@@ -322,8 +322,6 @@
 *toboads*
 *touchcommerce*
 *trackalyzer*
-*tracker*
-*tracking*
 *tradedoubler*
 *tradetracker*
 *trafficjunky*
