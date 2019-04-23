@@ -1,5 +1,4 @@
 
-*247realmedia*
 *2giga*
 *3lift*
 *51yes*
@@ -24,11 +23,10 @@
 *adiquity*
 *adjuggler*
 *adk2*
-*adk2x*
 *adlegend*
 *adlooxtracking*
 *admanager*
-*admarketplace*
+*admarket*
 *admedia*
 *admitad*
 *admob*
@@ -44,9 +42,6 @@
 *adscience*
 *adsense*
 *adserv*
-*adserve*
-*adserver*
-*adsfac*
 *adshuffle*
 *adskeeper*
 *adsnative*
@@ -61,14 +56,12 @@
 *adtechus*
 *adtlgc*
 *advert*
-*advertising*
 *adwords*
 *adydba*
 *adzmedia*
 *affiliate*
 *ajcryptominer*
 *ajplugins*
-*allyes*
 *alphonso*
 *amazingcounters*
 *amobee*
@@ -211,7 +204,6 @@
 *measurementapi*
 *mediaplex*
 *mentalist*
-*metrix*
 *millennialmedia*
 *mimageads*
 *minexmr*
@@ -224,7 +216,7 @@
 *mookie1*
 *mouseflow*
 *msadcenter*
-*mydas.com*
+*mydas*
 *myroitracking*
 *myshopify*
 *mystat*
@@ -260,6 +252,7 @@
 *popunder*
 *pornographo*
 *promoted_content*
+*promoted-content*
 *pubmatic*
 *pubnative*
 *puserving*
@@ -278,11 +271,8 @@
 *richmetrics*
 *rubiconproject*
 *scorecardresearch*
-*seedpeer*
 *servedby*
-*servedbyopenx*
 *sextracker*
-*sexybabesx*
 *shengen*
 *shinystat*
 *sitemeter*
@@ -308,7 +298,6 @@
 *switchadhub*
 *taboola*
 *taobao*
-*tapjoy.com*
 *taplytics*
 *tapreq*
 *targetnet*
@@ -330,7 +319,6 @@
 *tribalfusion*
 *truememberent*
 *tubemogul*
-*unbounce*
 *urbanairship*
 *usllpic*
 *valueclick*
@@ -359,7 +347,6 @@
 *xxxcounter*
 *ydstatic*
 *yieldmanager*
-*yimg.com*
 *youboranqs*
 *youcanoptout*
 *zapto*
