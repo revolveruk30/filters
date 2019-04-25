@@ -1,5 +1,4 @@
-# SPOTIFY ADS
-
+# SPOTIFY
 0.0.0.0 omaze.com
 0.0.0.0 2mdn.net
 0.0.0.0 adeventtracker.spotify.com
@@ -534,7 +533,7 @@
 ::1 ad.doubleclick.net
 ::1 googleads4.g.doubleclick.net
 
-# kaspersky
+# KASPERSKY
 
 0.0.0.0 auto-activation1.kaspersky.com
 0.0.0.0 auto-activation2.kaspersky.com
@@ -583,8 +582,6 @@
 0.0.0.0 a-0010.a-msedge.net
 0.0.0.0 a-0011.a-msedge.net
 0.0.0.0 a-0012.a-msedge.net
-0.0.0.0 apps.skype.com
-0.0.0.0 pricelist.skype.com
 0.0.0.0 bn3sch020010536.wns.windows.com
 0.0.0.0 array615-prod.do.dsp.mp.microsoft.com
 0.0.0.0 fg.download.windowsupdate.com.c.footprint.net
@@ -700,7 +697,6 @@
 0.0.0.0 ls2web.redmond.corp.microsoft.com
 0.0.0.0 m.adnxs.com
 0.0.0.0 mobile.pipe.aria.microsoft.com
-0.0.0.0 msedge.net
 0.0.0.0 msntest.serving-sys.com
 0.0.0.0 nexus.officeapps.live.com
 0.0.0.0 nexusrules.officeapps.live.com
@@ -767,7 +763,7 @@
 0.0.0.0 web.vortex.data.microsoft.com
 0.0.0.0 wes.df.telemetry.microsoft.com
 0.0.0.0 win10.ipv6.microsoft.com
-0.0.0.0 www.msedge.net
+0.0.0.0 msedge.net
 0.0.0.0 prod.configsvc1.live.com.akadns.net
 0.0.0.0 wdcpus.microsoft.akadns.net
 0.0.0.0 modern.watson.data.microsoft.com.akadns.net
@@ -848,7 +844,6 @@
 0.0.0.0 mobileads.msn.com
 0.0.0.0 mpd.mxptint.net
 0.0.0.0 mscrl.microsoft.com
-0.0.0.0 msftncsi.com
 0.0.0.0 msnbot-191-232-139-155.search.msn.com
 0.0.0.0 msnbot-207-46-194-25.search.msn.com
 0.0.0.0 msnbot-207-46-194-33.search.msn.com
@@ -906,7 +901,7 @@
 0.0.0.0 wildcard.twimg.com
 0.0.0.0 win10.ipv6.microsoft.com.nsatc.net
 0.0.0.0 wns.notify.windows.com.akadns.net
-0.0.0.0 www.msftncsi.com
+0.0.0.0 msftncsi.com
 ::1 watson.telemetry.microsoft.com/telemetry.request
 ::1 ris.api.iris.microsoft.com.akadns.net
 ::1 location-inference-westus.cloudapp.net
@@ -929,8 +924,6 @@
 ::1 a-0010.a-msedge.net
 ::1 a-0011.a-msedge.net
 ::1 a-0012.a-msedge.net
-::1	apps.skype.com
-::1	pricelist.skype.com
 ::1 bn3sch020010536.wns.windows.com
 ::1 array615-prod.do.dsp.mp.microsoft.com
 ::1 fg.download.windowsupdate.com.c.footprint.net
@@ -1046,7 +1039,6 @@
 ::1 ls2web.redmond.corp.microsoft.com
 ::1 m.adnxs.com
 ::1 mobile.pipe.aria.microsoft.com
-::1 msedge.net
 ::1 msntest.serving-sys.com
 ::1 nexus.officeapps.live.com
 ::1 nexusrules.officeapps.live.com
@@ -1113,7 +1105,7 @@
 ::1 web.vortex.data.microsoft.com
 ::1 wes.df.telemetry.microsoft.com
 ::1 win10.ipv6.microsoft.com
-::1 www.msedge.net
+::1 msedge.net
 ::1 prod.configsvc1.live.com.akadns.net
 ::1 wdcpus.microsoft.akadns.net
 ::1 modern.watson.data.microsoft.com.akadns.net
