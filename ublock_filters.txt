@@ -354,7 +354,7 @@
 *zeroredirect*
 *ziraat*
 *zrus*
-/btnaddtofacebook.
+
 /facebook_badge-
 /facebook_badge-
 /facebook_badge.
@@ -395,6 +395,7 @@ _facebook_badge.
 _facebook_badge.
 _facebookbadge.
 _facebookbadge.
+
 ||as01.epimg.net/img/txt_publi_v.svg$image
 ||badge.facebook.com^$third-party
 ||connect.facebook.net/en_US/fbadnw.js^
@@ -405,8 +406,10 @@ _facebookbadge.
 ||youtube.com/api/stats/ads?
 ||youtube.com/api/stats/ads?
 ||youtube.com/get_video_info?*el=adunit
+
 accounts.google.com#@#.adwords
 as.com##.banner_sup.cf
+
 blogs.wsj.com###magic
 blogs.wsj.com##.vltsociallinks
 blogs.wsj.com##[class="art_tabbed_nav"]
@@ -417,9 +420,7 @@ blogs.wsj.com##[id="footer"]
 blogs.wsj.com##[id="promologindetailsid"]
 blogs.wsj.com##[id="rightrail"]
 blogs.wsj.com##header[class="sp-header box2"]
-cooking.nytimes.com###alertbannermount
-cooking.nytimes.com##.has-newsletter
-dealbook.nytimes.com##.entry-related.entry
+
 facebook.com###gear-balloon-promo
 facebook.com###header-notices
 facebook.com###megamall_rhc_ssfy_pagelet
@@ -456,6 +457,7 @@ facebook.com#@##fb_header
 facebook.com#@##fb_header
 facebook.com/ads^$first-party
 facebook.com/ajax/typeahead/record_basic_metrics.php
+
 google.com###tadsc
 google.com##.GC3LC41DERB + div[style="position: relative; height: 170px;"]
 google.com##.GGQPGYLCD5
@@ -465,20 +467,18 @@ google.com##.nH.MC
 google.com##div[style^="height: 16px; font: bold 12px/16px"]
 google.com#@##videoads
 google.com.au###mclip_control
-healthgrades.com,nytimes.com###upnext
+
 leechpremium.link##.modal-body
 leechpremium.link##.modal-footer
 leechpremium.link##.modal-header
-m.facebook.com###header-notices, ._5tel
-m.facebook.com###msite-pages-header-contents > div[class="_4b-b"][style]
-m.youtube.com###mealbar\:3 > ytm-mealbar.mealbar-promo-renderer
+
 mail.google.com##.aeF > .nH > .nH[role="main"] > .aKB
 mail.google.com##.nH.PS
+
 maps.google.com###mclip
 maps.google.com##.hotel-partner-item-sponsored
 maps.google.com##.hotel-price
-mobile.nytimes.com###newsletter-promo
-mobile.nytimes.com##div[class^="responsivead-"]
+
 nytimes.com###anchor-ad
 nytimes.com###anchor-container
 nytimes.com###anchoredad_module
@@ -560,6 +560,8 @@ nytimes.com#@#.expanded.gdpr:not(body):not(html)
 nytimes.com#@#.sharetools
 nytimes.com#@#.sharetoolsitem
 nytimes.com,nytimes3xbfgragh.onion##.css-990mwl
+nytimes.com###upnext
+
 reddit.com###ad_1
 reddit.com###ad_4
 reddit.com###ad_5
@@ -587,6 +589,7 @@ reddit.com##div.dfp-ad-container
 reddit.com##div.promotedlink
 reddit.com##div.promotedvideolink
 reddit.com##div.read-next-container
+
 twitter.com##.presented.cards-forward.has-cards.promoted-tweet.js-original-tweet.original-tweet.dismissible-content.js-profile-popup-actionable.js-actionable-tweet.js-stream-tweet.tweet
 twitter.com##.scribed.presented.cards-forward.has-cards.promoted-tweet.js-original-tweet.original-tweet.dismissible-content.js-profile-popup-actionable.js-actionable-tweet.js-stream-tweet.tweet
 twitter.com##[data-focusable="true"]:has-text(/Promoted|Gesponsert|???????/):not(:xpath(//span[contains(text(),'??????? ? ????????')]))
@@ -594,6 +597,7 @@ twitter.com##[data-testid="trend"]:has-text(/Promoted|Gesponsert|???????/):xpath
 twitter.com##[data-testid="tweet"]:has-text(/Promoted|Gesponsert|???????/):xpath(..)
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
+
 washingtonpost.com###bb-watchlist
 washingtonpost.com###bc-badges
 washingtonpost.com###comments
@@ -645,6 +649,7 @@ washingtonpost.com##div[class*="-ad-"]
 washingtonpost.com##div[moat-id="ad/leaderboard"]
 washingtonpost.com##span[class="tweet-authors"]
 washingtonpost.com#@#.gdpr-consent
+
 wsj.com###ad_rail1.wsj-ad
 wsj.com###articlerrtest_joblistings
 wsj.com###finsw_jobs
@@ -665,6 +670,7 @@ wsj.com##div[class="module trending_now  "]
 wsj.com##p > #deloitte_column > [data-module-zone="deloitte_insights"] > .deloitte-insights
 wsj.com##ul[class="top_stories clear"]
 wsj.com#@#.share_tools
+
 www.livenewsmag.com###secondary
 www.livenewsmag.com##.category-american.has-post-thumbnail.format-standard.status-publish.type-post.post.post-55.entry-tpl-listxxs
 www.livenewsmag.com##.category-united-kingdom.has-post-thumbnail.format-standard.status-publish.type-post.post.post-80.entry-tpl-listxxs
@@ -699,9 +705,10 @@ www.livenewsmag.com##.g1-teaser-next.g1-teaser > .g1-teaser-arrow
 www.livenewsmag.com##.g1-teaser-prev.g1-teaser
 www.livenewsmag.com##.g1-teaser-prev.g1-teaser > .g1-teaser-arrow
 www.livenewsmag.com##ol
+
 www.marca.com###banda_suscripcion
 www.marca.com###didomi-notice
-www.nytimes.com###upnext
+
 www.textfixer.com###amhide
 www.textfixer.com###content > p:nth-of-type(1)
 www.textfixer.com###content > p:nth-of-type(2)
@@ -711,14 +718,16 @@ www.textfixer.com###content > p:nth-of-type(5)
 www.textfixer.com###ftr
 www.textfixer.com##.frow > div:nth-of-type(1)
 www.textfixer.com##.frow > div:nth-of-type(2)
+
 www.wsj.com###cx-candybar
 www.wsj.com###cx-candybarhp
 www.wsj.com###cx-scrim-overlay
 www.wsj.com##.bing-native-ad
 www.wsj.com##[class^="style__subscribe"]
 www.wsj.com##[href*="https://buy.wsj.com"]
-www.youtube.com###masthead-ad
-www.youtube.com##ytd-guide-signin-promo-renderer.ytd-guide-renderer.style-scope
+
+youtube.com###masthead-ad
+youtube.com##ytd-guide-signin-promo-renderer.ytd-guide-renderer.style-scope
 youtube.com###__ffYoutube1
 youtube.com###__ffYoutube2
 youtube.com###__ffYoutube3
