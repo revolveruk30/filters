@@ -5,6 +5,7 @@
 0.0.0.0 doubleclick.net
 0.0.0.0 partnerad.1.doubleclick.net
 0.0.0.0 stats.g.doubleclick.net
+0.0.0.0	ad.doubleclick.net
 0.0.0.0 adservice.google.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 https://auto-activation1.kaspersky.com
@@ -57,7 +58,6 @@
 0.0.0.0 a-0011.a-msedge.net
 0.0.0.0 a-0012.a-msedge.net
 0.0.0.0	ac3.msn.com
-0.0.0.0	ad.doubleclick.net
 0.0.0.0	adnexus.net
 0.0.0.0	adnxs.com
 0.0.0.0	ads.msn.com
@@ -347,7 +347,6 @@
 0.0.0.0 a767.dscd.akamai.net
 0.0.0.0 a767.dspw65.akamai.net
 0.0.0.0 a978.i6g1.akamai.net
-0.0.0.0 ad.doubleclick.net
 0.0.0.0 aka.ms
 0.0.0.0 americas2.notify.windows.com.akadns.net
 0.0.0.0 any.edge.bing.com
