@@ -1,4 +1,5 @@
-# spotify ads
+# SPOTIFY ADS
+
 0.0.0.0 omaze.com
 0.0.0.0 2mdn.net
 0.0.0.0 adeventtracker.spotify.com
@@ -295,7 +296,9 @@
 0.0.0.0 upgrade.scdn.co
 0.0.0.0 upgrade.spotify.com
 0.0.0.0 weblb-wg.dual-gslb.spotify.com
-# google
+
+# GOOGLE
+
 0.0.0.0 4.afs.googleadservices.com
 0.0.0.0 adservices.google.com
 0.0.0.0 adwords.google.lloymlincs.com
@@ -556,8 +559,7 @@
 0.0.0.0 activation-v1.kaspersky.com/activationservice/activationservice.svc
 0.0.0.0 activation-v2.kaspersky.com/activationservice/activationservice.svc
 
-# microsoft
-
+# MICROSOFT
 
 0.0.0.0 watson.telemetry.microsoft.com/telemetry.request
 0.0.0.0 ris.api.iris.microsoft.com.akadns.net
