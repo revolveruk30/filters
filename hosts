@@ -558,6 +558,7 @@
 0.0.0.0 auto-activation20.kaspersky.com
 0.0.0.0 activation-v1.kaspersky.com/activationservice/activationservice.svc
 0.0.0.0 activation-v2.kaspersky.com/activationservice/activationservice.svc
+0.0.0.0 gc.kis.v2.scr.kaspersky-labs.com
 
 # MICROSOFT
 
