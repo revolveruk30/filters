@@ -562,6 +562,8 @@
 
 # MICROSOFT
 
+0.0.0.0	browser.pipe.aria.microsoft.com
+0.0.0.0 v10.events.data.microsoft.com
 0.0.0.0 watson.telemetry.microsoft.com/telemetry.request
 0.0.0.0 ris.api.iris.microsoft.com.akadns.net
 0.0.0.0 location-inference-westus.cloudapp.net
