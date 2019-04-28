@@ -586,8 +586,6 @@
 0.0.0.0 a-0010.a-msedge.net
 0.0.0.0 a-0011.a-msedge.net
 0.0.0.0 a-0012.a-msedge.net
-0.0.0.0 apps.skype.com
-0.0.0.0 pricelist.skype.com
 0.0.0.0 bn3sch020010536.wns.windows.com
 0.0.0.0 array615-prod.do.dsp.mp.microsoft.com
 0.0.0.0 fg.download.windowsupdate.com.c.footprint.net
@@ -928,8 +926,6 @@
 ::1 a-0010.a-msedge.net
 ::1 a-0011.a-msedge.net
 ::1 a-0012.a-msedge.net
-::1	apps.skype.com
-::1	pricelist.skype.com
 ::1 bn3sch020010536.wns.windows.com
 ::1 array615-prod.do.dsp.mp.microsoft.com
 ::1 fg.download.windowsupdate.com.c.footprint.net
