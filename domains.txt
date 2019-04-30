@@ -6404,7 +6404,6 @@ ado.icorp.ro
 ado.internet.cz
 ado.pro-market.net
 adobe.5v.pl
-adobe.com.us.reader.cloud.web.access.securely.asinacabinets.com
 adobe.fisher-realty.org
 adobe02.000webhostapp.com
 adobe496.000webhostapp.com
@@ -20601,7 +20600,6 @@ cdn.applifier.com
 cdn.appnext.com
 cdn.appround.biz
 cdn.apptv.com
-cdn.arstechnica.net
 cdn.askosshunt.com
 cdn.assets.craveonline.com
 cdn.assets.gorillanation.com
@@ -39109,7 +39107,6 @@ gateway.adgatemedia.com
 gateway.answerscloud.com
 gateway.blamads.com
 gateway.fortunelounge.com
-gateway.reddit.com
 gateway-02.com
 gateway-03.com
 gateway-banner.eravage.com
@@ -46274,7 +46271,7 @@ images.parked.com
 images.parsely.com
 images.paypal.com
 images.people2people.com
-images.performgroup.com
+
 images.primaryads.com
 images.quitnet.com
 images.rambler.ru
@@ -79927,7 +79924,6 @@ pubimgs.sapo.pt
 publiads.com
 public.carpediem.fr
 public.porn.fr
-public.slidesharecdn.com
 public.tableausoftware.com
 public.vilynx.com
 public.wmo.int
@@ -90480,7 +90476,6 @@ s-static.ak.facebook.com
 s-static.innovid.com
 sstatic.net
 sstatic1.histats.com
-sstats.adobe.com
 sstats.arstechnica.com
 sstats.condenast.com
 sstats.economist.com
