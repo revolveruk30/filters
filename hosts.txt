@@ -1,13 +1,11 @@
 # SPOTIFY ADS
 
-0.0.0.0 omaze.com
 0.0.0.0 2mdn.net
 0.0.0.0 adeventtracker.spotify.com
 0.0.0.0 adnxs.comadplexmedia.adk2x.com
 0.0.0.0 ads.cc-dt.com
 0.0.0.0 ads.pubmatic.com
 0.0.0.0 ads.spotify.com
-0.0.0.0 ads.yahoo.com
 0.0.0.0 adserver.adtechus.com
 0.0.0.0 ads-fa.spotify.com
 0.0.0.0 ads-west-colo.adsymptotic.com
@@ -297,13 +295,10 @@
 0.0.0.0 weblb-wg.dual-gslb.spotify.com
 
 # GOOGLE
-
 0.0.0.0 4.afs.googleadservices.com
 0.0.0.0 adservices.google.com
 0.0.0.0 adwords.google.lloymlincs.com
 0.0.0.0 affiliate.googleusercontent.com
-0.0.0.0 analytic-google.com
-0.0.0.0 analytics.google.com
 0.0.0.0 analytics-api-samples.googlecode.com
 0.0.0.0 buttons.googlesyndication.com
 0.0.0.0 clientmetrics-pa.googleapis.com
@@ -317,24 +312,15 @@
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 video-ad-stats.googlesyndication.com
 0.0.0.0 feedads.googleadservices.com
-0.0.0.0 fgoogle.com
 0.0.0.0 google.ienet.pl
 0.0.0.0 google.xweb24.pl
 0.0.0.0 googleadapis.l.google.com
 0.0.0.0 googleads2.g.doubleclick.net
 0.0.0.0 google-analytics.com
-0.0.0.0 googleapps-espana.com
-0.0.0.0 googleapps-jobs.com
-0.0.0.0 googleapps-spain.com
-0.0.0.0 googlechrome2013.com
-0.0.0.0 google-docs.info
 0.0.0.0 google-docs.org
 0.0.0.0 googlepositions.com
 0.0.0.0 googlesyndication.com
 0.0.0.0 googletagmanager.com
-0.0.0.0 google-tour.com
-0.0.0.0 googlew.com
-0.0.0.0 googlewordpad.info
 0.0.0.0 m4.afs.googleadservices.com
 0.0.0.0 mimageads.googleadservices.com
 0.0.0.0 mimageads1.googleadservices.com
@@ -354,11 +340,9 @@
 0.0.0.0 pagead2.googleadservices.com
 0.0.0.0 pagead3.googlesyndication.com
 0.0.0.0 partnerad.l.google.com
-0.0.0.0 router.googlecom.biz
 0.0.0.0 ssl.google-analytics.com
 0.0.0.0 video-stats.video.google.com
 0.0.0.0 wintricksbanner.googlepages.com
-0.0.0.0 www-google.nl
 0.0.0.0 www-google-analytics.l.google.com
 0.0.0.0 wwwgoogles.com
 0.0.0.0 googleads.g.doubleclick.net
@@ -437,8 +421,6 @@
 0.0.0.0 creatives.doubleclick.net
 0.0.0.0 dfp.doubleclick.net
 0.0.0.0 doubleclick.com
-0.0.0.0 doubleclick.de
-0.0.0.0 doubleclick.ne.jp
 0.0.0.0 dp.g.doubleclick.net
 0.0.0.0 ebaycn.doubleclick.net
 0.0.0.0 ebaytw.doubleclick.net
@@ -534,7 +516,6 @@
 ::1 googleads4.g.doubleclick.net
 
 # KASPERSKY
-
 0.0.0.0 auto-activation1.kaspersky.com
 0.0.0.0 auto-activation2.kaspersky.com
 0.0.0.0 auto-activation3.kaspersky.com
@@ -559,9 +540,7 @@
 0.0.0.0 activation-v2.kaspersky.com/activationservice/activationservice.svc
 0.0.0.0 gc.kis.v2.scr.kaspersky-labs.com
 
-
 # MICROSOFT
-
 0.0.0.0 v10.events.data.microsoft.com
 0.0.0.0 watson.telemetry.microsoft.com/telemetry.request
 0.0.0.0 ris.api.iris.microsoft.com.akadns.net
@@ -571,7 +550,6 @@
 0.0.0.0 incoming.telemetry.mozilla.org
 0.0.0.0 treasuredata.com
 0.0.0.0 in.treasuredata.com
-0.0.0.0 redshell.io
 0.0.0.0 api.redshell.io
 0.0.0.0 a-0001.a-msedge.net
 0.0.0.0 a-0002.a-msedge.net
@@ -699,7 +677,6 @@
 0.0.0.0 live.rads.msn.com
 0.0.0.0 ls2web.redmond.corp.microsoft.com
 0.0.0.0 m.adnxs.com
-0.0.0.0 msedge.net
 0.0.0.0 msntest.serving-sys.com
 0.0.0.0 oca.telemetry.microsoft.com
 0.0.0.0 oca.telemetry.microsoft.com.nsatc.net
@@ -764,7 +741,6 @@
 0.0.0.0 web.vortex.data.microsoft.com
 0.0.0.0 wes.df.telemetry.microsoft.com
 0.0.0.0 win10.ipv6.microsoft.com
-0.0.0.0 www.msedge.net
 0.0.0.0 prod.configsvc1.live.com.akadns.net
 0.0.0.0 wdcpus.microsoft.akadns.net
 0.0.0.0 modern.watson.data.microsoft.com.akadns.net
@@ -777,7 +753,6 @@
 0.0.0.0 a767.dscd.akamai.net
 0.0.0.0 a767.dspw65.akamai.net
 0.0.0.0 a978.i6g1.akamai.net
-0.0.0.0 aka.ms
 0.0.0.0 americas2.notify.windows.com.akadns.net
 0.0.0.0 any.edge.bing.com
 0.0.0.0 atlas.c10r.facebook.com
@@ -797,8 +772,6 @@
 0.0.0.0 bn4sch101123006.wns.windows.com
 0.0.0.0 c-0001.c-msedge.net
 0.0.0.0 c.msn.com.nsatc.net
-0.0.0.0 choice.live.com
-0.0.0.0 choice.microsoft.com
 0.0.0.0 choice.microsoft.com.nsatc.net
 0.0.0.0 choice.microsoft.com.nstac.net
 0.0.0.0 client.wns.windows.com
@@ -829,7 +802,6 @@
 0.0.0.0 fw.adsafeprotected.com
 0.0.0.0 g.msn.com.nsatc.net
 0.0.0.0 geo.prod.dodsp.mp.microsoft.com.nsatc.net
-0.0.0.0 go.microsoft.com
 0.0.0.0 i.s1.social.ms.akadns.net
 0.0.0.0 ieonlinews.microsoft.com
 0.0.0.0 inference.location.livenet.akadns.net
@@ -837,9 +809,7 @@
 0.0.0.0 ipv6.msftncsi.com.edgesuite.net
 0.0.0.0 legacy-redirection-neurope-prod-hp.cloudapp.net
 0.0.0.0 licensing.md.mp.microsoft.com
-0.0.0.0 login.live.com
 0.0.0.0 login.live.com.nsatc.net
-0.0.0.0 m.hotmail.com
 0.0.0.0 m221.absolute.com
 0.0.0.0 mobileads.msn.com
 0.0.0.0 mpd.mxptint.net
@@ -897,7 +867,6 @@
 0.0.0.0 updatekeepalive.mcafee.com
 0.0.0.0 urs.microsoft.com.nsatc.net
 0.0.0.0 v10.vortex-win.data.metron.life.com.nsatc.net
-0.0.0.0 vsgallery.com
 0.0.0.0 wildcard.appex-rf.msn.com.edgesuite.net
 0.0.0.0 wildcard.twimg.com
 0.0.0.0 win10.ipv6.microsoft.com.nsatc.net
@@ -911,7 +880,6 @@
 ::1 incoming.telemetry.mozilla.org
 ::1 treasuredata.com
 ::1 in.treasuredata.com
-::1 redshell.io
 ::1 api.redshell.io
 ::1 a-0001.a-msedge.net
 ::1 a-0002.a-msedge.net
@@ -1039,7 +1007,6 @@
 ::1 live.rads.msn.com
 ::1 ls2web.redmond.corp.microsoft.com
 ::1 m.adnxs.com
-::1 msedge.net
 ::1 msntest.serving-sys.com
 ::1 oca.telemetry.microsoft.com
 ::1 oca.telemetry.microsoft.com.nsatc.net
@@ -1104,7 +1071,6 @@
 ::1 web.vortex.data.microsoft.com
 ::1 wes.df.telemetry.microsoft.com
 ::1 win10.ipv6.microsoft.com
-::1 www.msedge.net
 ::1 prod.configsvc1.live.com.akadns.net
 ::1 wdcpus.microsoft.akadns.net
 ::1 modern.watson.data.microsoft.com.akadns.net
@@ -1117,7 +1083,6 @@
 ::1 a767.dscd.akamai.net
 ::1 a767.dspw65.akamai.net
 ::1 a978.i6g1.akamai.net
-::1 aka.ms
 ::1 americas2.notify.windows.com.akadns.net
 ::1 any.edge.bing.com
 ::1 atlas.c10r.facebook.com
@@ -1137,8 +1102,6 @@
 ::1 bn4sch101123006.wns.windows.com
 ::1 c-0001.c-msedge.net
 ::1 c.msn.com.nsatc.net
-::1 choice.live.com
-::1 choice.microsoft.com
 ::1 choice.microsoft.com.nsatc.net
 ::1 choice.microsoft.com.nstac.net
 ::1 client.wns.windows.com
@@ -1169,7 +1132,6 @@
 ::1 fw.adsafeprotected.com
 ::1 g.msn.com.nsatc.net
 ::1 geo.prod.dodsp.mp.microsoft.com.nsatc.net
-::1 go.microsoft.com
 ::1 i.s1.social.ms.akadns.net
 ::1 ieonlinews.microsoft.com
 ::1 inference.location.livenet.akadns.net
@@ -1177,7 +1139,6 @@
 ::1 ipv6.msftncsi.com.edgesuite.net
 ::1 legacy-redirection-neurope-prod-hp.cloudapp.net
 ::1 licensing.md.mp.microsoft.com
-::1 login.live.com
 ::1 login.live.com.nsatc.net
 ::1 m.hotmail.com
 ::1 m221.absolute.com
