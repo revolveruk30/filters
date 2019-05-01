@@ -514,6 +514,7 @@
 0.0.0.0 partnerad.1.doubleclick.net
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 ad.doubleclick.net
+0.0.0.0 connectivitycheck.gstatic.com
 
 # KASPERSKY
 0.0.0.0 auto-activation1.kaspersky.com
