@@ -29,7 +29,6 @@ leechpremium.link##.purechat-collapsed-image
 leechpremium.link/assets/img/clouds2.png$image
 leechpremium.link/nativead.php$subdocument
 
-
 ! GOOGLE
 
 accounts.google.com#@#.adwords
@@ -73,7 +72,6 @@ reddit.com##div.promotedlink
 reddit.com##div.promotedvideolink
 reddit.com##div.read-next-container
 
-
 ! TWITTER
 
 twitter.com##.presented.cards-forward.has-cards.promoted-tweet.js-original-tweet.original-tweet.dismissible-content.js-profile-popup-actionable.js-actionable-tweet.js-stream-tweet.tweet
@@ -85,9 +83,6 @@ twitter.com##[data-testid="trend"]:has-text(/Promoted|Gesponsert|???????/):xpath
 twitter.com##[data-testid="tweet"]:has-text(/Promoted|Gesponsert|???????/):xpath(..)
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
-www.livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-twitter
-
-
 
 ! WASHINGTONPOST
 
@@ -163,7 +158,6 @@ www.justwatch.com##.footer > .container-fluid
 www.justwatch.com##div:nth-of-type(1) > publication-block > .row.publication-block
 www.justwatch.com##div:nth-of-type(2) > publication-block > .row.publication-block
 
-
 ! LIVENEWSMAG
 
 www.livenewsmag.com###secondary
@@ -200,8 +194,7 @@ www.livenewsmag.com##.g1-teaser-prev.g1-teaser
 www.livenewsmag.com##.g1-teaser-prev.g1-teaser > .g1-teaser-arrow
 www.livenewsmag.com##ol
 www.livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-facebook
-
-
+www.livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-twitter
 
 ! NYTIMES
 
@@ -293,7 +286,6 @@ www.nytimes.com##.egw6tc40.css-nu8xsr
 www.nytimes.com##.ejw0p350.css-9ghvn0
 www.nytimes.com##.supplemental.css-lhjs31
 
-
 ! TEXTFIXER
 
 www.textfixer.com###amhide
@@ -305,7 +297,6 @@ www.textfixer.com###content > p:nth-of-type(5)
 www.textfixer.com###ftr
 www.textfixer.com##.frow > div:nth-of-type(1)
 www.textfixer.com##.frow > div:nth-of-type(2)
-
 
 ! WSJ
 
@@ -346,8 +337,8 @@ www.wsj.com##.bing-native-ad
 www.wsj.com##[class^="style__subscribe"]
 www.wsj.com##[href*="https://buy.wsj.com"]
 
-
 ! YOUTUBE
+
 youtube.com/ad_data$important
 youtube.com/api/stats/ads?
 youtube.com/get_video_info?*el=adunit
@@ -416,9 +407,6 @@ youtube.com/get_midroll_
 /log_event?
 /generate_204
 
-
-
-
 ! GOAL
 
 www.goal.com##.-mtfadbq-qlm-pqlofbp > .clearfix.card-8-group-1.group > .-mzljjbozfxi
@@ -427,7 +415,6 @@ www.goal.com##.-mtfadbq-jlob-kbtp > .clearfix.card-8-group-1.group > .-mzljjbozf
 www.goal.com##.clearfix.-mtfadbq-cllqbo
 www.goal.com##.clearfix.nav-tabs
 www.goal.com##.-mtfadbq-kxsfdxqflk__lmqflkp
-
 
 ! FACEBOOK
 
@@ -575,8 +562,8 @@ as.com###promociones1
 as.com##footer
 as.com##.slider-producto-fw.slider-producto
 
-
 ! BOXREC
+
 boxrec.com##.footerAd
 boxrec.com##.footerOuter
 boxrec.com##.footerTopOuter > .footer
@@ -584,8 +571,8 @@ boxrec.com##.topAd
 boxrec.com###StreamAMP_MPU1
 boxrec.com##.midAdvert
 
-
 !  RUTRACKER
+
 rutrk.org/iframe/MG-2/MG-240x120.html$subdocument
 rutracker.org/iframe/MG-bottom.html?rnd=4859727$subdocument
 rutracker.org###page_footer
