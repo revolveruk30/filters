@@ -533,19 +533,16 @@ www.facebook.com##div[id^=hyperfeed_story_id_]:has(span[data-ft="{\"tn\":\"j\"}"
 www.facebook.com##._4oes
 www.facebook.com###js_3zv > ._qhr._55ln > ._55lp
 
-
 ! FOTMOB 
 
 www.fotmob.com##.react-calendar
 www.fotmob.com##.fm-fotMobAd
-
 
 ! WHOSCORED
 
 www.whoscored.com##.layout-content-2col-right
 www.whoscored.com###footer-wrapper
 www.whoscored.com###matchslider
-
 
 ! AS.COM
 
