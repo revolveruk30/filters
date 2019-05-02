@@ -543,6 +543,8 @@
 0.0.0.0 gc.kis.v2.scr.kaspersky-labs.com
 
 # MICROSOFT
+
+0.0.0.0 browser.pipe.aria.microsoft.com
 0.0.0.0 v10.events.data.microsoft.com
 0.0.0.0 watson.telemetry.microsoft.com/telemetry.request
 0.0.0.0 ris.api.iris.microsoft.com.akadns.net
