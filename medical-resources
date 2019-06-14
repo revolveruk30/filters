@@ -26,15 +26,26 @@ health.gov.au
 
 // ASSOCIATIONS
 
-cancer.org
-lung.org
-heart.org
-aans.org
-alz.org
-diabetes.org
-kidney.org
-psychiatry.org
-liverfoundation.org
+cancer.org // Cancer
+lung.org // Lung
+heart.org // Heart
+alz.org // Alzheimers
+diabetes.org // Diabetes
+kidney.org // Kidney
+psychiatry.org // Psychiatry
+liverfoundation.org // Liver
+
+aans.org // Neurosurgeons
+aap.org // Pediatricians
+aaaai.org // Allergy, Asthma, Immunology
+asahq.org // Anesthesiologists 
+acc.org // Cardiology
+fascrs.org // Colon
+sccm.org // Critical Care
+aad.org // Dermatology
+
+wellbeingofwomen.org.uk // Women Health
+rsph.org.uk // Royal Society of Public Health
 
 // UNIVERSITIES (TOP 30 MEDICAL SCHOOLS)
 
