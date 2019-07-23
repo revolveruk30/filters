@@ -2604,6 +2604,9 @@
 0.0.0.0 activation-v1.kaspersky.com/activationservice/activationservice.svc
 0.0.0.0 activation-v2.kaspersky.com/activationservice/activationservice.svc
 0.0.0.0 gc.kis.v2.scr.kaspersky-labs.com
+0.0.0.0 refresh-bkg.activation-v1.kaspersky.com
+0.0.0.0 refresh-bkg.activation-v2.kaspersky.com
+0.0.0.0 refresh-bkg.activation-v3.kaspersky.com
 
 # MICROSOFT
 
