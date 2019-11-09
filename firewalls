@@ -1,0 +1,21 @@
+set firewall name eth1_local rule 20 action accept
+set firewall name eth1_local rule 20 description “Allow webproxy traffic through”
+set firewall name eth1_local rule 20 destination address 0.0.0.0
+set firewall name eth1_local rule 20 state new enable
+set firewall name eth1_local rule 20 state established enable 
+set firewall name eth1_local rule 20 state related enable
+set firewall name eth0_local rule 10 action accept
+set firewall name eth0_local rule 10 description “Allow webproxy traffic through”
+set firewall name eth0_local rule 10 protocol tcp
+set firewall name eth0_local rule 10 source port 80,443
+set firewall name eth0_local rule 10 destination address 0.0.0.0
+set firewall name eth0_local rule 10 state established enable 
+set firewall name eth0_local rule 10 state related enable
+set firewall name eth0_local rule 20 action accept
+set firewall name eth0_local rule 20 description “Allow webproxy DNS requests”
+set firewall name eth0_local rule 20 protocol udp
+set firewall name eth0_local rule 20 source address 1.1.1.1
+set firewall name eth0_local rule 20 source port 53
+set firewall name eth0_local rule 20 destination address 0.0.0.0
+set firewall name eth0_local rule 20 state established enable
+set firewall name eth0_local rule 20 state related enable
