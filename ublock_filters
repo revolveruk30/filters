@@ -1,35 +1,120 @@
-! ARENAVISION
-
-arenavision.us###_pn_1556364553197
-arenavision.us###_pn_1556364829711
-arenavision.us##.maugpfs > div:nth-of-type(1)
-arenavision.us##div._8js2mid:nth-of-type(1)
-arenavision.us##div._8js2mid:nth-of-type(2)
-
-! DOUPLOADS
-
-douploads.com###gdpr-cookie-notice
-douploads.com###news_last
-douploads.com##.btn-danger.btn-lg.btn-block.btn
-douploads.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-douploads.com##.footer
-douploads.com##.py-3.col-md-12
-douploads.com##.py-3.col-md-12 > ul > li:nth-of-type(1)
-douploads.com##.py-3.col-md-12 > ul > li:nth-of-type(2)
-douploads.com##div.mt-5.col-md-4:nth-of-type(5)
-
-! LEECHPREMIUM
-
-leechpremium.link##.footer-distributed
-leechpremium.link##.header-user-dropdown
-leechpremium.link##.modal-body
-leechpremium.link##.modal-footer
-leechpremium.link##.modal-header
-leechpremium.link##.purechat-collapsed-image
-leechpremium.link/assets/img/clouds2.png$image
-leechpremium.link/nativead.php$subdocument
-
-! GOOGLE
+/facebook_badge-
+/facebook_badge.
+/facebook_header.
+/facebookadd_
+/facebookbadge.
+/facebook-head.
+/facebookHeader.
+/facebookloader.
+/facebook-page-popup-cadence/*$~stylesheet
+/head_facebook.
+/header-facebook.png
+/plugins/facebook-page-promoter-$~stylesheet
+/promo/facebook.png
+/uploads/*facebook.jpg
+/uploads/facebook-
+/uploads/facebook.
+/wp-content/plugins/advanced-facebook-content-locker/*
+/wp-content/plugins/facebook-page-promoter-lightbox/*
+_facebook_badge.
+_facebookbadge.
+badge.facebook.com^$third-party
+connect.facebook.net/en_US/fbadnw.js^
+facebook.com###fbpage_invite_audience_action
+facebook.com###fbpage_invite_audience_action_finch
+facebook.com###feed_optimistic_video
+facebook.com###friend_invites_section
+facebook.com###gear-balloon-promo
+facebook.com###GroupDiscoverCard_Local
+facebook.com###GroupsRHCSuggestionSection
+facebook.com###header-notices
+facebook.com###home_sponsor_nile
+facebook.com###js_3zv > ._qhr._55ln > ._55lp
+facebook.com###left_nav_section_nodes ul li[id="navItem_124024574287414"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_1728807357362356"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_275254692598279"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_343553122467255"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_399711043500146"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_456900714360021"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_526732794016279"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_645191315628772"]
+facebook.com###left_nav_section_nodes ul li[id="navItem_762992637108088"]
+facebook.com###marketplace_bsg_explore_div #sale_groups_landing_page_recommended_groups div[id^="group_browse"] div[id^="GroupSuggestionCard"]
+facebook.com###megamall_rhc_ssfy_pagelet
+facebook.com###mobile_login_bar
+facebook.com###page > #header-notices
+facebook.com###page_recommendations #recommendations_create_entrypoint_container
+facebook.com###page_suggestions_on_liking
+facebook.com###pageInviteNoticeCard
+facebook.com###pagelet_ads_when_no_friend_list_suggestion
+facebook.com###pagelet_advertiser_panel
+facebook.com###pagelet_ego_pane
+facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
+facebook.com###pagelet_ego_pane a[ajaxify*="&eid="] + div
+facebook.com###pagelet_explore_feed div[role="article"] .fbUserStory span.uiLikePageButton
+facebook.com###pagelet_games_rhc
+facebook.com###pagelet_group_mall div[id^="group_mall"] div[id^="mall_post"][id*="SUGGESTED_IN_MALL"]
+facebook.com###pagelet_main_column_personal #fbSuggestionsPlaceHolder
+facebook.com###pagelet_video_home_watch_list_rhc
+facebook.com###pages_may_like_section
+facebook.com###pages_side_column div > div[id^="PageRelatedPagesSecondaryPagelet"]
+facebook.com###pages_side_column div a[href*="/friend_inviter_v2/"]
+facebook.com###pagesTimelineChainingUnit
+facebook.com###permalink_related_videos_logged_out
+facebook.com###substream_1:has([id^="feed_subtitle_"]:has-text(Sp))
+facebook.com###u_ps_0_a_0
+facebook.com###u_ps_0_a_2
+facebook.com###video_permalink_related_pagelet
+facebook.com##._4oes
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
+facebook.com##.pagelet-group .pagelet:has(a:has-text(Create ad))
+facebook.com##.pagelet-group .pagelet:has(a:has-text(Sponsored))
+facebook.com##.pagelet-group > .pagelet:has(a:has-text(/Sponsored/))
+facebook.com##.userContentWrapper :has([id^="feed_subtitle_"]:has-text(Sp))
+facebook.com##.userContentWrapper._5pcr > div:has(.r_zjlob1xpb)
+facebook.com##.userContentWrapper._5pcr > div:has(.s_v8i43c603)
+facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
+facebook.com##[id^=hyperfeed_story_id_]:has([id^=u_fetchstream_2_1]:has-text(SpSonSsoSredS))
+facebook.com##[id^=hyperfeed_story_id_]:has(a[href*="client_token"])
+facebook.com##[id^=hyperfeed_story_id_]:has(a[href*="utm_campaign"])
+facebook.com##a[ajaxify*="&eid="] + a[href^="https://l.facebook.com/l.php?u="]
+facebook.com##a[href^="/ajax/emu/end.php?"]
+facebook.com##a[href^="https://l.facebook.com/"][href*="%2526ad_id%"]
+facebook.com##a[title*="AdChoices"]
+facebook.com##body:xpath(//i[text()[contains(.,'Sponsored')]]/ancestor::div[11])
+facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestampContent"])):not(span:contains(/^m$/)):not(span:contains(/^M$/)):not(span:contains(/^h$/)):not(span:contains(/^:$/)):not(span:contains(/^J$/)):has(span:contains(/^S$/))
+facebook.com##div[id^=hyperfeed_story_id_]:has(a[role^=button]:has(> span:has-text(/S/i):has-text(p):has-text(o):has-text(n):has-text(r):has-text(e):has-text(d):not(:has-text(0)):not(:has-text(1)):not(:has-text(2)):not(:has-text(3)):not(:has-text(4)):not(:has-text(5)):not(:has-text(6)):not(:has-text(7)):not(:has-text(8)):not(:has-text(9))))
+facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtilte"]:has(span[data-ft]:has(s > s)))
+facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtilte"]:has(span[data-ft]:has(span > span)))
+facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtitle"]:has(span[data-ft]:has(s > s)))
+facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtitle"]:has(span[data-ft]:has(span > span)))
+facebook.com##div[id^=hyperfeed_story_id_]:has(span[data-ft="{\"tn\":\"j\"}"])
+facebook.com#*(sidebar_ads)
+facebook.com#*(social_ad_advert_text)
+facebook.com#?#.pagelet:-abp-has(a[href^="/ad_campaign"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href*="is_sponsored"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href^="/business/help/788160621327601/?"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(input[data-next-question-id])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(span:-abp-contains(/Suggested Post|Vorgeschlagener Beitrag/))
+facebook.com#@##fb_header
+facebook.com/ads^$first-party
+facebook.com/ajax/typeahead/record_basic_metrics.php
+livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-facebook
+/generate_204
+/log_event?
 
 accounts.google.com#@#.adwords
 douploads.com##div.col-md-12:nth-of-type(1) > .adsbygoogle
@@ -48,10 +133,210 @@ maps.google.com###mclip
 maps.google.com##.hotel-partner-item-sponsored
 maps.google.com##.hotel-price
 
-! REDDIT
 
-reddit.com/api/request_promo$important
-reddit.com/api/request_promo$
+arenavision.us###_pn_1556364553197
+arenavision.us###_pn_1556364829711
+arenavision.us##.maugpfs > div:nth-of-type(1)
+arenavision.us##div._8js2mid:nth-of-type(1)
+arenavision.us##div._8js2mid:nth-of-type(2)
+as.com###enjuego_body
+as.com###gtp_diarioas_19753-NSTD1
+as.com###gtp_diarioas_19753-NSTD2
+as.com###promociones1
+as.com##.ad-h-fix.separador.flexible.row.area-actualidad > .col-xs-12.col-sm-12.col-md-4
+as.com##.banner_sup.cf
+as.com##.fw.row
+as.com##.headerAs
+as.com##.lo-mas-visto
+as.com##.slider-producto-fw.slider-producto
+as.com##div.separador.flexible.row:nth-of-type(9)
+as.com##footer
+blogs.wsj.com###magic
+blogs.wsj.com##.vltsociallinks
+blogs.wsj.com##[class="art_tabbed_nav"]
+blogs.wsj.com##[class="hatwsj_c"]
+blogs.wsj.com##[class="insetcontent"]
+blogs.wsj.com##[class="post-bottom-row"]
+blogs.wsj.com##[id="footer"]
+blogs.wsj.com##[id="promologindetailsid"]
+blogs.wsj.com##[id="rightrail"]
+blogs.wsj.com##header[class="sp-header box2"]
+boxrec.com###StreamAMP_MPU1
+boxrec.com##.footerAd
+boxrec.com##.footerOuter
+boxrec.com##.footerTopOuter > .footer
+boxrec.com##.midAdvert
+boxrec.com##.topAd
+douploads.com###gdpr-cookie-notice
+douploads.com###news_last
+douploads.com##.btn-danger.btn-lg.btn-block.btn
+douploads.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+douploads.com##.footer
+douploads.com##.py-3.col-md-12
+douploads.com##.py-3.col-md-12 > ul > li:nth-of-type(1)
+douploads.com##.py-3.col-md-12 > ul > li:nth-of-type(2)
+douploads.com##div.mt-5.col-md-4:nth-of-type(5)
+fotmob.com##.fm-fotMobAd
+fotmob.com##.react-calendar
+goal.com##.clearfix.card-6-group-2.group > .-mzljjbozfxi
+goal.com##.clearfix.-mtfadbq-cllqbo
+goal.com##.clearfix.nav-tabs
+goal.com##.-mtfadbq-jlob-kbtp > .clearfix.card-8-group-1.group > .-mzljjbozfxi
+goal.com##.-mtfadbq-kxsfdxqflk__lmqflkp
+goal.com##.-mtfadbq-qlm-pqlofbp > .clearfix.card-8-group-1.group > .-mzljjbozfxi
+justwatch.com###justwatch_detail-top-md
+justwatch.com##.consent-notification--expanded.consent-notification--shown.consent-notification
+justwatch.com##.detail-infos--backdrop__description > publication-block > .row.publication-block > div:nth-of-type(2)
+justwatch.com##.footer > .container-fluid
+justwatch.com##div:nth-of-type(1) > publication-block > .row.publication-block
+justwatch.com##div:nth-of-type(2) > publication-block > .row.publication-block
+learning.oreilly.com##.ContentNavigation-ContentNavigation-3zv63
+learning.oreilly.com##.ContentNavigation-isOpen-3-IXZ.ContentNavigation-ContentNavigation-3zv63
+learning.oreilly.com##.orm-ff-NavigationView-slim.orm-ff-NavigationView-root
+learning.oreilly.com##.orm-ff-ShellRefactor-collapsedFooter.orm-ff-ShellRefactor-authFooter.orm-ff-ShellRefactor-footer.orm-ff-Footer-root
+learning.oreilly.com##.orm-ff-ShellRefactor-collapsedSidebar.orm-ff-ShellRefactor-sidebar
+leechpremium.link##.footer-distributed
+leechpremium.link##.header-user-dropdown
+leechpremium.link##.modal-body
+leechpremium.link##.modal-footer
+leechpremium.link##.modal-header
+leechpremium.link##.purechat-collapsed-image
+leechpremium.link/assets/img/clouds2.png$image
+leechpremium.link/nativead.php$subdocument
+livenewsmag.com###\38 b2c9902-0a32-468b-85d7-8f4e8470d16b
+livenewsmag.com###popmake-3502
+livenewsmag.com###pum-3502
+livenewsmag.com###pushalert-ticker
+livenewsmag.com###secondary
+livenewsmag.com##.category-american.has-post-thumbnail.format-standard.status-publish.type-post.post.post-55.entry-tpl-listxxs
+livenewsmag.com##.category-united-kingdom.has-post-thumbnail.format-standard.status-publish.type-post.post.post-80.entry-tpl-listxxs
+livenewsmag.com##.category-united-kingdom.has-post-thumbnail.format-standard.status-publish.type-post.post.post-80.entry-tpl-listxxs > .entry-featured-media > .g1-frame > .g1-frame-inner
+livenewsmag.com##.crp_related > h3
+livenewsmag.com##.crp_related > ul
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > div:nth-of-type(1)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > div:nth-of-type(4)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > h2
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(1)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(2)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(3)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(4)
+livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(5)
+livenewsmag.com##.entry-header-01.entry-header
+livenewsmag.com##.exp-col-content-holder
+livenewsmag.com##.g1-footer.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
+livenewsmag.com##.g1-nav-single-links
+livenewsmag.com##.g1-prefooter.g1-row-layout-page.g1-row
+livenewsmag.com##.g1-prefooter.g1-row-layout-page.g1-row > .g1-row-background
+livenewsmag.com##.g1-row-breadcrumbs.g1-row-layout-page.g1-row-padding-xs.g1-row
+livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-twitter
+livenewsmag.com##.g1-teaser-next.g1-teaser
+livenewsmag.com##.g1-teaser-next.g1-teaser > .g1-teaser-arrow
+livenewsmag.com##.g1-teaser-prev.g1-teaser
+livenewsmag.com##.g1-teaser-prev.g1-teaser > .g1-teaser-arrow
+livenewsmag.com##ol
+nurikasej.wixsite.com###comp-k5ld9b2x
+nurikasej.wixsite.com###SITE_BACKGROUND_current_o8tb5_desktop_bg
+nurikasej.wixsite.com###SITE_BACKGROUND_currentImage_o8tb5_desktop_bg
+nurikasej.wixsite.com###SITE_BACKGROUND_currentOverlay_o8tb5_desktop_bg
+nurikasej.wixsite.com###SITE_FOOTERinlineContent
+nurikasej.wixsite.com###SITE_HEADERinlineContent
+nurikasej.wixsite.com###top
+nurikasej.wixsite.com##.color_11
+nytimes.com###anchor-ad
+nytimes.com###anchor-container
+nytimes.com###anchoredad_module
+nytimes.com###anchor-header
+nytimes.com###collectionspromoslot
+nytimes.com###growl_optly
+nytimes.com###hp-subscribe
+nytimes.com###mid1-wrapper
+nytimes.com###newsletter-module
+nytimes.com###newsletter-promo
+nytimes.com###site-index
+nytimes.com###story-ad-10-wrapper
+nytimes.com###story-ad-11-wrapper
+nytimes.com###story-ad-12-wrapper
+nytimes.com###story-ad-1-wrapper
+nytimes.com###story-ad-2-wrapper
+nytimes.com###story-ad-3-wrapper
+nytimes.com###story-ad-4-wrapper
+nytimes.com###story-ad-5-wrapper
+nytimes.com###story-ad-6-wrapper
+nytimes.com###story-ad-7-wrapper
+nytimes.com###story-ad-8-wrapper
+nytimes.com###story-ad-9-wrapper
+nytimes.com###subscribe_cont
+nytimes.com###subscribe_mobile_cont
+nytimes.com###topad1
+nytimes.com###top-wrapper
+nytimes.com###upnext
+nytimes.com##.articletoolssponsor
+nytimes.com##.css-9ynegn
+nytimes.com##.css-mlcs8h.shown
+nytimes.com##.e1c1i1hy1.css-pbg2l9
+nytimes.com##.e1i2wxpm0.css-mlcs8h.shown
+nytimes.com##.e1pwbg3p0.css-1xz93ux.standard.meter_default.shown
+nytimes.com##.e1pwbg3p0.css-tjd2vt.standard.meter_default.shown
+nytimes.com##.e1wet1p0.css-9ghvn0
+nytimes.com##.e1x0szx60.css-1xz93ux.standard.shown.meter_default
+nytimes.com##.e1yhpxjt0.css-3bfhll
+nytimes.com##.ebmu6dd0.css-9ghvn0
+nytimes.com##.egw6tc40.css-1yboj43
+nytimes.com##.egw6tc40.css-nu8xsr
+nytimes.com##.ehpkjz40.css-1r7etr0
+nytimes.com##.ejw0p350.css-9ghvn0
+nytimes.com##.ek9z99y2.css-z3qape
+nytimes.com##.email-updates
+nytimes.com##.evy98830.css-1mahq3m
+nytimes.com##.inlinemessage-inline--2ysnq
+nytimes.com##.mobilepromo
+nytimes.com##.notification-widget
+nytimes.com##.nps-promo
+nytimes.com##.nytc---recircpromocard---promocard
+nytimes.com##.nythpclimatechangenewsletterpromo
+nytimes.com##.recirculation-recirculation--2bqm-
+nytimes.com##.recirculation-recirculationad--3dayy
+nytimes.com##.ribbon-dockhidden--3r3jo.ribbon-ribbon--3jg7y
+nytimes.com##.ribbon-page-navigation
+nytimes.com##.supplemental.css-lhjs31
+nytimes.com##.toolslistcontainer
+nytimes.com##[class="nocontent robots-nocontent"]
+nytimes.com##[id^="medium-rectangle-ad-"]
+nytimes.com##[id^="story-ad-"]
+nytimes.com##[id="navigation-edge"]
+nytimes.com##[id="ribbon"]
+nytimes.com##[id="whats-next"]
+nytimes.com##a[aria-label="email"]
+nytimes.com##article.story:style(opacity: 1.0 !important;)
+nytimes.com##aside
+nytimes.com##div#acm-wrapper
+nytimes.com##div#bottom-wrapper
+nytimes.com##div#top-wrapper
+nytimes.com##div#upnextwrapper
+nytimes.com##div.e12j3pa50
+nytimes.com##div.e1yhpxjt1.css-70rfte:nth-of-type(1)
+nytimes.com##div.e1yhpxjt1.css-70rfte:nth-of-type(2)
+nytimes.com##div.egw6tc41.css-70rfte:nth-of-type(1)
+nytimes.com##div.egw6tc41.css-70rfte:nth-of-type(2)
+nytimes.com##div.shown:has-text(review our cookie policy)
+nytimes.com##div[class^="dock-dock-"]
+nytimes.com##div[class^="inlinemessage-inline-"]
+nytimes.com##div[id^="story-ad-"][id$="-wrapper"]
+nytimes.com#$#.bottom-left-ad { position: absolute!important; left: -3000px!important; }
+nytimes.com#%#document.cookie = "nyt-t=ok";
+nytimes.com#@#.expanded.gdpr
+nytimes.com#@#.expanded.gdpr:not(body):not(html)
+nytimes.com#@#.sharetools
+nytimes.com#@#.sharetoolsitem
+nytimes.com,nytimes3xbfgragh.onion##.css-990mwl
 reddit.com###ad_1
 reddit.com###ad_4
 reddit.com###ad_5
@@ -71,9 +356,31 @@ reddit.com##div.dfp-ad-container
 reddit.com##div.promotedlink
 reddit.com##div.promotedvideolink
 reddit.com##div.read-next-container
-
-! TWITTER
-
+reddit.com/api/request_promo$
+reddit.com/api/request_promo$important
+rutracker.org###page_footer
+rutracker.org/iframe/MG-bottom.html?rnd=4859727$subdocument
+rutrk.org/iframe/MG-2/MG-240x120.html$subdocument
+stream2watch.ws##.bg-light.navbar-light.navbar-expand-lg.navbar
+stream2watch.ws##.footer
+stream2watch.ws##.nt.stream-single-footer
+stream2watch.ws##.stream-box-actions-bar
+teamos-hkrg.com##.js-notices.notices--isMulti.notices--block.notices
+teamos-hkrg.com##div.block-outer:nth-of-type(1)
+teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(1) > .notice-content
+teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(1) > .notice-content > .low-ratio-alert
+teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(2) > .notice-content
+teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(2) > .notice-content > .low-ratio-alert
+textfixer.com###amhide
+textfixer.com###content > p:nth-of-type(1)
+textfixer.com###content > p:nth-of-type(2)
+textfixer.com###content > p:nth-of-type(3)
+textfixer.com###content > p:nth-of-type(4)
+textfixer.com###content > p:nth-of-type(5)
+textfixer.com###ftr
+textfixer.com##.frow > div:nth-of-type(1)
+textfixer.com##.frow > div:nth-of-type(2)
+tutorialspoint.com##.tutorial-toc.mui-col-md-3
 twitter.com##.presented.cards-forward.has-cards.promoted-tweet.js-original-tweet.original-tweet.dismissible-content.js-profile-popup-actionable.js-actionable-tweet.js-stream-tweet.tweet
 twitter.com##.promoted.u-linkComplex.js-tooltip.js-nav.pretty-link
 twitter.com##.roaming-module.module.Footer
@@ -83,9 +390,18 @@ twitter.com##[data-testid="trend"]:has-text(/Promoted|Gesponsert|???????/):xpath
 twitter.com##[data-testid="tweet"]:has-text(/Promoted|Gesponsert|???????/):xpath(..)
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
-
-! WASHINGTONPOST
-
+warez-bb.org###description
+warez-bb.org###general
+warez-bb.org###infobar
+warez-bb.org###search-panel > .breadcrumbs
+warez-bb.org###slogan
+warez-bb.org##div.input-row:nth-of-type(10)
+warez-bb.org##div.input-row:nth-of-type(11)
+warez-bb.org##div.input-row:nth-of-type(2) > .input > div > div.option:nth-of-type(2)
+warez-bb.org##div.input-row:nth-of-type(2) > .input > div > div.option:nth-of-type(3)
+warez-bb.org##div.input-row:nth-of-type(3)
+warez-bb.org##div.input-row:nth-of-type(7)
+warez-bb.org##div.input-row:nth-of-type(9)
 washingtonpost.com###bb-watchlist
 washingtonpost.com###bc-badges
 washingtonpost.com###comments
@@ -137,9 +453,6 @@ washingtonpost.com##div[class*="-ad-"]
 washingtonpost.com##div[moat-id="ad/leaderboard"]
 washingtonpost.com##span[class="tweet-authors"]
 washingtonpost.com#@#.gdpr-consent
-
-! WEATHER
-
 weather.com##.cm-four-stack-v2
 weather.com##.hourly.region-top.region
 weather.com##.panel > .cm-module > .cm-four-stack > .wx-media-group.cm-small-content > .body.wx-media-group
@@ -148,176 +461,21 @@ weather.com##.region-footer.region
 weather.com##.region-rail.region
 weather.com##.styles__regionContentBottom__21Eni.hourly.region-content-bottom.region
 weather.com##.WPOneClick__wpOneClickFlexContainer__djszh
-
-! JUSTWATCH
-
-www.justwatch.com###justwatch_detail-top-md
-www.justwatch.com##.consent-notification--expanded.consent-notification--shown.consent-notification
-www.justwatch.com##.detail-infos--backdrop__description > publication-block > .row.publication-block > div:nth-of-type(2)
-www.justwatch.com##.footer > .container-fluid
-www.justwatch.com##div:nth-of-type(1) > publication-block > .row.publication-block
-www.justwatch.com##div:nth-of-type(2) > publication-block > .row.publication-block
-
-! LIVENEWSMAG
-
-www.livenewsmag.com###secondary
-www.livenewsmag.com##.category-american.has-post-thumbnail.format-standard.status-publish.type-post.post.post-55.entry-tpl-listxxs
-www.livenewsmag.com##.category-united-kingdom.has-post-thumbnail.format-standard.status-publish.type-post.post.post-80.entry-tpl-listxxs
-www.livenewsmag.com##.category-united-kingdom.has-post-thumbnail.format-standard.status-publish.type-post.post.post-80.entry-tpl-listxxs > .entry-featured-media > .g1-frame > .g1-frame-inner
-www.livenewsmag.com##.crp_related > h3
-www.livenewsmag.com##.crp_related > ul
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > div:nth-of-type(1)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > div:nth-of-type(4)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > h2
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(1)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(2)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(3)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(4)
-www.livenewsmag.com##.entry-content.g1-typography-xl.g1-content-narrow > p:nth-of-type(5)
-www.livenewsmag.com##.entry-header-01.entry-header
-www.livenewsmag.com##.exp-col-content-holder
-www.livenewsmag.com##.g1-footer.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-2.g1-hb-row-b.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-mobile.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-hb-shadow-off.g1-hb-sticky-off.g1-hb-boxed.g1-hb-row-3.g1-hb-row-c.g1-hb-row-normal.g1-hb-row.g1-row-layout-page.g1-row > .g1-row-background
-www.livenewsmag.com##.g1-nav-single-links
-www.livenewsmag.com##.g1-prefooter.g1-row-layout-page.g1-row
-www.livenewsmag.com##.g1-prefooter.g1-row-layout-page.g1-row > .g1-row-background
-www.livenewsmag.com##.g1-teaser-next.g1-teaser
-www.livenewsmag.com##.g1-teaser-next.g1-teaser > .g1-teaser-arrow
-www.livenewsmag.com##.g1-teaser-prev.g1-teaser
-www.livenewsmag.com##.g1-teaser-prev.g1-teaser > .g1-teaser-arrow
-www.livenewsmag.com##ol
-www.livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-facebook
-www.livenewsmag.com##.g1-sharebar-inner.g1-column > .mashsb-stretched.mashsb-main.mashsb-container > .mashsb-box > .mashsb-buttons > .mashsb-noshadow.mash-center.mashicon-twitter
-
-! NYTIMES
-
-nytimes.com###anchor-ad
-nytimes.com###anchor-container
-nytimes.com###anchoredad_module
-nytimes.com###anchor-header
-nytimes.com###collectionspromoslot
-nytimes.com###growl_optly
-nytimes.com###hp-subscribe
-nytimes.com###mid1-wrapper
-nytimes.com###newsletter-module
-nytimes.com###newsletter-promo
-nytimes.com###site-index
-nytimes.com###story-ad-10-wrapper
-nytimes.com###story-ad-11-wrapper
-nytimes.com###story-ad-12-wrapper
-nytimes.com###story-ad-1-wrapper
-nytimes.com###story-ad-2-wrapper
-nytimes.com###story-ad-3-wrapper
-nytimes.com###story-ad-4-wrapper
-nytimes.com###story-ad-5-wrapper
-nytimes.com###story-ad-6-wrapper
-nytimes.com###story-ad-7-wrapper
-nytimes.com###story-ad-8-wrapper
-nytimes.com###story-ad-9-wrapper
-nytimes.com###subscribe_cont
-nytimes.com###subscribe_mobile_cont
-nytimes.com###topad1
-nytimes.com###top-wrapper
-nytimes.com###upnext
-nytimes.com##.articletoolssponsor
-nytimes.com##.css-9ynegn
-nytimes.com##.css-mlcs8h.shown
-nytimes.com##.e1i2wxpm0.css-mlcs8h.shown
-nytimes.com##.e1pwbg3p0.css-1xz93ux.standard.meter_default.shown
-nytimes.com##.e1pwbg3p0.css-tjd2vt.standard.meter_default.shown
-nytimes.com##.e1wet1p0.css-9ghvn0
-nytimes.com##.e1yhpxjt0.css-3bfhll
-nytimes.com##.ebmu6dd0.css-9ghvn0
-nytimes.com##.egw6tc40.css-1yboj43
-nytimes.com##.ehpkjz40.css-1r7etr0
-nytimes.com##.ek9z99y2.css-z3qape
-nytimes.com##.email-updates
-nytimes.com##.evy98830.css-1mahq3m
-nytimes.com##.inlinemessage-inline--2ysnq
-nytimes.com##.mobilepromo
-nytimes.com##.notification-widget
-nytimes.com##.nps-promo
-nytimes.com##.nytc---recircpromocard---promocard
-nytimes.com##.nythpclimatechangenewsletterpromo
-nytimes.com##.recirculation-recirculation--2bqm-
-nytimes.com##.recirculation-recirculationad--3dayy
-nytimes.com##.ribbon-dockhidden--3r3jo.ribbon-ribbon--3jg7y
-nytimes.com##.ribbon-page-navigation
-nytimes.com##.toolslistcontainer
-nytimes.com##[class="nocontent robots-nocontent"]
-nytimes.com##[id^="medium-rectangle-ad-"]
-nytimes.com##[id^="story-ad-"]
-nytimes.com##[id="navigation-edge"]
-nytimes.com##[id="ribbon"]
-nytimes.com##[id="whats-next"]
-nytimes.com##a[aria-label="email"]
-nytimes.com##article.story:style(opacity: 1.0 !important;)
-nytimes.com##aside
-nytimes.com##div#acm-wrapper
-nytimes.com##div#bottom-wrapper
-nytimes.com##div#top-wrapper
-nytimes.com##div#upnextwrapper
-nytimes.com##div.e12j3pa50
-nytimes.com##div.e1yhpxjt1.css-70rfte:nth-of-type(1)
-nytimes.com##div.e1yhpxjt1.css-70rfte:nth-of-type(2)
-nytimes.com##div.egw6tc41.css-70rfte:nth-of-type(1)
-nytimes.com##div.egw6tc41.css-70rfte:nth-of-type(2)
-nytimes.com##div.shown:has-text(review our cookie policy)
-nytimes.com##div[class^="dock-dock-"]
-nytimes.com##div[class^="inlinemessage-inline-"]
-nytimes.com##div[id^="story-ad-"][id$="-wrapper"]
-nytimes.com#$#.bottom-left-ad { position: absolute!important; left: -3000px!important; }
-nytimes.com#%#document.cookie = "nyt-t=ok";
-nytimes.com#@#.expanded.gdpr
-nytimes.com#@#.expanded.gdpr:not(body):not(html)
-nytimes.com#@#.sharetools
-nytimes.com#@#.sharetoolsitem
-nytimes.com,nytimes3xbfgragh.onion##.css-990mwl
-www.nytimes.com##.e1c1i1hy1.css-pbg2l9
-www.nytimes.com##.e1x0szx60.css-1xz93ux.standard.shown.meter_default
-www.nytimes.com##.egw6tc40.css-nu8xsr
-www.nytimes.com##.ejw0p350.css-9ghvn0
-www.nytimes.com##.supplemental.css-lhjs31
-
-! TEXTFIXER
-
-www.textfixer.com###amhide
-www.textfixer.com###content > p:nth-of-type(1)
-www.textfixer.com###content > p:nth-of-type(2)
-www.textfixer.com###content > p:nth-of-type(3)
-www.textfixer.com###content > p:nth-of-type(4)
-www.textfixer.com###content > p:nth-of-type(5)
-www.textfixer.com###ftr
-www.textfixer.com##.frow > div:nth-of-type(1)
-www.textfixer.com##.frow > div:nth-of-type(2)
-
-! WSJ
-
-blogs.wsj.com###magic
-blogs.wsj.com##.vltsociallinks
-blogs.wsj.com##[class="art_tabbed_nav"]
-blogs.wsj.com##[class="hatwsj_c"]
-blogs.wsj.com##[class="insetcontent"]
-blogs.wsj.com##[class="post-bottom-row"]
-blogs.wsj.com##[id="footer"]
-blogs.wsj.com##[id="promologindetailsid"]
-blogs.wsj.com##[id="rightrail"]
-blogs.wsj.com##header[class="sp-header box2"]
+whoscored.com###footer-wrapper
+whoscored.com###matchslider
+whoscored.com##.layout-content-2col-right
 wsj.com###ad_rail1.wsj-ad
 wsj.com###articlerrtest_joblistings
+wsj.com###cx-candybar
+wsj.com###cx-candybarhp
+wsj.com###cx-scrim-overlay
 wsj.com###finsw_jobs
 wsj.com###flyover
 wsj.com###login_scrim
 wsj.com###magic
 wsj.com###valettools-left
 wsj.com##.bannermessage
+wsj.com##.bing-native-ad
 wsj.com##.fbrecwidget
 wsj.com##.gdpr-message
 wsj.com##.login-section-container[amp-access="not access"]
@@ -326,22 +484,12 @@ wsj.com##.stlist-media
 wsj.com##.vcrsocial
 wsj.com##.wsj-amp-share
 wsj.com##[class*="share-tool"]
+wsj.com##[class^="style__subscribe"]
+wsj.com##[href*="https://buy.wsj.com"]
 wsj.com##div[class="module trending_now  "]
 wsj.com##p > #deloitte_column > [data-module-zone="deloitte_insights"] > .deloitte-insights
 wsj.com##ul[class="top_stories clear"]
 wsj.com#@#.share_tools
-www.wsj.com###cx-candybar
-www.wsj.com###cx-candybarhp
-www.wsj.com###cx-scrim-overlay
-www.wsj.com##.bing-native-ad
-www.wsj.com##[class^="style__subscribe"]
-www.wsj.com##[href*="https://buy.wsj.com"]
-
-! YOUTUBE
-
-youtube.com/ad_data$important
-youtube.com/api/stats/ads?
-youtube.com/get_video_info?*el=adunit
 youtube.com###__ffYoutube1
 youtube.com###__ffYoutube2
 youtube.com###__ffYoutube3
@@ -398,181 +546,15 @@ youtube.com#*(watch-promoted-videos-container)
 youtube.com#?#paper-dialog:-abp-has(ytd-mealbar-promo-renderer)
 youtube.com#@#.ddb
 youtube.com#@#.overlay-ads
-youtube.com/get_video?video_id=AS35zlAdaSQ
-youtube.com/get_video?video_id=NZ-AAD7Ci_c
+youtube.com/ad_data$important
+youtube.com/api/stats/ads?
 youtube.com/api/stats/qoe?
 youtube.com/csi_204?
-youtube.com/ptracking?
 youtube.com/get_midroll_
-/log_event?
-/generate_204
-
-! GOAL
-
-www.goal.com##.-mtfadbq-qlm-pqlofbp > .clearfix.card-8-group-1.group > .-mzljjbozfxi
-www.goal.com##.clearfix.card-6-group-2.group > .-mzljjbozfxi
-www.goal.com##.-mtfadbq-jlob-kbtp > .clearfix.card-8-group-1.group > .-mzljjbozfxi
-www.goal.com##.clearfix.-mtfadbq-cllqbo
-www.goal.com##.clearfix.nav-tabs
-www.goal.com##.-mtfadbq-kxsfdxqflk__lmqflkp
-
-! FACEBOOK
-
-/facebook_badge-
-/facebook_badge.
-/facebook_header.
-/facebookadd_
-/facebookbadge.
-/facebook-head.
-/facebookHeader.
-/facebookloader.
-/facebook-page-popup-cadence/*$~stylesheet
-/head_facebook.
-/header-facebook.png
-/plugins/facebook-page-promoter-$~stylesheet
-/promo/facebook.png
-/uploads/*facebook.jpg
-/uploads/facebook-
-/uploads/facebook.
-/wp-content/plugins/advanced-facebook-content-locker/*
-/wp-content/plugins/facebook-page-promoter-lightbox/*
-_facebook_badge.
-_facebookbadge.
-badge.facebook.com^$third-party
-connect.facebook.net/en_US/fbadnw.js^
-facebook.com###fbpage_invite_audience_action
-facebook.com###fbpage_invite_audience_action_finch
-facebook.com###feed_optimistic_video
-facebook.com###friend_invites_section
-facebook.com###gear-balloon-promo
-facebook.com###GroupDiscoverCard_Local
-facebook.com###GroupsRHCSuggestionSection
-facebook.com###header-notices
-facebook.com###home_sponsor_nile
-facebook.com###left_nav_section_nodes ul li[id="navItem_124024574287414"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_1728807357362356"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_275254692598279"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_343553122467255"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_399711043500146"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_456900714360021"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_526732794016279"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_645191315628772"]
-facebook.com###left_nav_section_nodes ul li[id="navItem_762992637108088"]
-facebook.com###marketplace_bsg_explore_div #sale_groups_landing_page_recommended_groups div[id^="group_browse"] div[id^="GroupSuggestionCard"]
-facebook.com###megamall_rhc_ssfy_pagelet
-facebook.com###mobile_login_bar
-facebook.com###page > #header-notices
-facebook.com###page_recommendations #recommendations_create_entrypoint_container
-facebook.com###page_suggestions_on_liking
-facebook.com###pageInviteNoticeCard
-facebook.com###pagelet_ads_when_no_friend_list_suggestion
-facebook.com###pagelet_advertiser_panel
-facebook.com###pagelet_ego_pane
-facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
-facebook.com###pagelet_ego_pane a[ajaxify*="&eid="] + div
-facebook.com###pagelet_explore_feed div[role="article"] .fbUserStory span.uiLikePageButton
-facebook.com###pagelet_games_rhc
-facebook.com###pagelet_group_mall div[id^="group_mall"] div[id^="mall_post"][id*="SUGGESTED_IN_MALL"]
-facebook.com###pagelet_main_column_personal #fbSuggestionsPlaceHolder
-facebook.com###pagelet_video_home_watch_list_rhc
-facebook.com###pages_may_like_section
-facebook.com###pages_side_column div > div[id^="PageRelatedPagesSecondaryPagelet"]
-facebook.com###pages_side_column div a[href*="/friend_inviter_v2/"]
-facebook.com###pagesTimelineChainingUnit
-facebook.com###permalink_related_videos_logged_out
-facebook.com###substream_1:has([id^="feed_subtitle_"]:has-text(Sp))
-facebook.com###video_permalink_related_pagelet
-facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
-facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
-facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
-facebook.com##.userContentWrapper :has([id^="feed_subtitle_"]:has-text(Sp))
-facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
-facebook.com##[id^=hyperfeed_story_id_]:has([id^=u_fetchstream_2_1]:has-text(SpSonSsoSredS))
-facebook.com##[id^=hyperfeed_story_id_]:has(a[href*="client_token"])
-facebook.com##[id^=hyperfeed_story_id_]:has(a[href*="utm_campaign"])
-facebook.com##a[ajaxify*="&eid="] + a[href^="https://l.facebook.com/l.php?u="]
-facebook.com##a[href^="/ajax/emu/end.php?"]
-facebook.com##a[href^="https://l.facebook.com/"][href*="%2526ad_id%"]
-facebook.com##a[title*="AdChoices"]
-facebook.com##body:xpath(//i[text()[contains(.,'Sponsored')]]/ancestor::div[11])
-facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestampContent"])):not(span:contains(/^m$/)):not(span:contains(/^M$/)):not(span:contains(/^h$/)):not(span:contains(/^:$/)):not(span:contains(/^J$/)):has(span:contains(/^S$/))
-facebook.com#*(sidebar_ads)
-facebook.com#*(social_ad_advert_text)
-facebook.com#?#.pagelet:-abp-has(a[href^="/ad_campaign"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href*="is_sponsored"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href^="/business/help/788160621327601/?"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(input[data-next-question-id])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(span:-abp-contains(/Suggested Post|Vorgeschlagener Beitrag/))
-facebook.com#@##fb_header
-facebook.com/ads^$first-party
-facebook.com/ajax/typeahead/record_basic_metrics.php
-www.facebook.com###u_ps_0_a_0
-www.facebook.com###u_ps_0_a_2
-www.facebook.com##.pagelet-group .pagelet:has(a:has-text(Create ad))
-www.facebook.com##.pagelet-group .pagelet:has(a:has-text(Sponsored))
-www.facebook.com##.pagelet-group > .pagelet:has(a:has-text(/Sponsored/))
-www.facebook.com##.userContentWrapper._5pcr > div:has(.r_zjlob1xpb)
-www.facebook.com##.userContentWrapper._5pcr > div:has(.s_v8i43c603)
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(a[role^=button]:has(> span:has-text(/S/i):has-text(p):has-text(o):has-text(n):has-text(r):has-text(e):has-text(d):not(:has-text(0)):not(:has-text(1)):not(:has-text(2)):not(:has-text(3)):not(:has-text(4)):not(:has-text(5)):not(:has-text(6)):not(:has-text(7)):not(:has-text(8)):not(:has-text(9))))
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtilte"]:has(span[data-ft]:has(s > s)))
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtilte"]:has(span[data-ft]:has(span > span)))
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtitle"]:has(span[data-ft]:has(s > s)))
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(div[data-testid="story-subtitle"]:has(span[data-ft]:has(span > span)))
-www.facebook.com##div[id^=hyperfeed_story_id_]:has(span[data-ft="{\"tn\":\"j\"}"])
-www.facebook.com##._4oes
-www.facebook.com###js_3zv > ._qhr._55ln > ._55lp
-
-! FOTMOB 
-
-www.fotmob.com##.react-calendar
-www.fotmob.com##.fm-fotMobAd
-
-! WHOSCORED
-
-www.whoscored.com##.layout-content-2col-right
-www.whoscored.com###footer-wrapper
-www.whoscored.com###matchslider
-
-! AS.COM
-
-as.com##.banner_sup.cf
-as.com###enjuego_body
-as.com##.headerAs
-as.com###gtp_diarioas_19753-NSTD1
-as.com##.ad-h-fix.separador.flexible.row.area-actualidad > .col-xs-12.col-sm-12.col-md-4
-as.com###gtp_diarioas_19753-NSTD2
-as.com##.fw.row
-as.com##div.separador.flexible.row:nth-of-type(9)
-as.com##.lo-mas-visto
-as.com###promociones1
-as.com##footer
-as.com##.slider-producto-fw.slider-producto
-
-! BOXREC
-
-boxrec.com##.footerAd
-boxrec.com##.footerOuter
-boxrec.com##.footerTopOuter > .footer
-boxrec.com##.topAd
-boxrec.com###StreamAMP_MPU1
-boxrec.com##.midAdvert
-
-!  RUTRACKER
-
-rutrk.org/iframe/MG-2/MG-240x120.html$subdocument
-rutracker.org/iframe/MG-bottom.html?rnd=4859727$subdocument
-rutracker.org###page_footer
+youtube.com/get_video?video_id=AS35zlAdaSQ
+youtube.com/get_video?video_id=NZ-AAD7Ci_c
+youtube.com/get_video_info?*el=adunit
+youtube.com/ptracking?
 
 ! DOMAINS
 
@@ -1687,47 +1669,3 @@ ads/display.js
 statistics.js
 bitrix/cache/js/ru/ru/kernel_main/kernel_main.js
 fbevents.js
-
-! OTHER
-
-learning.oreilly.com##.ContentNavigation-ContentNavigation-3zv63
-learning.oreilly.com##.ContentNavigation-isOpen-3-IXZ.ContentNavigation-ContentNavigation-3zv63
-learning.oreilly.com##.orm-ff-NavigationView-slim.orm-ff-NavigationView-root
-learning.oreilly.com##.orm-ff-ShellRefactor-collapsedFooter.orm-ff-ShellRefactor-authFooter.orm-ff-ShellRefactor-footer.orm-ff-Footer-root
-learning.oreilly.com##.orm-ff-ShellRefactor-collapsedSidebar.orm-ff-ShellRefactor-sidebar
-nurikasej.wixsite.com###comp-k5ld9b2x
-nurikasej.wixsite.com###SITE_BACKGROUND_current_o8tb5_desktop_bg
-nurikasej.wixsite.com###SITE_BACKGROUND_currentImage_o8tb5_desktop_bg
-nurikasej.wixsite.com###SITE_BACKGROUND_currentOverlay_o8tb5_desktop_bg
-nurikasej.wixsite.com###SITE_FOOTERinlineContent
-nurikasej.wixsite.com###SITE_HEADERinlineContent
-nurikasej.wixsite.com###top
-nurikasej.wixsite.com##.color_11
-teamos-hkrg.com##.js-notices.notices--isMulti.notices--block.notices
-teamos-hkrg.com##div.block-outer:nth-of-type(1)
-teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(1) > .notice-content > .low-ratio-alert
-teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(2) > .notice-content
-teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(2) > .notice-content > .low-ratio-alert
-www.livenewsmag.com###\38 b2c9902-0a32-468b-85d7-8f4e8470d16b
-www.livenewsmag.com###popmake-3502
-www.livenewsmag.com###pum-3502
-www.livenewsmag.com###pushalert-ticker
-www.livenewsmag.com##.g1-row-breadcrumbs.g1-row-layout-page.g1-row-padding-xs.g1-row
-www.stream2watch.ws##.bg-light.navbar-light.navbar-expand-lg.navbar
-www.stream2watch.ws##.footer
-www.stream2watch.ws##.nt.stream-single-footer
-www.stream2watch.ws##.stream-box-actions-bar
-www.teamos-hkrg.com##li.notice--primary.js-notice.notice:nth-of-type(1) > .notice-content
-www.tutorialspoint.com##.tutorial-toc.mui-col-md-3
-www.warez-bb.org###description
-www.warez-bb.org###general
-www.warez-bb.org###infobar
-www.warez-bb.org###search-panel > .breadcrumbs
-www.warez-bb.org###slogan
-www.warez-bb.org##div.input-row:nth-of-type(10)
-www.warez-bb.org##div.input-row:nth-of-type(11)
-www.warez-bb.org##div.input-row:nth-of-type(2) > .input > div > div.option:nth-of-type(2)
-www.warez-bb.org##div.input-row:nth-of-type(2) > .input > div > div.option:nth-of-type(3)
-www.warez-bb.org##div.input-row:nth-of-type(3)
-www.warez-bb.org##div.input-row:nth-of-type(7)
-www.warez-bb.org##div.input-row:nth-of-type(9)
