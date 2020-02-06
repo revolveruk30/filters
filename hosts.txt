@@ -1,4 +1,6 @@
+
 # GOOGLE
+
 0.0.0.0 4.afs.googleadservices.com
 0.0.0.0 adservices.google.com
 0.0.0.0 adwords.google.lloymlincs.com
@@ -594,7 +596,9 @@
 0.0.0.0 na1r.services.adobe.com
 0.0.0.0 hlrcv.stage.adobe.com
 
-# PRIVACY0.0.0.0 mybloglog.com
+# PRIVACY
+
+0.0.0.0 mybloglog.com
 0.0.0.0 widget.quantcast.com
 0.0.0.0 quantserve.com
 0.0.0.0 blog.crazyegg.com
