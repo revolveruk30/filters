@@ -1,6 +1,3 @@
-0.0.0.0 license.sublimehq.com
-
-
 # GOOGLE
 0.0.0.0 4.afs.googleadservices.com
 0.0.0.0 adservices.google.com
