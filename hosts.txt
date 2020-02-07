@@ -1,6 +1,5 @@
 
 # GOOGLE
-
 0.0.0.0 4.afs.googleadservices.com
 0.0.0.0 adservices.google.com
 0.0.0.0 adwords.google.lloymlincs.com
@@ -597,7 +596,6 @@
 0.0.0.0 hlrcv.stage.adobe.com
 
 # PRIVACY
-
 0.0.0.0 mybloglog.com
 0.0.0.0 widget.quantcast.com
 0.0.0.0 quantserve.com
@@ -772,7 +770,6 @@
 0.0.0.0 adtpix.com
 0.0.0.0 unica.com
 0.0.0.0 roitesting.com
-0.0.0.0 rover.ebay.com
 0.0.0.0 inq.com
 0.0.0.0 clixmetrix.com
 0.0.0.0 marinsm.com
@@ -942,7 +939,6 @@
 0.0.0.0 levexis.com
 0.0.0.0 cg-global.maxymiser.com
 0.0.0.0 crm-metrix.com
-0.0.0.0 facebook.com
 0.0.0.0 chango.ca
 0.0.0.0 chango.com
 0.0.0.0 cdna.tremormedia.com
@@ -986,7 +982,6 @@
 0.0.0.0 raasnet.com
 0.0.0.0 eyereturn.com
 0.0.0.0 mythings.com
-0.0.0.0 d9lq0o81skkdj.cloudfront.net
 0.0.0.0 esm1.net
 0.0.0.0 adconnexa.com
 0.0.0.0 adsbwm.com
@@ -1025,8 +1020,6 @@
 0.0.0.0 j.kissinsights.com
 0.0.0.0 learn.optimizely.com
 0.0.0.0 qksz.net
-0.0.0.0 d1qpxk1wfeh8v1.cloudfront.net
-0.0.0.0 d1cerpgff739r9.cloudfront.net
 0.0.0.0 gopjn.com
 0.0.0.0 pjatr.com
 0.0.0.0 pjtra.com
@@ -1077,7 +1070,6 @@
 0.0.0.0 clicktale.pantherssl.com
 0.0.0.0 clicktalecdn.sslcs.cdngc.net
 0.0.0.0 srv.clickfuse.com
-0.0.0.0 d1l6p2sc9645hc.cloudfront.net
 0.0.0.0 opentracker.net
 0.0.0.0 img.footprintlive.com
 0.0.0.0 script.footprintlive.com
@@ -1085,7 +1077,6 @@
 0.0.0.0 adcentriconline.com
 0.0.0.0 waterfrontmedia.com
 0.0.0.0 customerconversio.com
-0.0.0.0 apps.facebook.com
 0.0.0.0 webtrendslive.com
 0.0.0.0 addthis.com
 0.0.0.0 l.addthiscdn.com
@@ -1098,7 +1089,6 @@
 0.0.0.0 meteorsolutions.com
 0.0.0.0 freeonlineusers.com
 0.0.0.0 keymetric.net
-0.0.0.0 d3pkntwtp2ukl5.cloudfront.net
 0.0.0.0 t.unbounce.com
 0.0.0.0 zopim.com
 0.0.0.0 brainient.com
@@ -1115,10 +1105,8 @@
 0.0.0.0 impdesk.com
 0.0.0.0 atemda.com
 0.0.0.0 springmetrics.com
-0.0.0.0 d3rmnwi2tssrfx.cloudfront.net
 0.0.0.0 activeconversion.com
 0.0.0.0 linkconnector.com
-0.0.0.0 d5phz18u4wuww.cloudfront.net
 0.0.0.0 admedia.com
 0.0.0.0 visit.webhosting.yahoo.com
 0.0.0.0 prosperent.com
@@ -1130,7 +1118,6 @@
 0.0.0.0 persianstat.com
 0.0.0.0 nuffnang.com
 0.0.0.0 tailsweep.com
-0.0.0.0 d1ivexoxmp59q7.cloudfront.net
 0.0.0.0 scribol.com
 0.0.0.0 indieclick.com
 0.0.0.0 cdn.topsy.com
@@ -1274,7 +1261,6 @@
 0.0.0.0 engineseeker.com
 0.0.0.0 ratevoice.com
 0.0.0.0 etrigue.com
-0.0.0.0 dn3y71tq7jf07.cloudfront.net
 0.0.0.0 ads.intergi.com
 0.0.0.0 clickmanage.com
 0.0.0.0 nextstat.com
@@ -1289,7 +1275,6 @@
 0.0.0.0 cbproads.com
 0.0.0.0 activemeter.com
 0.0.0.0 wowanalytics.co.uk
-0.0.0.0 dnhgz729v27ca.cloudfront.net
 0.0.0.0 afdads.com
 0.0.0.0 addelive.com
 0.0.0.0 delivery47.com
@@ -1370,8 +1355,6 @@
 0.0.0.0 valuedopinions.co.uk
 0.0.0.0 blogbang.com
 0.0.0.0 segment.com
-0.0.0.0 d2dq2ahtl5zl1z.cloudfront.net
-0.0.0.0 d47xnnr8b1rki.cloudfront.net
 0.0.0.0 adk2.com
 0.0.0.0 cdn.adsrvmedia.com
 0.0.0.0 cdn.cdnrl.com
@@ -1405,7 +1388,6 @@
 0.0.0.0 amazon-adsystem.com
 0.0.0.0 spotxchange.com
 0.0.0.0 gwa.reedbusiness.net
-0.0.0.0 du8783wkf05yr.cloudfront.net
 0.0.0.0 affiliate.godaddy.com
 0.0.0.0 gamerdna.com
 0.0.0.0 reviews.bazaarvoice.com
@@ -1417,7 +1399,6 @@
 0.0.0.0 i.total-media.net
 0.0.0.0 revolvermaps.com
 0.0.0.0 bizsolutions.strands.com
-0.0.0.0 d15qhc0lu1ghnk.cloudfront.net
 0.0.0.0 errorception.com
 0.0.0.0 sail-horizon.com
 0.0.0.0 cdn.sailthru.com
@@ -1483,7 +1464,6 @@
 0.0.0.0 t.tellapart.com
 0.0.0.0 ads.avazu.net
 0.0.0.0 richmetrics.com
-0.0.0.0 d3q6px0y2suh5n.cloudfront.net
 0.0.0.0 rich-agent.s3.amazonaws.com
 0.0.0.0 image.providesupport.com
 0.0.0.0 secure.providesupport.com
@@ -1557,7 +1537,6 @@
 0.0.0.0 msgapp.com
 0.0.0.0 nytimes.com
 0.0.0.0 app.salecycle.com
-0.0.0.0 d16fk4ms6rqz1v.cloudfront.net
 0.0.0.0 plugrush.com
 0.0.0.0 adverticum.net
 0.0.0.0 creafi-online-media.com
@@ -1589,7 +1568,6 @@
 0.0.0.0 ads.adpv.com
 0.0.0.0 rsspump.com
 0.0.0.0 socialannex.com
-0.0.0.0 dssja7qsifeak.cloudfront.net
 0.0.0.0 tracking100.com
 0.0.0.0 api.toptenreviews.com
 0.0.0.0 servebom.com
@@ -1613,7 +1591,6 @@
 0.0.0.0 emjcd.com
 0.0.0.0 rsys4.net
 0.0.0.0 simplereach.com
-0.0.0.0 d8rk54i4mohrb.cloudfront.net
 0.0.0.0 adaos-ads.net
 0.0.0.0 semasio.net
 0.0.0.0 rvty.net
@@ -1872,7 +1849,6 @@
 0.0.0.0 valuecommerce.com
 0.0.0.0 checkmystats.com.au
 0.0.0.0 impactradius.com
-0.0.0.0 d3cxv97fi8q177.cloudfront.net
 0.0.0.0 dgm-au.com
 0.0.0.0 s2d6.com
 0.0.0.0 comm100.com
@@ -1890,7 +1866,6 @@
 0.0.0.0 ads.netcommunities.com
 0.0.0.0 ad.netcommunities.com
 0.0.0.0 smartdevicemedia.com
-0.0.0.0 d3s7ggfq1s6jlj.cloudfront.net
 0.0.0.0 np.lexity.com
 0.0.0.0 bounceexchange.com
 0.0.0.0 anametrix.net
@@ -1935,10 +1910,8 @@
 0.0.0.0 tcimg.com
 0.0.0.0 nodes.r66t.com
 0.0.0.0 grepdata.com
-0.0.0.0 d1lm7kd3bd3yo9.cloudfront.net
 0.0.0.0 musculahq.appspot.com
 0.0.0.0 adinch.com
-0.0.0.0 d3v27wwd40f0xu.cloudfront.net
 0.0.0.0 getsidecar.com
 0.0.0.0 kontextua.com
 0.0.0.0 linkstorm.net
@@ -2018,7 +1991,6 @@
 0.0.0.0 hm.baidu.com
 0.0.0.0 widget.weibo.com
 0.0.0.0 sociablelabs.com
-0.0.0.0 d3iwjrnl4m67rd.cloudfront.net
 0.0.0.0 triplelift.com
 0.0.0.0 3lift.com
 0.0.0.0 agilone.com
@@ -2062,11 +2034,9 @@
 0.0.0.0 livechatinc.net
 0.0.0.0 livechatinc.com
 0.0.0.0 livechat.s3.amazonaws.com
-0.0.0.0 d3aa0ztdn3oibi.cloudfront.net
 0.0.0.0 salespidermedia.com
 0.0.0.0 yotpo.com
 0.0.0.0 brainsins.com
-0.0.0.0 d2xkqxdy6ewr93.cloudfront.net
 0.0.0.0 avenseo.com
 0.0.0.0 netbooster.com
 0.0.0.0 bbtrack.net
@@ -2080,10 +2050,8 @@
 0.0.0.0 track.yieldsoftware.com
 0.0.0.0 oc-track.autonomycloud.com
 0.0.0.0 skysa.com
-0.0.0.0 d2gfdmu30u15x7.cloudfront.net
 0.0.0.0 tracelytics.com
 0.0.0.0 cdn-cs.com
-0.0.0.0 dtlilztwypawv.cloudfront.net
 0.0.0.0 siftscience.com
 0.0.0.0 fluidsurveys.com
 0.0.0.0 pingagenow.com
@@ -2095,7 +2063,6 @@
 0.0.0.0 trafficgate.net
 0.0.0.0 ax.xrea.com
 0.0.0.0 smaato.net
-0.0.0.0 d36lvucg9kzous.cloudfront.net
 0.0.0.0 adspynet.com
 0.0.0.0 adframesrc.com
 0.0.0.0 chatango.com
@@ -2111,13 +2078,11 @@
 0.0.0.0 flxpxl.com
 0.0.0.0 tracking.shopping-flux.com
 0.0.0.0 tracker.beezup.com
-0.0.0.0 d1af033869koo7.cloudfront.net
 0.0.0.0 analytics.sitewit.com
 0.0.0.0 beanstalkdata.com
 0.0.0.0 opinionbar.com
 0.0.0.0 sb.sellpoint.net
 0.0.0.0 mogointeractive.com
-0.0.0.0 d3qxef4rp70elm.cloudfront.net
 0.0.0.0 worthathousandwords.com
 0.0.0.0 exactag.com
 0.0.0.0 track.zappos.com
@@ -2184,17 +2149,14 @@
 0.0.0.0 devatics.com
 0.0.0.0 apptegic.com
 0.0.0.0 evergage.com
-0.0.0.0 de8of677fyt0b.cloudfront.net
 0.0.0.0 eum-appdynamics.com
 0.0.0.0 moontoast.com
 0.0.0.0 adacado.com
 0.0.0.0 v12groupinc.com
 0.0.0.0 sessioncam.com
-0.0.0.0 d2oh4tlt9mrke9.cloudfront.net
 0.0.0.0 gpm-digital.com
 0.0.0.0 veeseo.com
 0.0.0.0 lanistaads.com
-0.0.0.0 d3nslu0hdya83q.cloudfront.net
 0.0.0.0 a-ads.com
 0.0.0.0 adjal.com
 0.0.0.0 envolve.com
@@ -2219,8 +2181,6 @@
 0.0.0.0 ads.q1media.com
 0.0.0.0 paperg.com
 0.0.0.0 projectsunblock.com
-0.0.0.0 d31bfnnwekbny6.cloudfront.net
-0.0.0.0 dtkm4pd19nw6z.cloudfront.net
 0.0.0.0 justpremium.com
 0.0.0.0 dust.ipfingerprint.com
 0.0.0.0 adtrustmedia.com
@@ -2286,7 +2246,6 @@
 0.0.0.0 sportsbetaffiliates.com.au
 0.0.0.0 countby.com
 0.0.0.0 granify.com
-0.0.0.0 d2bw638ufki166.cloudfront.net
 0.0.0.0 12mnkys.com
 0.0.0.0 mpnrs.com
 0.0.0.0 cts.tradepub.com
@@ -2318,7 +2277,6 @@
 0.0.0.0 meltdsp.com
 0.0.0.0 widespace.com
 0.0.0.0 reachforce.com
-0.0.0.0 d12ulf131zb0yj.cloudfront.net
 0.0.0.0 insightera.com
 0.0.0.0 blog.getdrip.com
 0.0.0.0 getdrip.com
@@ -2340,12 +2298,10 @@
 0.0.0.0 9nl.com
 0.0.0.0 adespresso.com
 0.0.0.0 visibility-stats.com
-0.0.0.0 d1447tq2m68ekg.cloudfront.net
 0.0.0.0 adsvc1107131.net
 0.0.0.0 ringrevenue.com
 0.0.0.0 ekmpinpoint.com
 0.0.0.0 inside-graph.com
-0.0.0.0 d1tprjo2w7krrh.cloudfront.net
 0.0.0.0 create.leadid.com
 0.0.0.0 kameleoon.com
 0.0.0.0 adsby.breezeads.com
@@ -2388,7 +2344,6 @@
 0.0.0.0 affiz.net
 0.0.0.0 1sponsor.com
 0.0.0.0 clicktripz.com
-0.0.0.0 d29p64779x43zo.cloudfront.net
 0.0.0.0 iqnomy.com
 0.0.0.0 smaclick.com
 0.0.0.0 toroadvertising.com
@@ -2399,7 +2354,6 @@
 0.0.0.0 mooxar.com
 0.0.0.0 readserver.net
 0.0.0.0 widgets.sprinkletxt.com
-0.0.0.0 skype.com
 0.0.0.0 qbaka.net
 0.0.0.0 adservinginternational.com
 0.0.0.0 adservinghost.com
@@ -2421,7 +2375,6 @@
 0.0.0.0 cjmooter.xcache.kinxcdn.com
 0.0.0.0 dianomi.com
 0.0.0.0 dianomioffers.co.uk
-0.0.0.0 d3von6il1wr7wo.cloudfront.net
 0.0.0.0 livere.co.kr.cizion.ixcloud.net
 0.0.0.0 us2widget.nimblecommerce.com
 0.0.0.0 us3widget.nimblecommerce.com
@@ -2462,7 +2415,6 @@
 0.0.0.0 adwebster.com
 0.0.0.0 206solutions.com
 0.0.0.0 yllix.com
-0.0.0.0 d3mvnvhjmkxpjz.cloudfront.net
 0.0.0.0 api.usersnap.com
 0.0.0.0 poponclick.com
 0.0.0.0 fidelity-media.com
@@ -2477,7 +2429,6 @@
 0.0.0.0 clickpoint.com
 0.0.0.0 statsanalytics.com
 0.0.0.0 trafficforce.com
-0.0.0.0 d2wy8f7a9ursnm.cloudfront.net
 0.0.0.0 wisepops.com
 0.0.0.0 ehavior.net
 0.0.0.0 tracker.emailaptitude.com
@@ -2489,7 +2440,6 @@
 0.0.0.0 api.petametrics.com
 0.0.0.0 cdn.petametrics.com
 0.0.0.0 m-pathy.com
-0.0.0.0 d3uemyw1e5n0jw.cloudfront.net
 0.0.0.0 ads.placester.net
 0.0.0.0 trbo.com
 0.0.0.0 hsoub.com
@@ -2503,7 +2453,6 @@
 0.0.0.0 client.cobrowser.net
 0.0.0.0 system.picreel.com
 0.0.0.0 static.contactme.com
-0.0.0.0 d1uwd25yvxu96k.cloudfront.net
 0.0.0.0 scorecard.wspisp.net
 0.0.0.0 leaddyno.com
 0.0.0.0 viralmint.com
@@ -2512,10 +2461,6 @@
 0.0.0.0 widget.hypercomments.com
 0.0.0.0 w.hypercomments.com
 0.0.0.0 mdotlabs.com
-0.0.0.0 d3m83gvgzupli.cloudfront.net
-0.0.0.0 d28ethi6slcjbm.cloudfront.net
-0.0.0.0 d13im3ek7neeqp.cloudfront.net
-0.0.0.0 d2uevgmgh16uk4.cloudfront.net
 0.0.0.0 saas.seewhy.com
 0.0.0.0 web.localytics.com
 0.0.0.0 hfp.gdmdigital.com
@@ -2538,16 +2483,12 @@
 0.0.0.0 video.clrstm.com
 0.0.0.0 view.clrstm.com
 0.0.0.0 tbnadserver.com
-0.0.0.0 dl1d2m8ri9v3j.cloudfront.net
-0.0.0.0 d2zah9y47r7bi2.cloudfront.net
 0.0.0.0 usage.trackjs.com
 0.0.0.0 powerreviews.com
-0.0.0.0 d1q7pknmpq2wkm.cloudfront.net
 0.0.0.0 pl-engine.intextad.net
 0.0.0.0 yoapp.s3.amazonaws.com
 0.0.0.0 c.gumgum.com
 0.0.0.0 api.amplitude.com
-0.0.0.0 d24n15hnbwhuhn.cloudfront.net
 0.0.0.0 sumome.com
 0.0.0.0 tracking.rapidape.com
 0.0.0.0 natoms.com
@@ -2574,7 +2515,6 @@
 0.0.0.0 bat.bing.com
 0.0.0.0 trackuity.com
 0.0.0.0 zaloapp.com
-0.0.0.0 d81mfvml8p5ml.cloudfront.net
 0.0.0.0 gumroad.com
 0.0.0.0 genoo.com
 0.0.0.0 trustev.com
@@ -2585,7 +2525,6 @@
 0.0.0.0 zebra.pushbullet.com
 0.0.0.0 adagio.turboadv.com
 0.0.0.0 cdn.decibelinsight.net
-0.0.0.0 d3ezl4ajpp2zy8.cloudfront.net
 0.0.0.0 rhythmxchange.com
 0.0.0.0 6gpwkrxh.micpn.com
 0.0.0.0 scan.botscanner.com
@@ -2700,7 +2639,6 @@
 0.0.0.0 forms.hubspot.com
 0.0.0.0 crossroadswow.appspot.com
 0.0.0.0 sync.im-apps.net
-0.0.0.0 d36mpcpuzc4ztk.cloudfront.net
 0.0.0.0 in.treasuredata.com
 0.0.0.0 us.flipp.com
 0.0.0.0 cdn.atomex.net
@@ -2708,7 +2646,6 @@
 0.0.0.0 automation.webmecanik.com
 0.0.0.0 player.ooyala.com
 0.0.0.0 na.ads.yahoo.com
-0.0.0.0 d1z2jf7jlzjs58.cloudfront.net
 0.0.0.0 cdn.jumplead.com
 0.0.0.0 admanmedia.com
 0.0.0.0 letreach.com
@@ -2821,7 +2758,6 @@
 0.0.0.0 y-track.com
 0.0.0.0 widgets.spklw.com
 0.0.0.0 adnetwork.adasiaholdings.com
-0.0.0.0 d1l7z5ofrj6ab8.cloudfront.net
 0.0.0.0 native.adnegah.net
 0.0.0.0 gasurvey.gemius.com
 0.0.0.0 js.searchlinks.com
@@ -3375,9 +3311,65 @@
 0.0.0.0 visitor.dentsu.de
 0.0.0.0 imp.dentsu.de
 0.0.0.0 sb.scorecardresearch.com
-0.0.0.0 connect.facebook.net
 0.0.0.0 ib.adnxs.com
 0.0.0.0 js-sec.indexww.com	
 0.0.0.0 cdn.taboola.com
 
+0.0.0.0 d3pkntwtp2ukl5.cloudfront.net
+0.0.0.0 d3rmnwi2tssrfx.cloudfront.net
+0.0.0.0 d5phz18u4wuww.cloudfront.net
+0.0.0.0 d1ivexoxmp59q7.cloudfront.net
+0.0.0.0 dn3y71tq7jf07.cloudfront.net
+0.0.0.0 dnhgz729v27ca.cloudfront.net
+0.0.0.0 d2dq2ahtl5zl1z.cloudfront.net
+0.0.0.0 d47xnnr8b1rki.cloudfront.net
+0.0.0.0 d9lq0o81skkdj.cloudfront.net
+0.0.0.0 d1qpxk1wfeh8v1.cloudfront.net
+0.0.0.0 d1cerpgff739r9.cloudfront.net
+0.0.0.0 d1l6p2sc9645hc.cloudfront.net
+0.0.0.0 du8783wkf05yr.cloudfront.net
+0.0.0.0 d15qhc0lu1ghnk.cloudfront.net
+0.0.0.0 d3q6px0y2suh5n.cloudfront.net
+0.0.0.0 d16fk4ms6rqz1v.cloudfront.net
+0.0.0.0 dssja7qsifeak.cloudfront.net
+0.0.0.0 d8rk54i4mohrb.cloudfront.net
+0.0.0.0 d3cxv97fi8q177.cloudfront.net
+0.0.0.0 d3s7ggfq1s6jlj.cloudfront.net
+0.0.0.0 d1lm7kd3bd3yo9.cloudfront.net
+0.0.0.0 d3v27wwd40f0xu.cloudfront.net
+0.0.0.0 d3iwjrnl4m67rd.cloudfront.net
+0.0.0.0 d3aa0ztdn3oibi.cloudfront.net
+0.0.0.0 d2xkqxdy6ewr93.cloudfront.net
+0.0.0.0 d2gfdmu30u15x7.cloudfront.net
+0.0.0.0 dtlilztwypawv.cloudfront.net
+0.0.0.0 d36lvucg9kzous.cloudfront.net
+0.0.0.0 d1af033869koo7.cloudfront.net
+0.0.0.0 d3qxef4rp70elm.cloudfront.net
+0.0.0.0 de8of677fyt0b.cloudfront.net
+0.0.0.0 d2oh4tlt9mrke9.cloudfront.net
+0.0.0.0 d3nslu0hdya83q.cloudfront.net
+0.0.0.0 d31bfnnwekbny6.cloudfront.net
+0.0.0.0 dtkm4pd19nw6z.cloudfront.net
+0.0.0.0 d2bw638ufki166.cloudfront.net
+0.0.0.0 d12ulf131zb0yj.cloudfront.net
+0.0.0.0 d1447tq2m68ekg.cloudfront.net
+0.0.0.0 d1tprjo2w7krrh.cloudfront.net
+0.0.0.0 d29p64779x43zo.cloudfront.net
+0.0.0.0 d3von6il1wr7wo.cloudfront.net
+0.0.0.0 d3mvnvhjmkxpjz.cloudfront.net
+0.0.0.0 d3uemyw1e5n0jw.cloudfront.net
+0.0.0.0 d1uwd25yvxu96k.cloudfront.net
+0.0.0.0 d3m83gvgzupli.cloudfront.net
+0.0.0.0 d28ethi6slcjbm.cloudfront.net
+0.0.0.0 d13im3ek7neeqp.cloudfront.net
+0.0.0.0 d2uevgmgh16uk4.cloudfront.net
+0.0.0.0 dl1d2m8ri9v3j.cloudfront.net
+0.0.0.0 d2zah9y47r7bi2.cloudfront.net
+0.0.0.0 d1q7pknmpq2wkm.cloudfront.net
+0.0.0.0 d24n15hnbwhuhn.cloudfront.net
+0.0.0.0 d81mfvml8p5ml.cloudfront.net
+0.0.0.0 d3ezl4ajpp2zy8.cloudfront.net
+0.0.0.0 d36mpcpuzc4ztk.cloudfront.net
+0.0.0.0 d1z2jf7jlzjs58.cloudfront.net
+0.0.0.0 d1l7z5ofrj6ab8.cloudfront.net
 
