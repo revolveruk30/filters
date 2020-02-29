@@ -1,4 +1,4 @@
-// GOVERNMENT
+// US GOVERNMENT
 
 medlineplus.gov // Medline
 ncbi.nlm.nih.gov/pubmed // Pubmed
@@ -9,11 +9,16 @@ fnic.nal.usda.gov // Food Nutrition Center
 foodsafety.gov // Food Safety
 healthfinder.gov // HealthFinder
 hhs.gov // Human Health Services
-hprc-online.org // Human Performance Resource Center
-nihseniorhealth.gov // NIH Senior Health
 research.va.gov // Veterans Affairs Research
-who.int // World Health Organization
 cdc.gov // Center Disease Control
+health.ny.gov // New York Public Health
+publichealth.lacounty.gov // Los Angeles Public Health
+drugabuse.gov // Drug Abuse
+cancer.gov // Cancer
+
+// NON-US GOVERNMENT
+
+who.int // World Health Organization
 ecdc.europa.eu // European Centre Disease Prevention Control
 efsa.europa.eu // European Food Safety Authority
 paho.org // Pan-American Health Organization
@@ -21,10 +26,7 @@ nhs.uk // National Health Service UK
 canada.ca/en/health-canada // Canada Health
 canada.ca/en/public-health // Canada Health
 health.gov.au // Australia Health
-health.ny.gov // New York Public Health
-publichealth.lacounty.gov // Los Angeles Public Health
-drugabuse.gov // Drug Abuse
-cancer.gov // Cancer
+
 
 // ASSOCIATIONS
 
