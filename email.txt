@@ -1,0 +1,5 @@
+<html>
+	<body>
+		<h2>This is an email!</h2>
+	</body>
+</html>
