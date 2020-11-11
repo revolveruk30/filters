@@ -1,1 +1,0 @@
-sel.xpath('/html/body/div[4]/div/div[1]').re(\(\d\d\d\) \d\d\d-\d\d\d\d)
