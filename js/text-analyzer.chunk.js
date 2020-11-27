@@ -135,280 +135,280 @@
         },
         443: function(e, t) {
             e.exports = {
-                "ߘ": 1,
+                "😂": 1,
                 "❤": 4,
                 "♥": 3,
-                "ߘ": 3,
-                "ߘ": 0,
-                "ߘ": 4,
-                "ߘ": 3,
-                "ߑ": 3,
-                "ߒ": 3,
-                "ߑ": 3,
-                "ߘ": 2,
+                "😍": 3,
+                "😭": 0,
+                "😘": 4,
+                "😊": 3,
+                "👌": 3,
+                "💕": 3,
+                "👏": 3,
+                "😁": 2,
                 "☺": 3,
                 "♡": 3,
-                "ߑ": 3,
-                "ߘ": -2,
-                "ߙ": 2,
+                "👍": 3,
+                "😩": -2,
+                "🙏": 2,
                 "✌": 2,
-                "ߘ": 2,
-                "ߘ": 2,
-                "ߙ": 3,
-                "ߙ": 2,
-                "ߒ": 3,
-                "ߘ": 2,
-                "ߘ": -2,
-                "ߒ": 4,
-                "ߒ": 4,
-                "ߘ": 3,
-                "ߘ": -1,
-                "ߘ": 1,
-                "ߎ": 4,
-                "ߘ": 2,
+                "😏": 2,
+                "😉": 2,
+                "🙌": 3,
+                "🙈": 2,
+                "💪": 3,
+                "😄": 2,
+                "😒": -2,
+                "💃": 4,
+                "💖": 4,
+                "😃": 3,
+                "😔": -1,
+                "😱": 1,
+                "🎉": 4,
+                "😜": 2,
                 "☯": 0,
-                "ߌ": 3,
-                "ߒ": 3,
-                "ߒ": 4,
+                "🌸": 3,
+                "💜": 3,
+                "💙": 4,
                 "✨": 2,
-                "ߘ": 0,
-                "ߒ": 3,
+                "😳": 0,
+                "💗": 3,
                 "★": 1,
                 "█": 0,
                 "☀": 2,
-                "ߘ": -1,
-                "ߘ": 2,
-                "ߘ": 0,
-                "ߒ": 3,
-                "ߘ": 3,
-                "ߙ": 2,
-                "ߘ": 0,
-                "ߎ": 3,
-                "ߒ": 4,
-                "ߘ": 2,
-                "ߔ": 1,
-                "ߒ": 1,
-                "ߔ": -1,
-                "ߒ": 4,
-                "ߒ": 2,
-                "ߒ": 3,
+                "😡": -1,
+                "😎": 2,
+                "😢": 0,
+                "💋": 3,
+                "😋": 3,
+                "🙊": 2,
+                "😴": 0,
+                "🎶": 3,
+                "💞": 4,
+                "😌": 2,
+                "🔥": 1,
+                "💯": 1,
+                "🔫": -1,
+                "💛": 4,
+                "💁": 2,
+                "💚": 3,
                 "♫": 1,
-                "ߘ": -1,
-                "ߘ": 2,
-                "ߘ": 2,
-                "ߘ": 0,
-                "ߘ": -1,
-                "ߘ": 1,
-                "ߑ": 1,
-                "ߒ": -1,
-                "ߘ": 3,
-                "ߘ": 4,
-                "ߘ": 3,
+                "😞": -1,
+                "😆": 2,
+                "😝": 2,
+                "😪": 0,
+                "😫": -1,
+                "😅": 1,
+                "👊": 1,
+                "💀": -1,
+                "😀": 3,
+                "😚": 4,
+                "😻": 3,
                 "©": 1,
-                "ߑ": 0,
-                "ߒ": 3,
-                "ߐ": 0,
+                "👀": 0,
+                "💘": 3,
+                "🐓": 0,
                 "☕": 1,
-                "ߑ": 2,
+                "👋": 2,
                 "✋": 1,
-                "ߎ": 4,
-                "ߍ": 2,
+                "🎊": 4,
+                "🍕": 2,
                 "❄": 3,
-                "ߘ": 1,
-                "ߘ": -2,
-                "ߒ": 1,
-                "ߒ": -1,
-                "ߘ": -1,
-                "ߘ": 1,
+                "😥": 1,
+                "😕": -2,
+                "💥": 1,
+                "💔": -1,
+                "😤": -1,
+                "😈": 1,
                 "►": 1,
                 "✈": 2,
-                "ߔ": 2,
-                "ߘ": 0,
+                "🔝": 2,
+                "😰": 0,
                 "⚽": 3,
-                "ߘ": -2,
-                "ߑ": 4,
-                "ߘ": 1,
-                "ߑ": 2,
-                "ߍ": 2,
-                "ߎ": 4,
-                "ߘ": -2,
-                "ߐ": 2,
+                "😑": -2,
+                "👑": 4,
+                "😹": 1,
+                "👉": 2,
+                "🍃": 2,
+                "🎁": 4,
+                "😠": -2,
+                "🐧": 2,
                 "☆": 2,
-                "ߍ": 1,
-                "ߎ": 4,
-                "ߎ": 2,
-                "ߘ": 0,
-                "ߘ": -1,
-                "ߘ": -2,
+                "🍀": 1,
+                "🎈": 4,
+                "🎅": 2,
+                "😓": 0,
+                "😣": -1,
+                "😐": -2,
                 "✊": 2,
-                "ߘ": -1,
-                "ߘ": -1,
-                "ߒ": 2,
-                "ߒ": 3,
-                "ߑ": -1,
-                "ߒ": 2,
+                "😨": -1,
+                "😖": -1,
+                "💤": 2,
+                "💓": 3,
+                "👎": -1,
+                "💦": 2,
                 "✔": 1,
-                "ߘ": -1,
+                "😷": -1,
                 "⚡": 1,
-                "ߙ": 2,
-                "ߎ": 3,
-                "ߒ": -1,
-                "ߎ": 3,
+                "🙋": 2,
+                "🎄": 3,
+                "💩": -1,
+                "🎵": 3,
                 "➡": 1,
-                "ߘ": 3,
-                "ߘ": 1,
-                "ߑ": 2,
-                "ߒ": 3,
-                "ߌ": 2,
-                "ߎ": 3,
-                "ߌ": 2,
-                "ߔ": 1,
+                "😛": 3,
+                "😬": 1,
+                "👯": 2,
+                "💎": 3,
+                "🌿": 2,
+                "🎂": 3,
+                "🌟": 2,
+                "🔮": 1,
                 "❗": 1,
-                "ߑ": 1,
-                "ߏ": 4,
+                "👫": 1,
+                "🏆": 4,
                 "✖": 2,
                 "☝": 2,
-                "ߘ": 4,
+                "😙": 4,
                 "⛄": 3,
-                "ߑ": 2,
+                "👅": 2,
                 "♪": 3,
-                "ߍ": 3,
-                "ߒ": 2,
-                "ߔ": 0,
-                "ߌ": 3,
-                "ߑ": 2,
-                "ߌ": 3,
-                "ߙ": 3,
+                "🍂": 3,
+                "💏": 2,
+                "🔪": 0,
+                "🌴": 3,
+                "👈": 2,
+                "🌹": 3,
+                "🙆": 3,
                 "➜": 1,
-                "ߑ": 1,
-                "ߒ": 1,
-                "ߍ": 3,
-                "ߙ": -1,
-                "ߌ": 3,
-                "ߍ": 2,
+                "👻": 1,
+                "💰": 1,
+                "🍻": 3,
+                "🙅": -1,
+                "🌞": 3,
+                "🍁": 2,
                 "⭐": 3,
                 "▪": 1,
-                "ߎ": 3,
+                "🎀": 3,
                 "━": 1,
                 "☷": 0,
-                "ߐ": 2,
-                "ߙ": 2,
-                "ߌ": 3,
-                "ߒ": 2,
-                "ߐ": 3,
-                "ߌ": 2,
-                "ߑ": 2,
-                "ߎ": 2,
-                "ߑ": 2,
-                "ߎ": 2,
-                "ߑ": 2,
-                "ߍ": 3,
-                "ߍ": 2,
+                "🐷": 2,
+                "🙉": 2,
+                "🌺": 3,
+                "💅": 2,
+                "🐶": 3,
+                "🌚": 2,
+                "👽": 2,
+                "🎤": 2,
+                "👭": 2,
+                "🎧": 2,
+                "👆": 2,
+                "🍸": 3,
+                "🍷": 2,
                 "®": 1,
-                "ߍ": 3,
-                "ߘ": 3,
+                "🍉": 3,
+                "😇": 3,
                 "☑": 1,
-                "ߏ": 2,
-                "ߘ": -2,
+                "🏃": 2,
+                "😿": -2,
                 "│": 2,
-                "ߒ": 0,
-                "ߍ": 3,
+                "💣": 0,
+                "🍺": 3,
                 "▶": 1,
-                "ߘ": 0,
-                "ߎ": 3,
-                "ߍ": 3,
-                "ߒ": 3,
-                "ߓ": 2,
-                "ߘ": -1,
-                "ߌ": 3,
-                "ߒ": 3,
-                "ߒ": 2,
-                "ߏ": 3,
-                "ߒ": 2,
+                "😲": 0,
+                "🎸": 3,
+                "🍹": 3,
+                "💫": 3,
+                "📚": 2,
+                "😶": -1,
+                "🌷": 3,
+                "💝": 3,
+                "💨": 2,
+                "🏈": 3,
+                "💍": 2,
                 "☔": 1,
-                "ߑ": 3,
-                "߇": 3,
+                "👸": 3,
+                "🇪": 3,
                 "░": 0,
-                "ߍ": 2,
-                "ߑ": 2,
+                "🍩": 2,
+                "👾": 2,
                 "☁": 2,
-                "ߌ": 3,
-                "ߘ": 0,
-                "ߓ": 0,
+                "🌻": 3,
+                "😵": 0,
+                "📒": 0,
                 "↿": 3,
-                "ߐ": 2,
-                "ߑ": 2,
-                "ߍ": 1,
-                "ߘ": 2,
-                "ߑ": 2,
+                "🐯": 2,
+                "👼": 2,
+                "🍔": 1,
+                "😸": 2,
+                "👶": 2,
                 "↾": 3,
-                "ߒ": 4,
-                "ߌ": 3,
-                "ߍ": 2,
-                "ߍ": 3,
-                "ߑ": 1,
-                "ߒ": 1,
-                "ߍ": 3,
-                "ߘ": 0,
-                "߇": 3,
-                "ߘ": 1,
+                "💐": 4,
+                "🌊": 3,
+                "🍦": 2,
+                "🍓": 3,
+                "👇": 1,
+                "💆": 1,
+                "🍴": 3,
+                "😧": 0,
+                "🇸": 3,
+                "😮": 1,
                 "▓": 0,
-                "ߚ": -2,
-                "ߘ": 3,
-                "ߌ": 3,
-                "ߙ": 2,
+                "🚫": -2,
+                "😽": 3,
+                "🌈": 3,
+                "🙀": 2,
                 "⚠": 0,
-                "ߎ": 2,
+                "🎮": 2,
                 "╯": 0,
-                "ߍ": 2,
-                "ߍ": 2,
+                "🍆": 2,
+                "🍰": 2,
                 "✓": 1,
-                "ߑ": 0,
-                "ߙ": 1,
-                "ߍ": 2,
-                "ߍ": 2,
-                "ߒ": 3,
-                "ߑ": 0,
-                "ߐ": 2,
-                "ߎ": 3,
+                "👐": 0,
+                "🙇": 1,
+                "🍟": 2,
+                "🍌": 2,
+                "💑": 3,
+                "👬": 0,
+                "🐣": 2,
+                "🎃": 3,
                 "▬": 2,
-                "ߘ": 0,
-                "ߐ": 3,
-                "ߎ": 3,
-                "ߏ": 3,
-                "ߍ": 1,
-                "ߓ": 2,
-                "ߑ": 2,
-                "ߌ": 4,
-                "ߚ": -1,
-                "ߐ": 3,
+                "😟": 0,
+                "🐾": 3,
+                "🎓": 3,
+                "🏊": 3,
+                "🍫": 1,
+                "📷": 2,
+                "👄": 2,
+                "🌼": 4,
+                "🚶": -1,
+                "🐱": 3,
                 "║": 1,
-                "ߐ": 0,
-                "߇": 3,
-                "ߑ": -3,
-                "ߚ": 3,
+                "🐸": 0,
+                "🇺": 3,
+                "👿": -3,
+                "🚬": 3,
                 "✿": 2,
-                "ߓ": 1,
-                "ߐ": 3,
-                "ߌ": 3,
+                "📖": 1,
+                "🐒": 3,
+                "🌍": 3,
                 "┊": 5,
-                "ߐ": 3,
-                "ߌ": 1,
-                "ߐ": 1,
-                "ߎ": 2,
-                "ߒ": 2,
-                "ߒ": 1,
+                "🐥": 3,
+                "🌀": 1,
+                "🐼": 1,
+                "🎥": 2,
+                "💄": 2,
+                "💸": 1,
                 "⛔": 3,
                 "●": 1,
-                "ߏ": 1,
-                "ߒ": 2,
-                "ߒ": 4,
-                "ߚ": 1,
-                "ߘ": 1,
-                "ߓ": 1,
+                "🏀": 1,
+                "💉": 2,
+                "💟": 4,
+                "🚗": 1,
+                "😯": 1,
+                "📝": 1,
                 "═": 0,
                 "♦": 2,
-                "ߒ": 1
+                "💭": 1
             }
         },
         444: function(e, t) {
@@ -5081,7 +5081,7 @@
                             for (var t = [], r = e.split(lt), n = 0; n < r.length; n++)
                                 for (var a = r[n].split(it), i = 0; i < a.length; i++) t.push(a[i]);
                             return t
-                        }(e = e.replace(" ", " ")), o = 0; o < i.length; o++) {
+                        }(e = e.replace(" ", " ")), o = 0; o < i.length; o++) {
                         var s = i[o];
                         if (void 0 !== s && "" !== s) {
                             if (!1 === ot.test(s)) {
@@ -11145,31 +11145,31 @@
                             for (var t = [{
                                     max: -2,
                                     text: "Very Negative",
-                                    emoji: "ߘ"
+                                    emoji: "😡"
                                 }, {
                                     max: -1,
                                     text: "Negative",
-                                    emoji: "ߘ"
+                                    emoji: "😣"
                                 }, {
                                     max: -.25,
                                     text: "Slightly Negative",
-                                    emoji: "ߤ"
+                                    emoji: "🤨"
                                 }, {
                                     max: .25,
                                     text: "Neutral",
-                                    emoji: "ߘ"
+                                    emoji: "😐"
                                 }, {
                                     max: 1,
                                     text: "Slightly Positive",
-                                    emoji: "ߙ"
+                                    emoji: "🙂"
                                 }, {
                                     max: 2,
                                     text: "Positive",
-                                    emoji: "ߘ"
+                                    emoji: "😀"
                                 }, {
                                     max: 99,
                                     text: "Very Positive",
-                                    emoji: "ߘ"
+                                    emoji: "😍"
                                 }], r = e.normalizedScore, n = 0; n < t.length; n++)
                                 if (r < t[n].max) return t[n];
                             return t[3]
@@ -11249,394 +11249,400 @@
                 },
                 to = r(57),
                 ro = Object(to.a)(eo, (function() {
-                        var e = this,
-                            t = e.$createElement,
-                            r = e._self._c || t;
-                        return r("div", {
-                                staticClass: "container-fluid px-5"
-                            }, [r("div", {
-                                staticClass: "row mt-4"
-                            }, [r("div", {
-                                staticClass: "col"
-                            }, [r("div", {
-                                staticClass: "card shadow mb-3 mr-3"
-                            }, [r("div", {
-                                staticClass: "card-body p-3"
-                            }, [r("h3", [e._v(e._s(e.stats.word_count))]), e._v(" "), r("span", {
-                                staticClass: "text-uppercase text-muted"
-                            }, [e._v("Word Count")])])])]), e._v(" "), r("div", {
-                                staticClass: "col"
-                            }, [r("div", {
-                                staticClass: "card shadow mb-3 mr-3"
-                            }, [r("div", {
-                                staticClass: "card-body p-3"
-                            }, [r("h3", [e._v(e._s(e.stats.reading_ease) + "%")]), e._v(" "), r("span", {
-                                staticClass: "text-uppercase text-muted"
-                            }, [e._v("Reading Ease")])])])]), e._v(" "), r("div", {
-                                staticClass: "col"
-                            }, [r("div", {
-                                staticClass: "card shadow mb-3 mr-3"
-                            }, [r("div", {
-                                staticClass: "card-body p-3"
-                            }, [r("h3", [e._v(e._s(e.stats.grade_level))]), e._v(" "), r("span", {
-                                staticClass: "text-uppercase text-muted"
-                            }, [e._v("Grade Level")])])])]), e._v(" "), r("div", {
-                                staticClass: "col"
-                            }, [r("div", {
-                                staticClass: "card shadow mb-3 mr-3"
-                            }, [r("div", {
-                                staticClass: "card-body p-3"
-                            }, [r("h2", [e._v(e._s(e.showSentiment(e.sentiment).emoji))]), e._v(" "), r("span", {
-                                staticClass: "text-uppercase text-muted"
-                            }, [e._v(e._s(e.showSentiment(e.sentiment).text) + " Sentiment")])])])])]), e._v(" "), r("div", {
-                                staticClass: "row mt-4"
-                            }, [r("div", {
-                                staticClass: "col-7"
-                            }, [r("b-tabs", {
-                                attrs: {
-                                    pills: "",
-                                    "nav-class": "small"
-                                }
-                            }, [r("b-tab", {
-                                attrs: {
-                                    title: "Text Editor"
-                                }
-                            }, [r("b-form-textarea", {
-                                staticClass: "form-control mt-2",
-                                staticStyle: {
-                                    height: "750px"
-                                },
-                                attrs: {
-                                    debounce: "1000",
-                                    autofocus: "",
-                                    placeholder: "Enter your text here to check your word count, readability and analyze your keyword density"
-                                },
-                                model: {
-                                    value: e.text,
-                                    callback: function(t) {
-                                        e.text = t
-                                    },
-                                    expression: "text"
-                                }
-                            }, [e._v("Some text here\n                    ")])], 1)], 1)], 1), e._v(" "), r("div", {
-                                staticClass: "col-5"
-                            }, [r("b-tabs", {
-                                attrs: {
-                                    pills: "",
-                                    "nav-class": "small"
-                                }
-                            }, [r("b-tab", {
-                                staticClass: "mt-2",
-                                staticStyle: {
-                                    height: "720px",
-                                    "overflow-y": "auto",
-                                    "overflow-x": "hidden"
-                                },
-                                attrs: {
-                                    title: "Keyword Density"
-                                }
-                            }, [r("div", {
-                                staticClass: "card"
-                            }, [r("div", {
-                                staticClass: "card-body"
-                            }, [r("div", {
-                                staticClass: "row"
-                            }, [r("div", {
-                                staticClass: "col-7"
-                            }, [r("label", {
-                                staticClass: "small"
-                            }, [e._v("Filter Words")]), e._v(" "), r("b-form-group", [r("select", {
-                                directives: [{
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: e.filterInclude,
-                                    expression: "filterInclude"
-                                }],
-                                staticClass: "form-control",
-                                on: {
-                                    change: function(t) {
-                                        var r = Array.prototype.filter.call(t.target.options, (function(e) {
-                                            return e.selected
-                                        })).map((function(e) {
-                                            return "_value" in e ? e._value : e.value
-                                        }));
-                                        e.filterInclude = t.target.multiple ? r : r[0]
+                    var e = this,
+                        t = e.$createElement,
+                        r = e._self._c || t;
+                    return r("div", {
+                        staticClass: "container-fluid px-5"
+                    }, [r("div", {
+                        staticClass: "row mt-4"
+                    }, [r("div", {
+                        staticClass: "col"
+                    }, [r("div", {
+                        staticClass: "card shadow mb-3 mr-3"
+                    }, [r("div", {
+                        staticClass: "card-body p-3"
+                    }, [r("h3", [e._v(e._s(e.stats.word_count))]), e._v(" "), r("span", {
+                        staticClass: "text-uppercase text-muted"
+                    }, [e._v("Word Count")])])])]), e._v(" "), r("div", {
+                        staticClass: "col"
+                    }, [r("div", {
+                        staticClass: "card shadow mb-3 mr-3"
+                    }, [r("div", {
+                        staticClass: "card-body p-3"
+                    }, [r("h3", [e._v(e._s(e.stats.reading_ease) + "%")]), e._v(" "), r("span", {
+                        staticClass: "text-uppercase text-muted"
+                    }, [e._v("Reading Ease")])])])]), e._v(" "), r("div", {
+                        staticClass: "col"
+                    }, [r("div", {
+                        staticClass: "card shadow mb-3 mr-3"
+                    }, [r("div", {
+                        staticClass: "card-body p-3"
+                    }, [r("h3", [e._v(e._s(e.stats.grade_level))]), e._v(" "), r("span", {
+                        staticClass: "text-uppercase text-muted"
+                    }, [e._v("Grade Level")])])])]), e._v(" "), r("div", {
+                        staticClass: "col"
+                    }, [r("div", {
+                        staticClass: "card shadow mb-3 mr-3"
+                    }, [r("div", {
+                        staticClass: "card-body p-3"
+                    }, [r("h2", [e._v(e._s(e.showSentiment(e.sentiment).emoji))]), e._v(" "), r("span", {
+                        staticClass: "text-uppercase text-muted"
+                    }, [e._v(e._s(e.showSentiment(e.sentiment).text) + " Sentiment")])])])])]), e._v(" "), r("div", {
+                        staticClass: "row mt-4"
+                    }, [r("div", {
+                        staticClass: "col-7"
+                    }, [r("b-tabs", {
+                        attrs: {
+                            pills: "",
+                            "nav-class": "small"
+                        }
+                    }, [r("b-tab", {
+                        attrs: {
+                            title: "Text Editor"
+                        }
+                    }, [r("b-form-textarea", {
+                        staticClass: "form-control mt-2",
+                        staticStyle: {
+                            height: "750px"
+                        },
+                        attrs: {
+                            debounce: "1000",
+                            autofocus: "",
+                            placeholder: "Enter your text here to check your word count, readability and analyze your keyword density"
+                        },
+                        model: {
+                            value: e.text,
+                            callback: function(t) {
+                                e.text = t
+                            },
+                            expression: "text"
+                        }
+                    }, [e._v("Some text here\n                    ")])], 1)], 1)], 1), e._v(" "), r("div", {
+                        staticClass: "col-5"
+                    }, [r("b-tabs", {
+                        attrs: {
+                            pills: "",
+                            "nav-class": "small"
+                        }
+                    }, [r("b-tab", {
+                        staticClass: "mt-2",
+                        staticStyle: {
+                            height: "720px",
+                            "overflow-y": "auto",
+                            "overflow-x": "hidden"
+                        },
+                        attrs: {
+                            title: "Keyword Density"
+                        }
+                    }, [r("div", {
+                        staticClass: "card"
+                    }, [r("div", {
+                        staticClass: "card-body"
+                    }, [r("div", {
+                        staticClass: "row"
+                    }, [r("div", {
+                        staticClass: "col-7"
+                    }, [r("label", {
+                        staticClass: "small"
+                    }, [e._v("Filter Words")]), e._v(" "), r("b-form-group", [r("select", {
+                        directives: [{
+                            name: "model",
+                            rawName: "v-model",
+                            value: e.filterInclude,
+                            expression: "filterInclude"
+                        }],
+                        staticClass: "form-control",
+                        on: {
+                            change: function(t) {
+                                var r = Array.prototype.filter.call(t.target.options, (function(e) {
+                                    return e.selected
+                                })).map((function(e) {
+                                    return "_value" in e ? e._value : e.value
+                                }));
+                                e.filterInclude = t.target.multiple ? r : r[0]
+                            }
+                        }
+                    }, [r("option", {
+                        domProps: {
+                            value: !0
+                        }
+                    }, [e._v("Including")]), e._v(" "), r("option", {
+                        domProps: {
+                            value: !1
+                        }
+                    }, [e._v("Excluding")])]), e._v(" "), r("b-input", {
+                        attrs: {
+                            placeholder: "Filter"
+                        },
+                        model: {
+                            value: e.filterText,
+                            callback: function(t) {
+                                e.filterText = t
+                            },
+                            expression: "filterText"
+                        }
+                    })], 1)], 1), e._v(" "), r("div", {
+                        staticClass: "col"
+                    }, [r("label", {
+                        staticClass: "small"
+                    }, [e._v("Number of Words")]), e._v(" "), r("b-button-group", [r("b-button", {
+                        class: {
+                            "bg-info": e.wordsOne
+                        },
+                        attrs: {
+                            variant: "outline-info"
+                        },
+                        on: {
+                            click: function(t) {
+                                e.wordsOne = !e.wordsOne
+                            }
+                        }
+                    }, [e._v("1")]), e._v(" "), r("b-button", {
+                        class: {
+                            "bg-info": e.wordsTwo
+                        },
+                        attrs: {
+                            variant: "outline-info"
+                        },
+                        on: {
+                            click: function(t) {
+                                e.wordsTwo = !e.wordsTwo
+                            }
+                        }
+                    }, [e._v("2")]), e._v(" "), r("b-button", {
+                        class: {
+                            "bg-info": e.wordsThree
+                        },
+                        attrs: {
+                            variant: "outline-info"
+                        },
+                        on: {
+                            click: function(t) {
+                                e.wordsThree = !e.wordsThree
+                            }
+                        }
+                    }, [e._v("3")]), e._v(" "), r("b-button", {
+                        class: {
+                            "bg-info": e.wordsFour
+                        },
+                        attrs: {
+                            variant: "outline-info"
+                        },
+                        on: {
+                            click: function(t) {
+                                e.wordsFour = !e.wordsFour
+                            }
+                        }
+                    }, [e._v("4")])], 1), e._v(" "), r("download-csv", {
+                        attrs: {
+                            data: e.filteredItems
+                        }
+                    }, [r("b-link", {
+                        staticClass: "small"
+                    }, [e._v("Export CSV")])], 1)], 1)]), e._v(" "), e.keywords.length > 0 ? r("b-table", {
+                        staticClass: "small",
+                        attrs: {
+                            items: e.keywords,
+                            "per-page": e.perPage,
+                            "sort-by": "uses",
+                            "sort-desc": !0,
+                            "sticky-header": "",
+                            "empty-text": "Please add some text to the editor to see an analysis of your keyword density and usage",
+                            fields: [{
+                                key: "keyword",
+                                sortable: !0
+                            }, {
+                                key: "word_count",
+                                label: "Words",
+                                sortable: !0,
+                                sortDirection: "desc",
+                                class: "text-right"
+                            }, {
+                                key: "uses",
+                                label: "Uses",
+                                sortable: !0,
+                                sortDirection: "desc",
+                                class: "text-right"
+                            }, {
+                                key: "density",
+                                label: "Uses",
+                                sortable: !0,
+                                sortDirection: "desc",
+                                class: "text-right"
+                            }],
+                            "filter-function": e.filterFunction,
+                            filter: e.filterValue
+                        },
+                        on: {
+                            filtered: e.onFiltered
+                        },
+                        scopedSlots: e._u([{
+                            key: "cell(density)",
+                            fn: function(t) {
+                                return [e._v("\n                                    " + e._s(t.item.density) + "%\n                                ")]
+                            }
+                        }], null, !1, 2831030155)
+                    }) : e._e(), e._v(" "), e.keywords.length > 0 ? r("b-pagination", {
+                        attrs: {
+                            "per-page": e.perPage,
+                            "total-rows": e.totalRows
+                        },
+                        model: {
+                            value: e.currentPage,
+                            callback: function(t) {
+                                e.currentPage = t
+                            },
+                            expression: "currentPage"
+                        }
+                    }) : r("p", {
+                        staticClass: "lead"
+                    }, [r("em", [e._v("Please enter some text in the editor to see your keyword analysis!")])])], 1)])]), e._v(" "), r("b-tab", {
+                        staticClass: "small mt-2",
+                        attrs: {
+                            title: "Text Analysis"
+                        }
+                    }, [r("div", {
+                        staticClass: "card shadow m-1"
+                    }, [r("div", {
+                        staticClass: "card-body p-2"
+                    }, [r("h3", [e._v("Content Analysis")]), e._v(" "), r("table", {
+                        staticClass: "table table-sm"
+                    }, [r("tr", [r("th", [e._v("Word Count")]), e._v(" "), r("td", [e._v(e._s(e.stats.word_count))])]), e._v(" "), r("tr", [r("th", [e._v("Character Length")]), e._v(" "), r("td", [e._v(e._s(e.stats.length))])]), e._v(" "), r("tr", [r("th", [e._v("Letters")]), e._v(" "), r("td", [e._v(e._s(e.stats.letterCount))])]), e._v(" "), r("tr", [r("th", [e._v("Sentences")]), e._v(" "), r("td", [e._v(e._s(e.stats.sentenceCount))])]), e._v(" "), r("tr", [r("th", [e._v("Syllables")]), e._v(" "), r("td", [e._v(e._s(e.stats.syllable_count))])]), e._v(" "), r("tr", [r("th", [e._v("Average Words/Sentence")]), e._v(" "), r("td", [e._v(e._s(Number(e.stats.averageWordsPerSentence).toFixed(1)))])]), e._v(" "), r("tr", [r("th", [e._v("Average Syllables/Word")]), e._v(" "), r("td", [e._v(e._s(Number(e.stats.averageSyllablesPerWord).toFixed(1)))])]), e._v(" "), r("tr", [r("th", [e._v("Lexical Density")]), e._v(" "), r("td", [e._v(e._s(Number(100 * e.stats.lexicalDensity).toFixed(0)) + "%")])]), e._v(" "), r("tr", [r("th", [e._v("Lexical Diversity")]), e._v(" "), r("td", [e._v(e._s(Number(100 * e.stats.lexicalDiversity).toFixed(0)) + "%")])])])])]), e._v(" "), r("div", {
+                        staticClass: "card shadow m-1 mt-4"
+                    }, [r("div", {
+                        staticClass: "card-body p-2"
+                    }, [r("h3", [e._v("Readability")]), e._v(" "), r("table", {
+                        staticClass: "table table-sm"
+                    }, [r("tr", [r("th", [e._v("Reading Ease")]), e._v(" "), r("td", [e._v(e._s(e.stats.reading_ease) + "%")])]), e._v(" "), r("tr", [r("th", [e._v("Grade Level")]), e._v(" "), r("td", [e._v(e._s(e.stats.grade_level))])]), e._v(" "), r("tr", [r("th", [e._v("Gunning Fog")]), e._v(" "), r("td", [e._v(e._s(e.stats.gunningFocScore))])]), e._v(" "), r("tr", [r("th", [e._v("Coleman Liau Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.colemanLiauIndex))])]), e._v(" "), r("tr", [r("th", [e._v("Smog Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.smogIndex))])]), e._v(" "), r("tr", [r("th", [e._v("Automated Reading Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.automatedReadabilityIndex))])])])])])]), e._v(" "), r("b-tab", {
+                        attrs: {
+                            title: "Topics"
+                        }
+                    }, [r("div", {
+                        staticClass: "alert alert-info"
+                    }, [e._v("This is a 'best guess' attempt at entity extraction in Javascript. For a true NLP analysis please try our "), r("a", {
+                        attrs: {
+                            href: "/features/keyword-research"
+                        }
+                    }, [e._v("topic research tool")])]), e._v(" "), e.topics.length > 0 ? r("b-table", {
+                        attrs: {
+                            items: e.topics,
+                            "sort-by": "uses",
+                            "sort-desc": !0,
+                            "sticky-header": "",
+                            "empty-text": "We couldn't find any entities such as organizations, places or people  in this text"
+                        }
+                    }) : r("p", {
+                        staticClass: "lead"
+                    }, [r("em", [e._v("We couldn't find any entities such as organizations, places or people  in this text")])])], 1), e._v(" "), r("b-tab", {
+                        staticClass: "small",
+                        attrs: {
+                            title: "Sentences"
+                        }
+                    }, [e.sentences.length > 0 ? r("b-table", {
+                        attrs: {
+                            items: e.sentences,
+                            fields: ["sentence", {
+                                key: "sentiment.score",
+                                label: "Sentiment",
+                                sortable: !0
+                            }, {
+                                key: "words",
+                                sortable: !0
+                            }, {
+                                key: "readability",
+                                sortable: !0
+                            }],
+                            "sticky-header": "",
+                            "empty-text": "Please add some text to the editor to see an analysis of your sentences"
+                        },
+                        scopedSlots: e._u([{
+                            key: "cell(sentiment.score)",
+                            fn: function(t) {
+                                return [r("span", {
+                                    staticClass: "lead",
+                                    attrs: {
+                                        title: e.showSentiment(t.item.sentiment).text
                                     }
-                                }
-                            }, [r("option", {
-                                domProps: {
-                                    value: !0
-                                }
-                            }, [e._v("Including")]), e._v(" "), r("option", {
-                                domProps: {
-                                    value: !1
-                                }
-                            }, [e._v("Excluding")])]), e._v(" "), r("b-input", {
-                                attrs: {
-                                    placeholder: "Filter"
-                                },
-                                model: {
-                                    value: e.filterText,
-                                    callback: function(t) {
-                                        e.filterText = t
-                                    },
-                                    expression: "filterText"
-                                }
-                            })], 1)], 1), e._v(" "), r("div", {
-                                staticClass: "col"
-                            }, [r("label", {
-                                staticClass: "small"
-                            }, [e._v("Number of Words")]), e._v(" "), r("b-button-group", [r("b-button", {
-                                class: {
-                                    "bg-info": e.wordsOne
-                                },
-                                attrs: {
-                                    variant: "outline-info"
-                                },
-                                on: {
-                                    click: function(t) {
-                                        e.wordsOne = !e.wordsOne
-                                    }
-                                }
-                            }, [e._v("1")]), e._v(" "), r("b-button", {
-                                class: {
-                                    "bg-info": e.wordsTwo
-                                },
-                                attrs: {
-                                    variant: "outline-info"
-                                },
-                                on: {
-                                    click: function(t) {
-                                        e.wordsTwo = !e.wordsTwo
-                                    }
-                                }
-                            }, [e._v("2")]), e._v(" "), r("b-button", {
-                                class: {
-                                    "bg-info": e.wordsThree
-                                },
-                                attrs: {
-                                    variant: "outline-info"
-                                },
-                                on: {
-                                    click: function(t) {
-                                        e.wordsThree = !e.wordsThree
-                                    }
-                                }
-                            }, [e._v("3")]), e._v(" "), r("b-button", {
-                                class: {
-                                    "bg-info": e.wordsFour
-                                },
-                                attrs: {
-                                    variant: "outline-info"
-                                },
-                                on: {
-                                    click: function(t) {
-                                        e.wordsFour = !e.wordsFour
-                                    }
-                                }
-                            }, [e._v("4")])], 1), e._v(" "), r("download-csv", {
-                                attrs: {
-                                    data: e.filteredItems
-                                }
-                            }, [r("b-link", {
-                                staticClass: "small"
-                            }, [e._v("Export CSV")])], 1)], 1)]), e._v(" "), e.keywords.length > 0 ? r("b-table", {
-                                staticClass: "small",
-                                attrs: {
-                                    items: e.keywords,
-                                    "per-page": e.perPage,
-                                    "sort-by": "uses",
-                                    "sort-desc": !0,
-                                    "sticky-header": "",
-                                    "empty-text": "Please add some text to the editor to see an analysis of your keyword density and usage",
-                                    fields: [{
-                                        key: "keyword",
-                                        sortable: !0
-                                    }, {
-                                        key: "word_count",
-                                        label: "Words",
-                                        sortable: !0,
-                                        sortDirection: "desc",
-                                        class: "text-right"
-                                    }, {
-                                        key: "uses",
-                                        label: "Uses",
-                                        sortable: !0,
-                                        sortDirection: "desc",
-                                        class: "text-right"
-                                    }, {
-                                        key: "density",
-                                        label: "Uses",
-                                        sortable: !0,
-                                        sortDirection: "desc",
-                                        class: "text-right"
-                                    }],
-                                    "filter-function": e.filterFunction,
-                                    filter: e.filterValue
-                                },
-                                on: {
-                                    filtered: e.onFiltered
-                                },
-                                scopedSlots: e._u([{
-                                    key: "cell(density)",
-                                    fn: function(t) {
-                                        return [e._v("\n                                    " + e._s(t.item.density) + "%\n                                ")]
-                                    }
-                                }], null, !1, 2831030155)
-                            }) : e._e(), e._v(" "), e.keywords.length > 0 ? r("b-pagination", {
-                                attrs: {
-                                    "per-page": e.perPage,
-                                    "total-rows": e.totalRows
-                                },
-                                model: {
-                                    value: e.currentPage,
-                                    callback: function(t) {
-                                        e.currentPage = t
-                                    },
-                                    expression: "currentPage"
-                                }
-                            }) : r("p", {
-                                staticClass: "lead"
-                            }, [r("em", [e._v("Please enter some text in the editor to see your keyword analysis!")])])], 1)])]), e._v(" "), r("b-tab", {
-                                staticClass: "small mt-2",
-                                attrs: {
-                                    title: "Text Analysis"
-                                }
-                            }, [r("div", {
-                                staticClass: "card shadow m-1"
-                            }, [r("div", {
-                                staticClass: "card-body p-2"
-                            }, [r("h3", [e._v("Content Analysis")]), e._v(" "), r("table", {
-                                staticClass: "table table-sm"
-                            }, [r("tr", [r("th", [e._v("Word Count")]), e._v(" "), r("td", [e._v(e._s(e.stats.word_count))])]), e._v(" "), r("tr", [r("th", [e._v("Character Length")]), e._v(" "), r("td", [e._v(e._s(e.stats.length))])]), e._v(" "), r("tr", [r("th", [e._v("Letters")]), e._v(" "), r("td", [e._v(e._s(e.stats.letterCount))])]), e._v(" "), r("tr", [r("th", [e._v("Sentences")]), e._v(" "), r("td", [e._v(e._s(e.stats.sentenceCount))])]), e._v(" "), r("tr", [r("th", [e._v("Syllables")]), e._v(" "), r("td", [e._v(e._s(e.stats.syllable_count))])]), e._v(" "), r("tr", [r("th", [e._v("Average Words/Sentence")]), e._v(" "), r("td", [e._v(e._s(Number(e.stats.averageWordsPerSentence).toFixed(1)))])]), e._v(" "), r("tr", [r("th", [e._v("Average Syllables/Word")]), e._v(" "), r("td", [e._v(e._s(Number(e.stats.averageSyllablesPerWord).toFixed(1)))])]), e._v(" "), r("tr", [r("th", [e._v("Lexical Density")]), e._v(" "), r("td", [e._v(e._s(Number(100 * e.stats.lexicalDensity).toFixed(0)) + "%")])]), e._v(" "), r("tr", [r("th", [e._v("Lexical Diversity")]), e._v(" "), r("td", [e._v(e._s(Number(100 * e.stats.lexicalDiversity).toFixed(0)) + "%")])])])])]), e._v(" "), r("div", {
-                                staticClass: "card shadow m-1 mt-4"
-                            }, [r("div", {
-                                staticClass: "card-body p-2"
-                            }, [r("h3", [e._v("Readability")]), e._v(" "), r("table", {
-                                staticClass: "table table-sm"
-                            }, [r("tr", [r("th", [e._v("Reading Ease")]), e._v(" "), r("td", [e._v(e._s(e.stats.reading_ease) + "%")])]), e._v(" "), r("tr", [r("th", [e._v("Grade Level")]), e._v(" "), r("td", [e._v(e._s(e.stats.grade_level))])]), e._v(" "), r("tr", [r("th", [e._v("Gunning Fog")]), e._v(" "), r("td", [e._v(e._s(e.stats.gunningFocScore))])]), e._v(" "), r("tr", [r("th", [e._v("Coleman Liau Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.colemanLiauIndex))])]), e._v(" "), r("tr", [r("th", [e._v("Smog Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.smogIndex))])]), e._v(" "), r("tr", [r("th", [e._v("Automated Reading Index")]), e._v(" "), r("td", [e._v(e._s(e.stats.automatedReadabilityIndex))])])])])])]), e._v(" "), r("b-tab", {
-                                attrs: {
-                                    title: "Topics"
-                                }
-                            }, [r("div", {
-                                staticClass: "alert alert-info"
-                            }, e.topics.length > 0 ? r("b-table", {
-                                attrs: {
-                                    items: e.topics,
-                                    "sort-by": "uses",
-                                    "sort-desc": !0,
-                                    "sticky-header": "",
-                                    "empty-text": ""
-                                }
-                            }) : r("p", {
-                                staticClass: "lead"
-                            }, [r("em", [e._v("")])])], 1), e._v(" "), r("b-tab", {
-                                staticClass: "small",
-                                attrs: {
-                                    title: "Sentences"
-                                }
-                            }, [e.sentences.length > 0 ? r("b-table", {
-                                attrs: {
-                                    items: e.sentences,
-                                    fields: ["sentence", {
-                                        key: "sentiment.score",
-                                        label: "Sentiment",
-                                        sortable: !0
-                                    }, {
-                                        key: "words",
-                                        sortable: !0
-                                    }, {
-                                        key: "readability",
-                                        sortable: !0
-                                    }],
-                                    "sticky-header": "",
-                                    "empty-text": "Please add some text to the editor to see an analysis of your sentences"
-                                },
-                                scopedSlots: e._u([{
-                                    key: "cell(sentiment.score)",
-                                    fn: function(t) {
-                                        return [r("span", {
-                                            staticClass: "lead",
-                                            attrs: {
-                                                title: e.showSentiment(t.item.sentiment).text
-                                            }
-                                        }, [e._v(e._s(e.showSentiment(t.item.sentiment).emoji))])]
-                                    }
-                                }, {
-                                    key: "cell(sentence)",
-                                    fn: function(t) {
-                                        return [e._v("\n                            " + e._s(t.item.sentence) + "\n                        ")]
-                                    }
-                                }], null, !1, 2034161311)
-                            }) : r("p", {
-                                staticClass: "lead mt-2"
-                            }, [r("em", [e._v("Please add some text to the editor to see an analysis of your sentences")])])], 1), e._v(" "), r("b-tab", {
-                                scopedSlots: e._u([{
-                                    key: "title",
-                                    fn: function() {
-                                        return [r("i", {
-                                            staticClass: "fa fa-cogs"
-                                        })]
-                                    },
-                                    proxy: !0
-                                }])
-                            }, [e._v(" "), r("table", {
-                                staticClass: "table"
-                            }, [r("tr", [r("td", [e._v("Stopwords Language")]), e._v(" "), r("td", [r("b-select", {
-                                attrs: {
-                                    options: Object.keys(e.all_stopwords).sort()
-                                },
-                                on: {
-                                    change: e.analyzeText
-                                },
-                                model: {
-                                    value: e.language,
-                                    callback: function(t) {
-                                        e.language = t
-                                    },
-                                    expression: "language"
-                                }
-                            })], 1)]), e._v(" "), r("tr", [r("td", [e._v("Minimum Word Length: " + e._s(e.minWordLength))]), e._v(" "), r("td", [r("b-input", {
-                                attrs: {
-                                    type: "range",
-                                    min: "1",
-                                    max: "10"
-                                },
-                                on: {
-                                    change: e.analyzeText
-                                },
-                                model: {
-                                    value: e.minWordLength,
-                                    callback: function(t) {
-                                        e.minWordLength = t
-                                    },
-                                    expression: "minWordLength"
-                                }
-                            })], 1)]), e._v(" "), r("tr", [r("td", [e._v("Minimum Uses: " + e._s(e.minUses))]), e._v(" "), r("td", [r("b-input", {
-                                attrs: {
-                                    type: "range",
-                                    min: "1",
-                                    max: "10"
-                                },
-                                on: {
-                                    change: e.analyzeText
-                                },
-                                model: {
-                                    value: e.minUses,
-                                    callback: function(t) {
-                                        e.minUses = t
-                                    },
-                                    expression: "minUses"
-                                }
-                            })], 1)])])])], 1)], 1)]), e._v(" "), e._m(0)])
-                        }), [function() {
-                        var e = this.$createElement,
-                            t = this._self._c || e;
-                        return t("div", {
-                            staticClass: "row text-center justify-content-center"
-                        }, [t("span", {
-                            staticClass: "small text-muted"
-                        }, [this._v("All content analysis is performed on your own device. We don't monitor or store any of your text or results.")])])
-                    }], !1, null, "e129e30e", null); t.default = ro.exports
-                }
-        }]));
+                                }, [e._v(e._s(e.showSentiment(t.item.sentiment).emoji))])]
+                            }
+                        }, {
+                            key: "cell(sentence)",
+                            fn: function(t) {
+                                return [e._v("\n                            " + e._s(t.item.sentence) + "\n                        ")]
+                            }
+                        }], null, !1, 2034161311)
+                    }) : r("p", {
+                        staticClass: "lead mt-2"
+                    }, [r("em", [e._v("Please add some text to the editor to see an analysis of your sentences")])])], 1), e._v(" "), r("b-tab", {
+                        scopedSlots: e._u([{
+                            key: "title",
+                            fn: function() {
+                                return [r("i", {
+                                    staticClass: "fa fa-cogs"
+                                })]
+                            },
+                            proxy: !0
+                        }])
+                    }, [e._v(" "), r("table", {
+                        staticClass: "table"
+                    }, [r("tr", [r("td", [e._v("Stopwords Language")]), e._v(" "), r("td", [r("b-select", {
+                        attrs: {
+                            options: Object.keys(e.all_stopwords).sort()
+                        },
+                        on: {
+                            change: e.analyzeText
+                        },
+                        model: {
+                            value: e.language,
+                            callback: function(t) {
+                                e.language = t
+                            },
+                            expression: "language"
+                        }
+                    })], 1)]), e._v(" "), r("tr", [r("td", [e._v("Minimum Word Length: " + e._s(e.minWordLength))]), e._v(" "), r("td", [r("b-input", {
+                        attrs: {
+                            type: "range",
+                            min: "1",
+                            max: "10"
+                        },
+                        on: {
+                            change: e.analyzeText
+                        },
+                        model: {
+                            value: e.minWordLength,
+                            callback: function(t) {
+                                e.minWordLength = t
+                            },
+                            expression: "minWordLength"
+                        }
+                    })], 1)]), e._v(" "), r("tr", [r("td", [e._v("Minimum Uses: " + e._s(e.minUses))]), e._v(" "), r("td", [r("b-input", {
+                        attrs: {
+                            type: "range",
+                            min: "1",
+                            max: "10"
+                        },
+                        on: {
+                            change: e.analyzeText
+                        },
+                        model: {
+                            value: e.minUses,
+                            callback: function(t) {
+                                e.minUses = t
+                            },
+                            expression: "minUses"
+                        }
+                    })], 1)])])])], 1)], 1)]), e._v(" "), e._m(0)])
+                }), [function() {
+                    var e = this.$createElement,
+                        t = this._self._c || e;
+                    return t("div", {
+                        staticClass: "row text-center justify-content-center"
+                    }, [t("span", {
+                        staticClass: "small text-muted"
+                    }, [this._v("All content analysis is performed on your own device. We don't monitor or store any of your text or results.")])])
+                }], !1, null, "e129e30e", null);
+            t.default = ro.exports
+        }
+    }
+]);
