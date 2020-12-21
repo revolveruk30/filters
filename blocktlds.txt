@@ -6,6 +6,7 @@
 ||.boots^
 ||.ca^
 ||.chloe^
+||.co^
 ||.doha^
 ||.doosan^
 ||.epost^
