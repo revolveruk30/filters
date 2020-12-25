@@ -10,10 +10,13 @@
 /adbanner/
 /adbrite/
 /adbureau/
+/adbutler/
 /adcenter/
 /adcolony/
+/adconductor/
 /adcore/
 /addfreestats/
+/addispenser/
 /adfarm/
 /adform/
 /adgear/
@@ -26,6 +29,7 @@
 /adiquity/
 /adjuggler/
 /adk2/
+/adlantis/
 /adlegend/
 /adlogger/
 /adlooxtracking/
@@ -37,12 +41,15 @@
 /admitad/
 /admob/
 /adnet/
+/adnologies/
 /adnow/
 /adnxs/
 /adocean/
 /adomik/
 /adotmob/
 /adpage/
+/adplugg/
+/adpreference/
 /adriver/
 /adroll/
 /ads1/
@@ -66,6 +73,7 @@
 /adsonar/
 /adspace/
 /adspaces/
+/adspeed/
 /adspirit/
 /adsrv/
 /adsymptotic/
@@ -82,8 +90,10 @@
 /adwords/
 /adworks/
 /adydba/
+/adzerk/
 /adzmedia/
 /adzone/
+/aerserv/
 /affiliate/
 /ajcryptominer/
 /ajplugins/
@@ -121,6 +131,7 @@
 /bravenet/
 /bridgetrack/
 /brightroll/
+/broadstreetads/
 /btttag/
 /buysellads/
 /casalemedia/
@@ -139,6 +150,7 @@
 /clicktale/
 /clickzs/
 /clickzzs/
+/clippersoft/
 /clksite/
 /clusterd/
 /cnzz/
@@ -150,6 +162,7 @@
 /connectlinking/
 /contentabc/
 /contextweb/
+/conversantmedia/
 /cookiescript/
 /coremetrics/
 /cqcounter/
@@ -178,6 +191,7 @@
 /esomniture/
 /etargetnet/
 /everesttech/
+/exads/
 /exelator/
 /exoclick/
 /ezcybersearch/
@@ -209,9 +223,11 @@
 /hotjar/
 /hotlog/
 /hyperbanner/
+/ibillboard/
 /iesnare/
 /imasdk/
 /imrworldwide/
+/inclick/
 /inclk/
 /industrybrains/
 /inmobi/
@@ -247,9 +263,11 @@
 /mktoresp/
 /moatads/
 /mobileapptracking/
+/moceanmobile/
 /mojiva.com/
 /monerise/
 /mookie1/
+/mopub/
 /mouseflow/
 /msadcenter/
 /mydas/
@@ -261,7 +279,9 @@
 /netshelter/
 /newrelic/
 /newzgames/
+/nexage/
 /nimiq.com/
+/noprimetime/
 /nuggad/
 /nullrefexcep/
 /oascentral/
@@ -273,6 +293,7 @@
 /opentracker/
 /openx/
 /optimonk/
+/otlix/
 /outbrain/
 /outster/
 /p1ai/
@@ -307,6 +328,7 @@
 /revcontent/
 /rewardpath/
 /richmetrics/
+/rightmedia/
 /rubiconproject/
 /scorecardresearch/
 /servedby/
@@ -323,12 +345,14 @@
 /skyhookwireless/
 /smaato/
 /smartadserver/
+/smartyads/
 /smetrics/
 /sokrati/
 /solocpm/
 /sonobi/
 /specificclick/
 /spinbox/
+/spiralaxis/
 /sponsor/
 /spylog/
 /startappservice/
@@ -366,10 +390,12 @@
 /tubemogul/
 /urbanairship/
 /usllpic/
+/valuead/
 /valueclick/
 /vertamedia/
 /videoplaza/
 /vidible/
+/viewzd/
 /vindicosuite/
 /vizury/
 /voluumtrk/
