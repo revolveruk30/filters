@@ -935,7 +935,6 @@
 ||numbate.com^
 ||nwidget.networkedblogs.com^
 ||nxtck.com^
-||nytimes.com^
 ||oaserve.com^
 ||oclaserver.com^
 ||ocyss.com^
