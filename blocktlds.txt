@@ -1,52 +1,12 @@
 ! Blocks all major Top-Level Domains, except: 
-!.com
-!.net
-!.org
-!.uk
-!.au
-!.es
-!.edu
+!com
+!edu
+!net
+!org
+!gov
+!us
+!uk
 
-||.active^
-||.an^
-||.apple^
-||.arpa^
-||.blanco^
-||.boots^
-||.ca^
-||.chloe^
-||.co^
-||.doha^
-||.doosan^
-||.epost^
-||.flsmidth^
-||.goodhands^
-||.htc^
-||.iinet^
-||.iwc^
-||.jlc^
-||.llp^
-||.mcd^
-||.mcdonalds^
-||.montblanc^
-||.mtpc^
-||.mutuelle^
-||.netflix^
-||.nz^
-||.orientexpress^
-||.pamperedchef^
-||.panerai^
-||.sapo^
-||.skype^
-||.spiegel^
-||.statoil^
-||.telecity^
-||.tp^
-||.vista^
-||.xperia^
-||.yahoo^
-||.zip^
-||.zippo^
 ||aaa^
 ||aarp^
 ||abarth^
@@ -63,6 +23,7 @@
 ||accountant^
 ||accountants^
 ||aco^
+||active^
 ||actor^
 ||ad^
 ||adac^
@@ -102,6 +63,7 @@
 ||amfam^
 ||amica^
 ||amsterdam^
+||an^
 ||analytics^
 ||android^
 ||anquan^
@@ -110,6 +72,7 @@
 ||aol^
 ||apartments^
 ||app^
+||apple^
 ||aq^
 ||aquarelle^
 ||ar^
@@ -117,6 +80,7 @@
 ||aramco^
 ||archi^
 ||army^
+||arpa^
 ||art^
 ||arte^
 ||as^
@@ -126,6 +90,7 @@
 ||at^
 ||athleta^
 ||attorney^
+||au^
 ||auction^
 ||audi^
 ||audible^
@@ -189,6 +154,7 @@
 ||bj^
 ||black^
 ||blackfriday^
+||blanco^
 ||blockbuster^
 ||blog^
 ||bloomberg^
@@ -208,6 +174,7 @@
 ||boo^
 ||book^
 ||booking^
+||boots^
 ||bosch^
 ||bostik^
 ||boston^
@@ -235,6 +202,7 @@
 ||by^
 ||bz^
 ||bzh^
+||ca^
 ||cab^
 ||cafe^
 ||cal^
@@ -286,6 +254,7 @@
 ||chat^
 ||cheap^
 ||chintai^
+||chloe^
 ||christmas^
 ||chrome^
 ||chrysler^
@@ -402,7 +371,9 @@
 ||doctor^
 ||dodge^
 ||dog^
+||doha^
 ||domains^
+||doosan^
 ||dot^
 ||download^
 ||drive^
@@ -430,11 +401,13 @@
 ||engineer^
 ||engineering^
 ||enterprises^
+||epost^
 ||epson^
 ||equipment^
 ||er^
 ||ericsson^
 ||erni^
+||es^
 ||esq^
 ||estate^
 ||esurance^
@@ -487,6 +460,7 @@
 ||flir^
 ||florist^
 ||flowers^
+||flsmidth^
 ||fly^
 ||fm^
 ||fo^
@@ -559,6 +533,7 @@
 ||goldpoint^
 ||golf^
 ||goo^
+||goodhands^
 ||goodyear^
 ||goog^
 ||google^
@@ -629,6 +604,7 @@
 ||hr^
 ||hsbc^
 ||ht^
+||htc^
 ||hu^
 ||hughes^
 ||hyatt^
@@ -641,6 +617,7 @@
 ||ie^
 ||ieee^
 ||ifm^
+||iinet^
 ||ikano^
 ||il^
 ||im^
@@ -677,6 +654,7 @@
 ||itau^
 ||itv^
 ||iveco^
+||iwc^
 ||jaguar^
 ||java^
 ||jcb^
@@ -686,6 +664,7 @@
 ||jetzt^
 ||jewelry^
 ||jio^
+||jlc^
 ||jll^
 ||jm^
 ||jmp^
@@ -779,6 +758,7 @@
 ||lixil^
 ||lk^
 ||llc^
+||llp^
 ||loan^
 ||loans^
 ||locker^
@@ -822,6 +802,8 @@
 ||mattel^
 ||mba^
 ||mc^
+||mcd^
+||mcdonalds^
 ||mckinsey^
 ||md^
 ||me^
@@ -863,6 +845,7 @@
 ||monash^
 ||money^
 ||monster^
+||montblanc^
 ||mopar^
 ||mormon^
 ||mortgage^
@@ -879,12 +862,15 @@
 ||msd^
 ||mt^
 ||mtn^
+||mtpc^
 ||mtr^
 ||mu^
 ||museum^
 ||mutual^
+||mutuelle^
 ||mv^
 ||mw^
+||mx^
 ||my^
 ||mz^
 ||na^
@@ -900,6 +886,7 @@
 ||ne^
 ||nec^
 ||netbank^
+||netflix^
 ||network^
 ||neustar^
 ||new^
@@ -935,6 +922,7 @@
 ||ntt^
 ||nu^
 ||nyc^
+||nz^
 ||obi^
 ||observer^
 ||off^
@@ -956,6 +944,7 @@
 ||oracle^
 ||orange^
 ||organic^
+||orientexpress^
 ||origins^
 ||osaka^
 ||otsuka^
@@ -963,7 +952,9 @@
 ||ovh^
 ||pa^
 ||page^
+||pamperedchef^
 ||panasonic^
+||panerai^
 ||paris^
 ||pars^
 ||partners^
@@ -1102,6 +1093,7 @@
 ||sandvikcoromant^
 ||sanofi^
 ||sap^
+||sapo^
 ||sarl^
 ||sas^
 ||save^
@@ -1163,6 +1155,7 @@
 ||ski^
 ||skin^
 ||sky^
+||skype^
 ||sl^
 ||sling^
 ||sm^
@@ -1182,6 +1175,7 @@
 ||sony^
 ||soy^
 ||space^
+||spiegel^
 ||sport^
 ||spot^
 ||spreadbetting^
@@ -1196,6 +1190,7 @@
 ||starhub^
 ||statebank^
 ||statefarm^
+||statoil^
 ||stc^
 ||stcgroup^
 ||stockholm^
@@ -1241,6 +1236,7 @@
 ||tech^
 ||technology^
 ||tel^
+||telecity^
 ||telefonica^
 ||temasek^
 ||tennis^
@@ -1279,6 +1275,7 @@
 ||town^
 ||toyota^
 ||toys^
+||tp^
 ||tr^
 ||trade^
 ||trading^
@@ -1308,7 +1305,6 @@
 ||uno^
 ||uol^
 ||ups^
-||us^
 ||uy^
 ||uz^
 ||va^
@@ -1334,6 +1330,7 @@
 ||virgin^
 ||visa^
 ||vision^
+||vista^
 ||vistaprint^
 ||viva^
 ||vivo^
@@ -1389,9 +1386,11 @@
 ||xfinity^
 ||xihuan^
 ||xin^
+||xperia^
 ||xxx^
 ||xyz^
 ||yachts^
+||yahoo^
 ||yamaxun^
 ||yandex^
 ||ye^
@@ -1406,6 +1405,8 @@
 ||zappos^
 ||zara^
 ||zero^
+||zip^
+||zippo^
 ||zm^
 ||zone^
 ||zuerich^
