@@ -6,6 +6,7 @@
 !gov
 !us
 !uk
+!es
 
 ||aaa^
 ||aarp^
@@ -407,7 +408,6 @@
 ||er^
 ||ericsson^
 ||erni^
-||es^
 ||esq^
 ||estate^
 ||esurance^
