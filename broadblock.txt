@@ -1,3 +1,5 @@
+/_adslot/
+/_td_api/beacon/
 /1000mercis/
 /12mnkys/
 /1plusx/
@@ -10,10 +12,13 @@
 /4wmarketplace/
 /51yes/
 /6sense/
+/a0o07ort/
 /a1platform/
+/a8c-analytics/
 /a-ads/
 /aaxads/
 /abilicom/
+/ablincoln/
 /abudantia/
 /accelarys/
 /accelerize/
@@ -142,6 +147,7 @@
 /adnow/
 /adnuntius/
 /adnxs/
+/adobeanalytics/
 /adobedtm/
 /adocean/
 /adometry/
@@ -164,6 +170,8 @@
 /adriver/
 /adroll/
 /adrule/
+/ads/
+/ads/scripts/
 /ads1/
 /ads2/
 /ads3/
@@ -185,6 +193,7 @@
 /adshelper/
 /adshow/
 /adshuffle/
+/adsjs/
 /adskeeper/
 /adsnative/
 /adsniper/
@@ -213,6 +222,7 @@
 /adtelligence/
 /adtelligent/
 /adtheorent/
+/ad-time/
 /adtlgc/
 /adtoox/
 /adtrader/
@@ -261,6 +271,7 @@
 /ajcryptominer/
 /ajillion/
 /ajplugins/
+/akam/11/
 /aktyvus/
 /alexametrics/
 /alfasense/
@@ -431,6 +442,7 @@
 /casalemedia/
 /catapultx/
 /cazamba/
+/cdn-cgi/bm/cv/
 /cdn-cgipebag2/
 /cedato/
 /cedexis/
@@ -440,6 +452,7 @@
 /chango/
 /channeladvisor/
 /chartbeat/
+/chartbeatanalytics/
 /chartboost/
 /chasebanklogon/
 /chatrouter/
@@ -482,6 +495,8 @@
 /coincodex/
 /coinhive/
 /coinzilla/
+/collect/
+/collector/
 /colossus/
 /colossusssp/
 /comads/
@@ -492,8 +507,10 @@
 /commander1/
 /communicationads/
 /company-target/
+/components/ad/
 /compricer/
 /comscore/
+/comscore_beacon/
 /comtrack/
 /condenastdigital/
 /conforama/
@@ -511,6 +528,8 @@
 /convertmedia/
 /convertro/
 /convertstar/
+/cookieconsent/
+/cookie-consent/
 /cookiescript/
 /coremetrics/
 /cqcounter/
@@ -526,8 +545,10 @@
 /csgocpu/
 /cuebiq/
 /curiositystream/
+/curveball/ads/
 /cxense/
 /darmowe/
+/data/collect/
 /databerries/
 /datablocks/
 /datafy/
@@ -630,11 +651,13 @@
 /ezakus/
 /ezcybersearch/
 /facetz/
+/failsafe/
 /fastbooking/
 /fastbuild/
 /fastclick/
 /fastly/
 /fattext/
+/fd/ls/
 /ficken/
 /fiducia/
 /financegenerator/
@@ -654,6 +677,7 @@
 /flxone/
 /focalink/
 /forensiq/
+/foresee/
 /fortvision/
 /fospha/
 /freebitco/
@@ -665,6 +689,7 @@
 /fwmrm/
 /fxcm/
 /fyber/
+/g/stats/
 /gameanalytics/
 /gamemine/
 /gamesight/
@@ -687,7 +712,10 @@
 /go2affise/
 /goodeed/
 /good-loop/
+/google_analytics/
+/google_tag/
 /googlead/
+/google-analyticator/
 /google-analytics/
 /googlesyndic/
 /gpaper/
@@ -738,6 +766,7 @@
 /hyperbanner/
 /hypertv/
 /ibillboard/
+/icons/social/
 /id5-sync/
 /iesnare/
 /igaworks/
@@ -745,8 +774,10 @@
 /ignitionone/
 /igodigital/
 /ijento/
+/images/social/
 /im-apps/
 /imasdk/
+/imdbads/js/
 /imedia/
 /imediamax/
 /immedium/
@@ -799,6 +830,7 @@
 /jetpack/
 /joinville/
 /jonsden/
+/jscript/metrics/
 /jsdelivr/
 /jsrdn/
 /juicyads/
@@ -820,6 +852,7 @@
 /keycdn/
 /keymantics/
 /keyversion/
+/ki.js/
 /kijiji/
 /kinetiq/
 /kiosked/
@@ -855,7 +888,9 @@
 /lendingtree/
 /lentainform/
 /letitbefaster/
+/li.lms-analytics/
 /liadm/
+/lib/tracking/
 /lifesight/
 /lifestreet/
 /liftoff/
@@ -881,6 +916,7 @@
 /localstars/
 /localytics/
 /lockerdome/
+/logging/
 /loggly/
 /logicad/
 /longtail/
@@ -888,6 +924,7 @@
 /lotame/
 /lotlinx/
 /lucidmedia/
+/m3d0s1/
 /macromill/
 /madberry/
 /madgic/
@@ -906,6 +943,7 @@
 /marketo/
 /marketscore/
 /markpoint/
+/maropost/
 /mashero/
 /massmotionmedia/
 /matchflow/
@@ -940,6 +978,8 @@
 /merchenta/
 /metapeople/
 /meteora/
+/meter/
+/metrics/
 /metrigo/
 /metrixlab/
 /metropcs/
@@ -995,6 +1035,7 @@
 /mouseflow/
 /mpnewmedia/
 /msadcenter/
+/mscc/
 /msi-aci/
 /mt-technologies/
 /musikhaus/
@@ -1067,6 +1108,7 @@
 /onedigitalad/
 /onescreen/
 /onesoon/
+/onetag/
 /openads/
 /opendsp/
 /openledger/
@@ -1076,6 +1118,7 @@
 /opinionads/
 /opinmind/
 /optdcom/
+/optimizelyjs/
 /optimonk/
 /optomaton/
 /orbitsoft/
@@ -1129,6 +1172,7 @@
 /playdigo/
 /playwire/
 /plista/
+/plugins/mashsharer/
 /plymedia/
 /pntheon/
 /pocketmath/
@@ -1139,9 +1183,11 @@
 /popmarker/
 /poprule/
 /popunder/
+/porpoiseant/
 /postrelease/
 /powerlinks/
 /powster/
+/prebid/
 /prodatafeed/
 /prod-mng-proxy-connext/
 /progsol/
@@ -1153,6 +1199,7 @@
 /propellerads/
 /proquire/
 /prosiebensat/
+/pub/
 /publicis/
 /pubmatic/
 /pubnative/
@@ -1161,6 +1208,7 @@
 /pulsepoint/
 /purposelab/
 /puserving/
+/push-notifications/
 /pymx5/
 /qantas/
 /qinggu/
@@ -1239,6 +1287,7 @@
 /scigineer/
 /scorecardresearch/
 /scribblelive/
+/scripts/analytics/
 /scrutineer/
 /seedtag/
 /seenthis/
@@ -1258,6 +1307,7 @@
 /sextracker/
 /sharethis/
 /sharethrough/
+/sharing_icons/
 /shengen/
 /shinystat/
 /shirtinator/
@@ -1295,9 +1345,12 @@
 /smartline/
 /smartology/
 /smartyads/
+/smetrics.*/b/ss/
 /smetrics/
 /snapupp/
 /sobmag/
+/socialicons/
+/socialize/
 /sociocast/
 /sociomantic/
 /softbank/
@@ -1309,6 +1362,7 @@
 /sonicmoov/
 /sonobi/
 /sophus3/
+/sourcepoint_js_files/
 /sovrn/
 /spacyz/
 /sparkflow/
@@ -1337,6 +1391,7 @@
 /startappservice/
 /starwave/
 /statcounter/
+/static/ads/
 /steelhouse/
 /stickyadstv/
 /storygize/
@@ -1409,6 +1464,7 @@
 /thumblogger/
 /tidafors/
 /timeone/
+/timings/
 /tinkoff/
 /tiscali/
 /toboads/
@@ -1485,6 +1541,7 @@
 /usemax/
 /usllpic/
 /uswitch/
+/v1/ads/
 /valuead/
 /valueclick/
 /valuepotion/
@@ -1524,6 +1581,7 @@
 /visualwebsiteoptimizer/
 /vivaki/
 /vizury/
+/vnpbbfwe/
 /voluumtrk/
 /volvelle/
 /voodoo/
@@ -1565,6 +1623,7 @@
 /wishabi/
 /wizaly/
 /wootag/
+/wp-content/banners/
 /xcheck/
 /xgraph/
 /xiaomi/
