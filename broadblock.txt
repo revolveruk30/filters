@@ -1199,7 +1199,6 @@
 /propellerads/
 /proquire/
 /prosiebensat/
-/pub/
 /publicis/
 /pubmatic/
 /pubnative/
