@@ -48,7 +48,6 @@
 /liadm/
 /lijit/
 /mate1/
-/meter/
 /micpn/
 /ml314/
 /mopub/
