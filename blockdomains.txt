@@ -789,7 +789,6 @@
 ||flightingserviceweurope.cloudapp.net^
 ||flite.com^
 ||fls-eu.amazon.co.uk^
-||fls-na.amazon.com^
 ||fluidsurveys.com^
 ||flux.com^
 ||flxpxl.com^
@@ -1825,8 +1824,6 @@
 ||uhf.microsoft.com^
 ||ui.skype.com^
 ||ulukaris.com^
-||unagi.amazon.com^
-||unagi-na.amazon.com^
 ||unanimis.co.uk^
 ||undertone.com^
 ||unica.com^
