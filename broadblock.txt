@@ -729,7 +729,6 @@
 /alkemics/
 /alphalyr/
 /alphonso/
-/american/
 /antvoice/
 /aperture/
 /applovin/
