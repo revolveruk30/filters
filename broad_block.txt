@@ -331,6 +331,10 @@
 /yousee/
 /zeotap/
 /ziraat/
+/emltrk/
+/g2afse/
+/acxiom/
+/cfjump/
 /snapads/
 /adready/
 /adhaven/
@@ -669,6 +673,8 @@
 /zapp360/
 /zemanta/
 /zergnet/
+/mktoweb/
+/abtasty/
 /moengage/
 /addragon/
 /bidagent/
@@ -991,6 +997,13 @@
 /zentrick/
 /zooroyal/
 /zypmedia/
+/redinuid/
+/evergage/
+/leanplum/
+/mybestdc/
+/leaddyno/
+/srepdata/
+/like2buy/
 /mediavine/
 /adadvisor/
 /automatad/
@@ -1224,6 +1237,12 @@
 /webterren/
 /webtrends/
 /whatrocks/
+/refersion/
+/silveregg/
+/moatpixel/
+/omnitagjs/
+/adsbtrack/
+/lgsmartad/
 /mediaforge/
 /urekamedia/
 /appmetrica/
@@ -1423,6 +1442,9 @@
 /xxxcounter/
 /youboranqs/
 /zoekhelden/
+/infopicked/
+/tapfiliate/
+/lookbookhq/
 /omniconvert/
 /activengage/
 /thunderhead/
@@ -1540,6 +1562,10 @@
 /way2traffic/
 /webcindario/
 /websponsors/
+/exacttarget/
+/offerstrack/
+/sedoparking/
+/adlightning/
 /extremereach/
 /thetradedesk/
 /impactradius/
@@ -1619,6 +1645,9 @@
 /yieldmanager/
 /youcanoptout/
 /zeroredirect/
+/clickfunnels/
+/infusionsoft/
+/actonservice/
 /freshmarketer/
 /indexexchange/
 /perfectmarket/
@@ -1674,6 +1703,9 @@
 /touchcommerce/
 /truememberent/
 /vertriebswerk/
+/siteintercept/
+/quantummetric/
+/firstpromoter/
 /adasiaholdings/
 /scarabresearch/
 /chargeplatform/
