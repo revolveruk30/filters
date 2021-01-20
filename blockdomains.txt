@@ -37,6 +37,7 @@
 ||a.teads.tv.edgekey.net^
 ||a.ucoz.net^
 ||a1.api.bbc.co.uk^
+||amplitude.com^
 ||a1051.d.akamai.net^
 ||a1095.g2.akamai.net^
 ||a1213.g.akamai.net^
