@@ -623,7 +623,6 @@
 ||dap.digitalgov.gov^
 ||dapadobeproxy7498us.azurewebsites.net^
 ||data.cmcore.com^
-||data.cnn.com^
 ||data.econa.com^
 ||data.flurry.com^
 ||data.gosquared.com^
@@ -1063,7 +1062,6 @@
 ||kontextua.com^
 ||korrelate.net^
 ||kr.ixiaa.com^
-||krxd.net^
 ||ktcpxl.com^
 ||kwobj.com^
 ||kyarm.com^
