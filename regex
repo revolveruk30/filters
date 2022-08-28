@@ -33,10 +33,10 @@ Capture group	(example)
 Contents of group 1	\1	
 Contents of group 2	\2	
 Non-capturing group	(?:example)	
-Positive lookahead	"(?=…)	"	
-Positive lookbehind	"(?<=…)	"	
-Negative lookahead	"(?!…)	"	
-Negative lookbehind	"(?<!…)	"	
+Positive lookahead	(?=…)		
+Positive lookbehind	(?<=…)		
+Negative lookahead	(?!…)		
+Negative lookbehind	(?<!…)		
 Character class subtraction	[a-z-[aeiou]]	
 Change file extension	^(.*\.)[^.]+$	\1rar
 Words: Matches 7-letter words with the word 'hay'	(?=\b\w{7}\b)\w*?hay\w*	
