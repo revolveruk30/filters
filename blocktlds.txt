@@ -12,6 +12,7 @@
 !instagr.am / instagram short-urls
 !nyti.ms / new york times short-urls
 !wpo.st / washington post short-urls
+!amzn.to / amazon short-urls
 
 ||aaa^
 ||aarp^
