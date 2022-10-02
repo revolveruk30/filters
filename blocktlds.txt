@@ -4,6 +4,9 @@
 !net
 !org
 !gov
+!co / twitter short-urls
+!it / reddit short-url
+!me / facebook short-url
 
 ||aaa^
 ||aarp^
@@ -267,7 +270,6 @@
 ||clubmed^
 ||cm^
 ||cn^
-||co^
 ||coach^
 ||codes^
 ||coffee^
@@ -620,7 +622,6 @@
 ||ismaili^
 ||ist^
 ||istanbul^
-||it^
 ||itau^
 ||itv^
 ||jaguar^
@@ -766,7 +767,6 @@
 ||mc^
 ||mckinsey^
 ||md^
-||me^
 ||med^
 ||media^
 ||meet^
