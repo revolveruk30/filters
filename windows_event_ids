@@ -1,0 +1,423 @@
+Category	Subcategory	Message Summary	Event ID
+System	Security State Change	Windows is starting up.	4608
+System	Security State Change	Windows is shutting down.	4609
+System	Security System Extension	An authentication package has been loaded by the Local Security Authority.	4610
+System	Security System Extension	A trusted logon process has been registered with the Local Security Authority.	4611
+System	System Integrity	Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.	4612
+System	Security System Extension	A notification package has been loaded by the Security Account Manager.	4614
+System	System Integrity	Invalid use of LPC port.	4615
+System	Security State Change	The system time was changed.	4616
+System	System Integrity	A monitored security event pattern has occurred.	4618
+System	Security State Change	Administrator recovered system from CrashOnAuditFail. Users who are not administrators will now be allowed to log on. Some auditable activity might not have been recorded.	4621
+System	Security System Extension	A security package has been loaded by the Local Security Authority.	4622
+Logon/Logoff	Logon	An account was successfully logged on.	4624
+Logon/Logoff	Logon	An account failed to log on.	4625
+Logon/Logoff	Logon	User/Device claims information.	4626
+Logon/Logoff	Group Membership	Group membership information. 	4627
+Logon/Logoff	Logoff	An account was logged off.	4634
+Logon/Logoff	IPsec Main Mode	%1	4646
+Logon/Logoff	Logoff	User initiated logoff.	4647
+Logon/Logoff	Logon	A logon was attempted using explicit credentials.	4648
+Logon/Logoff	Other Logon/Logoff Events	A replay attack was detected.	4649
+Logon/Logoff	IPsec Main Mode	An IPsec Main Mode security association was established. Extended Mode was not enabled. Certificate authentication was not used.	4650
+Logon/Logoff	IPsec Main Mode	An IPsec Main Mode security association was established. Extended Mode was not enabled. A certificate was used for authentication.	4651
+Logon/Logoff	IPsec Main Mode	An IPsec Main Mode negotiation failed.	4652
+Logon/Logoff	IPsec Main Mode	An IPsec Main Mode negotiation failed.	4653
+Logon/Logoff	IPsec Quick Mode	An IPsec Quick Mode negotiation failed.	4654
+Logon/Logoff	IPsec Main Mode	An IPsec Main Mode security association ended.	4655
+Object Access	Handle Manipulation	A handle to an object was requested.	4656
+Object Access	Registry	A registry value was modified.	4657
+Object Access	Handle Manipulation	The handle to an object was closed.	4658
+Object Access	SAM	A handle to an object was requested with intent to delete.	4659
+Object Access	Kernel	A handle to an object was requested with intent to delete.	4659
+Object Access	SAM	An object was deleted.	4660
+Object Access	Kernel	An object was deleted.	4660
+Object Access	SAM	A handle to an object was requested.	4661
+Object Access	Kernel	A handle to an object was requested.	4661
+DS Access	Directory Service Access	An operation was performed on an object.	4662
+Object Access	SAM	An attempt was made to access an object.	4663
+Object Access	Kernel	An attempt was made to access an object.	4663
+Object Access	File System	An attempt was made to create a hard link.	4664
+Object Access	Application Generated	An attempt was made to create an application client context.	4665
+Object Access	Application Generated	An application attempted an operation:	4666
+Object Access	Application Generated	An application client context was deleted.	4667
+Object Access	Application Generated	An application was initialized.	4668
+Policy Change	Subcategory (special)	Permissions on an object were changed.	4670
+Object Access	Other Object Access Events	An application attempted to access a blocked ordinal through the TBS.	4671
+Privilege Use	Sensitive Privilege Use / Non Sensitive Privilege Use	Special privileges assigned to new logon.	4672
+Privilege Use	Sensitive Privilege Use / Non Sensitive Privilege Use	A privileged service was called.	4673
+Privilege Use	Sensitive Privilege Use / Non Sensitive Privilege Use	An operation was attempted on a privileged object.	4674
+Logon/Logoff	Logon	SIDs were filtered.	4675
+Detailed Tracking	Process Creation	A new process has been created.	4688
+Detailed Tracking	Process Termination	A process has exited.	4689
+Object Access	Handle Manipulation	An attempt was made to duplicate a handle to an object.	4690
+Object Access	Other Object Access Events	Indirect access to an object was requested.	4691
+Detailed Tracking	DPAPI Activity	Backup of data protection master key was attempted.	4692
+Detailed Tracking	DPAPI Activity	Recovery of data protection master key was attempted.	4693
+Detailed Tracking	DPAPI Activity	Protection of auditable protected data was attempted.	4694
+Detailed Tracking	DPAPI Activity	Unprotection of auditable protected data was attempted.	4695
+Detailed Tracking	Process Creation	A primary token was assigned to process.	4696
+System	Security System Extension	A service was installed in the system.	4697
+Object Access	Other Object Access Events	A scheduled task was created.	4698
+Object Access	Other Object Access Events	A scheduled task was deleted.	4699
+Object Access	Other Object Access Events	A scheduled task was enabled.	4700
+Object Access	Other Object Access Events	A scheduled task was disabled.	4701
+Object Access	Other Object Access Events	A scheduled task was updated.	4702
+Policy Change	Authorization Policy Change	A user right was adjusted.	4703
+Policy Change	Authorization Policy Change	A user right was assigned.	4704
+Policy Change	Authorization Policy Change	A user right was removed.	4705
+Policy Change	Authorization Policy Change	A new trust was created to a domain.	4706
+Policy Change	Authorization Policy Change	A trust to a domain was removed.	4707
+Policy Change	Filtering Platform Policy Change	IPsec Services was started.	4709
+Policy Change	Filtering Platform Policy Change	IPsec Services was disabled.	4710
+Policy Change	Filtering Platform Policy Change	"May contain any one of the following: PAStore Engine applied locally cached copy of Active Directory storage IPsec policy on the computer.
+PAStore Engine applied Active Directory storage IPsec policy on the computer.
+PAStore Engine applied local registry storage IPsec policy on the computer.
+PAStore Engine failed to apply locally cached copy of Active Directory storage IPsec policy on the computer.
+PAStore Engine failed to apply Active Directory storage IPsec policy on the computer.
+PAStore Engine failed to apply local registry storage IPsec policy on the computer.
+PAStore Engine failed to apply some rules of the active IPsec policy on the computer.
+PAStore Engine failed to load directory storage IPsec policy on the computer.
+PAStore Engine loaded directory storage IPsec policy on the computer.
+PAStore Engine failed to load local storage IPsec policy on the computer.
+PAStore Engine loaded local storage IPsec policy on the computer.
+PAStore Engine polled for changes to the active IPsec policy and detected no changes."	4711
+Policy Change	Filtering Platform Policy Change	IPsec Services encountered a potentially serious failure.	4712
+Policy Change	Authentication Policy Change	Kerberos policy was changed.	4713
+Policy Change	Authorization Policy Change	Encrypted data recovery policy was changed.	4714
+Policy Change	Audit Policy Change	The audit policy (SACL) on an object was changed.	4715
+Policy Change	Authentication Policy Change	Trusted domain information was modified.	4716
+Policy Change	Authentication Policy Change	System security access was granted to an account.	4717
+Policy Change	Authentication Policy Change	System security access was removed from an account.	4718
+Policy Change	Audit Policy Change	System audit policy was changed.	4719
+Account Management	User Account Management	A user account was created.	4720
+Account Management	User Account Management	A user account was enabled.	4722
+Account Management	User Account Management	An attempt was made to change an account's password.	4723
+Account Management	User Account Management	An attempt was made to reset an account's password.	4724
+Account Management	User Account Management	A user account was disabled.	4725
+Account Management	User Account Management	A user account was deleted.	4726
+Account Management	Security Group Management	A security-enabled global group was created.	4727
+Account Management	Security Group Management	A member was added to a security-enabled global group.	4728
+Account Management	Security Group Management	A member was removed from a security-enabled global group.	4729
+Account Management	Security Group Management	A security-enabled global group was deleted.	4730
+Account Management	Security Group Management	A security-enabled local group was created.	4731
+Account Management	Security Group Management	A member was added to a security-enabled local group.	4732
+Account Management	Security Group Management	A member was removed from a security-enabled local group.	4733
+Account Management	Security Group Management	A security-enabled local group was deleted.	4734
+Account Management	Security Group Management	A security-enabled local group was changed.	4735
+Account Management	Security Group Management	A security-enabled global group was changed.	4737
+Account Management	User Account Management	A user account was changed.	4738
+Policy Change	Authentication Policy Change	Domain Policy was changed.	4739
+Account Management	User Account Management	A user account was locked out.	4740
+Account Management	Computer Account Management	A computer account was changed.	4742
+Account Management	Computer Account Management	A computer account was deleted.	4743
+Account Management	Distribution Group Management	A security-disabled local group was created.	4744
+Account Management	Distribution Group Management	A security-disabled local group was changed.	4745
+Account Management	Distribution Group Management	A member was added to a security-disabled local group.	4746
+Account Management	Distribution Group Management	A member was removed from a security-disabled local group.	4747
+Account Management	Distribution Group Management	A security-disabled local group was deleted.	4748
+Account Management	Distribution Group Management	A security-disabled global group was created.	4749
+Account Management	Distribution Group Management	A security-disabled global group was changed.	4750
+Account Management	Distribution Group Management	A member was added to a security-disabled global group.	4751
+Account Management	Distribution Group Management	A member was removed from a security-disabled global group.	4752
+Account Management	Distribution Group Management	A security-disabled global group was deleted.	4753
+Account Management	Security Group Management	A security-enabled universal group was created.	4754
+Account Management	Security Group Management	A security-enabled universal group was changed.	4755
+Account Management	Security Group Management	A member was added to a security-enabled universal group.	4756
+Account Management	Security Group Management	A member was removed from a security-enabled universal group.	4757
+Account Management	Security Group Management	A security-enabled universal group was deleted.	4758
+Account Management	Distribution Group Management	A security-disabled universal group was created.	4759
+Account Management	Distribution Group Management	A security-disabled universal group was changed.	4760
+Account Management	Distribution Group Management	A member was added to a security-disabled universal group.	4761
+Account Management	Distribution Group Management	A member was removed from a security-disabled universal group.	4762
+Account Management	Security Group Management	A group’s type was changed.	4764
+Account Management	User Account Management	SID History was added to an account.	4765
+Account Management	User Account Management	An attempt to add SID History to an account failed.	4766
+Account Management	User Account Management	A user account was unlocked.	4767
+Account Logon	Kerberos Authentication Service	A Kerberos authentication ticket (TGT) was requested.	4768
+Account Logon	Kerberos Service Ticket Operations	A Kerberos service ticket was requested.	4769
+Account Logon	Kerberos Service Ticket Operations	A Kerberos service ticket was renewed.	4770
+Account Logon	Kerberos Authentication Service	Kerberos pre-authentication failed.	4771
+Account Logon	Kerberos Authentication Service	A Kerberos authentication ticket request failed.	4772
+Account Logon	Kerberos Authentication Service	A Kerberos service ticket request failed.	4773
+Account Logon	Credential Validation	An account was mapped for logon.	4774
+Account Logon	Credential Validation	An account could not be mapped for logon.	4775
+Account Logon	Credential Validation	The domain controller attempted to validate the credentials for an account.	4776
+Account Logon	Credential Validation	The domain controller failed to validate the credentials for an account.	4777
+Logon/Logoff	Other Logon/Logoff Events	A session was reconnected to a Window Station.	4778
+Logon/Logoff	Other Logon/Logoff Events	A session was disconnected from a Window Station.	4779
+Account Management	User Account Management	The ACL was set on accounts which are members of administrators groups.	4780
+Account Management	User Account Management	The name of an account was changed:	4781
+Account Management	Other Account Management Events	The password hash an account was accessed.	4782
+Account Management	Application Group Management	A basic application group was created.	4783
+Account Management	Application Group Management	A basic application group was changed.	4784
+Account Management	Application Group Management	A member was added to a basic application group.	4785
+Account Management	Application Group Management	A member was removed from a basic application group.	4786
+Account Management	Application Group Management	A non-member was added to a basic application group.	4787
+Account Management	Application Group Management	A non-member was removed from a basic application group.	4788
+Account Management	Application Group Management	A basic application group was deleted.	4789
+Account Management	Application Group Management	An LDAP query group was created.	4790
+Account Management	Application Group Management	A basic application group was changed.	4791
+Account Management	Application Group Management	An LDAP query group was deleted.	4792
+Account Management	Other Account Management Events	The Password Policy Checking API was called.	4793
+Account Management	User Account Management	An attempt was made to set the Directory Services Restore Mode.	4794
+Account Management	User Account Management	An attempt was made to query the existence of a blank password for an account.	4797
+Account Management	User Account Management	A user's local group membership was enumerated. 	4798
+Account Management	Security Group Management	A security-enabled local group membership was enumerated.	4799
+Logon/Logoff	Other Logon/Logoff Events	The workstation was locked.	4800
+Logon/Logoff	Other Logon/Logoff Events	The workstation was unlocked.	4801
+Logon/Logoff	Other Logon/Logoff Events	The screen saver was invoked.	4802
+Logon/Logoff	Other Logon/Logoff Events	The screen saver was dismissed.	4803
+System	System Integrity	RPC detected an integrity violation while decrypting an incoming message.	4816
+Policy Change	Audit Policy Change	Auditing settings on an object were changed.	4817
+Object Access	Central Access Policy Staging	Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy	4818
+Policy Change	Other Policy Change Events	Central Access Policies on the machine have been changed.	4819
+Account Logon	Kerberos Authentication Service	A Kerberos Ticket-granting-ticket (TGT) was denied because the device does not meet the access control restrictions.	4820
+Account Logon	Kerberos Service Ticket Operations	A Kerberos service ticket was denied because the user, device, or both does not meet the access control restrictions.	4821
+Account Logon	Credential Validation	NTLM authentication failed because the account was a member of the Protected User group.	4822
+Account Logon	Credential Validation	NTLM authentication failed because access control restrictions are required.	4823
+Account Logon	Kerberos Authentication Service	Kerberos preauthentication by using DES or RC4 failed because the account was a member of the Protected User group.	4824
+Logon/Logoff	Other Logon/Logoff Events	A user was denied the access to Remote Desktop. 	4825
+Policy Change	Other Policy Change Events	Boot Configuration Data loaded.	4826
+Policy Change	Authentication Policy Change	A namespace collision was detected.	4864
+Policy Change	Authentication Policy Change	A trusted forest information entry was added.	4865
+Policy Change	Authentication Policy Change	A trusted forest information entry was removed.	4866
+Policy Change	Authentication Policy Change	A trusted forest information entry was modified.	4867
+Object Access	Certification Services	The certificate manager denied a pending certificate request.	4868
+Object Access	Certification Services	Certificate Services received a resubmitted certificate request.	4869
+Object Access	Certification Services	Certificate Services revoked a certificate.	4870
+Object Access	Certification Services	Certificate Services received a request to publish the certificate revocation list (CRL).	4871
+Object Access	Certification Services	Certificate Services published the certificate revocation list (CRL).	4872
+Object Access	Certification Services	A certificate request extension changed.	4873
+Object Access	Certification Services	One or more certificate request attributes changed.	4874
+Object Access	Certification Services	Certificate Services received a request to shut down.	4875
+Object Access	Certification Services	Certificate Services backup started.	4876
+Object Access	Certification Services	Certificate Services backup completed.	4877
+Object Access	Certification Services	Certificate Services restore started.	4878
+Object Access	Certification Services	Certificate Services restore completed.	4879
+Object Access	Certification Services	Certificate Services started.	4880
+Object Access	Certification Services	Certificate Services stopped.	4881
+Object Access	Certification Services	The security permissions for Certificate Services changed.	4882
+Object Access	Certification Services	Certificate Services retrieved an archived key.	4883
+Object Access	Certification Services	Certificate Services imported a certificate into its database.	4884
+Object Access	Certification Services	The audit filter for Certificate Services changed.	4885
+Object Access	Certification Services	Certificate Services received a certificate request.	4886
+Object Access	Certification Services	Certificate Services approved a certificate request and issued a certificate.	4887
+Object Access	Certification Services	Certificate Services denied a certificate request.	4888
+Object Access	Certification Services	Certificate Services set the status of a certificate request to pending.	4889
+Object Access	Certification Services	The certificate manager settings for Certificate Services changed.	4890
+Object Access	Certification Services	A configuration entry changed in Certificate Services.	4891
+Object Access	Certification Services	A property of Certificate Services changed.	4892
+Object Access	Certification Services	Certificate Services archived a key.	4893
+Object Access	Certification Services	Certificate Services imported and archived a key.	4894
+Object Access	Certification Services	Certificate Services published the CA certificate to Active Directory Domain Services.	4895
+Object Access	Certification Services	One or more rows have been deleted from the certificate database.	4896
+Object Access	Certification Services	Role separation enabled:	4897
+Object Access	Certification Services	Certificate Services loaded a template.	4898
+Object Access	Certification Services	A Certificate Services template was updated.	4899
+Object Access	Certification Services	Certificate Services template security was updated.	4900
+Policy Change	Audit Policy Change	The Per-user audit policy table was created.	4902
+Policy Change	Audit Policy Change	An attempt was made to register a security event source.	4904
+Policy Change	Audit Policy Change	An attempt was made to unregister a security event source.	4905
+Policy Change	Audit Policy Change	The CrashOnAuditFail value has changed.	4906
+Policy Change	Audit Policy Change	Auditing settings on object were changed.	4907
+Policy Change	Audit Policy Change	Special Groups Logon table modified.	4908
+Policy Change	Other Policy Change Events	The local policy settings for the TBS were changed.	4909
+Policy Change	Other Policy Change Events	The group policy settings for the TBS were changed.	4910
+Policy Change	Authorization Policy Change	Resource attributes of the object were changed.	4911
+Policy Change	Audit Policy Change	Per User Audit Policy was changed.	4912
+Policy Change	Authorization Policy Change	Central Access Policy on the object was changed.	4913
+DS Access	Detailed Directory Service Replication	An Active Directory replica source naming context was established.	4928
+DS Access	Detailed Directory Service Replication	An Active Directory replica source naming context was removed.	4929
+DS Access	Detailed Directory Service Replication	An Active Directory replica source naming context was modified.	4930
+DS Access	Detailed Directory Service Replication	An Active Directory replica destination naming context was modified.	4931
+DS Access	Directory Service Replication	Synchronization of a replica of an Active Directory naming context has begun.	4932
+DS Access	Directory Service Replication	Synchronization of a replica of an Active Directory naming context has ended.	4933
+DS Access	Detailed Directory Service Replication	Attributes of an Active Directory object were replicated.	4934
+DS Access	Detailed Directory Service Replication	Replication failure begins.	4935
+DS Access	Detailed Directory Service Replication	Replication failure ends.	4936
+DS Access	Detailed Directory Service Replication	A lingering object was removed from a replica.	4937
+Policy Change	MPSSVC Rule-Level Policy Change	The following policy was active when the Windows Firewall started.	4944
+Policy Change	MPSSVC Rule-Level Policy Change	A rule was listed when the Windows Firewall started.	4945
+Policy Change	MPSSVC Rule-Level Policy Change	A change has been made to Windows Firewall exception list. A rule was added.	4946
+Policy Change	MPSSVC Rule-Level Policy Change	A change has been made to Windows Firewall exception list. A rule was modified.	4947
+Policy Change	MPSSVC Rule-Level Policy Change	A change has been made to Windows Firewall exception list. A rule was deleted.	4948
+Policy Change	MPSSVC Rule-Level Policy Change	Windows Firewall settings were restored to the default values.	4949
+Policy Change	MPSSVC Rule-Level Policy Change	A Windows Firewall setting has changed.	4950
+Policy Change	MPSSVC Rule-Level Policy Change	A rule has been ignored because its major version number was not recognized by Windows Firewall.	4951
+Policy Change	MPSSVC Rule-Level Policy Change	Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall. The other parts of the rule will be enforced.	4952
+Policy Change	MPSSVC Rule-Level Policy Change	A rule has been ignored by Windows Firewall because it could not parse the rule.	4953
+Policy Change	MPSSVC Rule-Level Policy Change	Windows Firewall Group Policy settings have changed. The new settings have been applied.	4954
+Policy Change	MPSSVC Rule-Level Policy Change	Windows Firewall has changed the active profile.	4956
+Policy Change	MPSSVC Rule-Level Policy Change	Windows Firewall did not apply the following rule:	4957
+Policy Change	MPSSVC Rule-Level Policy Change	Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer:	4958
+System	IPsec Driver	IPsec dropped an inbound packet that failed an integrity check. If this problem persists, it could indicate a network issue or that packets are being modified in transit to this computer. Verify that the packets sent from the remote computer are the same as those received by this computer. This error might also indicate interoperability problems with other IPsec implementations.	4960
+System	IPsec Driver	IPsec dropped an inbound packet that failed a replay check. If this problem persists, it could indicate a replay attack against this computer.	4961
+System	IPsec Driver	IPsec dropped an inbound packet that failed a replay check. The inbound packet had too low a sequence number to ensure it was not a replay.	4962
+System	IPsec Driver	IPsec dropped an inbound clear text packet that should have been secured. This is usually due to the remote computer changing its IPsec policy without informing this computer. This could also be a spoofing attack attempt.	4963
+Logon/Logoff	Special Logon	Special groups have been assigned to a new logon.	4964
+System	IPsec Driver	IPsec received a packet from a remote computer with an incorrect Security Parameter Index (SPI). This is usually caused by malfunctioning hardware that is corrupting packets. If these errors persist, verify that the packets sent from the remote computer are the same as those received by this computer. This error may also indicate interoperability problems with other IPsec implementations. In that case, if connectivity is not impeded, then these events can be ignored.	4965
+Logon/Logoff	IPsec Main Mode	During Main Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.	4976
+Logon/Logoff	IPsec Quick Mode	During Quick Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.	4977
+Logon/Logoff	IPsec Extended Mode	During Extended Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.	4978
+Logon/Logoff	IPsec Extended Mode	IPsec Main Mode and Extended Mode security associations were established.	4979
+Logon/Logoff	IPsec Extended Mode	IPsec Main Mode and Extended Mode security associations were established.	4980
+Logon/Logoff	IPsec Extended Mode	IPsec Main Mode and Extended Mode security associations were established.	4981
+Logon/Logoff	IPsec Extended Mode	IPsec Main Mode and Extended Mode security associations were established.	4982
+Logon/Logoff	IPsec Extended Mode	An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.	4983
+Logon/Logoff	IPsec Extended Mode	An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.	4984
+Object Access	File System	The state of a transaction has changed.	4985
+System	Other System Events	The Windows Firewall Service has started successfully.	5024
+System	Other System Events	The Windows Firewall Service has been stopped.	5025
+System	Other System Events	The Windows Firewall Service was unable to retrieve the security policy from the local storage. The service will continue enforcing the current policy.	5027
+System	Other System Events	The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.	5028
+System	Other System Events	The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy.	5029
+System	Other System Events	The Windows Firewall Service failed to start.	5030
+Object Access	Filtering Platform Connection	The Windows Firewall Service blocked an application from accepting incoming connections on the network.	5031
+System	Other System Events	Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.	5032
+System	Other System Events	The Windows Firewall Driver has started successfully.	5033
+System	Other System Events	The Windows Firewall Driver has been stopped.	5034
+System	Other System Events	The Windows Firewall Driver failed to start.	5035
+System	Other System Events	The Windows Firewall Driver detected critical runtime error. Terminating.	5037
+System	System Integrity	Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.	5038
+Object Access	Registry	A registry key was virtualized.	5039
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. An Authentication Set was added.	5040
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. An Authentication Set was modified.	5041
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. An Authentication Set was deleted.	5042
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Connection Security Rule was added.	5043
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Connection Security Rule was modified.	5044
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Connection Security Rule was deleted.	5045
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Crypto Set was added.	5046
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Crypto Set was modified.	5047
+Policy Change	Filtering Platform Policy Change	A change has been made to IPsec settings. A Crypto Set was deleted.	5048
+Logon/Logoff	IPsec Main Mode	An IPsec Security Association was deleted.	5049
+System	Other System Events	An attempt to programmatically disable the Windows Firewall was rejected because this API is not supported on Windows Vista.	5050
+Object Access	File System	A file was virtualized.	5051
+System	System Integrity	A cryptographic self test was performed.	5056
+System	System Integrity	A cryptographic primitive operation failed.	5057
+System	Other System Events	Key file operation.	5058
+System	Other System Events	Key migration operation.	5059
+System	System Integrity	Verification operation failed.	5060
+System	System Integrity	Cryptographic operation.	5061
+System	System Integrity	A kernel-mode cryptographic self test was performed.	5062
+Policy Change	Other Policy Change Events	A cryptographic provider operation was attempted.	5063
+Policy Change	Other Policy Change Events	A cryptographic context operation was attempted.	5064
+Policy Change	Other Policy Change Events	A cryptographic context modification was attempted.	5065
+Policy Change	Other Policy Change Events	A cryptographic function operation was attempted.	5066
+Policy Change	Other Policy Change Events	A cryptographic function modification was attempted.	5067
+Policy Change	Other Policy Change Events	A cryptographic function provider operation was attempted.	5068
+Policy Change	Other Policy Change Events	A cryptographic function property operation was attempted.	5069
+Policy Change	Other Policy Change Events	A cryptographic function property modification was attempted.	5070
+System	Other System Events	Key access denied by Microsoft key distribution service.	5071
+Object Access	Certification Services	OCSP Responder Service Started.	5120
+Object Access	Certification Services	OCSP Responder Service Stopped.	5121
+Object Access	Certification Services	A Configuration entry changed in the OCSP Responder Service.	5122
+Object Access	Certification Services	A configuration entry changed in the OCSP Responder Service.	5123
+Object Access	Certification Services	A security setting was updated on OCSP Responder Service.	5124
+Object Access	Certification Services	A request was submitted to OCSP Responder Service.	5125
+Object Access	Certification Services	Signing Certificate was automatically updated by the OCSP Responder Service.	5126
+Object Access	Certification Services	The OCSP Revocation Provider successfully updated the revocation information.	5127
+DS Access	Directory Service Changes	A directory service object was modified.	5136
+DS Access	Directory Service Changes	A directory service object was created.	5137
+DS Access	Directory Service Changes	A directory service object was undeleted.	5138
+DS Access	Directory Service Changes	A directory service object was moved.	5139
+Object Access	File Share	A network share object was accessed.	5140
+DS Access	Directory Service Changes	A directory service object was deleted.	5141
+Object Access	File Share	A network share object was added.	5142
+Object Access	File Share	A network share object was modified.	5143
+Object Access	File Share	A network share object was deleted.	5144
+Object Access	Detailed File Share	A network share object was checked to see whether the client can be granted desired access.	5145
+Object Access	Filtering Platform Packet Drop 	The Windows Filtering Platform has blocked a packet.	5146
+Object Access	Filtering Platform Packet Drop 	A more restrictive Windows Filtering Platform filter has blocked a packet.	5147
+Object Access	Other Object Access Events	The Windows Filtering Platform has detected a DoS attack and entered a defensive mode; packets associated with this attack will be discarded.	5148
+Object Access	Other Object Access Events	The DoS attack has subsided and normal processing is being resumed.	5149
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has blocked a packet.	5150
+Object Access	Filtering Platform Connection	A more restrictive Windows Filtering Platform filter has blocked a packet.	5151
+Object Access	Filtering Platform Packet Drop 	The Windows Filtering Platform blocked a packet.	5152
+Object Access	Filtering Platform Packet Drop 	A more restrictive Windows Filtering Platform filter has blocked a packet.	5153
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.	5154
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.	5155
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has allowed a connection.	5156
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has blocked a connection.	5157
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has permitted a bind to a local port.	5158
+Object Access	Filtering Platform Connection	The Windows Filtering Platform has blocked a bind to a local port.	5159
+Object Access	File Share	Spn check for SMB/SMB2 failed.	5168
+DS Access	Directory Service Access	A directory service object was modified.     	5169
+Account Management	User Account Management	Credential Manager credentials were backed up.	5376
+Account Management	User Account Management	Credential Manager credentials were restored from a backup.	5377
+Logon/Logoff	Other Logon/Logoff Events	The requested credentials delegation was disallowed by policy.	5378
+Policy Change	Filtering Platform Policy Change	The following callout was present when the Windows Filtering Platform Base Filtering Engine started.	5440
+Policy Change	Filtering Platform Policy Change	The following filter was present when the Windows Filtering Platform Base Filtering Engine started.	5441
+Policy Change	Filtering Platform Policy Change	The following provider was present when the Windows Filtering Platform Base Filtering Engine started.	5442
+Policy Change	Filtering Platform Policy Change	The following provider context was present when the Windows Filtering Platform Base Filtering Engine started.	5443
+Policy Change	Filtering Platform Policy Change	The following sub-layer was present when the Windows Filtering Platform Base Filtering Engine started.	5444
+Policy Change	Filtering Platform Policy Change	A Windows Filtering Platform callout has been changed.	5446
+Policy Change	Other Policy Change Events	A Windows Filtering Platform filter has been changed.	5447
+Policy Change	Filtering Platform Policy Change	A Windows Filtering Platform provider has been changed.	5448
+Policy Change	Filtering Platform Policy Change	A Windows Filtering Platform provider context has been changed.	5449
+Policy Change	Filtering Platform Policy Change	A Windows Filtering Platform sub-layer has been changed.	5450
+Logon/Logoff	IPsec Quick Mode	An IPsec Quick Mode security association was established.	5451
+Logon/Logoff	IPsec Quick Mode	An IPsec Quick Mode security association ended.	5452
+Logon/Logoff	IPsec Main Mode	An IPsec negotiation with a remote computer failed because the IKE and AuthIP IPsec Keying Modules (IKEEXT) service is not started.	5453
+Policy Change	Filtering Platform Policy Change	PAStore Engine applied Active Directory storage IPsec policy on the computer.	5456
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to apply Active Directory storage IPsec policy on the computer.	5457
+Policy Change	Filtering Platform Policy Change	PAStore Engine applied locally cached copy of Active Directory storage IPsec policy on the computer.	5458
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to apply locally cached copy of Active Directory storage IPsec policy on the computer.	5459
+Policy Change	Filtering Platform Policy Change	PAStore Engine applied local registry storage IPsec policy on the computer.	5460
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to apply local registry storage IPsec policy on the computer.	5461
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to apply some rules of the active IPsec policy on the computer. Use the IP Security Monitor snap-in to diagnose the problem.	5462
+Policy Change	Filtering Platform Policy Change	PAStore Engine polled for changes to the active IPsec policy and detected no changes.	5463
+Policy Change	Filtering Platform Policy Change	PAStore Engine polled for changes to the active IPsec policy, detected changes, and applied them to IPsec Services.	5464
+Policy Change	Filtering Platform Policy Change	PAStore Engine received a control for forced reloading of IPsec policy and processed the control successfully.	5465
+Policy Change	Filtering Platform Policy Change	PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory cannot be reached, and will use the cached copy of the Active Directory IPsec policy instead. Any changes made to the Active Directory IPsec policy since the last poll could not be applied.	5466
+Policy Change	Filtering Platform Policy Change	PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, and found no changes to the policy. The cached copy of the Active Directory IPsec policy is no longer being used.	5467
+Policy Change	Filtering Platform Policy Change	PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, found changes to the policy, and applied those changes. The cached copy of the Active Directory IPsec policy is no longer being used.	5468
+Policy Change	Filtering Platform Policy Change	PAStore Engine loaded local storage IPsec policy on the computer.	5471
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to load local storage IPsec policy on the computer.	5472
+Policy Change	Filtering Platform Policy Change	PAStore Engine loaded directory storage IPsec policy on the computer.	5473
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to load directory storage IPsec policy on the computer.	5474
+Policy Change	Filtering Platform Policy Change	PAStore Engine failed to add quick mode filter.	5477
+System	IPsec Driver	IPsec Services has started successfully.	5478
+System	IPsec Driver	IPsec Services has been shut down successfully. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.	5479
+System	IPsec Driver	IPsec Services failed to get the complete list of network interfaces on the computer. This poses a potential security risk because some of the network interfaces may not get the protection provided by the applied IPsec filters. Use the IP Security Monitor snap-in to diagnose the problem.	5480
+System	IPsec Driver	IPsec Services failed to initialize RPC server. IPsec Services could not be started.	5483
+System	IPsec Driver	IPsec Services has experienced a critical failure and has been shut down. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.	5484
+System	IPsec Driver	IPsec Services failed to process some IPsec filters on a plug-and-play event for network interfaces. This poses a potential security risk because some of the network interfaces may not get the protection provided by the applied IPsec filters. Use the IP Security Monitor snap-in to diagnose the problem.	5485
+Logon/Logoff	Other Logon/Logoff Events	A request was made to authenticate to a wireless network.	5632
+Logon/Logoff	Other Logon/Logoff Events	A request was made to authenticate to a wired network.	5633
+Detailed Tracking	RPC Events	A Remote Procedure Call (RPC) was attempted.	5712
+Object Access	Other Object Access Events	An object in the COM+ Catalog was modified.	5888
+Object Access	Other Object Access Events	An object was deleted from the COM+ Catalog.	5889
+Object Access	Other Object Access Events	An object was added to the COM+ Catalog.	5890
+Policy Change	Other Policy Change Events	Security policy in the group policy objects has been applied successfully.	6144
+Policy Change	Other Policy Change Events	One or more errors occurred while processing security policy in the group policy objects.	6145
+Logon/Logoff	Network Policy Server	Network Policy Server granted access to a user.	6272
+Logon/Logoff	Network Policy Server	Network Policy Server denied access to a user.	6273
+Logon/Logoff	Network Policy Server	Network Policy Server discarded the request for a user.	6274
+Logon/Logoff	Network Policy Server	Network Policy Server discarded the accounting request for a user.	6275
+Logon/Logoff	Network Policy Server	Network Policy Server quarantined a user.	6276
+Logon/Logoff	Network Policy Server	Network Policy Server granted access to a user but put it on probation because the host did not meet the defined health policy.	6277
+Logon/Logoff	Network Policy Server	Network Policy Server granted full access to a user because the host met the defined health policy.	6278
+Logon/Logoff	Network Policy Server	Network Policy Server locked the user account due to repeated failed authentication attempts.	6279
+Logon/Logoff	Network Policy Server	Network Policy Server unlocked the user account.	6280
+System	System Integrity	Code Integrity determined that the page hashes of an image file are not valid. The file could be improperly signed without page hashes or corrupt due to unauthorized modification. The invalid hashes could indicate a potential disk device error	6281
+System	Other System Events	BranchCache: Received an incorrectly formatted response while discovering availability of content. 	6400
+System	Other System Events	BranchCache: Received invalid data from a peer. Data discarded. 	6401
+System	Other System Events	BranchCache: The message to the hosted cache offering it data is incorrectly formatted. 	6402
+System	Other System Events	BranchCache: The hosted cache sent an incorrectly formatted response to the client.	6403
+System	Other System Events	BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate. 	6404
+System	Other System Events	BranchCache: %2 instance(s) of event id %1 occurred.	6405
+System	Other System Events	%1 registered to Windows Firewall to control filtering for the following: %2	6406
+System	Other System Events	1%	6407
+System	Other System Events	Registered product %1 failed and Windows Firewall is now controlling the filtering for %2	6408
+System	Other System Events	BranchCache: A service connection point object could not be parsed.	6409
+System	System Integrity	Code integrity determined that a file does not meet the security requirements to load into a process.	6410
+System	Plug and Play Events	A new external device was recognized by the System	6416
+System	System Integrity	The FIPS mode crypto selftests succeeded.	6417
+System	System Integrity	The FIPS mode crypto selftests failed.	6418
+System	Plug and Play Events	A request was made to disable a device	6419
+System	Plug and Play Events	A device was disabled.	6420
+System	Plug and Play Events	A request was made to enable a device.	6421
+System	Plug and Play Events	A device was enabled.	6422
+System	Plug and Play Events	The installation of this device is forbidden by system policy	6423
+System	Plug and Play Events	The installation of this device was allowed, after having previously been forbidden by policy.	6424
