@@ -1,0 +1,127 @@
+﻿Authors,Title,Year
+"Dong, Feng; Wang, Liu; Nie, Xu; Shao, Fei; Wang, Haoyu; Li, Ding; Luo, Xiapu; Xiao, Xusheng",DISTDET: A Cost-Effective Distributed Cyber Threat Detection System,2023
+"Herley, Cormac",Automated Detection of Automated Trafﬁc,2022
+"Seyyar, Yunus Emre; Yavuz, Ali Gokhan; Unver, Halil Murat",An Attack Detection Framework Based on BERT and Deep Learning,2022
+"Sabir, Bushra; Ullah, Faheem; Babar, M. Ali; Gaire, Raj",Machine Learning for Detecting Data Exfiltration: A Review,2022
+"Moussaileb, Routa; Cuppens, Nora; Lanet, Jean-Louis; Bouder, Hélène Le",A Survey on Windows-based Ransomware Taxonomy and Detection Mechanisms,2022
+"Luo, Yuan; Xiao, Ya; Cheng, Long; Peng, Guojun; Yao, Danfeng (Daphne)",Deep Learning-based Anomaly Detection in Cyber-physical Systems: Progress and Opportunities,2022
+"Anjum, Md Monowar; Iqbal, Shahrear; Hamelin, Benoit",ANUBIS: A Provenance Graph-Based Framework for Advanced Persistent Threat Detection,2022
+"Li, Liqun; Zhang, Xu; Zhao, Xin; Zhang, Hongyu; Kang, Yu; Zhao, Pu; Qiao, Bo; He, Shilin; Lee, Pochian; Sun, Jeffrey; Gao, Feng; Yang, Li; Lin, Qingwei; Rajmohan, Saravanakumar; Xu, Zhangwei; Zhang, Dongmei",Fighting the Fog of War: Automated Incident Detection for Cloud Systems,2021
+"Sun, Xiaoshuang; Wang, Yu; Shi, Zengkai",Insider Threat Detection Using An Unsupervised Learning Method: COPOD,2021
+"Ndichu, Samuel; Ban, Tao; Takahashi, Takeshi; Inoue, Daisuke",A Machine Learning Approach to Detection of Critical Alerts from Imbalanced Multi-Appliance Threat Alert Logs,2021
+"Zhang, Kai; Jiang, Yushan; Seversky, Lee; Xu, Chengtao; Liu, Dahai; Song, Houbing",Federated Variational Learning for Anomaly Detection in Multivariate Time Series,2021
+"Qu, Xiaofei; Yang, Lin; Guo, Kai; Pan, Zhisong; Feng, Tao; Ren, Shuangyin; Sun, Meng",Entropy-Defined Direct Batch Growing Hierarchical Self-Organizing Mapping for Efficient Network Anomaly Detection,2021
+"King, James; Bendiab, Gueltoum; Savage, Nick; Shiaeles, Stavros",Data Exfiltration: Methods and Detection Countermeasures,2021
+"Otoum, Safa; Kantarci, Burak; Mouftah, Hussein",A Comparative Study of AI-Based Intrusion Detection Techniques in Critical Infrastructures,2021
+"Wilkens, Florian; Ortmann, Felix; Haas, Steffen; Vallentin, Matthias; Fischer, Mathias",Multi-Stage Attack Detection via Kill Chain State Machines,2021
+"Zhu, Shixiang; Yuchi, Henry Shaowu; Xie, Yao",Adversarial Anomaly Detection for Marked Spatio-Temporal Streaming Data,2020
+"Raj, Chitranshu; Khular, Lavanya; Raj, Gaurav",Clustering Based Incident Handling For Anomaly Detection in Cloud Infrastructures,2020
+"Karaçay, Leyli; Savaş, Erkay; Alptekin, Halit",Intrusion Detection Over Encrypted Network Data,2020
+"Musleh, Ahmed S.; Chen, Guo; Dong, Zhao Yang",A Survey on the Detection Algorithms for False Data Injection Attacks in Smart Grids,2020
+"Enigo, V.S. Felix; Ganesh, K Tarun; Raj, N N Vishal; Sandeep, D",Hybrid Intrusion Detection System for Detecting New Attacks Using Machine Learning,2020
+"Alsowail, Rakan A.; Al-Shehari, Taher",Empirical Detection Techniques of Insider Threat Incidents,2020
+"Dmitry, Dik; Elena, Polyakova; Anna, Chelovechkova; Tatiana, Zmyzgova; Elena, Ponomareva",Approaches to Anomaly Detection in Web Application Intrusion Detection Systems,2020
+"Brandao, Andre; Georgieva, Petia",Log Files Analysis For Network Intrusion Detection,2020
+"Aslam, Muhammad; Ye, Dengpan; Hanif, Muhammad; Asad, Muhammad",Adaptive Machine learning: A Framework for Active Malware Detection,2020
+"Ali, Arshid; Shaukat, Shahtaj; Tayyab, Muhammad; Khan, Muazzam A; Khan, Jan Sher; Arshad; Ahmad, Jawad",Network Intrusion Detection Leveraging Machine Learning and Feature Selection,2020
+"Wash, Rick",How Experts Detect Phishing Scam Emails,2020
+"Sun, Ying; Wang, Wenjun; Wu, Nannan; Yu, Wei; Chen, Xue",Anomaly Subgraph Detection with Feature Transfer,2020
+"Shin, Hyejin; Shim, WooChul; Moon, Jiin; Seo, Jae Woo; Lee, Sol; Hwang, Yong Ho",Cybersecurity Event Detection with New and Re-emerging Words,2020
+"Chalé, Marc; Bastian, Nathaniel D.; Weir, Jeffery",Algorithm selection framework for cyber attack detection,2020
+"Kuchar, Karel; Fujdiak, Radek; Blazek, Petr; Martinasek, Zdenek; Holasova, Eva",Simplified Method for Fast and Efficient Incident Detection in Industrial Networks,2020
+"Shumailov, Ilia; Zhao, Yiren; Mullins, Robert; Anderson, Ross",Towards Certifiable Adversarial Sample Detection,2020
+"Panum, Thomas Kobber; Hageman, Kaspar; Hansen, René Rydhof; Pedersen, Jens Myrup",Towards Adversarial Phishing Detection,2020
+"Cidon, Asaf; Gavish, Lior; Bleier, Itay; Korshun, Nadia; Schweighauser, Marco; Tsitkin, Alexey",High Precision Detection of Business Email Compromise,2019
+"Sangher, Kanti Singh; Singh, Archana",A Systematic Review – Intrusion Detection Algorithms Optimisation for Network Forensic Analysis and Investigation,2019
+"Ji, Taoran; Zhang, Xuchao; Self, Nathan; Fu, Kaiqun; Lu, Chang-Tien; Ramakrishnan, Naren",Feature driven learning framework for cybersecurity event detection,2019
+"Husák, Martin; Kašpar, Jaroslav",AIDA Framework: Real-Time Correlation and Prediction of Intrusion Detection Alerts,2019
+"Haas, Steffen; Fischer, Mathias",On the alert correlation process for the detection of multi-step attacks and a graph-based realization,2019
+"Ramaki, Ali Ahmadian; Rasoolzadegan, Abbas; Bafghi, Abbas Ghaemi",A Systematic Mapping Study on Intrusion Alert Analysis in Intrusion Detection Systems,2019
+"Lu, Jiuming; Wong, Raymond K.",Insider Threat Detection with Long Short-Term Memory,2019
+"Kurogome, Yuma; Otsuki, Yuto; Kawakoya, Yuhei; Iwamura, Makoto; Hayashi, Syogo; Mori, Tatsuya; Sen, Koushik",EIGER: automated IOC generation for accurate and interpretable endpoint malware detection,2019
+"Ji, Taoran; Zhang, Xuchao; Self, Nathan; Fu, Kaiqun; Lu, Chang-Tien; Ramakrishnan, Naren",Feature driven learning framework for cybersecurity event detection,2019
+"He, Wenhao; Li, Hongjiao; Li, Jinguo",Ensemble Feature Selection for Improving Intrusion Detection Classification Accuracy,2019
+"Capobianco, Frank; George, Rahul; Huang, Kaiming; Jaeger, Trent; Krishnamurthy, Srikanth; Qian, Zhiyun; Payer, Mathias; Yu, Paul",Employing attack graphs for intrusion detection,2019
+"Amin, Mohammad Ruhul; Garg, Pranav; Coskun, Baris",CADENCE: Conditional Anomaly Detection for Events Using Noise-Contrastive Estimation,2019
+"Liu, Ming; Xue, Zhi; Xu, Xianghua; Zhong, Changmin; Chen, Jinjun",Host-Based Intrusion Detection System with System Calls: Review and Future Trends,2019
+"Pokharel, Prabhat; Sigdel, Sandeep; Pokhrel, Roshan; Joshi, Basanta",Time Series Based Pattern Recognition for Anomaly Detection from System Audit Logs,2019
+"Siddiqui, Md Amran; Fern, Alan; Dietterich, Thomas G.; Wong, Weng-Keen",Sequential Feature Explanations for Anomaly Detection,2019
+"Wu, Shuning; Fulton, Joel; Liu, Ningwei; Feng, Charles; Zhang, Ligang",Risky Host Detection with Bias Reduced Semi-Supervised Learning,2019
+"Eke, Hope Nkiruka; Petrovski, Andrei; Ahriz, Hatem",The use of machine learning algorithms for detecting advanced persistent threats,2019
+"Arnaldo, Ignacio; Veeramachaneni, Kalyan","The Holy Grail of ""Systems for Machine Learning"": Teaming humans and machine learning for detecting cyber threats",2019
+"Kuzuno, Hiroki; Otsuka, Shintaro",Early Detection of Network Incident Using Open Security Information,2018
+"Kono, Kento; Phomkeona, Sanouphab; Okamura, Koji",An Unknown Malware Detection Using Execution Registry Access,2018
+"Fraunholz, Daniel; Krohmer, Daniel; Pohl, Frederic; Schotten, Hans Dieter",On the Detection and Handling of Security Incidents and Perimeter Breaches - A Modular and Flexible Honeytoken based Framework,2018
+"Heigl, Michael; Doerr, Laurin; Almaini, Amar; Fiala, Dalibor; Schram, Martin",Incident Reaction Based on Intrusion Detections’ Alert Analysis,2018
+"Parameshwarappa, Pooja; Chen, Zhiyuan; Gangopadhyay, Aryya",Analyzing attack strategies against rule-based intrusion detection systems,2018
+"Oprea, Alina; Li, Zhou; Norris, Robin; Bowers, Kevin",MADE: Security Analytics for Enterprise Threat Detection,2018
+"Haas, Steffen; Fischer, Mathias",GAC: graph-based alert correlation for the detection of distributed multi-step attacks,2018
+"Mac, Hieu; Truong, Dung; Nguyen, Lam; Nguyen, Hoa; Tran, Hai Anh; Tran, Duc",Detecting Attacks on Web Applications using Autoencoder,2018
+"Angelini, Marco; Bonomi, Silvia; Borzi, Emanuele; Pozzo, Antonella Del; Lenti, Simone; Santucci, Giuseppe",An Attack Graph-based On-line Multi-step Attack Detector,2018
+"Han, Xueyuan; Pasquier, Thomas; Seltzer, Margo",Provenance-based Intrusion Detection: Opportunities and Challenges,2018
+"Kotani, Gaku; Sekiya, Yuji",Unsupervised Scanning Behavior Detection Based on Distribution of Network Traffic Features Using Robust Autoencoders,2018
+"Jin, Chenglu; Valizadeh, Saeed; van Dijk, Marten",Snapshotter: Lightweight intrusion detection and prevention system for industrial control systems,2018
+"Viet, Hung Nguyen; Van, Quan Nguyen; Trang, Linh Le Thi; Nathan, Shone",Using Deep Learning Model for Network Scanning Detection,2018
+"Akinrolabu, Olusola; Agrafiotis, Ioannis; Erola, Arnau",The challenge of detecting sophisticated attacks: Insights from SOC Analysts,2018
+"Gao, Peng; Xiao, Xusheng; Li, Ding; Li, Zhichun; Jee, Kangkook; Wu, Zhenyu; Kim, Chung Hwan; Kulkarni, Sanjeev R; Mittal, Prateek",SAQL: A Stream-based Query System for Real-Time Abnormal System Behavior Detection,2018
+"Yoshida, Naoki; Ata, Shingo; Nakayama, Hiroki; Hayashi, Tsunemasa",Automation of Network Operations by Cooperation between Anomaly Detections and Operation Logs,2017
+"Sharma, Pradeep Kumar; Gupta, Aman Kumar; Chakraborty, Debraj; Mondal, Pritam Kumar; Banerjee, Santu; Chakraborty, Kumardeep; Dey, Drik; Chakraborty, Rounak; Das, Debangshu; Ghoshal, Tuhin; Sinha, Anirban; Mondal, Souvik; Pal, Soumyadeep; Sharma, Rahul; Gorai, Shreyash; Roy, Suvankar; Das, Bhaswat Jyoti; Dey, Aniket; Sarker, Siddhartha; Saha, Sourav; Poddar, Rohan; Saha, Nabanit; Dubey, Saurav; Singh, Rohan; Das, Surajit; Hazra, Debanik; Das, Saikat",A brief study of intrusion detection techniques to overcome cyber attacks,2017
+"Harang, Richard; Kott, Alexander",Burstiness of Intrusion Detection Process: Empirical Evidence and a Modeling Approach,2017
+"Kongsgård, Kyrre W.; Nordbotten, Nils A.; Mancini, Federico; Engelstad, Paal E.",An Internal/Insider Threat Score for Data Loss Prevention and Detection,2017
+"Wurzenberger, Markus; Skopik, Florian; Landauer, Max; Greitbauer, Philipp; Fiedler, Roman; Kastner, Wolfgang",Incremental Clustering for Semi-Supervised Anomaly Detection applied on Log Data,2017
+"Umer, Muhammad Azmi; Mathur, Aditya; Junejo, Khurum Nazir; Adepu, Sridhar",Integrating Design and Data Centric Approaches to Generate Invariants for Distributed Attack Detection,2017
+"Tian, Yifan; Wang, Jiabao; Zhou, Zhenji; Zhou, Shengli",CNN-Webshell: Malicious Web Shell Detection with Convolutional Neural Network,2017
+"Siffer, Alban; Fouque, Pierre-Alain; Termier, Alexandre; Largouet, Christine",Anomaly Detection in Streams with Extreme Value Theory,2017
+"Siadati, Hossein; Memon, Nasir",Detecting Structurally Anomalous Logins Within Enterprise Networks,2017
+"Moriano, Pablo; Pendleton, Jared; Rich, Steven; Camp, L Jean",Insider Threat Event Detection in User-System Interactions,2017
+"Liu, Daiping; Li, Zhou; Du, Kun; Wang, Haining; Liu, Baojun; Duan, Haixin",Don't Let One Rotten Apple Spoil the Whole Barrel: Towards Automated Detection of Shadowed Domains,2017
+"Kumar, Ram Shankar Siva; Wicker, Andrew; Swann, Matt",Practical Machine Learning for Cloud Intrusion Detection: Challenges and the Way Forward,2017
+"Khandpur, Rupinder Paul; Ji, Taoran; Jan, Steve; Wang, Gang; Lu, Chang-Tien; Ramakrishnan, Naren",Crowdsourcing Cybersecurity: Cyber Attack Detection using Social Media,2017
+"Kreimel, Philipp; Eigner, Oliver; Tavolato, Paul",Anomaly-Based Detection and Classification of Attacks in Cyber-Physical Systems,2017
+"Chen, Zhi-Guo; Kang, Ho-Seok; Yin, Shang-Nan; Kim, Sung-Ryul",Automatic Ransomware Detection and Analysis Based on Dynamic API Calls Flow Graph,2017
+"Thoma, Marios; Hadjicostis, Christoforos N.",Detection of collaborative cyber-attacks through correlation and time dependency analysis,2016
+"Udd, Robert; Asplund, Mikael; Nadjm-Tehrani, Simin; Kazemtabrizi, Mehrdad; Ekstedt, Mathias",Exploiting Bro for Intrusion Detection in a SCADA System,2016
+"Taylor, Teryl; Hu, Xin; Wang, Ting; Jang, Jiyong; Stoecklin, Marc Ph; Monrose, Fabian; Sailer, Reiner",Detecting Malicious Exploit Kits using Tree-based Similarity Searches,2016
+"Sisiaridis, Dimitrios; Carcillo, Fabrizio; Markowitch, Olivier",A Framework for Threat Detection in Communication Systems,2016
+"Shi, Yang; Zhang, Yaoxue; Zhou, Fangfang; Zhao, Ying; Wang, Guojun; Shi, Ronghua; Liang, Xing",IDSPlanet: A Novel Radial Visualization of Intrusion Detection Alerts,2016
+"Sanzgiri, Ameya; Dasgupta, Dipankar",Classification of Insider Threat Detection Techniques,2016
+"Razaq, Abdul; Tianfield, Huaglory; Barrie, Peter",A big data analytics based approach to anomaly detection,2016
+"Rashid, Tabish; Agrafiotis, Ioannis; Nurse, Jason R.C.",A New Take on Detecting Insider Threats: Exploring the Use of Hidden Markov Models,2016
+"Laszka, Aron; Abbas, Waseem; Sastry, S. Shankar; Vorobeychik, Yevgeniy; Koutsoukos, Xenofon",Optimal thresholds for intrusion detection systems,2016
+"Junejo, Khurum Nazir; Goh, Jonathan",Behaviour-Based Attack Detection and Classification in Cyber Physical Systems Using Machine Learning,2016
+"Bohara, Atul; Thakore, Uttam; Sanders, William H.",Intrusion detection in enterprise systems by combining and clustering diverse monitor data,2016
+"Ban, Tao; Pang, Shaoning; Eto, Masashi; Inoue, Daisuke; Nakao, Koji; Huang, Runhe",Towards Early Detection of Novel Attack Patterns through the Lens of a Large-Scale Darknet,2016
+"Caselli, Marco; Zambon, Emmanuele; Sommer, Robin; Kargl, Frank; Amann, Johanna",Speciﬁcation Mining for Intrusion Detection in Networked Control Systems,2016
+"Vukalovic, J.; Delija, D.",Advanced Persistent Threats - detection and defense,2015
+"Perez, Manuel Gil; Gomez Marmol, Felix; Martinez Perez, Gregorio",Improving attack detection in self-organizing networks: A trust-based approach toward alert satisfaction,2015
+"Papadopoulos, Panagiotis; Petsas, Thanasis; Christou, Giorgos; Vasiliadis, Giorgos",MAD: A Middleware Framework for Multi-step Attack Detection,2015
+"Milenkoski, Aleksandar; Vieira, Marco; Kounev, Samuel; Avritzer, Alberto; Payne, Bryan D.",Evaluating Computer Intrusion Detection Systems: A Survey of Common Practices,2015
+"Ibidunmoye, Olumuyiwa; Hernández-Rodriguez, Francisco; Elmroth, Erik",Performance Anomaly Detection and Bottleneck Identification,2015
+"Chapke, Prajkta P.; Deshmukh, Rupali R.",Intrusion Detection System using Fuzzy Logic and Data Mining Technique,2015
+"Cao, Phuong; Badger, Eric; Kalbarczyk, Zbigniew; Iyer, Ravishankar; Slagell, Adam",Preemptive intrusion detection: theoretical framework and real-world measurements,2015
+"Berlin, Konstantin; Slater, David; Saxe, Joshua",Malicious Behavior Detection using Windows Audit Logs,2015
+"Bekerman, Dmitri; Shapira, Bracha; Rokach, Lior; Bar, Ariel",Unknown malware detection using network traffic classification,2015
+"Saud, Zainab; Islam, M. Hasan",Towards proactive detection of advanced persistent threat (APT) attacks using honeypots,2015
+"Hashem, Yassir; Takabi, Hassan; GhasemiGol, Mohammad; Dantu, Ram",Towards Insider Threat Detection Using Psychophysiological Signals,2015
+"Abbas, Waseem; Laszka, Aron; Vorobeychik, Yevgeniy; Koutsoukos, Xenofon",Scheduling Intrusion Detection Systems in Resource-Bounded Cyber-Physical Systems,2015
+"Goldberg, David; Shan, Yinan",The Importance of Features for Statistical Anomaly Detection,2015
+"Maglaras, Leandros A.; Jiang, Jianmin",Intrusion detection in SCADA systems using machine learning techniques,2014
+"Shabtai, Asaf; Bercovitch, Maya; Rokach, Lior; Elovici, Yuval",Optimizing Data Misuse Detection,2014
+"Cao, Phuong; Chung, Key-whan; Kalbarczyk, Zbigniew; Iyer, Ravishankar; Slagell, Adam J.",Preemptive intrusion detection,2014
+"Threepak, T.; Watcharapupong, A.",Web attack detection using entropy-based analysis,2014
+Liu-Xiaoxing; Yu-Ning,Research on Efficient Pattern Matching Algorithms in Intrusion Detection System,2014
+"Hofstede, Rick; Hendriks, Luuk; Sperotto, Anna; Pras, Aiko",SSH Compromise Detection using NetFlow/IPFIX,2014
+"Thaseen, S.; Kumar, C. A.",An analysis of supervised tree based classifiers for intrusion detection system,2013
+"Ionita, Irina; Ionita, Liviu",An agent-based approach for building an intrusion detection system,2013
+"Lo, Chun-Hao; Ansari, Nirwan",CONSUMER: A Novel Hybrid Intrusion Detection System for Distribution Networks in Smart Grid,2013
+"Javed, Mobin; Paxson, Vern","Detecting stealthy, distributed SSH brute-forcing",2013
+"Yen, Ting-Fang; Oprea, Alina; Onarlioglu, Kaan; Leetham, Todd; Robertson, William; Juels, Ari; Kirda, Engin",Beehive: large-scale log analysis for detecting suspicious activity in enterprise networks,2013
+"Ali, Muhammad Qasim; Al-Shaer, Ehab; Khan, Hassan; Khayam, Syed Ali",Automated Anomaly Detector Adaptation using Adaptive Threshold Tuning,2013
+"Rathore, Jitendra S.; Saurav, Praneet; Verma, Bhupendra",AgentOuro: A Novelty Based Intrusion Detection and Prevention System,2012
+"Paredes-Oliva, Ignasi; Castell-Uroz, Ismael; Barlet-Ros, Pere; Dimitropoulos, Xenofontas; Sole-Pareta, Josep",Practical anomaly detection based on classifying frequent traffic patterns,2012
+"Massicotte, Frederic; Labiche, Yvan","On the Verification and Validation of Signature-Based, Network Intrusion Detection Systems",2012
+"Bilge, Leyla; Balzarotti, Davide; Robertson, William; Kirda, Engin; Kruegel, Christopher",Disclosure: detecting botnet command and control servers through large-scale NetFlow analysis,2012
+"Canali, Davide; Lanzi, Andrea; Balzarotti, Davide; Kruegel, Christopher; Christodorescu, Mihai; Kirda, Engin",A quantitative study of accuracy in system call-based malware detection,2012
+"Moghaddam, Alireza",Real time implementation of intrusion detection system with reconfigurable architecture,2012
+"Frenz, Christopher M.; Yoon, Jong P.",XSSmon: A Perl based IDS for the detection of potential XSS attacks,2012
+"Symons, Christopher T; Beaver, Justin M",Nonparametric semi-supervised learning for network intrusion detection: combining performance improvements with realistic in-situ training,2012
