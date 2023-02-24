@@ -1,0 +1,129 @@
+process.name:(*powershell.exe OR *pwsh.exe) AND (process.command_line:(*toint* OR *todecimal* OR *tobyte* OR *touint* OR *tosingle* OR *tosbyte*) AND process.command_line:(*tochar* OR *tostring* OR *string*)) OR (process.command_line:*join* AND (process.command_line:*char* OR process.command_line:*split*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND file.path:(*c\\:userspublic* OR *c\\:perflogs* OR *appdata* OR *c\\:windowstemp*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND file.path:(*c\\:userspublic* OR *c\\:perflogs*)) OR (process.name:(*schtasks.exe OR *wmic.exe OR *mshta.exe OR *forfiles.exe OR *scriptrunner.exe OR *certutil.exe) AND file.path:(*c\\:userspublic* OR *c\\:perflogs* OR *appdata* OR *c\\:windowstemp*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND file.path:*ntds.dit
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\-disablebehaviormonitoring\\$true* OR *\\-disableruntimemonitoring\\$true*)) OR (process.command_line:*sc* AND process.command_line:*stop* AND process.command_line:*windefend*) OR (process.command_line:*sc* AND process.command_line:*config* AND process.command_line:*windefend* AND process.command_line:*start\\=disabled*))
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic* OR *file*public*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowstemp* OR *temporary\\internet* OR *appdatalocaltemp* OR *appdataroamingtemp* OR *%temp%* OR *%tmp%* OR *%localappdata%temp*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowsty* OR *windowsh* OR *windoh* OR *windh* OR *winh* OR *wih* OR *winh* OR *nopr* OR *nonin* OR *ec* OR *en* OR *exec OR *exeby*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*add\\-pssnapin\\microsoft.exchange.powershell.snapin*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*foreach* AND process.command_line:*xor*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*get\\-content* AND process.command_line:*\\-stream*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*new\\-object* AND process.command_line:*net.webclient\\).* AND process.command_line:*download* AND process.command_line:(*string\\* OR *file\\(*))
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*pester* AND process.command_line:*get\\-help*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*shadow* AND process.command_line:*create*
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\-bitstransfer*
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.command_line:*msiexec.exe* AND process.parent.command_line:*\\-embedding\\*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name: *windowshh.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:(*w3wp.exe OR *httpd.exe OR *nginx.exe OR *php\\-cgi.exe OR *tomcat.exe OR *umworkerprocess.exe OR *ws_tomcatservice.exe)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:(*winword.exe OR *excel.exe OR *powerpnt.exe OR *mspub.exe OR *visio.exe OR *outlook.exe OR *msaccess.exe OR *eqnedt32.exe)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:(*wscript.exe OR *cscript.exe) AND NOT (process.working_directory:*health\\service\\state*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*excel.exe AND process.command_line:*dataexchange.dll*)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*java.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*keytool.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*mmc.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*mshta.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*outlook.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*scrcons.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*sdiagnhost.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*serv\\-u.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*sqlservr.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*vmtoolsd.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*windowsinstaller* AND process.parent.name:*msi* AND process.parent.name:*tmp)
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*wmiprvse.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND process.parent.name:*wsmprovhost.exe
+
+process.name:(*powershell.exe OR *pwsh.exe) AND winlog.event_data.targetimage:*rundll32.exe)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe AND file.path:*ntds.dit
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND (process.name:*msdt.exe)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND file.path:(*.docm OR *.dotm OR *.xlsm OR *.xltm OR *.potm OR *.pptm OR *.pptx)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\pass\\* OR *\\user\\* OR *\\copy\\* OR *\\mega\\* OR *\\sync\\* OR *\\config\\* OR *\\lsd\\* OR *\\remote\\* OR *\\ls\\*)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:(*csi.exe)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:(*mofcomp.exe)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:*get\\-content* AND process.command_line:*\\-stream*)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:(*schtasks.exe OR *nslookup.exe OR *certutil.exe OR *bitsadmin.exe OR *mshta.exe)) AND NOT (process.working_directory:*ccmcache*)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*chrome.exe AND process.command_line:(*\\-\\-load\\-extension\\=*) AND process.command_line:(*appdatalocal*)
+
+process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*schtasks.exe AND process.command_line:*\\/create* AND process.command_line:*\\/sc* AND process.command_line:*\\/tn* AND process.command_line:*updater* AND process.command_line:*\\/tr* AND process.command_line:*powershell* AND process.command_line:(*onlogon* OR *daily* OR *onidle* OR *updater*)
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ( "configurationwizard*.exe" OR "netflowdatabasemaintenance*.exe" OR "netflowservice*.exe" OR "solarwinds.administration*.exe" OR "solarwinds.collector.service*.exe" OR "solarwindsdiagnostics*.exe" )
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "rundll32.exe"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("w3wp.exe" OR "httpd.exe" OR "nginx.exe" OR "php.exe" OR "php-cgi.exe" OR "tomcat.exe")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "set-mppreference" AND process.command_line: ("-disable*" OR "disabled" OR "neversend" OR "-exclusion*")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "zoom.exe"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "msbuild.exe"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "hh.exe"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("cscript.exe" OR "wscript.exe")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "echo" AND process.command_line: ">" AND process.command_line: "*\\pipe\\*"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "clear-eventlog" )
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: ("*add-mppreference*" OR "*set-mppreference*") AND process.command_line: ("*-exclusion*")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "w3wp.exe"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: ("*mklink*" OR "*symboliclink*") AND process.command_line: ("*harddiskvolumeshadowcopy*")
+
+process.name: (powershell.exe OR pwsh.exe) AND dll.name: "taskschd.dll" OR file.name: "taskschd.dll" AND destination.port:135 AND NOT destination.address:("127.0.0.1" OR "::1")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: ("*mailboxexportrequest*" OR "*-mailbox*-contentfilter*")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "set-casmailbox*activesyncalloweddeviceids*"
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: ("*get-wmiobject*" OR "*gwmi*" OR "*get-ciminstance*" OR "*gcim*") AND process.command_line: ("*win32_shadowcopy*") AND process.command_line: ("*.delete()*" OR "*remove-wmiobject*" OR "*rwmi*" OR "*remove-ciminstance*" OR "*rcim*")
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*clear-history*" OR (process.command_line: ("*remove-item*" OR "rm") AND process.command_line: ("*consolehost_history.txt*" OR "*(get-psreadlineoption).historysavepath*")) OR (process.command_line: "*set-psreadlineoption*" AND process.command_line: "*savenothing*"))
+
+process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*set-netfirewallprofile*" AND (process.command_line: "*-enabled*" AND process.command_line: "*false*") AND (process.command_line: "*-all*" OR process.command_line: ("*public*" OR "*domain*" OR "*private*"))
+
+
