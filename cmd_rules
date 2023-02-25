@@ -144,4 +144,38 @@ winlog.event_data.originalfilename:\"cmd.exe\" AND process.command_line.text:*in
 
 winlog.event_data.originalfilename:\"cmd.exe\" AND process.command_line.text:cmd\* OR cmd.exe* OR c\:\windows\system32\cmd.exe* AND process.command_line.text:*psinject* OR *spawnas* OR *make_token* OR *remote\-exec* OR *rev2self* OR *dcsync* OR *logonpasswords* OR *execute\-assembly* OR *getsystem*"
 
+file.path: ("*\\programs\\startup\\*" AND process.name : ("cmd.exe")
 
+process.name : "cmd.exe" AND process.args : "/c" AND process.args : ("set OR dir")
+
+process.name : "cmd.exe" AND process.parent.name: "sqlservr.exe" AND NOT process.args : ("\\\\* OR diskfree OR rmdir OR mkdir OR dir OR del OR rename OR bcp OR *xmlnamespaces*")
+
+process.name : "cmd.exe" AND process.parent.name: ("lsass.exe OR csrss.exe OR epad.exe OR regsvr32.exe OR dllhost.exe OR logonui.exe OR wermgr.exe OR spoolsv.exe OR jucheck.exe OR jusched.exe OR ctfmon.exe OR taskhostw.exe OR googleupdate.exe OR sppsvc.exe OR sihost.exe OR slui.exe OR sihclient.exe OR searchindexer.exe OR searchprotocolhost.exe OR flashplayerupdateservice.exe OR werfault.exe OR wudfhost.exe OR unsecapp.exe OR wlanext.exe")
+
+process.name : "msbuild.exe" AND process.parent.name: ("cmd.exe")
+
+process.name : "sc.exe" AND process.parent.name: ("cmd.exe") AND process.args:("config OR create OR start OR delete OR stop OR pause") 
+
+process.name : ("cmd.exe") AND process.args : ("copy* OR move* OR cp OR mv") AND process.args : "*$*"
+
+process.name : ("cmd.exe") AND process.parent.name: "rundll32.exe" AND process.parent.command_line: *
+
+process.name: ("cmd.exe") AND process.parent.name: ( "configurationwizard*.exe OR netflowdatabasemaintenance*.exe OR netflowservice*.exe OR solarwinds.administration*.exe OR solarwinds.collector.service*.exe OR solarwindsdiagnostics*.exe")
+
+process.name:cmd.exe AND process.commnd_line: ("*mklink* OR *symboliclink*") AND process.command_line : ("*harddiskvolumeshadowcopy*")
+
+process.parent.name: "hh.exe" AND process.name : ("cmd.exe")
+
+process.parent.name: "outlook.exe" AND process.name : ("cmd.exe")
+
+process.parent.name: "svchost.exe" AND process.name : "cmd.exe" AND NOT process.args : ("??:\\program files\\npcap\\checkstatus.bat? OR ?:\\program files\\npcap\\checkstatus.bat OR \\system32\\cleanmgr.exe OR ?:\\windows\\system32\\silcollector.cmd OR \\system32\\apphostregistrationverifier.exe OR \\system32\\servermanagerlauncher.exe OR dir OR ?:\\program files\\* OR ?:\\program files (x86)\\* OR ?:\\windows\\lsdeployment\\lspush.exe OR (x86)\\fmauditonsite\\watchdog.bat OR ?:\\programdata\\chocolatey\\bin\\choco-upgrade-all.bat OR files\\npcap\\checkstatus.bat")
+
+process.parent.name: "w3wp.exe" AND process.parent.args : "msexchange*apppool" AND (process.name : ("cmd.exe")
+
+process.parent.name: "wmiprvse.exe" AND process.name : "cmd.exe" AND process.args : "\\\\127.0.0.1\\*" AND process.args : ("2>&1 OR 1>")
+
+process.parent.name: "zoom.exe" AND process.name : ("cmd.exe")
+
+process.parent.name: ("acrord32.exe OR acrobat.exe OR foxitphantompdf.exe OR foxitreader.exe") AND process.name: "cmd.exe"
+
+process.parent.name: ("w3wp.exe OR httpd.exe OR nginx.exe OR php.exe OR php-cgi.exe OR tomcat.exe") AND process.name : ("cmd.exe")
