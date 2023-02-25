@@ -126,4 +126,21 @@ process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*clear-his
 
 process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*set-netfirewallprofile*" AND (process.command_line: "*-enabled*" AND process.command_line: "*false*") AND (process.command_line: "*-all*" OR process.command_line: ("*public*" OR "*domain*" OR "*private*"))
 
+process.executable: (*powershell.exe OR *pwsh.exe) AND destination.port: "5985"
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND NOT destination.ip:"10\..*" OR "192\.168\..*" OR "172\..*" OR '127.0.0.1' 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.command_line: "wmic os list full" OR  process.command_line: "wmic computersystem list full" OR  process.command_line: "wmic path win32_pnpdevice" OR  process.command_line: "wmic qfe list brief" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.command_line: ".* .*/c powershell set-mppreference -disablerealtimemonitoring $true .*" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.command_line: ".*downloadfile.*" OR process.command_line: ".*invoke-webrequest.*" OR process.command_line: "*system\.net\.webclient.*" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.command_line: ".*new-object system\.net\.webclient\\.downloadstring\.*" OR process.command_line: ".*new-object system\.net\.webclient\\.downloadfile\.*" OR process.command_line: ".*new-object net\.webclient\\.downloadstring\.*" OR process.command_line: ".*new-object net\.webclient\\.downloadfile\.*" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.command_line: "get-childitem -recurse -include .*\.ppt" OR process.command_line: "get-childitem -recurse -include .*\.doc" OR process.command_line: "get-childitem -recurse -include .*\.xls" OR process.command_line: "get-childitem -recurse -include .*\.pptx" OR process.command_line: "get-childitem -recurse -include .*\.docx" OR process.command_line: "get-childitem -recurse -include .*\.xlsx" OR process.command_line: "get-childitem -recurse -include .*\.pdf" OR process.command_line: "get-childitem -recurse -include .*\.csv" OR process.command_line: "get-childitem -recurse -include .*\.mdb" OR process.command_line: "get-childitem -recurse -include .*\.pps" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.executable: ".*\\sqlservr\.exe" 
+
+process.executable: (*powershell.exe OR *pwsh.exe) AND process.executable:".*\\rundll32\.exe" 
 
