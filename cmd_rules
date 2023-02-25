@@ -1,0 +1,147 @@
+file.path:*.docm OR *.dotm OR *.xlsm OR *.xltm OR *.potm OR *.pptm OR *.pptx AND process.executable:*\cmd.exe OR process.parent.executable:*\cmd.exe
+
+file.path:*\dbghelp.dll OR *\dbgcore.dll AND process.executable:*\cmd.exe
+
+file.path:*\ntds.dit AND process.executable:*\cmd.exe"
+
+process.command_line.text:*\-s\cmd.exe AND process.command_line.text:*psexec* OR *paexec* OR *accepteula* OR *cmd\/c\* OR *cmd\/k\*"
+
+process.command_line:*appvlp.exe* AND process.command_line:*cmd.exe AND process.command_line:*.sh* OR *.exe* OR *.dll* OR *.bin* OR *.bat* OR *.cmd* OR *.js* OR *.msh* OR *.reg* OR *.scr* OR *.ps* OR *.vb* OR *.jar* OR *.pl* OR *.inf*"
+
+process.command_line:*appvlp.exe* AND process.command_line:*cmd.exe* AND process.command_line:*.sh* OR *.exe* OR *.dll* OR *.bin* OR *.bat* OR *.cmd* OR *.js* OR *.msh* OR *.reg* OR *.scr* OR *.ps* OR *.vb* OR *.jar* OR *.pl* OR *.inf*"
+
+process.command_line:*cmd.exe\/c\* AND process.command_line:*\-p\0x* AND process.command_line:*c\:\programdata\* OR *c\:\recycler\* OR process.command_line:*rundll32.exe\* AND process.command_line:*c\:\programdata\* AND process.command_line:*.bin* OR *.tmp* OR *.dat* OR *.io* OR *.ini* OR *.db*"
+
+process.command_line:*cmd.exe\/c\* AND process.command_line:*tasklist\/fi\* AND process.command_line:*imagename\eq\lsass.exe* AND user.name:*nt\autho* OR *nt\auto*
+
+process.command_line:*psexec* OR *paexec* OR *accepteula* OR *cmd\/c\* AND process.command_line:*\-s\cmd.exe"
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*>\%userprofile%\* OR *>\%appdata%\* OR *>\users\public\* OR *>\c\:\users\public\* OR *>\%temp%\* OR *>\%tmp%\* OR *>\c\:\windows\temp\* OR *>\c\:\temp\* OR process.command_line.text:*\>\* OR *\>>\* AND process.command_line.text:*c\:\users\* AND process.command_line.text:*\appdata\local\*"
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*copy\* 
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*echo* AND process.command_line.text:*>* AND process.command_line.text:*\.\pipe\*"
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*gthread\-3.6.dll* OR *\windows\temp\tmp.bat* OR *sigcmm\-2.4.dll*"
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*mklink* AND process.command_line.text:*\osk.exe* AND process.command_line.text:*\cmd.exe*"
+
+process.executable.text:*\cmd.exe AND process.command_line.text:*sc\config* AND process.command_line.text:*wercplsupporte.dll* OR process.executable.text:*\wmic.exe AND process.command_line.text:*cor_profiler"
+
+process.executable.text:*\cmd.exe AND process.parent.executable.text:*\7zfm.exe AND not process.command_line.text:*\/c\* OR *\/k\* OR *\/r\*
+
+process.executable.text:*\cmd.exe AND process.parent.executable.text:*\elevation_service.exe AND integritylevel:\"system\""
+
+process.executable.text:*\cmd.exe AND process.parent.executable.text:*\sqlservr.exe"
+
+process.executable.text:*\cmd.exe AND process.parent.executable.text:*\windows\installer\* AND process.parent.executable.text:*msi* AND process.parent.executable.text:*tmp"
+
+process.executable.text:*\cmd.exe* AND process.command_line.text:*\net\use\http* AND process.command_line.text:*&\start\/b\* AND process.command_line.text:*\davwwwroot\* AND process.command_line.text:*.exe\* OR *.dll\* OR *.bat\* OR *.vbs\* OR *.ps1\*"
+
+process.executable.text:*\mshta.exe AND process.parent.executable.text:*\cmd.exe 
+
+process.executable.text:*\rundll32.exe AND process.parent.executable.text:*\cmd.exe AND process.command_line.text:*user32.dll* AND process.command_line.text:*lockworkstation*"
+
+process.executable: *cmd.exe AND process.command_line:*\windows\caches\navshext.dll\* OR process.command_line:*\appdata\roaming\micros\~1\windows\caches\navshext.dllsetting"
+
+process.executable:*\cmd.exe AND file.path:*.vhd OR *.bac OR *.bak OR *.wbcat OR *.bkf OR *.set OR *.win OR *.dsk"
+
+process.executable:*\cmd.exe AND file.path:*\users\* AND file.path:*\desktop\* AND file.path:*.txt"
+
+process.executable:*\cmd.exe AND file.path:*c\:\users\public* OR *c\:\perflogs* OR *\appdata\* OR *c\:\windows\temp*"
+
+process.executable:*\cmd.exe AND process.command_line:*\/q* AND process.command_line:*\/c* AND process.command_line:*chcp*"
+
+process.executable:*\cmd.exe AND process.command_line:*http* AND process.command_line:*\:\/\/* AND process.command_line:*%appdata%*"
+
+process.executable:*\cmd.exe AND process.command_line:*sc\config* AND process.command_line:*wercplsupporte.dll*
+
+process.executable:*\cmd.exe AND process.executable:*\windows\temp* OR *\temporary\internet* OR *\appdata\local\temp* OR *\appdata\roaming\temp* OR *c\:\users\public\* OR *c\:\perflogs\*"
+
+process.executable:*\cmd.exe AND process.parent.command_line:*msiexec.exe* AND process.parent.command_line:*\-embedding\
+
+process.executable:*\cmd.exe AND process.parent.executable:*\7zfm.exe AND not process.command_line:*\/c\* OR not _exists_:process.command_line"
+
+process.executable:*\cmd.exe AND process.parent.executable:*\elevation_service.exe AND integritylevel:\"system\""
+
+process.executable:*\cmd.exe AND process.parent.executable:*\windows\installer\* AND process.parent.executable:*msi* AND process.parent.executable:*tmp"
+
+process.executable:*\explorer.exe AND process.parent.executable:*\cmd.exe AND process.command_line:*explorer.exe*"
+
+process.executable:*\mofcomp.exe AND process.parent.executable:*\cmd.exe
+
+process.executable:*\mshta.exe AND process.parent.executable:*\cmd.exe 
+
+process.executable:*\powershell.exe AND process.command_line:*pester* AND process.command_line:*get\-help* OR process.executable:*\cmd.exe AND process.command_line:*pester* AND process.command_line:*;* AND process.command_line:*help* OR *?*"
+
+process.executable:*cmd.exe AND file.path:*.vhd OR *.bac OR *.bak OR *.wbcat OR *.bkf OR *.set OR *.win OR *.dsk"
+
+process.executable:*cmd.exe* AND process.command_line:*gthread\-3.6.dll* OR *\windows\temp\tmp.bat* OR *sigcmm\-2.4.dll*"
+
+process.executable:\"c\:\windows\syswow64\cmd.exe\" AND process.command_line:*\windows\caches\navshext.dll\* OR process.command_line:*\appdata\roaming\micros\~1\windows\caches\navshext.dllsetting"
+
+process.parent.command_line.text:*svchost.exe\-k\netsvcs* OR *taskeng.exe* AND process.command_line.text:*cmd.exe* AND process.command_line.text:*\/c* AND process.command_line.text:*windows\temp\* AND process.command_line.text:*&1*"
+
+process.parent.command_line:*\cmd.exe* AND process.parent.command_line:*\/c* AND process.parent.command_line:*c\:\windows\setup\scripts\* AND process.parent.command_line:*setupcomplete.cmd OR *partnersetupcomplete.cmd AND not process.executable:c\:\windows\system32\* OR c\:\windows\syswow64\* OR c\:\windows\winsxs\* OR c\:\windows\setup\*"
+
+process.parent.executable.text:*\cmd.exe AND process.parent.command_line.text:*\/c\* OR *\/k\* AND process.executable.text:*\chcp.com AND process.command_line.text:*chcp OR *chcp\OR *chcp \AND not grandparentcommandline:*\/c\c\:\programdata\anaconda3*"
+
+process.parent.executable.text:*\java.exe AND process.executable.text:*\cmd.exe AND NOT process.parent.executable.text:*build* AND process.command_line.text:*build*"
+
+process.parent.executable.text:*\keytool.exe AND process.executable.text:*\cmd.exe 
+
+process.parent.executable.text:*\sdiagnhost.exe AND process.executable.text:*\cmd.exe
+
+process.parent.executable.text:*\sqlservr.exe AND process.executable.text:*\cmd.exe 
+
+process.parent.executable.text:*\winword.exe OR *\excel.exe OR *\powerpnt.exe OR *\mspub.exe OR *\visio.exe OR *\msaccess.exe OR *\eqnedt32.exe OR *\onenote.exe AND process.executable.text:*\cmd.exe
+
+process.parent.executable.text:*\wmiprvse.exe OR *\mmc.exe OR *\explorer.exe OR *\services.exe AND process.command_line.text:*cmd.exe* AND process.command_line.text:*\/q* AND process.command_line.text:*\/c* AND process.command_line.text:*\127.0.0.1\* AND process.command_line.text:*&1*
+
+process.parent.executable.text:*screenconnect.clientservice.exe AND process.executable.text:*\cmd.exe
+
+process.parent.executable:*\apache* OR *\tomcat* OR *\w3wp.exe OR *\php\-cgi.exe OR *\nginx.exe OR *\httpd.exe AND process.executable:*\cmd.exe AND process.command_line:*perl\-\-help* OR *python\-\-help* OR *wget\-\-help* OR *perl\-h*"
+
+process.parent.executable:*\cmd.exe AND process.executable:*\msdt.exe
+
+process.parent.executable:*\cmd.exe AND process.executable:*\msdt.exe OR winlog.event_data.originalfilename:\"msdt.exe\""
+
+process.parent.executable:*\cmd.exe AND process.executable:*\nltest.exe AND process.command_line:*\/domain_trusts\/all_trusts*"
+
+process.parent.executable:*\java.exe AND process.executable:*\cmd.exe AND NOT process.parent.executable:*build* AND process.command_line:*build*"
+
+process.parent.executable:*\keytool.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\mmc.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\mshta.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\mshta.exe AND process.executable:OR *\cmd.exe
+
+process.parent.executable:*\outlook.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\sdiagnhost.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\serv\-u.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\sqlservr.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*\vmtoolsd.exe AND process.executable:*\cmd.exe AND not process.command_line:*\vmware\vmware\tools\poweron\-vm\-default.bat* OR *\vmware\vmware\tools\poweroff\-vm\-default.bat* OR *\vmware\vmware\tools\resume\-vm\-default.bat* OR *\vmware\vmware\tools\suspend\-vm\-default.bat*"
+
+process.parent.executable:*\winlogon.exe AND process.executable:*\cmd.exe AND process.command_line:*sethc.exe* OR *utilman.exe* OR *osk.exe* OR *magnify.exe* OR *narrator.exe* OR *displayswitch.exe*"
+
+process.parent.executable:*\winword.exe OR *\excel.exe OR *\powerpnt.exe OR *\mspub.exe OR *\visio.exe OR *\outlook.exe OR *\msaccess.exe OR *\eqnedt32.exe AND process.executable:*\cmd.exe 
+
+process.parent.executable:*\wsmprovhost.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:*java.exe AND process.executable:*\cmd.exe
+
+process.parent.executable:\"c\:\windows\explorer.exe\" AND process.executable:\"c\:\windows\system32\cmd.exe\" AND process.command_line:*powershell* AND process.command_line:*.lnk*"
+
+process.parent.executable:\"c\:\windows\hh.exe\" AND process.executable:*\cmd.exe
+
+winlog.event_data.originalfilename:\"cmd.exe\" AND process.command_line.text:*invoke\-userhunter* OR *invoke\-sharefinder* OR *invoke\-kerberoast* OR *invoke\-smbautobrute* OR *invoke\-nightmare* OR *zerologon* OR *av_query*"
+
+winlog.event_data.originalfilename:\"cmd.exe\" AND process.command_line.text:cmd\* OR cmd.exe* OR c\:\windows\system32\cmd.exe* AND process.command_line.text:*psinject* OR *spawnas* OR *make_token* OR *remote\-exec* OR *rev2self* OR *dcsync* OR *logonpasswords* OR *execute\-assembly* OR *getsystem*"
+
+
