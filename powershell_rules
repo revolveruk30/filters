@@ -1,8 +1,6 @@
 process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.executable: (*powershell.exe OR *pwsh.exe)file.path: *.docm OR *.dotm OR *.xlsm OR *.xltm OR *.potm OR *.pptm OR *.pptx
 
-process.name: (*powershell.exe OR *pwsh.exe) AND file.path: *ntds.dit 
-
-file.path: system.management.automation AND NOT process.name: (*powershell.exe OR *pwsh.exe)
+file.path: *system.management.automation AND NOT process.name: (*powershell.exe OR *pwsh.exe)
 
 process.name: (*powershell.exe OR *pwsh.exe) AND destination.port: "5985"
 
@@ -32,7 +30,7 @@ process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "w3wp.exe"
 
 process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "zoom.exe"
 
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("configurationwizard*.exe" OR "netflowdatabasemaintenance*.exe" OR "netflowservice*.exe" OR "solarwinds.administration*.exe" OR "solarwinds.collector.service*.exe" OR "solarwindsdiagnostics*.exe")
+process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("configurationwizard*" OR "netflowdatabasemaintenance*" OR "netflowservice*" OR "solarwinds.administration*" OR "solarwinds.collector.service*" OR "solarwindsdiagnostics*")
 
 process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("cscript.exe" OR "wscript.exe")
 
@@ -64,7 +62,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*clear-e
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*wind* OR "*win h*" OR "*wi h*" OR "-nop*" OR "-noni*" OR "-e*" OR "*exec*" OR "*bypass* OR "invoke-expression" OR "iex" OR "*download*
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*downloadfile*" OR process.command_line: "*invoke-webrequest*" OR process.command_line: "*http*" OR process.command_line: "*invoke-shellcode*" OR process.command_line: "*downloadstring*"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*downloadfile*" OR "*invoke-webrequest*" OR "*http*" OR "*invoke-shellcode*" OR "*downloadstring*"
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "get-childitem -recurse -include .*\.ppt" OR process.command_line: "get-childitem -recurse -include .*\.doc" OR process.command_line: "get-childitem -recurse -include .*\.xls" OR process.command_line: "get-childitem -recurse -include .*\.pptx" OR process.command_line: "get-childitem -recurse -include .*\.docx" OR process.command_line: "get-childitem -recurse -include .*\.xlsx" OR process.command_line: "get-childitem -recurse -include .*\.pdf" OR process.command_line: "get-childitem -recurse -include .*\.csv" OR process.command_line: "get-childitem -recurse -include .*\.mdb" OR process.command_line: "get-childitem -recurse -include .*\.pps"
 
@@ -74,7 +72,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: new-servi
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *shadow* AND *create*
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: add-pssnapin microsoft.exchange.powershell.snapin*
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: add-pssnapin microsoft.exchange.powershell.snapin
 
 process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*set-netfirewallprofile*" AND (process.command_line: "*-enabled*" AND process.command_line: "*false*") AND (process.command_line: "*-all*" OR process.command_line: ("*public*" OR "*domain*" OR "*private*"))
 
@@ -96,7 +94,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND (process.command_line:(*toint* 
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\-disablebehaviormonitoring\\$true* OR *\\-disableruntimemonitoring\\$true*)) OR (process.command_line:*sc* AND process.command_line:*stop* AND process.command_line:*windefend*) OR (process.command_line:*sc* AND process.command_line:*config* AND process.command_line:*windefend* AND process.command_line:*start\\=disabled*))
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic* OR *file*public*)
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic*)
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowstemp* OR *temporary\\internet* OR *appdatalocaltemp* OR *appdataroamingtemp* OR *%temp%* OR *%tmp%* OR *%localappdata%temp*)
 
@@ -110,7 +108,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*new\\-obj
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*pester* AND process.command_line:*get\\-help*)
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\- \bitstransfer*
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\-bitstransfer*
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.name:*excel.exe AND process.command_line:*dataexchange.dll*)
 
