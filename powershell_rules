@@ -94,7 +94,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND (process.command_line:(*toint* 
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\-disablebehaviormonitoring\\$true* OR *\\-disableruntimemonitoring\\$true*)) OR (process.command_line:*sc* AND process.command_line:*stop* AND process.command_line:*windefend*) OR (process.command_line:*sc* AND process.command_line:*config* AND process.command_line:*windefend* AND process.command_line:*start\\=disabled*))
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic*)
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic* OR *file*public*)
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowstemp* OR *temporary\\internet* OR *appdatalocaltemp* OR *appdataroamingtemp* OR *%temp%* OR *%tmp%* OR *%localappdata%temp*)
 
@@ -108,7 +108,7 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*new\\-obj
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*pester* AND process.command_line:*get\\-help*)
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\-bitstransfer*
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\- \bitstransfer*
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.name:*excel.exe AND process.command_line:*dataexchange.dll*)
 
@@ -120,13 +120,13 @@ process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*chrome.exe 
 
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*schtasks.exe AND process.command_line:*\\/create* AND process.command_line:*\\/sc* AND process.command_line:*\\/tn* AND process.command_line:*updater* AND process.command_line:*\\/tr* AND process.command_line:*powershell* AND process.command_line:(*onlogon* OR *daily* OR *onidle* OR *updater*)
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "vmblastsg"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*vmblastsg*"
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "siex"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*siex*"
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("-met" AND "post" AND "-body")
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "detectsandboxie"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*detectsandboxie*"
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("*base64*" OR "*gnirts46esabmorf*")
 
@@ -148,10 +148,12 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *get-netd
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *threading.mutex*
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*io.compression.*" OR "*io.streamreader*" OR "*]::decompress*"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*io.compression.*" OR "*io.streamreader*" 
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*select* OR *get-wmiobject*) AND *win32*
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("add-persistence" OR "find-avsignature" OR "get-gppautologon" OR "get-gpppassword" OR "get-httpstatus" OR "get-keystrokes" OR "get-securitypackages" OR "get-timedscreenshot" OR "get-vaultcredential" OR "get-volumeshadowcopy" OR "install-ssp" OR "invoke-credentialinjection" OR "invoke-dllinjection" OR "invoke-mimikatz" OR "invoke-ninjacopy" OR "invoke-portscan" OR "invoke-reflectivepeinjection" OR "invoke-reversednslookup" OR "invoke-shellcode" OR "invoke-tokenmanipulation" OR "invoke-wmicommand" OR "mount-volumeshadowcopy" OR "new-elevatedpersistenceoption" OR "new-userpersistenceoption" OR "new-volumeshadowcopy" OR "out-compresseddll" OR "out-encodedcommand" OR "out-encryptedscript" OR "out-minidump" OR "powerup" OR "powerview" OR "remove-comments" OR "remove-volumeshadowcopy" OR "set-criticalprocess" OR "set-masterbootrecord")
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*invoke-globalo365mailsearch*" OR "*invoke-globalmailsearch*" OR "*invoke-selfsearch*" OR "*invoke-passwordsprayowa*" OR "*invoke-passwordsprayews*" OR "*invoke-domainharvestowa*" OR "*invoke-usernameharvestowa*" OR "*invoke-openinboxfinder*" OR "*invoke-injectgeventapi*" OR "*invoke-injectgevent*" OR "*invoke-searchgmail*" OR "*invoke-monitorcredsniper*" OR "*invoke-addgmailrule*" OR "*invoke-passwordsprayeas*" OR "*invoke-usernameharvesteas*"
+
+
