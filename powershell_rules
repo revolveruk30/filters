@@ -1,3 +1,5 @@
+
+
 process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.executable: (*powershell.exe OR *pwsh.exe)file.path: *.docm OR *.dotm OR *.xlsm OR *.xltm OR *.potm OR *.pptm OR *.pptx
 
 file.path: *system.management.automation AND NOT process.name: (*powershell.exe OR *pwsh.exe)
@@ -8,33 +10,11 @@ process.name: (*powershell.exe OR *pwsh.exe) AND NOT destination.ip:"10\..*" OR 
 
 process.name: (*powershell.exe OR *pwsh.exe) AND NOT process.parent.executable: explorer.exe OR compattelrunner.exe
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.name: "*sqlservr.exe"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.name:"*rundll32.exe"
-
 process.name: (*powershell.exe OR *pwsh.exe) AND file.path: *.bat
 
 process.name: (*powershell.exe OR *pwsh.exe) AND file.path: *startup* AND file.path: *.lnk
 
-process.parent.executable: (*powershell.exe OR *pwsh.exe) AND process.name: csi.exe
-
 process.name: (powershell.exe OR pwsh.exe) AND dll.name: "taskschd.dll" OR file.name: "taskschd.dll" AND destination.port:135 AND NOT destination.address:("127.0.0.1" OR "::1")
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "hh.exe"
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "msbuild.exe"
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "rundll32.exe"
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "w3wp.exe"
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: "zoom.exe"
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("configurationwizard*" OR "netflowdatabasemaintenance*" OR "netflowservice*" OR "solarwinds.administration*" OR "solarwinds.collector.service*" OR "solarwindsdiagnostics*")
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("cscript.exe" OR "wscript.exe")
-
-process.name: (powershell.exe OR pwsh.exe) AND process.parent.name: ("w3wp.exe" OR "httpd.exe" OR "nginx.exe" OR "php.exe" OR "php-cgi.exe" OR "tomcat.exe")
 
 process.name: (*powershell.exe OR *pwsh.exe) AND file.path:(*c\\:userspublic* OR *c\\:perflogs* OR *appdata* OR *c\\:windowstemp*)
 
@@ -42,43 +22,14 @@ process.name: (*powershell.exe OR *pwsh.exe) AND file.path:*ntds.dit
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.command_line:*msiexec.exe* AND process.parent.command_line:*\\-embedding\\*)
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.name: (*eqnedt32.exe OR *excel.exe OR *httpd.exe OR *java.exe OR *keytool.exe OR *mmc.exe OR *msaccess.exe OR *mshta.exe OR *mspub.exe OR *nginx.exe OR *outlook.exe OR *php\\-cgi.exe OR *powerpnt.exe OR *scrcons.exe OR *sdiagnhost.exe OR *serv\\-u.exe OR *sqlservr.exe OR *tomcat.exe OR *umworkerprocess.exe OR *visio.exe OR *vmtoolsd.exe OR *w3wp.exe OR *windowshh.exe OR *windowsinstaller* OR *winword.exe OR *wmiprvse.exe OR *ws_tomcatservice.exe OR *wsmprovhost.exe)
-
-process.parent.executable: (*powershell.exe OR *pwsh.exe) AND process.name: sh.exe OR bash.exe OR schtasks.exe OR certutil.exe OR bitsadmin.exe OR wscript.exe OR cscript.exe OR scrcons.exe OR regsvr32.exe OR hh.exe OR wmic.exe OR mshta.exe OR rundll32.exe OR forfiles.exe OR scriptrunner.exe
-
-process.parent.name:(*powershell.exe OR *pwsh.exe) AND (process.name:*msdt.exe) OR process.name:(*csi.exe) OR process.name:(*mofcomp.exe)
-
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND file.path:(*.docm OR *.dotm OR *.xlsm OR *.xltm OR *.potm OR *.pptm OR *.pptx)
 
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND file.path:*ntds.dit
-
-process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:(*nslookup.exe OR *certutil.exe OR *bitsadmin.exe OR *mshta.exe)) AND NOT (process.working_directory:*ccmcache*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.executable: *wlsvcx64.exe 
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:"*-version 2" OR "*-versio 2" OR "*-versi 2" OR "-vers 2" OR "-ver 2" OR "-ve 2"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*clear-eventlog OR *remove-eventlog OR *limit-eventlog)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*wind* OR "*win h*" OR "*wi h*" OR "-nop*" OR "-noni*" OR "-e*" OR "*exec*" OR "*bypass* OR "invoke-expression" OR "iex" OR "*download*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*downloadfile*" OR "*invoke-webrequest*" OR "*http*" OR "*invoke-shellcode*" OR "*downloadstring*"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "get-childitem -recurse -include .*\.ppt" OR process.command_line: "get-childitem -recurse -include .*\.doc" OR process.command_line: "get-childitem -recurse -include .*\.xls" OR process.command_line: "get-childitem -recurse -include .*\.pptx" OR process.command_line: "get-childitem -recurse -include .*\.docx" OR process.command_line: "get-childitem -recurse -include .*\.xlsx" OR process.command_line: "get-childitem -recurse -include .*\.pdf" OR process.command_line: "get-childitem -recurse -include .*\.csv" OR process.command_line: "get-childitem -recurse -include .*\.mdb" OR process.command_line: "get-childitem -recurse -include .*\.pps"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "wmic os list full" OR process.command_line: "wmic computersystem list full" OR process.command_line: "wmic path win32_pnpdevice" OR process.command_line: "wmic qfe list brief"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: new-service
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *shadow* AND *create*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: add-pssnapin microsoft.exchange.powershell.snapin
 
 process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "*set-netfirewallprofile*" AND (process.command_line: "*-enabled*" AND process.command_line: "*false*") AND (process.command_line: "*-all*" OR process.command_line: ("*public*" OR "*domain*" OR "*private*"))
 
 process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "echo" AND process.command_line: ">" AND process.command_line: "*\\pipe\\*"
 
-process.name: (powershell.exe OR pwsh.exe) AND process.command_line: "set-casmailbox*activesyncalloweddeviceids*"
 
 process.name: (powershell.exe OR pwsh.exe) AND process.command_line: ("*add-mppreference*" OR "*set-mppreference*") AND process.command_line: ("-disable*" OR "disabled" OR "neversend" OR "*-exclusion*")
 
@@ -94,43 +45,13 @@ process.name: (*powershell.exe OR *pwsh.exe) AND (process.command_line:(*toint* 
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\-disablebehaviormonitoring\\$true* OR *\\-disableruntimemonitoring\\$true*)) OR (process.command_line:*sc* AND process.command_line:*stop* AND process.command_line:*windefend*) OR (process.command_line:*sc* AND process.command_line:*config* AND process.command_line:*windefend* AND process.command_line:*start\\=disabled*))
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*userspublic* OR *file*public*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowstemp* OR *temporary\\internet* OR *appdatalocaltemp* OR *appdataroamingtemp* OR *%temp%* OR *%tmp%* OR *%localappdata%temp*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*windowsty* OR *windowsh* OR *windoh* OR *windh* OR *winh* OR *wih* OR *winh* OR *nopr* OR *nonin* OR *ec* OR *en* OR *exec OR *exeby*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*foreach* AND process.command_line:*xor*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*get\\-content* AND process.command_line:*\\-stream*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*new\\-object* AND process.command_line:*\\.net\\.*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*pester* AND process.command_line:*get\\-help*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*start\\- \bitstransfer*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.name:*excel.exe AND process.command_line:*dataexchange.dll*)
-
-process.parent.executable: (*powershell.exe OR *pwsh.exe) AND process.name: nslookup.exe AND process.command_line: nslookup.exe
-
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.command_line:(*\\pass\\* OR *\\user\\* OR *\\copy\\* OR *\\mega\\* OR *\\sync\\* OR *\\config\\* OR *\\lsd\\* OR *\\remote\\* OR *\\ls\\*)
 
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*chrome.exe AND process.command_line:(*\\-\\-load\\-extension\\=*) AND process.command_line:(*appdatalocal*)
 
 process.parent.name:(*powershell.exe OR *pwsh.exe) AND process.name:*schtasks.exe AND process.command_line:*\\/create* AND process.command_line:*\\/sc* AND process.command_line:*\\/tn* AND process.command_line:*updater* AND process.command_line:*\\/tr* AND process.command_line:*powershell* AND process.command_line:(*onlogon* OR *daily* OR *onidle* OR *updater*)
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*vmblastsg*"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*siex*"
-
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("-met" AND "post" AND "-body")
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*detectsandboxie*"
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("*base64*" OR "*gnirts46esabmorf*")
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*powercat.ps1"
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("-ep bypass" AND "-command" AND "get-content" AND "remove-item" AND "iex")
 
@@ -138,22 +59,24 @@ process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("iex" AN
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("$admins=" AND "system.security.principal.securityidentifier" AND "translate" AND "-split" AND "localgroup" "/add" AND "$rdp=")
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*mimikatz* OR *-dumpcr* OR *sekurlsa* OR *kerberos*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*getprocaddress*)
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*system.management.automation.amsi*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *get-netdomaintrust* OR *get-netforesttrust* OR *get-addomain* OR *get-adgroupmember* OR *get-domainuser*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *threading.mutex*
-
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*io.compression.*" OR "*io.streamreader*" 
-
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: (*select* OR *get-wmiobject*) AND *win32*
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: ("add-persistence" OR "find-avsignature" OR "get-gppautologon" OR "get-gpppassword" OR "get-httpstatus" OR "get-keystrokes" OR "get-securitypackages" OR "get-timedscreenshot" OR "get-vaultcredential" OR "get-volumeshadowcopy" OR "install-ssp" OR "invoke-credentialinjection" OR "invoke-dllinjection" OR "invoke-mimikatz" OR "invoke-ninjacopy" OR "invoke-portscan" OR "invoke-reflectivepeinjection" OR "invoke-reversednslookup" OR "invoke-shellcode" OR "invoke-tokenmanipulation" OR "invoke-wmicommand" OR "mount-volumeshadowcopy" OR "new-elevatedpersistenceoption" OR "new-userpersistenceoption" OR "new-volumeshadowcopy" OR "out-compresseddll" OR "out-encodedcommand" OR "out-encryptedscript" OR "out-minidump" OR "powerup" OR "powerview" OR "remove-comments" OR "remove-volumeshadowcopy" OR "set-criticalprocess" OR "set-masterbootrecord")
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: *shadow* AND *create*
 
-process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line: "*invoke-globalo365mailsearch*" OR "*invoke-globalmailsearch*" OR "*invoke-selfsearch*" OR "*invoke-passwordsprayowa*" OR "*invoke-passwordsprayews*" OR "*invoke-domainharvestowa*" OR "*invoke-usernameharvestowa*" OR "*invoke-openinboxfinder*" OR "*invoke-injectgeventapi*" OR "*invoke-injectgevent*" OR "*invoke-searchgmail*" OR "*invoke-monitorcredsniper*" OR "*invoke-addgmailrule*" OR "*invoke-passwordsprayeas*" OR "*invoke-usernameharvesteas*"
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*foreach* AND process.command_line:*xor*
 
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*get\\-content* AND process.command_line:*\\-stream*
 
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*new\\-object* AND process.command_line:*\\.net*
+
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:*pester* AND process.command_line:*get\\-help*
+
+process.name: (*powershell.exe OR *pwsh.exe) AND process.parent.name: ("acrobat.exe" OR "acrord32.exe" OR "configurationwizard.exe" OR "cscript.exe" OR "eqnedt32.exe" OR "excel.exe" OR "hh.exe" OR "httpd.exe" OR "java.exe" OR "keytool.exe" OR "mmc.exe" OR "msaccess.exe" OR "msbuild.exe" OR "mshta.exe" OR "mspub.exe" OR "netflowdatabasemaintenance.exe" OR "netflowservice.exe" OR "nginx.exe" OR "outlook.exe" OR "php-cgi.exe" OR "php.exe" OR "powerpnt.exe" OR "rundll32.exe" OR "scrcons.exe" OR "sdiagnhost.exe" OR "serv-u.exe" OR "solarwinds.administration.exe" OR "solarwinds.collector.service.exe" OR "solarwindsdiagnostics.exe" OR "sqlservr.exe" OR "tomcat.exe" OR "umworkerprocess.exe" OR "visio.exe" OR "vmtoolsd.exe" OR "w3wp.exe" OR "windowshh.exe" OR "windowsinstaller.exe" OR "winword.exe" OR "wlsvcx64.exe" OR "wmiprvse.exe" OR "ws_tomcatservice.exe" OR "wscript.exe" OR "wsmprovhost.exe" OR "zoom.exe")
+
+process.parent.executable: (*powershell.exe OR *pwsh.exe) AND process.name: (sh.exe OR bash.exe OR schtasks.exe OR certutil.exe OR bitsadmin.exe OR wscript.exe OR cscript.exe OR scrcons.exe OR regsvr32.exe OR hh.exe OR wmic.exe OR mshta.exe OR rundll32.exe OR forfiles.exe OR scriptrunner.exe OR nslookup.exe OR msdt.exe OR csi.exe OR mofcomp.exe)
+
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:("invoke-addgmailrule" OR "invoke-domainharvestowa" OR "invoke-globalmailsearch" OR "invoke-globalo365mailsearch" OR "invoke-injectgevent" OR "invoke-monitorcredsniper" OR "invoke-openinboxfinder" OR "invoke-passwordspray" OR "invoke-searchgmail" OR "invoke-selfsearch" OR "invoke-shellcode" OR "invoke-usernameharvest" OR "invoke-webrequest" OR "invoke-aclscanner" OR "invoke-adsbackdoor" OR "invoke-arpscan" OR "invoke-backdoorlnk" OR "invoke-bypassuac" OR "invoke-credentialinjection" OR "invoke-dcsync" OR "invoke-dllinjection" OR "invoke-downgradeaccount" OR "invoke-egresscheck" OR "invoke-expression" OR "invoke-inveigh" OR "invoke-inveighrelay" OR "invoke-mimikatz" OR "invoke-mimikittenz" OR "invoke-netripper" OR "invoke-ninjacopy" OR "invoke-paranoia" OR "invoke-portscan" OR "invoke-poshrathttp" OR "invoke-postexfil" OR "invoke-powerdump" OR "invoke-powershelltcp" OR "invoke-powershellwmi" OR "invoke-psexec" OR "invoke-psinject" OR "invoke-psuacme" OR "invoke-reflectivepeinjection" OR "invoke-reversednslookup" OR "invoke-runas" OR "invoke-serviceabuse" OR "invoke-shellcode" OR "invoke-smbscanner" OR "invoke-sshcommand" OR "invoke-tater" OR "invoke-thunderstruck" OR "invoke-tokenmanipulation" OR "invoke-userhunter" OR "invoke-voicetroll" OR "invoke-winenum" OR "invoke-wmicommand" OR "invoke-wscriptbypassuac")
+
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:("add-exfiltration" OR "add-persistence" OR "add-pssnapin" OR "add-regbackdoor" OR "add-scrnsavebackdoor" OR "check-vm" OR "clear-eventlog" OR "do-exfiltration" OR "enabled-duplicatetoken" OR "exploit-jboss" OR "find-avsignature" OR "find-fruit" OR "find-gpolocation" OR "find-trusteddocuments" OR "get-addomain*" OR "get-adgroupmember*" OR "get-applicationhost" OR "get-childitem -recurse -include*" OR "get-chromedump" OR "get-clipboardcontents" OR "get-domainuser*" OR "get-foxdump" OR "get-gppautologon" OR "get-gpppassword" OR "get-httpstatus" OR "get-indexeditem" OR "get-keystrokes" OR "get-lsasecret" OR "get-netdomaintrust*" OR "get-netforesttrust*" OR "get-passhashes" OR "get-regalwaysinstallelevated" OR "get-regautologon" OR "get-rickastley" OR "get-screenshot" OR "get-securitypackages" OR "get-servicefilepermission" OR "get-servicepermission" OR "get-serviceunquoted" OR "get-sitelistpassword" OR "get-system" OR "get-timedscreenshot" OR "get-unattendedinstallfile" OR "get-unconstrained" OR "get-vaultcredential" OR "get-volumeshadowcopy" OR "get-vulnautorun" OR "get-vulnschtask" OR "get-webconfig" OR "gupt-backdoor" OR "http-login" OR "install-servicebinary" OR "install-ssp" OR "limit-eventlog" OR "mount-volumeshadowcopy" OR "new-elevatedpersistenceoption" OR "new-honeyhash" OR "new-service" OR "new-userpersistenceoption" OR "new-volumeshadowcopy" OR "out-compresseddll" OR "out-encodedcommand" OR "out-encryptedscript" OR "out-minidump" OR "port-scan" OR "remove-comments" OR "remove-eventlog" OR "remove-update" OR "remove-volumeshadowcopy" OR "set-casmailbox" OR "set-criticalprocess" OR "set-macattribute" OR "set-masterbootrecord" OR "set-wallpaper" OR "show-targetscreen" OR "start-captureserver")
+
+process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:("*%temp%*" OR "*%tmp%*" OR "*-dumpcr*" OR "*-versi 2" OR "*-versio 2" OR "*-version 2" OR "*appdatalocaltemp*" OR "*appdataroamingtemp*" OR "*base64*" OR "*bitstransfer*" OR "*bypass" OR "*detectsandboxie*" OR "*download*" OR "*ec*" OR "*en*" OR "*exeby*" OR "*exec*" OR "*getprocaddress*" OR "*gnirts46esabmorf*" OR "*http*" OR "*io.compression*" OR "*io.streamreader*" OR "*kerberos*" OR "*mimikatz*" OR "*nonin*" OR "*nopr*" OR "*powercat.ps1" OR "*sekurlsa*" OR "*siex*" OR "*system.management.automation.amsi" OR "*threading.mutex*" OR "*userspublic*" OR "*vmblastsg*" OR "*wi h*" OR "*wih*" OR "*win h*" OR "*wind*" OR "*windh*" OR "*windoh*" OR "*windowsh*" OR "*windowstemp*" OR "*windowsty*" OR "*winh*" OR "-e*" OR "-noni*" OR "-nop*" OR "-ve 2" OR "-ver 2" OR "-vers 2" OR "iex" OR "powerbreach" OR "powerup" OR "powerview" OR "volumeshadowcopytools" OR "wmic computersystem list full" OR "wmic os list full" OR "wmic path win32_pnpdevice" OR "wmic qfe list brief")
