@@ -4,17 +4,15 @@ process.name: "cmd.exe" AND NOT cidrmatch(destination.ip, "10.0.0.0/8", "127.0.0
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:("add-exfiltration" OR "add-persistence" OR "add-pssnapin" OR "add-regbackdoor" OR "add-scrnsavebackdoor" OR "check-vm" OR "clear-eventlog" OR "do-exfiltration" OR "enabled-duplicatetoken" OR "exploit-jboss" OR "find-avsignature" OR "find-fruit" OR "find-gpolocation" OR "find-trusteddocuments" OR "get-addomain*" OR "get-adgroupmember*" OR "get-applicationhost" OR "get-childitem -recurse -include*" OR "get-chromedump" OR "get-clipboardcontents" OR "get-domainuser*" OR "get-foxdump" OR "get-gppautologon" OR "get-gpppassword" OR "get-httpstatus" OR "get-indexeditem" OR "get-keystrokes" OR "get-lsasecret" OR "get-netdomaintrust*" OR "get-netforesttrust*" OR "get-passhashes" OR "get-regalwaysinstallelevated" OR "get-regautologon" OR "get-rickastley" OR "get-screenshot" OR "get-securitypackages" OR "get-servicefilepermission" OR "get-servicepermission" OR "get-serviceunquoted" OR "get-sitelistpassword" OR "get-system" OR "get-timedscreenshot" OR "get-unattendedinstallfile" OR "get-unconstrained" OR "get-vaultcredential" OR "get-volumeshadowcopy" OR "get-vulnautorun" OR "get-vulnschtask" OR "get-webconfig" OR "gupt-backdoor" OR "http-login" OR "install-servicebinary" OR "install-ssp" OR "limit-eventlog" OR "mount-volumeshadowcopy" OR "new-elevatedpersistenceoption" OR "new-honeyhash" OR "new-service" OR "new-userpersistenceoption" OR "new-volumeshadowcopy" OR "out-compresseddll" OR "out-encodedcommand" OR "out-encryptedscript" OR "out-minidump" OR "port-scan" OR "remove-comments" OR "remove-eventlog" OR "remove-update" OR "remove-volumeshadowcopy" OR "set-casmailbox" OR "set-criticalprocess" OR "set-macattribute" OR "set-masterbootrecord" OR "set-wallpaper" OR "show-targetscreen" OR "start-captureserver")
 
-process.name : "cmd.exe" AND process.parent.name: "sqlservr.exe" AND NOT process.args : ("\\\\* OR diskfree OR rmdir OR mkdir OR dir OR del OR rename OR bcp OR *xmlnamespaces*")
+process.name : "cmd.exe" AND process.parent.name: "sqlservr.exe" AND NOT process.command_line : ("diskfree OR rmdir OR mkdir OR dir OR del OR rename OR bcp OR *xmlnamespaces*")
 
 process.parent.executable:*\\winlogon.exe OR *\\services.exe OR *\\lsass.exe OR *\\csrss.exe OR *\\smss.exe OR *\\wininit.exe OR *\\spoolsv.exe OR *\\searchindexer.exe AND process.executable:*\\cmd.exe OR *\\powershell.exe
 
 process.name: (*powershell.exe OR *pwsh.exe) AND file.path: *startup* AND file.path: *.lnk
 
-process.parent.executable.text:*\cmd.exe AND process.parent.command_line.text:*\/c\* OR *\/k\* AND process.executable.text:*\chcp.com AND process.command_line.text:*chcp OR *chcp\OR *chcp \AND not grandparentcommandline:*\/c\c\:\programdata\anaconda3*"
-
 process.parent.executable:*\\winlogon.exe OR *\\services.exe OR *\\lsass.exe OR *\\csrss.exe OR *\\smss.exe OR *\\wininit.exe OR *\\spoolsv.exe OR *\\searchindexer.exe AND process.executable:*\\powershell.exe OR *\\pwsh.exe OR *\\cmd.exe AND user.name:*authori* OR *autori* AND NOT process.command_line:*\route\ * AND process.command_line:*\add\*
 
-process.parent.name: "svchost.exe" AND process.name : "cmd.exe" AND NOT process.args : ("??:\\program files\\npcap\\checkstatus.bat? OR ?:\\program files\\npcap\\checkstatus.bat OR \\system32\\cleanmgr.exe OR ?:\\windows\\system32\\silcollector.cmd OR \\system32\\apphostregistrationverifier.exe OR \\system32\\servermanagerlauncher.exe OR dir OR ?:\\program files\\* OR ?:\\program files (x86)\\* OR ?:\\windows\\lsdeployment\\lspush.exe OR (x86)\\fmauditonsite\\watchdog.bat OR ?:\\programdata\\chocolatey\\bin\\choco-upgrade-all.bat OR files\\npcap\\checkstatus.bat")
+process.parent.name: "svchost.exe" AND process.name : "cmd.exe" AND NOT process.command_line : ("??:\\program files\\npcap\\checkstatus.bat? OR ?:\\program files\\npcap\\checkstatus.bat OR \\system32\\cleanmgr.exe OR ?:\\windows\\system32\\silcollector.cmd OR \\system32\\apphostregistrationverifier.exe OR \\system32\\servermanagerlauncher.exe OR dir OR ?:\\program files\\* OR ?:\\program files (x86)\\* OR ?:\\windows\\lsdeployment\\lspush.exe OR (x86)\\fmauditonsite\\watchdog.bat OR ?:\\programdata\\chocolatey\\bin\\choco-upgrade-all.bat OR files\\npcap\\checkstatus.bat")
 
 process.parent.executable:*\serv\-u.exe AND process.executable:*\cmd.exe
 
@@ -78,7 +76,7 @@ process.parent.name: "hh.exe" AND process.name : ("cmd.exe")
 
 process.parent.executable:*\\mmc.exe AND process.executable:*\\cmd.exe OR *\\powershell.exe OR *\\pwsh.exe OR *\\wscript.exe OR *\\cscript.exe OR *\\sh.exe OR *\\bash.exe OR *\\reg.exe OR *\\regsvr32.exe OR process.executable:*\\bitsadmin*
 
-process.name : "sc.exe" AND process.parent.name: ("cmd.exe") AND process.args:("config OR create OR start OR delete OR stop OR pause") 
+process.name : "sc.exe" AND process.parent.name: ("cmd.exe") AND process.command_line:("config OR create OR start OR delete OR stop OR pause") 
 
 process.command_line:*appvlp.exe* AND process.command_line:*cmd.exe AND process.command_line:*.sh* OR *.exe* OR *.dll* OR *.bin* OR *.bat* OR *.cmd* OR *.js* OR *.msh* OR *.reg* OR *.scr* OR *.ps* OR *.vb* OR *.jar* OR *.pl* OR *.inf*"
 
@@ -144,13 +142,13 @@ process.executable:*\\powershell.exe OR *\\mshta.exe OR *\\wscript.exe OR *\\csc
 
 process.parent.executable.text:*screenconnect.clientservice.exe AND process.executable.text:*\\cmd.exe OR *\\powershell.exe OR *\\pwsh.exe
 
-process.name : ("cmd.exe") AND process.args : ("copy* OR move* OR cp OR mv") AND process.args : "*$*"
+process.name : ("cmd.exe") AND process.command_line : ("copy* OR move* OR cp OR mv") AND process.command_line : "*$*"
 
 process.executable.text:*\cmd.exe AND process.parent.executable.text:*\windows\installer\* AND process.parent.executable.text:*msi* AND process.parent.executable.text:*tmp"
 
 process.parent.name: ("acrord32.exe OR acrobat.exe OR foxitphantompdf.exe OR foxitreader.exe") AND process.name: "cmd.exe"
 
-process.name : "cmd.exe" AND process.args : "/c" AND process.args : ("set OR dir")
+process.name : "cmd.exe" AND process.command_line : "/c" AND process.command_line : ("set OR dir")
 
 process.executable:*\cmd.exe AND process.command_line:*\/q* AND process.command_line:*\/c* AND process.command_line:*chcp*"
 
@@ -228,7 +226,7 @@ process.parent.executable:*\\mmc.exe AND process.executable:*\\cmd.exe OR *\\pow
 
 process.parent.name: "zoom.exe" AND process.name : ("cmd.exe")
 
-process.executable.text:*\cmd.exe AND process.parent.executable.text:*\7zfm.exe AND not process.command_line.text:*\/c\* OR *\/k\* OR *\/r\*
+process.executable.text:*\cmd.exe AND process.parent.executable.text:*\7zfm.exe AND NOT process.command_line.text:*\/c\* OR *\/k\* OR *\/r\*
 
 process.parent.name: ("w3wp.exe OR httpd.exe OR nginx.exe OR php.exe OR php-cgi.exe OR tomcat.exe") AND process.name : ("cmd.exe")
 
@@ -240,7 +238,7 @@ process.parent.executable:*\\keytool.exe AND process.executable:*\\cmd.exe OR *\
 
 process.parent.executable:*\cmd.exe AND process.executable:*\nltest.exe AND process.command_line:*\/domain_trusts\/all_trusts*"
 
-process.parent.name: "wmiprvse.exe" AND process.name : "cmd.exe" AND process.args : "\\\\127.0.0.1\\*" AND process.args : ("2>&1 OR 1>")
+process.parent.name: "wmiprvse.exe" AND process.name : "cmd.exe" AND process.command_line : "\\\\127.0.0.1\\*" AND process.command_line : ("2>&1 OR 1>")
 
 process.name: (*powershell.exe OR *pwsh.exe) AND process.command_line:(*pester* AND *get\\-help*)
 
@@ -248,7 +246,7 @@ process.parent.executable:*\mmc.exe AND process.executable:*\cmd.exe
 
 process.parent.executable:*\\serv\-u.exe AND process.executable:*\\cmd.exe OR *\\powershell.exe OR *\\pwsh.exe OR *\\wscript.exe OR *\\cscript.exe OR *\\sh.exe OR *\\bash.exe OR *\\schtasks.exe OR *\\regsvr32.exe OR *\\wmic.exe OR *\\mshta.exe OR *\\rundll32.exe OR *\\msiexec.exe OR *\\forfiles.exe OR *\\scriptrunner.exe
 
-process.parent.executable:*\vmtoolsd.exe AND process.executable:*\cmd.exe AND not process.command_line:*\vmware\vmware\tools\poweron\-vm\-default.bat* OR *\vmware\vmware\tools\poweroff\-vm\-default.bat* OR *\vmware\vmware\tools\resume\-vm\-default.bat* OR *\vmware\vmware\tools\suspend\-vm\-default.bat*"
+process.parent.executable:*\vmtoolsd.exe AND process.executable:*\cmd.exe AND NOT process.command_line:*\vmware\vmware\tools\poweron\-vm\-default.bat* OR *\vmware\vmware\tools\poweroff\-vm\-default.bat* OR *\vmware\vmware\tools\resume\-vm\-default.bat* OR *\vmware\vmware\tools\suspend\-vm\-default.bat*"
 
 process.name: (*powershell.exe OR *pwsh.exe) AND NOT process.parent.executable: explorer.exe OR compattelrunner.exe
 
@@ -352,7 +350,7 @@ process.command_line:*appvlp.exe* AND process.command_line:*cmd.exe* OR *powersh
 
 process.executable.text:*\cmd.exe AND process.parent.executable.text:*\elevation_service.exe AND integritylevel:\"system\""
 
-process.parent.command_line:*\cmd.exe* AND process.parent.command_line:*\/c* AND process.parent.command_line:*c\:\windows\setup\scripts\* AND process.parent.command_line:*setupcomplete.cmd OR *partnersetupcomplete.cmd AND not process.executable:c\:\windows\system32\* OR c\:\windows\syswow64\* OR c\:\windows\winsxs\* OR c\:\windows\setup\*"
+process.parent.command_line:*\cmd.exe* AND process.parent.command_line:*\/c* AND process.parent.command_line:*c\:\windows\setup\scripts\* AND process.parent.command_line:*setupcomplete.cmd OR *partnersetupcomplete.cmd AND NOT process.executable:c\:\windows\system32\* OR c\:\windows\syswow64\* OR c\:\windows\winsxs\* OR c\:\windows\setup\*"
 
 process.parent.executable:*\\w3wp.exe OR *\\httpd.exe OR *\\nginx.exe OR *\\php\-cgi.exe OR *\\tomcat.exe OR *\\umworkerprocess.exe OR *\\ws_tomcatservice.exe AND process.executable:*\\cmd.exe OR *\\powershell.exe
 
@@ -405,5 +403,3 @@ process.executable:*cmd.exe AND file.path:*.vhd OR *.bac OR *.bak OR *.wbcat OR 
 process.parent.executable:\"c\:\\windows\\hh.exe\" AND process.executable:*\\cmd.exe OR *\\powershell.exe OR *\\pwsh.exe OR *\\wscript.exe OR *\\cscript.exe OR *\\regsvr32.exe OR *\\wmic.exe OR *\\rundll32.exe
 
 winlog.event_data.originalfilename:\"cmd.exe\" AND process.command_line.text:cmd\* OR cmd.exe* OR c\:\windows\system32\cmd.exe* AND process.command_line.text:*psinject* OR *spawnas* OR *make_token* OR *remote\-exec* OR *rev2self* OR *dcsync* OR *logonpasswords* OR *execute\-assembly* OR *getsystem*"
-
-process.executable:*\cmd.exe AND process.parent.executable:*\7zfm.exe AND not process.command_line:*\/c\* OR not _exists_:process.command_line"
