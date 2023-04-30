@@ -1,0 +1,109 @@
+ <-----------------> IPS
+ 
+What is the nature of the communication between the device and this IP?
+- Is this communication expected?
+
+What protocol or service was used?
+- Was non-DNS traffic routed through port 53?
+- Was encrypted traffic sent via port 80?
+
+What happened on the device immediately before and after the event in question?
+- Did a recently downloaded file initiate the connection?
+
+What data was transferred during the HTTP communication sequence?
+- Was a file downloaded?
+
+If files were transferred, were they malicious in nature?
+- Look up file hash. 
+
+Is there anything suspicious about the user agent that was used?
+- Custom user-agents are suspicious.
+
+Is there anything suspicious about the referrer that led to communication with this IP?
+- Does referrer originate from a suspicious domain?
+
+Is there anything suspicious about the domain name in the request?
+- Look up domain in threat intelligence platform.
+
+Is there anything suspicious about the certificate exchange?
+- Look up certificate that HTTPS traffic exchanges.
+
+When did the communication between this IP and the device start and end? 
+ 
+What was the volume, and did it occur all at once or over time with some level of frequency?
+- Was the communication automated or human-initiated?
+
+What other devices on the network have communicated with this IP?
+
+
+What user is associated with the device the IP communicated with?
+
+Is this type of communication normal for this device?
+
+Has any suspicious domains resolved to this IP?
+
+Have a large number of domains resolved to this IP?
+
+Who is the registered owner of the IP space that includes this IP?
+
+Is any malware known to communicate with this IP?
+
+Does this IP appear on any OSINT blacklists?
+
+ <-----------------> DOMAINS
+
+What IPs did the domain resolve to when the communication was observed?
+
+Has this domain resolved to any suspicious IPs? 
+
+Have other suspicious domains resolved to an IP that this domain has also resolved to?
+
+Has this domain resolved to a large number of IPs in a short time?
+
+Who is the registered owner of this domain? Is there anything suspicious there?
+
+Is any malware known to communicate with this domain?
+
+Does this domain appear on any OSINT blacklists?
+
+<------------> FILE HASHES
+
+What are the capabilities of this file?
+- Sandbox
+
+Are any OSINT sources aware of potentially malicious files sharing the same imphash as this file?
+- Look for related files 
+
+Are any of those file hashes present on any internal systems?
+
+Have any of those file hashes been observed in network traffic?
+
+Are any artifacts from the sandbox execution present on the affected system?
+
+If the file is compiled--when was it compiled?
+
+Does the name of the file look suspicious?
+
+Did the file execute?
+
+Was there any suspicious network communication right after the file was downloaded?
+
+Is there any evidence of process execution on the host?
+
+Did any other devices download or upload this file?
+
+Were any other files downloaded with the same imphash as the file in question?
+
+ <------------> USERNAME
+
+What systems does this account normally authenticate to?
+
+Is the activity occuring outside of the users normal usage window?
+
+Does this user normally log into the network remotely?
+
+Is the user an admin on the system?
+
+What was the user doing before and after the suspicious event?
+
+Is there anything suspicious running on the user's system?
