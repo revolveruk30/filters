@@ -1,1 +1,223 @@
-https://drive.google.com/file/d/1NKt46iSVW-tsTo6InwmTAxAjkqVaqUT3/view?usp=sharing
+The clock starts ticking as soon as an attacker accesses your network. We have seen attackers breaching organizations from initial breach via data exfiltration to full encryption of the network in less than 24 hours. That means, we as defenders have to become very fast and efficient to compete. At the same time, we have to be able to slow attackers down as much as possible to interfere with their actions on objective and buy us some time.
+
+An attack from a business perspective does not necessarily end once the attacker is not present in the network anymore. Exfiltrated data can harm the victim even long after the attack is over. So, priority number two is to identify leaked data. That allows the victim to better control the impact of the loss and notify affected partners and customers in a more informed way.
+
+After a breach, you definitely want to avoid being breached the same way again. That means that we need to reconstruct the attack and find points where we could have intercepted the attack path in the most efficient way.
+
+What we strive to do is to industrialize the Incident Response to a certain extent. We want to have repeatable, well-defined tasks for analysts. The engagement lead then acts like a puppeteer and controls the investigation.
+
+In most breaches, the attacker is way ahead at first. It’s our job to regain control. Knowledge is power and power gives you control. For that reason, if you want to get in control, you need to develop knowledge about the attack mechanics, but also knowledge about the victim. 
+
+Every case starts with some sort of suspicion... No matter what, to investigate the incident you need to scope it first. In many cases, one host behaves strangely. Oftentimes it’s not a security alert that tips the victim off but a capacity or availability alert. So, figure out if it’s really an attack, then figure out how big it is. Be ready to review your assessment over and over again.
+
+The main goal while the attacker is still ahead, is to develop more knowledge about the attack. That means that pulling the plug too early might make you play a whack a mole game. I’d rather get to know the attackers first before I kick them out of the network. You want to counter the urge to pull the plug too early. It’s a natural reflex to get rid of a foreign object in your organization as soon as you detect it.
+
+Obviously doing nothing against the attacker would be wrong as well. This is the reason we have the containment phase where we mostly watch the attacker to develop intelligence. The main difference between containment and remediation is that in remediation you just try to kick the attacker out. In the containment phase you limit the ability of the attacker to operate in the network, ideally in a way the attacker does not identify as defensive action.
+
+Active Defense in IT Security means actively setting countermeasures against a potential breach. The goal is to slow down an attacker. Many of the tactics applied in Active Defense happen in the containment phase of the IR cycle. Ideally, organizations can prepare for Active Defense before they get hit. Using active defense, organizations present themselves as less attractive targets by raising the costs of the attack for the attackers.
+
+Active Threat Hunting can support the security posture in multiple ways: 1. It prepares the security team for real attacks 2. It uncovers visibility gaps 3. It forces the security team to think about potential threats 4. It evaluates the tool landscape and the proficiency of how the hunters use the tools
+
+A hunter has two options to catch the prey. One is actively hunting it down, and the other one is laying traps. On a large scale, the second approach might scale better. As a result, it makes a lot of sense to lay some traps for potential attackers in your network. This is usually easy, cheap, and if done right will not flood you with false positives.
+
+
+Bit Flipping: When attackers stage files for exfiltration, they usually pack them up with compression tools. If you flip only a few bits in these files, the entire file becomes unusable. Bitflips can be done on the endpoint or on transit.
+
+Fake mails: When attackers read the victims emails, defenders can leverage that to feed the attackers wrong information.
+
+Canary/Honey tokens: These are files, folders, links, or URLs that throw an alert when they have been accessed.
+
+Honeypots: These simulate machines or services. When attackers try to connect to a service, the honeypots will throw an alert.
+
+There is way more to successful large-scale incident response than just technical skills. To stay on top of the game, you’ll need to have wide visibility into the environment. You’ll also need to be able to efficiently acquire and analyze data in pretty large quantities. Technical skills can help to develop and apply more sophisticated techniques to raise efficiency.
+
+Part of an efficient work process is to be aware of what you’ve already done and what you still need to do to uncover new facts. Documentation is key to reach that goal.
+
+There are two ways to work in incident response. You can define what you need based on what the available tools are able to give to you, or you can define what you need and then find or create the right tool for it. While the first approach is easier, it might not be very successful in the long run. The second approach brings our industry further and reduces detection gaps.
+
+Visibility can be differentiated into always on visibility and on-demand visibility. Always on visibility is usually established by various forms of logging, like system logs, Sysmon or NetFlow on the network. On-demand visibility means you do get full visibility but it’s a point in time request that delivers the data rather than a constant flow. You might mix these two approach es by acquiring log files in a onetime operation using an EDR or a forensic agent.
+
+Using Endpoint Detection and Response tools is a very common way in organizations to establish visibility. If the solution has been rolled out some time before a breach, the coverage is usually pretty good... As the name implies, there is also a response capability which ranges from direct blocking of detected attack attempts to quarantining machines. Most EDR tools support some form of hunting. There the general rules apply. That means, that the hunting hypothesis should never be limited by the tool used to check the hypothesis.
+
+Unfortunately, many EDRs use the windows API to access files, registry, and logs. That means that they could be tricked by rootkits. Also, they often don’t give you access to artifacts that were written before the EDR was installed in the endpoint
+
+Network metadata can be useful as an enrichment source. Imagine you identify a C2 host. You can easily identify more infected hosts by leveraging the firewall logs. The actual network data is not as useful as it used to be as most protocols are encrypted today. If you don’t break up SSL at your perimeter, you have no clue what data is being exchanged.
+
+Forensic agents offer powerful forensic features. They will usually not be tricked by rootkits and allow for historical analysis of all forensic artifacts. Ideally, they are setup in a way that the analyst can extend their historical analysis of all forensic artifacts. 
+
+Enterprise architectures get more complicated every year. To hunt an attacker down you need to understand how large domains are built, what kind of features Microsoft offers for large networks and which of them attackers can use to their advantage. This kind of knowledge is also important for remediation. If you need to rebuild/redesign large parts of the infrastructure, the suggestions you as an incident responder give should be feasible.
+
+Malware analysts dissect malware. For most cases the most important data is the configuration and the capabilities of the malware. In most cases the first thing IR leads want to get from a malware analyst are the C2 addresses for backdoors. They are also able to extract other IOCs like in-memory yara rules you can use to hunt for the attacker further. 
+
+Divide and conquer is a principle that most Software developers learn pretty early in their career. The same principle can be applied to incident response. You need to break down the complexity of a large-scale breach into digestible pieces. These bits and pieces for us are predefined tasks.
+
+Standard tasks allow everyone to complete the task the same way and facilitiates the creation of documentation that allows someone to grasp the gist of the case in a matter of minutes. A nice side effect of swapping in and out analysts is that you might get a new perspective on the case with every analyst that joins. Sometimes that renders unexpected results.
+
+The guiding principle for efficient IR is to assign tasks based on well-defined questions you want to answer. For example, when you deep dive into a hard-drive image you can work for days and weeks and will still chase potential evidence that doesn’t necessarily help the case. If you instead get a very specific question to answer, you are done once that question is answered.
+
+On a strategic level, you need to understand your specific risk profile first. Once you do that you can leverage threat intel to map potential threats to your specific risks. On a tactical level, you can acquire information about attackers’ TTPs, but you need to figure out which of those pose real risks to you. On an operational level you may want to compile and scan for technical IOCs that might be suitable to detect the attacker. Again, not all IOCs available will suit all organizations alike.
+
+Who are my adversaries? This question is fundamental. If you are setting up to defend your castle you might prepare differently depending on who you think will attack you.
+
+What are they after? While many organizations’ defensive strategies are focused on what they believe is valuable for the company, threat intelligence can help you to understand what attackers are after.
+
+While strategic questions mostly focus on what you are facing on a high level, tactical questions ask for more concrete measures against the various threats.
+
+Sample Guiding Questions...
+
+What TTPs are our adversaries using?
+
+Which hunting initiatives can we run to assure that they are not already in? We leverage threat intelligence to create a hypothesis of how certain attackers would enter the network. Then we run through all hypothesis to rule out an actual attack that already happened.
+
+How can we acquire more intelligence about the specific threats targeting us? When planning out the hunts we might get into a situation where we feel that we need more information to plan the hunt. In this case we need to make sure we get the right sources for more threat intelligence.
+
+How do TTPs translate into behavioral IOCs? So far, we’ve been discussing generic TTPs. To hunt for them and detect them, we need to translate them into IOCs. Some of these IOCs will work well in our environment, some won’t.
+
+How can I get accurate and verified technical IOCs? While many vendors sell IOCs, the best ones are the ones you create yourself during an IR investigation.
+
+Hunting and detection are clearly an area that cannot be run without proper threat intelligence. We need threat intelligence to form hypothesis and to create appropriate detection rules. Incident response creates threat intel on one hand and consumes threat intel on the other.
+
+The most valuable threat intelligence is usually the one you get from industry peers. They often share the same risk profile, and they will often be attacked by the same groups that attacks their peers. You still need to create your own knowledge from the peer data, but it’s a better start than a generic vendor report or publicly available intel.
+
+Creating knowledge first requires information. That can be information about threat groups, their TTPs or even IOCs. To make that information comparable it needs to be normalized and categorized.
+
+Timeline analysis is a powerful technique, but it’s not the only valid technique. In some cases, very specific questions may be best answered by searching for the artifact without needing to create full timelines. However, in most investigations, timeline analysis becomes an important component of piecing together the story and effectively communicating it to stakeholders.
+
+Threat Hunting & Assessment: We will start our process by looking at the network using tools that can scale collection and analysis, focusing on occurrence stacking and outlier analysis.
+
+Triage Collection & Analysis: As systems of interest are identified, we will perform targeted triage collection to acquire a deeper understanding of attacker activity. Triage data can include traditional forensic artifacts like application execution data, filesystem information, and in-memory artifacts such as application execution data, filesystem information, and in-memory artifacts such as process trees.
+
+Deep-Dive Forensics: Finally, we will reserve our limited analyst time for performing deep-dive forensics on only a handful of systems having the best chance to help us understand attacker tools and tradecraft, and craft better indicators to assist with scoping additional compromised systems.
+
+One of the most distinguishing features of EDR tools is the detailed logging available to help track attacker activity on endpoints.
+
+Carbon Black... "If you could monitor execution you could skip all the secondary and tertiary data collection and get to the heart of the matter."
+
+The visibility EDR provides across the fleet of endpoints can be a tremendous force multiplier for security teams, giving the ability to hunt for evil activity at scale. Once an indicator of attack is discovered, the ability to go back in time and see where else that activity was recorded significantly reduces identification and containment times and greatly increases the cost to the adversary as their tradecraft is discovered.
+
+The AV detection techniques for many of the commercial solutions are quite sophisticated, using some combination of signature analysis, dyna mic code analysis, reputational lookups, and machine learning/artificial intelligence.
+
+The response features incorporate even more functionality to deal with advanced threats. Many EDR tools allow for some level of forensics, mitigation, and remediation. They often allow for files to be retrieved from or pushed to the endpoint.
+
+Unusual process behavior that is bad in one environment is perfectly legitimate in another. This means most solutions have to err on the side of caution and focus on detection and logging over prevention.
+
+Mark Russinovich from Microsoft Sysinternals created Sysmon to fill in the visibility gaps in Windows event logging. Sysmon logging can easily show that a new file was created via an encoded PowerShell command, which resulted in a Registry key update and a new alternate data stream. It can then provide the hash of the file and track any network connections created by the suspicious running process.
+
+Perhaps most importantly, filtering and allowlisting can be pre-configured to eliminate noise and reduce the size of logs. This makes collection of items like process execution far more feasible than traditional 4688 events in the Security event log.
+
+Because it’s simple and relatively effective, attackers frequently rename their binaries to try to blend in and avoid detection. In such cases, we usually need to focus on command-line arguments to get additional context.
+
+An attacker can take basic steps to minimize process execution in the environment overall. Using a C2 implant as a tunneling route into the environment can allow the attacker to run suspicious recon and lateral movement processes from their own system rather than from the victim system. The more that an attacker can do from their own environment, the fewer footprints they leave in the victim’s environment.
+
+Many C2 frameworks such as Metasploit and Cobalt Strike offer plenty of functionality from their implant. Often this is extended functionality brought down as in-memory payloads. Regardless, the less that attackers have to rely on other processes on the system, the better.
+
+For incident responders, the ability to have log data from many sources in one log management system is critical for getting an initial big-picture overview of any malicious activity that’s underway. However, as responders gather more context about an incident, log data alone is often not enough, and a deeper dive is still required.
+
+In order to fully analyze compromises, incident responders need to dig even deeper, with the ability to interrogate the network and endpoints for specific indicators of compromise (IOCs). For greater network visibility, we often turn to full-packet capture systems. These are designed to store days or weeks’ worth of entire network data for historical analysis. 
+
+Then from an endpoint perspective, we generally turn to agent-based solutions. With proper agent-based access on the endpoints, incident responders will generally have the direct access they need for fully querying and analyzing the extent of complex breaches.
+
+Generally speaking, tools such as Elasticsearch allow us to sift through massive data sets to find the two types of “pivot points” for finding context amongst the noise: • Artifact-based: Quickly search on file names, usernames, domains, IP addresses, etc. • Time-based: Locate a specific time of interest, often based on an alert or notification
+
+For DFIR purposes, we can group compromised systems into one of three types. This reflects the challenges defenders face in detection & response. 
+
+Systems with active malware are often the easiest to detect in your environment and easiest to identify for response/remediation activity. Active malware creates artifacts across the system and often triggers alerts security tooling.
+
+The second type are systems where malware has run in the past but is not currently active. This is harder to detect with both EDR tooling and triage/memory forensic techniques. This is often the state of systems where an attack tool has run once, and the attackers have moved on. A common example is privilege escalation tooling, where the attackers elevate to SYSTEM and no longer need to use the tool. With dormant malware, defenders have to work harder to identify compromises.
+
+The last type is the hardest to respond to and the one we will cover in this section. This is the type where attackers haven’t introduced their own malware on disk. Often this involves using legitimate applications making their activity almost identical to a normal user, such as RDP with stolen credentials. PowerShell use falls into this category as well, with attackers making extensive use of encoded scripts – often storing them in registry autorun as “fileless” malware.
+
+Fileless malware is a bit of a misnomer. Really it means malware where there is no malicious executable file on disk in the traditional sense. For DFIR purposes, however, it is important to note that fileless really isn’t artifactless. Even without an executable on the filesystem, there are still lots of places where evidence might be resident on the disk.
+
+Key locations can include: • Evidence of execution – Prefetch, Shimcache, AppCompatCache • Registry keys – large binary data, encoded PowerShell entries • Event logs – Process Creation, Service Creation, Task Scheduler logs • PowerShell transcripts/PSReadLine • Scheduled Tasks • Autorun/Startup Keys • WMI Event Consumers
+
+Common examples of “fileless” malware include: • In memory execution. This is often used by tools like Cobalt Strike or Meterpreter, where malicious code is injected into a running process without being present on the disk. • Registry keys. Entire PowerShell scripts can be encoded in a registry key and then called by an apparently legitimate script. Attackers even put entire executable files, base64 encoded, into registry keys. • PowerShell and WMI are very popular tools for script based malicious activity with scripts able to make direct API calls and WMI event filters allowing very complicated triggers for execution.
+
+Threat actors are increasingly moving towards using existing, pre-installed and built-in applications rather than bringing over their own tools. This is referred to as “living off the land.”
+
+The primary advantage to attackers is that most of these applications are digitally signed and trusted by the environment. Even in hardened environments it is rare for the trusted applications to be blocked and some are so noisy that security teams simply suppress them in monitoring tools. Conversely, tools built by the attackers often stand out, are rarely digitally signed and even a single execution can trigger enough alerts for incident response to start.
+
+The LOLBAS project breaks down the applications into a range of functions. These include: • ADS – Use and manipulate Alternate Data Streams. • AWL bypass – Bypass application execution restrictions, AppLocker etc. • Compile – Compile code on the target. • Copy – Create copies of files and data. • Credentials – Access and manipulate account credentials. • Decode – Convert files from one encoding to another (often Base64 or hex to ASCII). • Download – Download files from the internet, SMB shares or other locations controlled by the attacker. • Dump – Dump data from databases, process memory, NTDS etc. • Encode – Convert files from one encoding to another (often ASCII to Base64). • Execute – Run code. • Reconnaissance – Discover useful information. • UAC bypass – Avoid user access control alerts. • Upload – Send files to the internet, SMB shares, or other locations controlled by the attacker.
+
+For defenders, it is equally useful. Searching through SIEM/EDR tooling for process command lines where regsvr32 calls a remote script can provide an excellent detection mechanism. Each entry also includes a section with some recommendations on how best to spot activity. For example, with Regsvr32.exe, this is what a defender should look for: •regsvr32.exe getting files from the internet •regsvr32.exe executing scriptlet files
+
+During Incident Response, you can search for likely candidates for an activity and then drill in. For example, suppose attackers bypassed UAC on a system. A quick search shows two LOLBAS for this, eventvwr.exe and wsreset.exe. The IR team can then validate this by checking for evidence of execution of either executable during the attack time frame. If both applications are rarely used in the environment, this presents a very high-quality signal.
+
+There are some LOLBAS which are more frequently seen than others. This can be useful when you are looking for starting points for a threat hunt, or if an IR investigation is stalled.
+
+Although LOLBAS cover a variety of functions, in the author’s experience, two are used more often than others. 
+
+• Downloaders. This is the group of LOLBAS which allow attackers to reach out to remote resources and transfer them to the victim system. This includes connections across the internet as well as the tools attackers use to move across network shares within an organization. Downloaders are often used to pull across scripts with the intent of bypassing application restrictions. 
+
+• Execution. Lots of modern systems have restrictions on what executables can run on a system and where they are allowed to execute from. This makes it hard for attackers to get malicious code to run but can be bypassed using LOLBAS. This is commonly seen when attackers can get executable code into a victim’s downloads folder and the system (AppLocker, AV etc.), prevents execution from that location. By using a LOLBAS to initiate the execution, the attacker can bypass the restrictions.
+
+One of the most effective ways of identifying modern attacks in general, and LOLBAS use specifically, is by running regular threat hunts. This significantly reduces attacker dwell time and improves general network visibility and detection.
+
+In general, there are two main ways to conduct a threat hunt. You can modify this to suit your organizational needs and it is a good idea to run both types. 
+
+• Hypothesis Led Hunting. With this approach, you start by forming a hypothesis on something an attacker might do. This combines well with Red Team/Adversary Emulation attacks and the MITRE ATT&CK framework is very useful. 
+
+• Intelligence Led Hunting. This approach takes targeted information about a known threat to your organization and then hunts across the data to find any evidence it may have happened. It is important to note that both hunts are equally important. Avoid thinking of this as one is better than the other.
+
+It is important to make sure that this hunt has a valid, effective, and well thought out hypothesis. First the organization identifies a threat actor/group they feel presents a threat. This analysis identifies APT29 as a valid concern. Next the hunt team reviews the MITRE ATT&CK framework for any useful information on this group to determine a good indicator to hunt for. After reviewing the data, and based on previous hunts/incidents, it is determined that the use of sdelete (for example) would be a good indicator. The hunt team made this decision as the tool is not in standard use in their environment.
+
+Finally, a decision is made as to what data will best serve this hunt. One option might be to collect the file hash of every executable and compare that with known entries for sdelete but the hunt manager determined that this would be resource intensive and instead the decision is made to collect the prefetch data from every endpoint and check for references the application.
+
+When hunting LOLBAS, the primary events will be in Sysmon Event 1/Security Event 4688 (process creation) and Security Event 5156 (Windows Firewall). Remember, Command Line auditing is essential for the process creation events. 
+
+With LOLBAS, the main network-based detection comes from the User Agent string or ports used. The nature of LOLBAS makes it challenging for attackers to modify the User Agent string. Increasingly attackers are using HTTP/HTTPS (ports 80/443) for C2 which makes it harder to spot malicious traffic by port alone. For best results ensure that you proxy all outbound traffic and at least have the ability to inspect the User Agent string for traffic. This may require TLS inspection. Once you have this data you can run threat hunts specifically looking at the strings and identify suspicious activity.
+
+Some common LOLBAS user agent strings are • Microsoft-CryptoAPI/* – Certutil.exe • Microsoft BITS/* – BITS • Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.610 – PowerShell A larger list of strings is at https://for608.com/uastrings.
+
+When it comes to hunting LOLBAS, be prepared for a lot of noise. Remember the attackers are trying to look like normal users so they will blend in. Your hunts, and IR, should focus on key events to filter out the noise. An example is looking for malicious use of reg.exe – instead of finding all uses, focus on ones hitting specific registry keys. When you find pivot points, use these to help focus in on the data and be prepared to zoom in and out as you find new things. Finally, building a timeline is a definite advantage and helps organize activity.
+
+Prefetch data provides evidence of execution and is difficult for attackers to modify without leaving more traces of their activity. Prefetch is very useful for determining a pivot point – such as time of execution or folder location – which can then be used to focus the investigation.
+
+For most hunts, it is worth starting with: • Command line used and any arguments • Folder where the command was issued • User account used to run the command
+
+Often overlooked, the Windows firewall event log is a useful source of LOLBAS detections. It can be very noisy but filtering on application name is an effective way to narrow down the search quickly.
+
+• Process ID/Application Name. This one of the better starting points for hunt and allows you to focus on specific event such as downloaders. 
+
+• Destination IP address. This can be deconflicted with known good addresses or any threat intelligence you might have about an attack. 
+
+• Destination Port. Is this what you expect to see? If you see calc.exe making a connection to an external IP address on port 4444, it is unlikely to be legitimate.
+
+Although LOLBAS hunting is harder on the network, with the correct instrumentation it is still possible. Additionally, network evidence allows for a much greater range of threat hunting and IR, so it is always worth gathering it whenever possible.
+
+Almost every ransomware variant makes extensive use of LOLBAS for a large part of its kill chain. Often this is to examine the target system, establish what controls are running, disable them and then remove backups/recovery options.
+
+Ransomware is noisy. Although initial access may be stealthy, when it runs, ransomware has to start disabling key Windows processes to become effective. The most common example is deleting volume shadow copies & disabling the volume shadow service. This often happens early in an attack and can be a loud signal in monitoring tools.
+
+The problem is that ransomware can be very aggressive. Automation and scripting mean that the time between a detection event and it being too late to prevent the attack is very short. However, encryption of data takes time, so if it is possible to detect the early stages this may allow sufficient time for response to prevent the attack.
+
+Early detection of ransomware is critical.
+Examples of precursor activity to look for include: 
+• Disabling security tools to allow the later stages to run unhindered • Modifying firewalls/ACLs to allow access • Taking ownership of files to ensure they can be encrypted • Disabling event logs to reduce alerts/hide tracks • Disabling backups/Volume Shadow copies to hinder file recover In most cases this is done with LOLBAS commands rather than external malware or exploits. More details and examples of the commands used can be found at https://for608.com/detectransom
+
+An EDR remains an essential tool for any form of enterprise incident response and is one of the best resources defenders have for dealing with modern attacks. Most commercial solutions have built in detections for LOLBAS activity.
+
+There are three main areas where an EDR tool adds significant value: • Real time detection of events. Rather than wait for an event log to be generated and forwarded to a SIEM and then turned into an alert, an EDR tool can give near real time notification of attacker behavior. This significantly moves the response earlier in the attackers kill chain. • The ability for responders to interact directly with the target system during response to hunt for novel or modified attacks. This is a significant improvement over pure reliance on SIEM tooling and becomes critically important during enterprise IR. • The ability to hunt across endpoints to look for signs of attacker behavior.
+
+Good incident response, threat hunting and even general security improvement is a cycle.
+
+Intelligence Led Security Improvement 
+
+• Assess Threats. Use a combination of threat intelligence, threat modeling or data generated from your tools/previous incidents. Work out what credible threats you face and use this to prioritize what areas you need to check, what you know is bad and where improvement will have the most value. 
+
+• Build Hunts. Based on the considered threat assessments, you should build a series of hunts. Although there are many ways to hunt, it can be more manageable to run a lot of very focused hunts rather than a few complex ones. 
+
+• Gather Data. Collect data for the hunt. If the data isn’t available, or getting it is challenging, this should be flagged up as a finding of the hunt. 
+
+• Analyze Data. As well as looking for attacker behavior, this is a good opportunity to baseline the organization and establish what is “normal” to help improve future incident response. 
+
+• Improve Detection. Based on the findings, make things better. This is possibly the most important step in the process. Use the data you gathered to determine where monitoring is weak, where alerts are that need tuning and where you can have maximum return of investment. 
+
+• Assess Threats. Now the cycle starts again. With your improved detection abilities, you need to re-assess the threat landscape.
+
+One of the challenges often faced with translating threat intelligence, hunt findings and IR reports into SIEM rules is having a consistent language to share data. This often leads in overly complex rules which focus on a specific technology.
+
+Using Sigma, you can create detection logic in a human readable format. This allows you to create a use-case library which is independent of the tools you use. In this manner you can build detection logic that can be used for SIEM queries, Sysmon rules, PowerShell searches and so on. A good starting point with Sigma rules is to take the default rules provided with the project and tweak them to fit your needs.
+
+
+
