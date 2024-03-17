@@ -45,3 +45,4 @@ Words: Match 'boy' or 'buy'	\bb[ou]y\b
 Words: Line does NOT contain the word 'boy'	^(?!.*boy).*	
 Words: Line contains 'bubble' but neither 'gum' nor 'bath'	^(?!.*gum)(?!.*bath).*?bubble.*	
 Match email addresses	(?i)\b[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,6}\b	
+Match line breaks: /\r\n|\n|\r/gm
