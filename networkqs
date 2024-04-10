@@ -1,0 +1,58 @@
+Initial Assessment
+•	What triggered the alert for suspicious network traffic?
+o	Identify the specific indicators or thresholds that were exceeded.
+•	When was the suspicious activity first detected?
+o	Establish a timeline for when the anomaly began.
+•	Is there a discernible pattern or trend in the suspicious traffic?
+o	Look for recurring timeframes, sources, or destinations.
+•	Which network devices are involved in the suspicious activity?
+o	Determine the devices transmitting or receiving the questionable traffic.
+•	What is the geographical origin of the suspicious traffic?
+o	Identify the source IP addresses and their locations.
+•	What is the volume and frequency of the suspicious traffic?
+o	Quantify the traffic to assess its potential impact on network resources.
+•	Does the suspicious traffic coincide with events or changes within the network?
+o	Consider recent updates, configurations changes, or other network events 
+Detailed Analysis
+•	What protocols, ports, and services are being used by the suspicious traffic?
+o	Analyze the technical vectors of the traffic to understand the communication methods.
+•	Is there any correlation between the suspicious traffic and known threat intelligence?
+o	Cross-reference IP addresses, domains, and other indicators with threat intelligence databases.
+•	Are there any similar historical incidents within the network?
+o	Review past security incidents for patterns or recurring vulnerabilities.
+•	What is the volume of data being transmitted in the suspicious traffic?
+o	Assess whether there is a potential data exfiltration attempt.
+•	Is there any discernible pattern in the timing or destination of the traffic that suggests automated or targeted activity?
+o	Look for regularities that might indicate botnet involvement or focused attacks.
+•	What data payloads, if any, are associated with the suspicious traffic?
+o	Examine the content being transmitted for malicious code or exfiltrated data.
+
+Source and Destination Analysis
+•	Who are the internal and external entities involved in the suspicious traffic?
+o	Identify the users or systems within the network and the external endpoints.
+•	Is the destination of the traffic known for hosting malicious content or services?
+o	Investigate the reputation of the destination IP addresses or domains.
+•	Are the source or destination points of the traffic associated with geographic locations or entities known for cyber threats?
+o	Assess the reputational context of the IP addresses involved.
+•	Are there any unauthorized applications or services communicating over the network?
+o	Look for unexpected or non-whitelisted applications.
+•	What is the nature of the content being transmitted?
+o	Determine if the content includes sensitive information, malware, or other malicious payloads.
+•	What is the security posture of the destination endpoints? Are they adequately secured against potential inbound threats?
+o	Evaluate the vulnerability of the target systems to ascertain the risk level.
+Impact Assessment
+•	Has there been any unauthorized access to sensitive or critical systems?
+o	Evaluate the potential breach of confidential or critical information.
+•	What is the potential impact of the suspicious activity on network performance?
+o	Assess whether the activity is consuming excessive bandwidth or disrupting services.
+•	Are there any signs of data manipulation or tampering?
+o	Investigate the integrity of data transmissions for alterations.
+•	Are there indications of lateral movement or further compromise stemming from the initial detection of suspicious traffic?
+o	Investigate the extent of the network penetration or data access achieved by the threat actor.
+Mitigation and Response
+•	What immediate actions can be taken to contain the suspicious activity?
+o	Consider blocking IP addresses, isolating affected systems, or adjusting firewall rules.
+•	What long-term measures can be implemented to prevent recurrence?
+o	Evaluate the need for enhanced monitoring, updated security policies, or infrastructure changes.
+•	How will the findings and actions be documented and communicated?
+o	Plan for comprehensive reporting and briefing to relevant stakeholders.
