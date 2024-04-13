@@ -23,14 +23,14 @@ Is there any discernible pattern in the timing or destination of the traffic tha
 What data payloads, if any, are associated with the suspicious traffic?
 • Examine the content being transmitted for malicious code or exfiltrated data.
 Are there any unauthorized applications or services communicating over the network?
-• Look for unexpected or non-whitelisted applications.  
+• Look for unexpected or non-whitelisted applications.
 Who are the internal and external entities involved in the suspicious traffic?
 • Identify the users or systems within the network and the external endpoints.
 Is the destination of the traffic known for hosting malicious content or services?
 • Investigate the reputation of the destination IP addresses or domains.
 Are the source or destination points of the traffic associated with geographic locations or entities known for cyber threats?
 • Assess the reputational context of the IP addresses involved.
- Are the destination endpoints adequately secured against potential inbound threats?
+Are the destination endpoints adequately secured against potential inbound threats?
 • Evaluate the vulnerability of the target systems to ascertain the risk level.
 When was the domain name registered, and what is the duration of its registration?
 • Determine if the domain name was recently created or has a short-term registration period, which can be indicative of malicious intent.
@@ -48,34 +48,34 @@ What types of content or services are being hosted on the domain, and do they ex
 • Review the hosted content for malware, phishing attempts, or other fraudulent activities.
 Has the domain name been involved in email spoofing or phishing campaigns?
 • Investigate any reports or evidence of the domain being used for deceptive communication practices.
-Is there traffic to external IPs without DNS query? 
-• Legitimate applications do not typically use hard-coded IP addresses for communication 
+Is there traffic to external IPs without DNS query?
+• Legitimate applications do not typically use hard-coded IP addresses for communication
 Is the use of a specific port suspicious in this context?
-• Use of rare ports or ports associated with exploitation tools are suspicious 
-Is there outbound non-DNS traffic allowed on port 53? 
+• Use of rare ports or ports associated with exploitation tools are suspicious
+Is there outbound non-DNS traffic allowed on port 53?
 • Only DNS traffic should be allowed on port 53, unless specified by policy
-Do DNS packets have a query length greater than 40 bytes? 
-• Legitimate DNS queries are on average smaller than 40 bytes.  
-Do DNS packets have a frequency per domain greater than 30 packets? 
-• Numerous DNS queries to specific domains indicates network scanning 
+Do DNS packets have a query length greater than 40 bytes?
+• Legitimate DNS queries are on average smaller than 40 bytes.
+Do DNS packets have a frequency per domain greater than 30 packets?
+• Numerous DNS queries to specific domains indicates network scanning
 Are there any abnormally long sessions (over 24 hours)?
-• User accounts typically do not have sessions longer than 24 hours 
+• User accounts typically do not have sessions longer than 24 hours
 Is there a large number of POST requests to servers that have not been seen before?
 • Large number of POST requests to rare servers suggests unauthorized exfiltration
-Is encrypted traffic being transmitted via an unencrypted channel (HTTP or FTP)? 
+Is encrypted traffic being transmitted via an unencrypted channel (HTTP or FTP)?
 • Typically encrypted traffic is sent via encrypted channels
-Is there traffic between (internal) clients? 
-• Clients typically send and receive most of their data from servers outside the network 
-Are there clients that are sending significantly more data than they receive? 
-• Clients typically receive a lot more traffic than they send 
-Is there outbound HTTP traffic originating from a non-browser process? 
+Is there traffic between (internal) clients?
+• Clients typically send and receive most of their data from servers outside the network
+Are there clients that are sending significantly more data than they receive?
+• Clients typically receive a lot more traffic than they send
+Is there outbound HTTP traffic originating from a non-browser process?
 • HTTP traffic typically originates from browsers
-Has a suspicious referer or user-agent string been used? 
+Has a suspicious referer or user-agent string been used?
 • Abnormal user-agent strings might indicate automated activity
-Are there gratuitous ARP replies for which no requests were made? 
+Are there gratuitous ARP replies for which no requests were made?
 • This might indicate ARP poisoining attack
-Do multiple IP addresses map to a single MAC address? 
-• Typically, a single IP address is mapped to a single MAC address 
+Do multiple IP addresses map to a single MAC address?
+• Typically, a single IP address is mapped to a single MAC address
 Is there traffic on UDP port 137 despite NetBIOS being disabled by security policy?
 • Traffic on disabled ports indicates a bypass of access control
 Has there been any unauthorized access to sensitive or critical systems?
@@ -86,6 +86,12 @@ Are there any signs of data manipulation or tampering?
 • Investigate the integrity of data transmissions for alterations.
 Are there indications of lateral movement or further compromise stemming from the initial detection of suspicious traffic?
 • Investigate the extent of the network penetration or data access achieved by the threat actor.
+What immediate actions can be taken to contain the suspicious activity?
+• Consider blocking IP addresses, isolating affected systems, or adjusting firewall rules.
+What long-term measures can be implemented to prevent recurrence?
+• Evaluate the need for enhanced monitoring, updated security policies, or infrastructure changes.
+How will the findings and actions be documented and communicated?
+• Plan for comprehensive reporting and briefing to relevant stakeholders.
 What specific characteristics or behaviors flagged the process as suspicious?
 • Identify the attributes or actions (e.g., unexpected resource consumption, network activity) that initially raised concerns.
 What is the origin or source of the suspicious process?
@@ -105,7 +111,7 @@ What is the file's type, extension, and associated application?
 What are the creation, modification, and access timestamps of the file?
 • Document temporal data to ascertain the timeline of the file's introduction and activity within the environment.
 Who is the owner of the file, and what permissions are assigned to it?
-• Assess the file's ownership and access control settings to understand potential actors and their capabilities. 
+• Assess the file's ownership and access control settings to understand potential actors and their capabilities.
 What are the command-line arguments used by the process, and do they reveal any malicious intent?
 • Examine the parameters and flags associated with the process execution for indicators of suspicious activity.
 What network connections or activities are being initiated by the process?
@@ -130,7 +136,7 @@ What is the exact syntax and parameterization of the suspicious command?
 • Document the precise command line input, including all flags, options, and arguments, to facilitate a granular understanding of its intended function.
 What was the source of the command execution?
 • Identify whether the command originated from a user input, a scheduled task, a remote session, or an automated script, providing insights into its origin.
-Should this parent process spawn this child process? 
+Should this parent process spawn this child process?
 • Cmd.exe as a Child of Office Applications, Svchost.exe Running Under User Context, Explorer.exe Launching Network Tools etc
 What are the immediate outcomes or side effects observed following the command's execution?
 • Monitor the system for changes or anomalies triggered by the command, including altered files, spawned processes, or network traffic variations.
@@ -140,7 +146,7 @@ What subsequent commands or actions were initiated following the execution of th
 • Trace the sequence of activities post-execution to uncover potential stages of an attack or unauthorized operations.
 Does the command exhibit patterns or signatures consistent with known malware, exploits, or cyber-attack techniques?
 • Compare the command's characteristics against threat intelligence databases and security reports to identify similarities with documented threats.
- Does static analysis of the file reveal any embedded or obfuscated code?
+Does static analysis of the file reveal any embedded or obfuscated code?
 • Employ static analysis tools to inspect the file's code without executing it, looking for hidden or malicious content.
 What are the results of dynamic analysis upon executing the file in a controlled environment?
 • Conduct dynamic analysis by running the file in a sandbox to observe its behavior, including network communication, file modification, and persistence mechanisms.
@@ -149,58 +155,70 @@ Are there any network connections initiated by the file, and what are their dest
 What dependencies or external resources does the file require or interact with?
 • Investigate the file's interactions with system libraries, external servers, or other resources that could indicate malicious functionality.
 Does the file share similarities with components of known attack campaigns or threat actors?
-• Compare the file's attributes and behaviors with threat intelligence reports to identify possible affiliations with documented threats. 
+• Compare the file's attributes and behaviors with threat intelligence reports to identify possible affiliations with documented threats.
+What is the potential impact of the suspicious process on critical systems and data?
+• Consider the implications for data confidentiality, system availability, and overall network integrity.
+What immediate steps can be taken to isolate and neutralize the suspicious process?
+• Outline containment strategies, such as terminating the process, isolating affected systems, or implementing network segmentation.
+What potential vulnerabilities or security weaknesses could the file exploit within the current environment?
+• Evaluate the file's capabilities against the system or network's known vulnerabilities to understand potential attack vectors.
+What is the potential impact of the file on system integrity, data confidentiality, and network security?
+• Assess the implications for critical systems and sensitive information, considering scenarios such as data theft, system compromise, and lateral movement.
+What immediate steps can be taken to isolate and neutralize the threat posed by the suspicious file?
+• Outline containment measures, such as quarantining the file, disconnecting affected systems, and revoking network access.
+What long-term strategies can be implemented to enhance detection and prevention of similar threats?
+•  Propose adjustments to security protocols, including the deployment of advanced malware detection tools, regular system audits, and user training programs.
 Has the User Exhibited Any Unusual Login Patterns?
-• Assess login times, frequencies, and locations for deviations from established norms. Investigate any attempts made outside of business hours or from geographically anomalous locations. 
+• Assess login times, frequencies, and locations for deviations from established norms. Investigate any attempts made outside of business hours or from geographically anomalous locations.
 Are There Discrepancies in the Account’s Group Memberships or Role Assignments?
-• Evaluate the account's group memberships and role assignments for any irregularities or unauthorized changes that increase its access beyond what is required for its duties. 
+• Evaluate the account's group memberships and role assignments for any irregularities or unauthorized changes that increase its access beyond what is required for its duties.
 Has the Account Been Involved in Unusual File or Data Access Activities?
-• Review logs for unauthorized access to sensitive or critical data, including unusual file modification, deletion, or exfiltration activities. 
+• Review logs for unauthorized access to sensitive or critical data, including unusual file modification, deletion, or exfiltration activities.
 Is There Evidence of the Account Being Used to Bypass Security Controls?
-• Investigate instances where the user account may have been utilized to disable or tamper with security software, firewall rules, or audit logs. 
+• Investigate instances where the user account may have been utilized to disable or tamper with security software, firewall rules, or audit logs.
 Are There Anomalies in the User's Application or System Usage Patterns?
-• Analyze application and system usage logs to identify any deviation from typical user behavior, such as accessing unfamiliar systems or executing atypical commands. 
+• Analyze application and system usage logs to identify any deviation from typical user behavior, such as accessing unfamiliar systems or executing atypical commands.
 Has the User Attempted Unauthorized Network Connections or Data Transfers?
-• Examine network logs for evidence of unauthorized external connections, use of tunneling protocols, or unexpected data uploads/downloads. 
+• Examine network logs for evidence of unauthorized external connections, use of tunneling protocols, or unexpected data uploads/downloads.
 Does the Account Exhibit Signs of Being Compromised or Controlled Remotely?
-• Look for indicators of account compromise, such as concurrent logins from disparate locations, unrecognized devices, or activities suggesting remote control. 
+• Look for indicators of account compromise, such as concurrent logins from disparate locations, unrecognized devices, or activities suggesting remote control.
 Have There Been Any Recent Changes to the Account’s Security Settings?
-• Review changes to the account's security configurations, including password resets, two-factor authentication settings, or security question alterations. 
+• Review changes to the account's security configurations, including password resets, two-factor authentication settings, or security question alterations.
 Is the User’s Email Activity Consistent with Known Phishing or Social Engineering Tactics?
-• Analyze sent and received emails for patterns consistent with phishing attempts, including unsolicited attachments, suspicious links, or requests for sensitive information. 
+• Analyze sent and received emails for patterns consistent with phishing attempts, including unsolicited attachments, suspicious links, or requests for sensitive information.
 Are There Discrepancies Between the User's Role and Their System Activities?
-• Evaluate system activities and accessed resources for alignment with the user’s job responsibilities. Look for actions that fall outside the scope of their official duties. 
+• Evaluate system activities and accessed resources for alignment with the user’s job responsibilities. Look for actions that fall outside the scope of their official duties.
 Has the User Introduced Unauthorized Software or Hardware?
-• Inspect the network for unauthorized devices connected by the user and software installations not approved by IT policies. 
+• Inspect the network for unauthorized devices connected by the user and software installations not approved by IT policies.
 Is There a History of Security Incidents Associated with This Account?
-• Review the account's incident history to identify any patterns of behavior that may indicate susceptibility to compromise or malicious use. 
+• Review the account's incident history to identify any patterns of behavior that may indicate susceptibility to compromise or malicious use.
 Are There Anomalies in the Account’s Session Durations or Activity Times?
-• Analyze session logs to identify any discrepancies in login durations and periods of activity, particularly those that fall outside the user's typical working hours or patterns. 
+• Analyze session logs to identify any discrepancies in login durations and periods of activity, particularly those that fall outside the user's typical working hours or patterns.
 What Authentication Methods Are Used, and Have There Been Changes Recently?
-• Investigate the authentication mechanisms employed by the account, noting any recent switches in methods that could indicate an attempt to bypass security measures. 
+• Investigate the authentication mechanisms employed by the account, noting any recent switches in methods that could indicate an attempt to bypass security measures.
 Does the Account Exhibit Patterns of Geographical Improbabilities in Access Locations?
-• Analyze access logs for login attempts from geographically improbable locations, suggesting the potential use of proxy services or compromised credentials. 
+• Analyze access logs for login attempts from geographically improbable locations, suggesting the potential use of proxy services or compromised credentials.
 Is the Account Involved in the Circumvention of Data Loss Prevention (DLP) Controls?
-• Investigate instances where the account may be implicated in bypassing DLP measures, including unauthorized transfer of sensitive information outside the corporate network. 
+• Investigate instances where the account may be implicated in bypassing DLP measures, including unauthorized transfer of sensitive information outside the corporate network.
 What Are the Historical Patterns of This Account’s File Creation, Modification, and Deletion Activities?
-• Analyze the account's file operations over time to identify any patterns of creation, modification, or deletion that diverge from expected behavior, potentially indicating data tampering or theft. 
+• Analyze the account's file operations over time to identify any patterns of creation, modification, or deletion that diverge from expected behavior, potentially indicating data tampering or theft.
 Has the Account Been Detected Using Encryption Tools or Services Unnecessarily?
-• Review the usage of encryption tools or services by the account, particularly those not aligned with its operational needs, which may hint at efforts to conceal unauthorized data exfiltration. 
+• Review the usage of encryption tools or services by the account, particularly those not aligned with its operational needs, which may hint at efforts to conceal unauthorized data exfiltration.
 Are There Indications of the Account Performing Reconnaissance Activities Within the Network?
 • Examine network and system access logs for signs of scanning or enumeration activities conducted by the account, indicative of internal reconnaissance for vulnerabilities or valuable data.
-Are There Anomalies in Email Sending Patterns? 
-• Analyze the volume, frequency, and recipients of sent emails for irregularities. Unusual spikes in email activity or messages sent to unfamiliar recipients may suggest account misuse. 
-What Types of Attachments Are Being Sent From the Email Account? 
-• Review the types and sizes of attachments being disseminated from the account. Large or unexpected file types, especially executable files, could indicate malicious intent. 
-Does the Email Account Exhibit Signs of Being Compromised or Used as a Spam Bot? 
-• Monitor the account for signs of compromise, such as spam emails sent from the account, unauthorized auto-forwarding rules, or replies from recipients indicating unexpected messages. 
-Are There Unusual Email Forwarding Rules or Filters Set Up? 
+Are There Anomalies in Email Sending Patterns?
+• Analyze the volume, frequency, and recipients of sent emails for irregularities. Unusual spikes in email activity or messages sent to unfamiliar recipients may suggest account misuse.
+What Types of Attachments Are Being Sent From the Email Account?
+• Review the types and sizes of attachments being disseminated from the account. Large or unexpected file types, especially executable files, could indicate malicious intent.
+Does the Email Account Exhibit Signs of Being Compromised or Used as a Spam Bot?
+• Monitor the account for signs of compromise, such as spam emails sent from the account, unauthorized auto-forwarding rules, or replies from recipients indicating unexpected messages.
+Are There Unusual Email Forwarding Rules or Filters Set Up?
 • Examine the account for any forwarding rules or filters that automatically redirect emails to external addresses, which could be indicative of information exfiltration efforts.
 Are There Indications of Account Involvement in Internal Threats or Sabotage?
 • Review internal communications, file access logs, and system activity for evidence that suggests the account may be implicated in acts aimed at undermining organizational security or operational integrity.
-Has the Account Been Linked to the Use of Unapproved Cloud Services? 
+Has the Account Been Linked to the Use of Unapproved Cloud Services?
 • Investigate the use of cloud storage or applications not sanctioned by organizational IT policies, as these can present significant data leakage risks or violate compliance requirements.
-Are There Instances of the Account Performing Unauthorized System Changes? 
+Are There Instances of the Account Performing Unauthorized System Changes?
 • Scrutinize system and configuration change logs for unauthorized modifications attributed to the account, which may compromise system integrity or facilitate further unauthorized activities.
-Are There Signs of the Account Being Used for Intellectual Property Theft? 
+Are There Signs of the Account Being Used for Intellectual Property Theft?
 • Investigate activities related to intellectual property, including access to patent documents, source code, or proprietary designs, for unauthorized dissemination or potential theft indicators.
