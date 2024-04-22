@@ -42,6 +42,8 @@ Character class subtraction	[a-z-[aeiou]]
 Change file extension	^(.*\.)[^.]+$	\1rar
 Words: Matches 7-letter words with the word 'hay'	(?=\b\w{7}\b)\w*?hay\w*	
 Words: Matches lines with both words	^(?=.*?\bbubble\b).*?\bgum\b.*	
+
+URLS: \b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]|(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]|www\.[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]|\b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]
 Words: Match 'boy' or 'buy'	\bb[ou]y\b	
 Words: Line does NOT contain the word 'boy'	^(?!.*boy).*	
 Words: Line contains 'bubble' but neither 'gum' nor 'bath'	^(?!.*gum)(?!.*bath).*?bubble.*	
