@@ -38,6 +38,7 @@ Positive lookahead	(?=…)
 Positive lookbehind	(?<=…)		
 Negative lookahead	(?!…)		
 Negative lookbehind	(?<!…)		
+Match from Example1 up until before Example2: Example1([\s\S]*?)(?=Example2)
 Character class subtraction	[a-z-[aeiou]]	
 Change file extension	^(.*\.)[^.]+$	\1rar
 Words: Matches 7-letter words with the word 'hay'	(?=\b\w{7}\b)\w*?hay\w*	
