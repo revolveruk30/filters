@@ -4,6 +4,7 @@
 !net
 !org
 !gov
+!es
 
 !t.co / twitter short-urls
 !redd.it / reddit short-urls
@@ -416,7 +417,6 @@
 ||er^
 ||ericsson^
 ||erni^
-||es^
 ||esq^
 ||estate^
 ||esurance^
